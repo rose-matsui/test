@@ -1,0 +1,286 @@
+.section-header{
+    position:relative;
+    z-index:1;
+    margin-bottom: var(--spacing-3);
+    margin-left: var(--spacing-4);
+    margin-right: var(--spacing-4);
+    line-height: 1;
+    @media (min-width: 960px) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: var(--spacing-4);
+    }
+}
+
+.ff-heading{
+  font-weight: 700;
+}
+
+.page__cart-inner {
+  padding: var(--spacing-2) var(--spacing-2);
+  @media (min-width: 960px) {
+      padding: var(--spacing-6) var(--spacing-6);
+      max-width: 1400px;
+      margin: 0 auto;
+      box-sizing: content-box;
+  }
+}
+
+/* QUANTITY INPUT */
+.quantity-input {
+  background-color: #FFFEF9;
+}
+
+/* QUANTITY INPUT ADD */
+.quantity-input-add{
+  height:42px;
+  display:inline-flex;
+  border:1px solid var(--color-border);
+  overflow:hidden;
+  transition:border-color 0.3s ease-in-out;
+}
+.quantity-input-add:hover{
+    border-color:var(--color-text);
+  }
+.quantity-input-add input{
+    width:48px;
+    margin:0 calc((4px * 3) * -1);
+    margin:0 calc(calc(4px * 3) * -1);
+    margin:0 calc(var(--spacing-3) * -1);
+    padding:0;
+    border:0;
+    overflow:visible;
+    text-align:center;
+  }
+.quantity-input-add input::-webkit-outer-spin-button,
+    .quantity-input-add input::-webkit-inner-spin-button{
+      -webkit-appearance:none;
+    }
+.no-js .quantity-input-add input{
+      margin:0;
+    }
+.has-quantity-update .quantity-input-add{
+    opacity:0.4;
+    cursor:default;
+    pointer-events:none;
+  }
+.quantity-input-add__button{
+  position:relative;
+  height:100%;
+  cursor:pointer;
+  color:var(--color-text);
+  background-color:transparent;
+  border:0;
+  transition:background-color 0.25s ease-in-out;
+  padding:6px calc(4px * 3);
+  padding:6px var(--spacing-3);
+  z-index:1;
+}
+.quantity-input-add__button:hover,
+  .quantity-input-add__button:focus{
+    background-color:var(--color-background-darker-meta-alpha);
+  }
+.quantity-input-add__button:active{
+    background-color:var(--color-background-darker-meta);
+  }
+.quantity-input-add__button .icon{
+    width:12px;
+    height:12px;
+  }
+.has-quantity-update .quantity-input-add__button{
+    cursor:default;
+    pointer-events:none;
+  }
+.no-js .quantity-input-add__button{
+    display:none;
+  }
+
+.cart__product-options__product-price {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  @media (min-width: 400px) {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-1);
+  }
+}
+
+.quantity-input-add__button.is-disabled, .quantity-input-add__button[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+/* QUANTITY GIFT BAG ADD */
+.quantity-gift-bag-add{
+  height:42px;
+  display:inline-flex;
+  border:1px solid var(--color-border);
+  overflow:hidden;
+  transition:border-color 0.3s ease-in-out;
+}
+.quantity-gift-bag-add:hover{
+    border-color:var(--color-text);
+  }
+.quantity-gift-bag-add input{
+    width:48px;
+    margin:0 calc((4px * 3) * -1);
+    margin:0 calc(calc(4px * 3) * -1);
+    margin:0 calc(var(--spacing-3) * -1);
+    padding:0;
+    border:0;
+    overflow:visible;
+    text-align:center;
+  }
+.quantity-gift-bag-add input::-webkit-outer-spin-button,
+    .quantity-gift-bag-add input::-webkit-inner-spin-button{
+      -webkit-appearance:none;
+    }
+.no-js .quantity-gift-bag-add input{
+      margin:0;
+    }
+.has-quantity-update .quantity-gift-bag-add{
+    opacity:0.4;
+    cursor:default;
+    pointer-events:none;
+  }
+.quantity-gift-bag-add__button{
+  position:relative;
+  height:100%;
+  cursor:pointer;
+  color:var(--color-text);
+  background-color:transparent;
+  border:0;
+  transition:background-color 0.25s ease-in-out;
+  padding:6px calc(4px * 3);
+  padding:6px var(--spacing-3);
+  z-index:1;
+}
+.quantity-gift-bag-add__button:hover,
+  .quantity-gift-bag-add__button:focus{
+    background-color:var(--color-background-darker-meta-alpha);
+  }
+.quantity-gift-bag-add__button:active{
+    background-color:var(--color-background-darker-meta);
+  }
+.quantity-gift-bag-add__button .icon{
+    width:12px;
+    height:12px;
+  }
+.has-quantity-update .quantity-gift-bag-add__button{
+    cursor:default;
+    pointer-events:none;
+  }
+.no-js .quantity-gift-bag-add__button{
+    display:none;
+  }
+
+.cart__product-options__product-price {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+}
+
+.quantity-gift-bag-add__button.is-disabled, .quantity-gift-bag-add__button[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.cart__sticky-checkout-cta-wrapper {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  padding: var(--spacing-6) var(--spacing-4);
+  border-top: 1px solid var(--color-border);
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.cart__top-area {
+  width: 100%;
+}
+
+.cart__marketing-message {
+  color: var(--color-text);
+  font-size: var(--font-size-body-100);
+  text-align: center;
+  margin-bottom: var(--spacing-4);
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cart__cart-back-button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  line-height: 0;
+	justify-content: start;
+	margin: var(--spacing-6) var(--spacing-4);
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.cart__back-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CART FOOTER */
+.cart__footer-inner {
+  padding: var(--spacing-8) var(--spacing-4);
+}
+
+.cart__footer-subtotal {
+  h3 {
+    font-weight: 700;
+  }
+}
+
+.cart__footer-subtotal-tax-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-1);
+}
+
+.cart__footer-subtotal-tax-amount {
+  font-weight: 700;
+}
+
+.cart__footer-subtotal-tax-label {
+  font-size: var(--font-size-body-50);
+  color: var(--color-text-meta);
+}
+
+
+/* PDP */
+.product-form__controls-group--submit {
+  margin-top:calc(4px * 6);
+  margin-top:var(--spacing-6);
+  margin-bottom: var(--spacing-4) !important;
+}
+
+/* ADD TO WISHLIST BUTTON */
+.atw-button {
+  height: 48px !important;
+}
+
+/* HIDE WISHLIST HEART ICON */
+.shopify-section > .swym-wishlist-collections-v2-container,
+.customer.account-section .swym-wishlist-collections-v2-container,
+.cart__form-item .swym-wishlist-collections-v2-container,
+.meganav .swym-wishlist-collections-v2-container,
+.drawer-menu__links-wrapper .swym-wishlist-collections-v2-container {
+  display: none !important;
+}

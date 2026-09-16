@@ -1,0 +1,172 @@
+/* Customer Account */
+.login__main .input {
+  background-color: #fffef9;
+}
+
+.login__main {
+  box-sizing: content-box;
+}
+
+.separator {
+  padding: 0 !important;
+}
+
+.login__form > label,
+.login__form > div > label {
+  font-size: var(--font-size-body-75);
+  margin-bottom: var(--spacing-2);
+}
+
+.birthday-field > label {
+  font-size: var(--font-size-body-75);
+}
+
+.addresses__checkbox-wrapper label {
+  font-size: var(--font-size-body-75);
+}
+
+label+select.input,
+label+textarea.input,
+input.input+label {
+  margin-top: 0;
+}
+
+.account-section input:not([type="checkbox"]),
+.account-section select,
+.account-section form .btn--primary {
+  margin-top: 0;
+  margin-bottom: var(--spacing-6);
+}
+
+.addresses__modal .addresses__content {
+  background-color: #fffef9
+}
+
+.login__links .btn--text-link,
+.login__links a {
+  letter-spacing: -0.1%;
+  text-decoration-thickness: 7%;
+  text-underline-offset: 0.1em;
+}
+
+.login__inner form input[type="checkbox"] {
+  transform: scale(1.5);
+  transform-origin: left;
+  margin: var(--spacing-1);
+}
+
+.birthday-selects .input {
+  color: var(--color-text-meta);
+  /* font-size: var(--font-size-body-150); */
+}
+
+.terms-text a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.terms-text {
+  letter-spacing: -0.02rem;
+}
+
+@media (min-width: 480px) {
+  .login__main .login__links li+li::before {
+    content: '';
+  }
+}
+
+.customer.login .login__main .input,
+.customer.login .login__header .input,
+.customer.login .addresses__checkbox-wrapper,
+.customer.login .terms-text {
+  margin-bottom: var(--spacing-6);
+}
+
+.customer.login .login__main .name-field .input:first-of-type,
+.customer.login .login__main .kana-field .input:first-of-type {
+  margin-bottom: var(--spacing-2);
+}
+
+#birthday-error a {
+  text-decoration: none;
+}
+
+#birthday-error li {
+ list-style: none;
+}
+
+.login__main .login__links {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.customer.login .login__main .btn.btn--primary,
+.customer.login .login__header .btn.btn--primary {
+  margin-top: 0px;
+}
+
+.smart-table td[data-label="source_name"]::before {
+  content: "";
+}
+
+.template-customers-order .account__subheading {
+  margin-top: 0px;
+}
+
+.template-customers-order .store_name {
+  margin-bottom: var(--spacing-4);
+}
+
+@media (max-width: 719px) {
+  #AddressNewButton,
+  .addresses__new {
+    width: 100%;
+  }
+}
+
+#customer-account-welcome .page__inner {
+  padding-bottom: 0px;
+}
+
+#customer-account-welcome .page__header {
+  margin: 0 auto var(--spacing-6);
+}
+
+.customer-barcode .page__inner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.guest_login_main .guest_login {
+  width: 100%;
+  max-width: var(--login-max-width);
+  padding: 0 var(--space-outer);
+  margin: 0 auto;
+}
+
+.guest_login_main .separator {
+    margin-top: var(--spacing-6);
+    margin-bottom: var(--spacing-6);
+}
+
+.login {
+  --login-max-width: 400px !important;
+}
+
+.login__inner.page__inner {
+  padding-bottom: var(--spacing-6);
+}
+
+.multi-column__inner.section {
+  padding-bottom: var(--spacing-25);
+}
+
+.login_privacy_wrap{
+    font-size: var(--font-size-body-75);
+        margin-bottom: var(--spacing-2);
+}
+
+.login_privacy_wrap .login_privacy_link{
+  color: var(--color-text-link);
+  text-decoration:underline;
+}

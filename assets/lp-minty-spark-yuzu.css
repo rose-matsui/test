@@ -1,0 +1,2872 @@
+@charset "utf-8";
+
+.lp-content.lp-minty-spark-yuzu .font-yumin {
+  font-family: "游明朝", YuMincho, 'Yu Mincho', "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "Noto Serif JP", "serif" !important;
+}
+
+.lp-content.lp-minty-spark-yuzu .font-garamond {
+  font-family: 'EB Garamond', serif !important;
+}
+
+.lp-content.lp-minty-spark-yuzu .font-arno {
+  font-family: arno-pro, serif !important;
+}
+
+.lp-content.lp-minty-spark-yuzu .font-petrona {
+  font-family: Petrona, serif !important;
+}
+
+.lp-content.lp-minty-spark-yuzu .inview {
+  opacity: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu #msy {
+  color: #404040;
+}
+
+.lp-content.lp-minty-spark-yuzu sup {
+  vertical-align: top;
+}
+
+/* ------------------------------
+              共通
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .font-capitalize {
+  text-transform: capitalize;
+}
+
+.lp-content.lp-minty-spark-yuzu .common__title {
+  color: #c9a856;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .common__catch {
+  font-size: 26px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .name-and-price {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.lp-content.lp-minty-spark-yuzu .btn--cart {
+  margin: 0px;
+  padding: 17px 0px 0px;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .btn--cart a {
+  width: 210px;
+  display: inline-block;
+  background-image: linear-gradient(90deg, #00a77f, #04755b);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px;
+  padding: 16px 0px;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .btn--cart a svg {
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.lp-content.lp-minty-spark-yuzu .limited {
+  position: absolute;
+  background-color: #00a77f;
+  border-radius: 50%;
+  z-index: 15;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.lp-content.lp-minty-spark-yuzu .limited--l {
+  width: 81px;
+  height: 81px;
+  top: 15px;
+  right: 14px;
+}
+
+.lp-content.lp-minty-spark-yuzu .limited--s {
+  width: 56px;
+  height: 56px;
+  top: -2px;
+  right: 10px;
+}
+
+.lp-content.lp-minty-spark-yuzu .limited--r {
+  background-color: #c9a856;
+}
+
+.lp-content.lp-minty-spark-yuzu .limited .limited-in {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.lp-content.lp-minty-spark-yuzu .ltext {
+  width: 100%;
+  display: inline-block;
+  color: #FFF;
+  letter-spacing: 0.05em;
+  line-height: 1.1em;
+  text-align: center;
+  margin-top: 0px;
+  position: absolute;
+  left: 0px;
+  top: 51%;
+  -webkit-transform: translateY(-51%);
+  transform: translateY(-51%);
+}
+
+.lp-content.lp-minty-spark-yuzu .ltext--l {
+  font-size: 20px;
+}
+
+.lp-content.lp-minty-spark-yuzu .ltext--s {
+  font-size: 14px;
+}
+
+.sup {
+  font-size: 12px;
+  vertical-align: text-top;
+}
+
+.lp-content.lp-minty-spark-yuzu .accordion__wrapper {
+  width: 535px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.lp-content.lp-minty-spark-yuzu .accordion__title {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance-accordion {
+  border-top: 1px solid #9b9b9b;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance-accordion-more {
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.lp-content.lp-minty-spark-yuzu .accordion {
+  padding: 16px 0px;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.lp-content.lp-minty-spark-yuzu .accordion-more {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 30px;
+}
+
+.lp-content.lp-minty-spark-yuzu .open .common-icon-plus {
+  display: none;
+}
+
+.lp-content.lp-minty-spark-yuzu .open .common-icon-minus {
+  display: block;
+}
+
+.lp-content.lp-minty-spark-yuzu .open .fragrance-accordion {
+  border-bottom: none;
+}
+
+.lp-content.lp-minty-spark-yuzu .reverse-icon .common-icon-plus {
+  display: block;
+}
+
+.lp-content.lp-minty-spark-yuzu .common-icon {
+  font-size: 30px;
+  position: absolute;
+  top: 52%;
+  right: 3px;
+  transform: translateY(-52%);
+  -webkit-transform: translateY(-52%);
+}
+
+.lp-content.lp-minty-spark-yuzu .common-notes {
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.lp-content.lp-minty-spark-yuzu .end-text {
+  color: #F00;
+  margin: 0px;
+  padding: 15px 0px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .end-text span {
+  display: block;
+  color: #412E17;
+  font-size: 14px;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-block .data .bcs .bbg {
+  border: 1px solid #04755b;
+}
+
+/* ------------------------------
+              mv
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .kv {
+  margin: 0px;
+  padding: 0px;
+  overflow: visible;
+  z-index: 20;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .kv-text__wrapper {
+  width: 54.9vw;
+  text-align: center;
+  position: absolute;
+  top: 3.3vw;
+  left: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .kv-text__img img {
+  width: 14vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .kv__title {
+  margin-top: 1vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .kv__title img {
+  width: 33.9vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .kv__lead {
+  color: #fff;
+  font-size: 1.3vw;
+  line-height: 1.3;
+  margin-top: 1vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .kv-lead__label {
+  margin-top: 1.3vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .kv-lead__label img {
+  /* width: 25vw; */
+  width: 15vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .kv__notes {
+  font-size: 1vw;
+  line-height: 1;
+  margin-top: 0.4vw;
+}
+
+/* ------------------------------
+              lead
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .lead__inner {
+  padding: 68px 0 60px;
+}
+
+.lp-content.lp-minty-spark-yuzu .nav-anchor__list {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+}
+
+.lp-content.lp-minty-spark-yuzu .nav-anchor__item {
+  width: 209px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 12px 0 32px;
+}
+
+.lp-content.lp-minty-spark-yuzu .nav-anchor__link {
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .fa-chevron-down {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.lp-content.lp-minty-spark-yuzu .lead__text {
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 52px;
+}
+
+.lp-content.lp-minty-spark-yuzu .lead__obj--l {
+  top: 39px;
+  left: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .lead__obj--r {
+  top: 17px;
+  right: 0;
+}
+
+/* ------------------------------
+          Special Kit
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .special-kit,
+.lp-content.lp-minty-spark-yuzu .campaign {
+  background-size: 52px auto;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .special-kit__inner {
+  padding: 82px 0 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .special-kit__contents {
+  display: flex;
+  column-gap: 55px;
+  justify-content: center;
+  margin: 37px auto 0;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .special-kit-img__wrapper {
+  width: 507px;
+  position: relative;
+}
+
+/* .special-kit-img {
+  width: 507px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.lp-content.lp-minty-spark-yuzu .special-kit__catch {
+  margin-top: 68px;
+}
+
+.lp-content.lp-minty-spark-yuzu .special-kit__data {
+  box-sizing: content-box;
+  text-align: center;
+  margin: 0px;
+}
+
+/* ------------------------------
+          Item LineUp
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .item-lineup {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .item-lineup__inner {
+  padding: 100px 0 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .item-lineup__title {
+  color: #00a77f;
+  line-height: 1;
+}
+
+.lp-content.lp-minty-spark-yuzu .item-lineup__sub-title {
+  display: block;
+  color: #404040;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.lp-content.lp-minty-spark-yuzu .item-lineup__list {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  margin-top: 61px;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-img__wrapper {
+  width: 380px;
+  height: 587px;
+  line-height: 1;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-text__wrapper {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lp-content.lp-minty-spark-yuzu .step__text {
+  width: 180px;
+  display: flex;
+  column-gap: 15px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-tbg {
+  margin: 0px auto;
+  padding: 0px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 77px;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-tjp {
+  font-size: 44px;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-tbg:before,
+.lp-content.lp-minty-spark-yuzu .step-tbg:after {
+  border-top: 1px solid #fff;
+  content: "";
+  flex-grow: 1;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-tbg:before {
+  margin-right: 6px;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-tbg::after {
+  margin-left: 6px;
+}
+
+.lp-content.lp-minty-spark-yuzu .step__catch {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-top: 21px;
+}
+
+.lp-content.lp-minty-spark-yuzu .name-and-price--step {
+  color: #404040;
+  line-height: 1.3;
+  margin-top: 302px;
+}
+
+.lp-content.lp-minty-spark-yuzu .slick-dots {
+  margin-top: 30px;
+}
+
+/* ステップスライダー */
+.lp-content.lp-minty-spark-yuzu .step-slider .slick-dots {
+  display: none;
+}
+
+.lp-content.lp-minty-spark-yuzu .slick-arrow.slick-prev::after,
+.lp-content.lp-minty-spark-yuzu .slick-arrow.slick-next::after {
+  display: none;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-slider .step-prev,
+.lp-content.lp-minty-spark-yuzu .step-slider .step-next {
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+  transition: unset;
+  border-width: 0px;
+  border-style: none;
+  opacity: 1;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-slider .step-prev {
+  left: -18px;
+}
+
+.lp-content.lp-minty-spark-yuzu .step-slider .step-next {
+  right: -18px;
+}
+
+/* ------------------------------
+            Other Kit
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .other-kit {
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit__inner {
+  padding: 62px 0 102px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit-slider {
+  width: 1000px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 62px 0 68px;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit__list {
+  width: 855px;
+  margin: 33px auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit__item {
+  width: 285px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit__item .img {
+  width: 190px;
+  height: 190px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  margin: 22px auto 0;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .img_wrapper {
+  display: block;
+  width: 240px;
+  margin: 0 auto;
+  margin-left: -25px;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit__item1 img {
+  width: 189px;
+  margin: 0 auto;
+  padding-top: 53px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit__item2 img {
+  width: 190px;
+  margin: 0 auto;
+  padding-top: 41px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit__item3 img {
+  width: 220px;
+  margin: 0 auto;
+  padding-top: 54px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit__item4 img {
+  width: 180px;
+  margin: 0 auto;
+  padding-top: 53px;
+}
+
+.lp-content.lp-minty-spark-yuzu .name-and-price--ok {
+  margin-top: 14px;
+}
+
+.lp-content.lp-minty-spark-yuzu .common-other__catch {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 0px;
+  /* display: flex; */
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.lp-content.lp-minty-spark-yuzu .lk__obj--l {
+  top: -36px;
+  left: -27px;
+}
+
+.lp-content.lp-minty-spark-yuzu .lk__obj--r {
+  bottom: 48px;
+  right: -30px;
+}
+
+/* ------------------------------
+          Other LineUp
+------------------------------ */
+/* .other-lineup {
+  background-image: url(../../images/special_contents/Minty_Spark_Yuzu/20250529/bg_ol.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+} */
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__inner {
+  padding: 86px 0 85px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__title {
+  color: #00a77f;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup-slider {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__item1 img,
+.lp-content.lp-minty-spark-yuzu .other-lineup__item2 img,
+.lp-content.lp-minty-spark-yuzu .other-lineup__item3 img,
+.lp-content.lp-minty-spark-yuzu .other-lineup__item4 img {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__item .img {
+  width: 190px;
+  height: 190px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 22px auto 0;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__item1 img {
+  width: 61px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__item2 img {
+  width: 42px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__item3 img {
+  width: 37px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__item4 img {
+  width: 54px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup__item3 img.eds-limited__label {
+  width: 192px;
+  margin: -20px auto;
+}
+
+.lp-content.lp-minty-spark-yuzu .name-and-price--ol {
+  margin-top: 21px;
+}
+
+/* ------------------------------
+          Mint items
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .mint-items,
+.lp-content.lp-minty-spark-yuzu .pop-up-block {
+  background-size: 52px auto;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__inner {
+  padding: 100px 0 95px;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__title {
+  color: #00a77f;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__sub-title {
+  color: #00a77f;
+  font-size: 26px;
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__notes {
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__list {
+  width: 774px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 48px;
+  row-gap: 43px;
+  justify-content: center;
+  margin: 60px auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__img {
+  width: 190px;
+  margin: 0 auto;
+}
+
+.name-and-price--mint {
+  text-align: left;
+}
+
+.lp-content.lp-minty-spark-yuzu .evaluation {
+  font-weight: bold;
+}
+
+.lp-content.lp-minty-spark-yuzu .star {
+  color: #00a77f;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__obj1 {
+  top: 56px;
+  left: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__obj2 {
+  top: 62px;
+  right: 340px;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__obj3 {
+  top: 331px;
+  right: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__obj4 {
+  bottom: 499px;
+  bottom: 269px;
+  left: 100px;
+}
+
+.lp-content.lp-minty-spark-yuzu .mint-items__obj5 {
+  bottom: 499px;
+  bottom: 119px;
+  right: 0;
+}
+
+/* ------------------------------
+          Fragrance
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .fragrance {
+  /* height: 70.3vw; */
+  background-color: #cdeaee;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance__inner {
+  padding: 70px 0 60px;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance__title {
+  color: #c9a856;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance-accordion__wrapper {
+  margin-top: 20px;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance-accordion {
+  border-top: 1px solid #9b9b9b;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance-accordion-more {
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance__text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance__img {
+  margin-top: 38px;
+}
+
+.lp-content.lp-minty-spark-yuzu .fragrance__frame {
+  position: absolute;
+  bottom: 135px;
+  left: 497px;
+}
+
+.lp-content.lp-minty-spark-yuzu .fra-item__img {
+  width: 100%;
+  margin: 35px auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .obj__fra1 {
+  width: 157px;
+  top: -34px;
+  left: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .obj__fra2 {
+  width: 114px;
+  top: -40px;
+  right: 0;
+}
+
+/* ------------------------------
+        Key Ingredients
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .key-ingredient {
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .section__line {
+  line-height: 1;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-mv__wrapper {
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki__title {
+  color: #00a77f;
+  position: absolute;
+  top: 13vw;
+  left: 17vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-accordion__wrapper {
+  width: 952px;
+  margin: 0 auto;
+  padding: 55px 0 105px;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-detail__wrapper {
+  width: 884px;
+  display: flex;
+  column-gap: 20px;
+  margin: 20px auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-detail {
+  width: 432px;
+  height: 580px;
+  background-color: #dbf0ee;
+  border-radius: 20px;
+  padding: 18px 34px 0 18px;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-detail__top {
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-detail__top-text {
+  font-size: 20px;
+  line-height: 1.4;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* .ki-detail__top-text--mint {
+  padding-top: 27px;
+}
+
+.ki-detail__top-text--menthol {
+  padding-top: 10px;
+} */
+
+.lp-content.lp-minty-spark-yuzu .ki-detail__top-text sup {
+  font-size: 1.20px;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-detail__text {
+  text-align: justify;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  margin-top: 17px;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-detail__text--emphasis {
+  color: #0eaf9f;
+  line-height: 1;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-detail__text span {
+  display: block;
+  font-weight: bold;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-detail__text sup,
+.lp-content.lp-minty-spark-yuzu .ki-detail__text span sup {
+  font-size: 8px;
+}
+
+.lp-content.lp-minty-spark-yuzu .ki-notes {
+  width: 884px;
+  margin: 30px auto 0;
+}
+
+/* ------------------------------
+            Campaign
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .campaign__inner {
+  padding: 85px 0 90px;
+}
+
+.lp-content.lp-minty-spark-yuzu .campaign__contents {
+  width: 860px;
+  margin: 30px auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .campaign__detail {
+  display: flex;
+  align-items: center;
+  column-gap: 88px;
+
+  justify-content: center;
+  column-gap: 14px;
+}
+
+.lp-content.lp-minty-spark-yuzu .campaign-text__s {
+  font-size: 20px;
+  font-feature-settings: "palt";
+  line-height: 1.5;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .campaign-text__l {
+  font-size: 36px;
+  font-feature-settings: "palt";
+  font-weight: 400;
+  line-height: 1.1;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .campaign__img {
+  width: 391px;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .tax {
+  font-size: 14px;
+}
+
+.lp-content.lp-minty-spark-yuzu .products__wrapper {
+  width: 407px;
+  border-radius: 20px;
+  background-color: #eff9dd;
+  margin: 40px auto 0;
+  padding: 33px 0 21px 25px;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .products__label {
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lp-content.lp-minty-spark-yuzu .products__text {
+  font-feature-settings: "palt";
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.lp-content.lp-minty-spark-yuzu .item-size__text {
+  font-size: 14px;
+  font-feature-settings: "palt";
+  line-height: 1.5;
+  margin-top: 21px;
+}
+
+.lp-content.lp-minty-spark-yuzu .sc-accordion__wrapper {
+  width: 723px;
+  margin: 51px auto 0;
+  position: relative;
+  z-index: 20;
+}
+
+.lp-content.lp-minty-spark-yuzu .sc-accordion {
+  border-top: 1px solid #9b9b9b;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.lp-content.lp-minty-spark-yuzu .sc-accordion__in {
+  line-height: 1.7;
+}
+
+.lp-content.lp-minty-spark-yuzu .sc-accordion-more {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .sc-accordion__title,
+.lp-content.lp-minty-spark-yuzu .sc-accordion-more__in {
+  background-color: #fff;
+}
+
+.lp-content.lp-minty-spark-yuzu .sc-comment__list {
+  letter-spacing: 0.04em;
+  text-align: justify;
+  padding: 25px 17px 30px 19px;
+}
+
+.lp-content.lp-minty-spark-yuzu .limited--cp {
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .ltext--cp {
+  font-size: 18px;
+}
+
+.lp-content.lp-minty-spark-yuzu .obj__cp1 {
+  width: 161px;
+  top: -50px;
+  left: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .obj__cp2 {
+  width: 141px;
+  top: 0;
+  left: 395px;
+}
+
+.lp-content.lp-minty-spark-yuzu .obj__cp3 {
+  width: 188px;
+  top: 0;
+  right: 300px;
+}
+
+.lp-content.lp-minty-spark-yuzu .obj__cp4 {
+  width: 110px;
+  top: -50px;
+  right: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .obj__cp5 {
+  width: 214px;
+  bottom: 160px;
+  left: 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .obj__cp6 {
+  width: 478px;
+  right: 0;
+  bottom: 135px;
+}
+
+/* ------------------------------
+          オブジェクト
+------------------------------ */
+.lp-content.lp-minty-spark-yuzu .obj {
+  position: absolute;
+}
+
+/* MENUアンカー */
+.lp-content.lp-minty-spark-yuzu .open-menu-out {
+  z-index: 110;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu {
+  position: fixed;
+  top: 160px;
+  right: -80px;
+  transition: all 0.8s cubic-bezier(.165, .84, .44, 1);
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu-out .open-menu.open {
+  right: -400px;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu-out.view .open-menu {
+  right: 0px;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-in {
+  transform: translateX(0%);
+  transition: all 0.8s cubic-bezier(.165, .84, .44, 1);
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu.open .open-menu-in {
+  transform: translateX(-320px);
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .btn {
+  position: relative;
+  z-index: 80;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .btn a {
+  opacity: 1;
+  display: block;
+  transition: unset;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .btn a span.open-text {
+  display: none;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .btn a span.close-text {
+  display: inline-block;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu.open .btn a span.open-text {
+  display: inline-block;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu.open .btn a span.close-text {
+  display: none;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list {
+  position: absolute;
+  top: 5px;
+  right: -320px;
+  /*right: 0px;*/
+  z-index: 50;
+  overflow: hidden;
+  width: 320px;
+  /* background-image: url(../../images/special_contents/FacePolisher/20230720/bg_menu_2.png);
+  background-repeat: repeat-y;
+  background-size: 100% auto; */
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu.open .open-menu-list {
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.17);
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-frame1 {
+  margin: 0px;
+  padding: 0px;
+  /* background-image: url(../../images/special_contents/FacePolisher/20230720/bg_menu_1.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100% auto; */
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-frame2 {
+  margin: 0px;
+  padding: 23px 0px 20px;
+  /* background-image: url(../../images/special_contents/FacePolisher/20230720/bg_menu_3.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% auto; */
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list-iner {
+  margin: 0px;
+  padding: 0px;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li a {
+  margin: 0px;
+  padding: 0px 24px 0px 24px;
+  display: block;
+  position: relative;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-decoration: none;
+  opacity: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li a svg {
+  color: #fff;
+  font-size: 11px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li a:hover {
+  background-image: url(../../images/special_contents/FacePolisher/20230720/nav_current.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li a span {
+  display: block;
+  margin: 0px;
+  padding: 14px 0px 14px 55px;
+  border-bottom: 1px solid rgba(120, 99, 32, 0.5);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li:last-child a span {
+  border-bottom: 0px none;
+}
+
+/* TOPに戻るボタン */
+.lp-content.lp-minty-spark-yuzu .pagetop {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+  z-index: 500;
+  display: none;
+}
+
+.lp-content.lp-minty-spark-yuzu .pagetop .pagetop-link {
+  margin: 0;
+  padding: 0;
+  width: 62px;
+}
+
+.lp-content.lp-minty-spark-yuzu .pagetop .pagetop-link a {
+  margin: 0;
+  padding: 35px 0px 0;
+  width: 62px;
+  height: 62px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1;
+  background-color: #000;
+  color: #FFF;
+  font-style: italic;
+  font-weight: 600;
+  /* background-image: url(../../images/sp/special_contents/FacePolisher/20230720/page_top2.svg); */
+  background-repeat: no-repeat;
+  background-position: center top 16px;
+  background-size: 19px auto;
+  box-shadow: 0 0 12.1px 0.9px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+/* POP UP 詳細 */
+.lp-content.lp-minty-spark-yuzu .pop-up__in {
+  width: 960px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__title {
+  color: #00a77f;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__title img {
+  width: 550px;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__text-wrapper {
+  width: 500px;
+  background-color: #fff;
+  margin: 30px auto 0;
+  padding: 30px 40px;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__table-title {
+  font-size: 2.20px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__sub-title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__text {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up-block .pop-up__img {
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__notes {
+  width: 500px;
+  font-size: 1.20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__btn {
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__btn a {
+  margin-top: 30px;
+  padding: 20px 0px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  background: #04755b;
+  width: 250px;
+  cursor: pointer;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__btn a span svg {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  font-size: 11px;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin: 0 auto;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__table--area {
+  margin-top: 15px;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__table th {
+  width: 17%;
+  vertical-align: middle;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 2px 0px;
+  background-color: #dbf0ee;
+  padding: 5px 10px;
+  /* color: #070627; */
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .pop-up__table td {
+  font-size: 16px;
+  line-height: 1.1;
+  padding-left: 20px;
+}
+
+.lp-content.lp-minty-spark-yuzu .comment__title {
+  color: #c9a856;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  margin-top: 40px;
+}
+
+.lp-content.lp-minty-spark-yuzu .release-date {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.lp-content.lp-minty-spark-yuzu .bcs {
+  margin: 0px;
+  padding: 20px 0px 0px;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .bbg {
+  width: 210px;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #04755b;
+  color: #04755b;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px;
+  padding: 16px 0px;
+  position: relative;
+}
+
+/* 0801 */
+.lp-content.lp-minty-spark-yuzu .limited-kit .special-kit-img__wrapper {
+  top: 10px;
+}
+
+.lp-content.lp-minty-spark-yuzu .limited-kit-img {
+  width: 330px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup-slider .slick-dots li button,
+.lp-content.lp-minty-spark-yuzu .other-kit-slider .slick-dots li button {
+  display: block;
+  line-height: 0;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  color: transparent;
+  font-size: 0;
+  outline: none;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.lp-content.lp-minty-spark-yuzu .slick-dots>li.slick-active>button::before,
+.lp-content.lp-minty-spark-yuzu .slick-dots>li>button::before {
+  background-color: transparent;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit-slider .slick-dots li button {
+  background: #e0e3df;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit-slider .slick-dots .slick-active button,
+.lp-content.lp-minty-spark-yuzu .slick-dots li button:hover {
+  background: #c9a856;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup-slider .slick-dots .slick-active button,
+.lp-content.lp-minty-spark-yuzu .slick-dots li button:hover {
+  background: #00a77f;
+}
+
+.lp-content.lp-minty-spark-yuzu .slick-dots>li:not(:first-of-type) {
+  margin-left: 15px;
+}
+
+.lp-content.lp-minty-spark-yuzu .collection-banner__title {
+  color: #c9a856;
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.lp-content.lp-minty-spark-yuzu .title__obj {
+  width: 347px;
+  line-height: 1;
+  margin-top: 35px;
+}
+
+.lp-content.lp-minty-spark-yuzu .slick-arrow {
+  width: 15px;
+  height: 30px;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-kit-prev,
+.lp-content.lp-minty-spark-yuzu .other-kit-next,
+.lp-content.lp-minty-spark-yuzu .other-lineup-prev,
+.lp-content.lp-minty-spark-yuzu .other-lineup-next {
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+  transition: unset;
+  border-width: 0px;
+  border-style: none;
+  opacity: 1;
+}
+
+.lp-content.lp-minty-spark-yuzu .slick-arrow.slick-prev.other-kit-prev,
+.lp-content.lp-minty-spark-yuzu .slick-arrow.slick-prev.other-lineup-prev {
+  left: 40px;
+}
+
+.lp-content.lp-minty-spark-yuzu .slick-arrow.slick-next.other-kit-next,
+.lp-content.lp-minty-spark-yuzu .slick-arrow.slick-next.other-lineup-next {
+  right: 40px;
+}
+
+.lp-content.lp-minty-spark-yuzu .collaboration-banner__wrapper {
+  width: 600px;
+  margin: 0 auto 40px;
+}
+
+.lp-content.lp-minty-spark-yuzu .collaboration__img {
+  width: 400px;
+  margin: 15px auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .other-lineup-prev,
+.lp-content.lp-minty-spark-yuzu .other-lineup-next {
+  display: none;
+}
+
+.lp-content.lp-minty-spark-yuzu .serum__inner {
+  width: 1160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 85px;
+  margin: 66px auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .serum__catch {
+  font-size: 26px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .serum__img {
+  width:507px;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .new__icon {
+  right: -30px;
+  bottom: -13px;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__wrapper {
+  width: 975px;
+  background-color: #fff;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
+  margin: 75px auto 0;
+  padding: 50px 0 66px;
+}
+
+.lp-content.lp-minty-spark-yuzu .online__label {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__title {
+  color: #00a77f;
+  margin-top: 18px;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo-item__wrapper {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__item {
+  width: 330px;
+  margin-top: 35px;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__catch {
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__img {
+  position: relative;
+  margin-top: 25px;
+}
+
+.lp-content.lp-minty-spark-yuzu .new__icon--duo {
+  width: 128px;
+  top: -12px;
+  left: -14px;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__obj--l {
+  top: 30px;
+  left: -40px;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__obj--r {
+  top: -13px;
+  right: 35px;
+}
+
+
+@media screen and (max-width: 960px) {
+  .lp-content.lp-minty-spark-yuzu .end-text {
+    margin: 0px;
+    padding: 3% 0px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .end-text span {
+    font-size: 11px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pick-up-text__wrapper {
+    bottom: 34vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__item4 img {
+    width: 32.8vw;
+  }
+
+  /* ------------------------------
+              共通
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .common__title {
+    width: 100%;
+    font-size: 10vw;
+    line-height: 1;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .common__catch {
+    font-size: 4vw;
+    line-height: 1.2;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .name-and-price {
+    font-size: 3.6vw;
+    margin-top: 3.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .btn--cart {
+    padding: 2.2vw 0 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .btn--cart a {
+    width: 58.7vw;
+    font-size: 3.6vw;
+    line-height: 1;
+    padding: 5.6vw 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .btn--cart a svg {
+    font-size: 3vw;
+    right: 5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .btn-cart--s a {
+    width: 37.2vw;
+    padding: 4.9vw 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .btn-cart--s a svg {
+    right: 2vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .limited {
+    padding: 2px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .limited--l {
+    width: 14vw;
+    height: 14vw;
+    top: 2.4vw;
+    right: 2.4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .limited--s {
+    width: 12vw;
+    height: 12vw;
+    top: -1vw;
+    right: 7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ltext {
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ltext--l {
+    font-size: 3.3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ltext--s {
+    font-size: 2.7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sup {
+    font-size: 3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .accordion__wrapper {
+    width: 84vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .accordion__title {
+    font-size: 3.6vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .accordion {
+    padding: 3vw 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .accordion-more {
+    padding-bottom: 2.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .common-icon {
+    font-size: 7vw;
+    right: 3px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .common-notes {
+    font-size: 3.1vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-arrow {
+    background-repeat: no-repeat;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-dots>li:not(:first-of-type) {
+    margin-left: 15px;
+  }
+
+  /* ------------------------------
+              mv
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .kv-text__wrapper {
+    width: 100%;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .kv-text__img img {
+    width: 40.1vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .kv__title {
+    margin-top: 2.3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .kv__title img {
+    width: 80.4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .kv__lead {
+    font-size: 4.5vw;
+    line-height: 1.45;
+    margin-top: 1.4vw;
+  }
+
+  /* 予約 */
+  .lp-content.lp-minty-spark-yuzu .kv-lead__label {
+    margin-top: 48.3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .kv-lead__label img {
+    width: 95.9vw;
+  }
+
+  /* 本発売 */
+  /* .mv-lead__label {
+  margin-top: 42vw;
+}
+
+.mv-lead__label img {
+  width: 62vw;
+} */
+
+  .lp-content.lp-minty-spark-yuzu .kv__notes {
+    display: inline-block;
+    font-size: 3.1vw;
+    line-height: 1.2;
+    margin-top: 1.4vw;
+  }
+
+
+  /* ------------------------------
+              lead
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .lead {
+    background-image: none;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .lead__inner {
+    padding: 7.3vw 0 11.2vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .nav-anchor__list {
+    width: 69.1vw;
+    column-gap: 2.4vw;
+    row-gap: 2.7vw;
+    flex-wrap: wrap;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .nav-anchor__item {
+    width: 33vw;
+    background-size: 100% 100%;
+    padding: 1.5vw 0 5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .nav-anchor__link {
+    font-size: 2.9vw;
+    font-feature-settings: "palt";
+    letter-spacing: -0.025em;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .fa-chevron-down {
+    font-size: 4vw;
+    bottom: -4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .lead__label {
+    width: 53.5vw;
+    margin: 7vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .lead__notes {
+    font-size: 3.1vw;
+    line-height: 1;
+    text-align: center;
+    margin-top: 1.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .lead__text {
+    font-size: 3.6vw;
+    line-height: 1.4;
+    margin-top: 5.7vw;
+    padding-top: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .lead__obj--l {
+    width: 19.4vw;
+    top: inherit;
+    bottom: 17.6vw;
+    z-index: -1;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .lead__obj--r {
+    width: 38.8vw;
+    top: 29.3vw;
+    z-index: -1;
+  }
+
+  /* ------------------------------
+          Special Kit
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .special-kit__inner {
+    padding: 11.8vw 0 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .special-kit__contents {
+    width: 84.7vw;
+    flex-direction: column;
+    margin: 3.6vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .special-kit__catch {
+    font-size: 4.7vw;
+    line-height: 1.2;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .special-kit-img__wrapper {
+    width: 84.7vw;
+    position: absolute;
+    top: 19vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .lp-content.lp-minty-spark-yuzu .special-kit-img {
+    width: 84.7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .special-kit__data {
+    margin-top: 2.1vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .name-and-price--sk {
+    margin-top: 69vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sk__obj1 {
+    width: 25.6vw;
+    top: -16vw;
+    right: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sk__obj2 {
+    width: 7.4vw;
+    top: 0;
+    left: -7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sk__obj3 {
+    width: 11.1vw;
+    top: 106vw;
+    right: 3vw;
+  }
+
+  /* ------------------------------
+          Item LineUp
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .item-lineup {
+    position: relative;
+    z-index: 10;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .item-lineup__inner {
+    padding: 14.4vw 0 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .item-lineup__sub-title {
+    font-size: 4.7vw;
+    line-height: 1;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .item-lineup__list {
+    flex-direction: column;
+    row-gap: 3.6vw;
+    margin-top: 6.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-img__wrapper {
+    width: 89vw;
+    height: 119.3vw;
+    margin: 0 auto;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-text__wrapper {
+    top: 6.6vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step__text {
+    width: 37vw;
+    column-gap: 4.4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-tjp {
+    font-size: 8.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-tbg {
+    font-size: 4vw;
+    width: 15vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-tbg:before {
+    margin-right: 1.1vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-tbg:after {
+    margin-left: 1.1vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-tbg:before {
+    margin-right: 6px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-tbg::after {
+    margin-left: 6px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step__catch {
+    margin-top: 3.9vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .name-and-price--step {
+    margin-top: 53vw;
+  }
+
+  /* ステップスライダー */
+  .lp-content.lp-minty-spark-yuzu .step-slider .slick-dots {
+    bottom: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-dots li button {
+    display: block;
+    line-height: 0;
+    width: 8px;
+    height: 8px;
+    background: #8ad4c2;
+    color: transparent;
+    font-size: 0;
+    outline: none;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-dots>li.slick-active>button::before,
+  .lp-content.lp-minty-spark-yuzu .slick-dots>li>button::before {
+    background-color: transparent;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-dots .slick-active button,
+  .lp-content.lp-minty-spark-yuzu .slick-dots li button:hover {
+    background: #00a77f;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-arrow.slick-prev::after,
+  .lp-content.lp-minty-spark-yuzu .slick-arrow.slick-next::after {
+    display: none;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-slider .step-prev {
+    top: 90vw;
+    left: -5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .step-slider .step-next {
+    top: 90vw;
+    right: -5vw;
+  }
+
+  /* ------------------------------
+            Other Kit
+------------------------------ */
+  /* .other-kit {
+  background-image: url(../../../images/sp/special_contents/Minty_Spark_Yuzu/20250529/bg_ok.jpg);
+  background-size: 100% 100%;
+} */
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__inner {
+    padding: 11.5vw 0 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit-slider {
+    width: 100vw;
+    border-radius: 0;
+    padding: 9vw 0 16vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__list {
+    width: 100%;
+    margin: 7.9vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__item {
+    width: 45vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__item .img {
+    width: 35.2vw;
+    height: 35.2vw;
+    margin-top: 5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .img_wrapper {
+    width: 60vw;
+    margin-left: -12vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__item1 img {
+    width: 31vw;
+    padding-top: 10vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__item2 img {
+    width: 33.8vw;
+    padding-top: 8vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__item3 img {
+    width: 36.8vw;
+    padding-top: 10vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit__item4 img {
+    width: 26.8vw;
+    padding-top: 10vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .common-other__catch {
+    font-size: 4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .kit-detail--s {
+    width: 46.3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit-slider .other-kit-prev {
+    left: 10vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-kit-slider .other-kit-next {
+    right: 10vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .lk__obj--l {
+    width: 19.4vw;
+    top: -5.5vw;
+    left: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .lk__obj--r {
+    width: 12.5vw;
+    bottom: 8.1vw;
+    right: 0;
+  }
+
+  /* ------------------------------
+          Other LineUp
+------------------------------ */
+  /* .other-lineup {
+  background-image: url(../../../images/sp/special_contents/Minty_Spark_Yuzu/20250529/bg_ol.jpg);
+} */
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup__inner {
+    padding: 14.9vw 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup-slider {
+    width: 100vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup__list {
+    width: 100vw;
+    margin: 8.7vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup__item1 img {
+    width: 11.8vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup__item2 img {
+    width: 8.4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup__item3 img {
+    width: 6.4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup__item4 img {
+    width: 9.1vw;
+  }
+
+  .other-lineup__item3 img.eds-limited__label {
+    width: 39.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .name-and-price--ol {
+    margin-top: 5.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup-slider .slick-dots {
+    margin-top: 8.9vw;
+  }
+
+  /* ------------------------------
+          Mint items
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .mint-items__inner {
+    padding: 12.4vw 0 15.9vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__sub-title {
+    font-size: 4.7vw;
+    line-height: 1.2;
+    margin-top: 4.7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__notes {
+    font-size: 3.4vw;
+    line-height: 1.2;
+    margin-top: 2vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0;
+    row-gap: 6.5vw;
+    margin: 10.6vw auto 0;
+    padding: 0 5.8vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__item {
+    width: calc(100%/2);
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__img {
+    width: 35.2vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .name-and-price--mint {
+    text-align: left;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .evaluation {
+    font-weight: bold;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .star {
+    color: #00a77f;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__obj1 {
+    width: 19.5vw;
+    top: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__obj2 {
+    width: 12.4vw;
+    top: -6vw;
+    right: 5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__obj3 {
+    width: 8.5vw;
+    top: 90vw;
+    right: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__obj4 {
+    width: 13.2vw;
+    bottom: 132vw;
+    left: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__obj5 {
+    width: 12.4vw;
+    bottom: 132vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .mint-items__obj6 {
+    width: 12.5vw;
+    bottom: 80vw;
+    right: 0;
+  }
+
+  /* ------------------------------
+          Fragrance
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .fragrance {
+    /* height: 241.3vw; */
+  }
+
+  .lp-content.lp-minty-spark-yuzu .fragrance__inner {
+    padding: 11vw 0 10vw;
+  }
+
+
+  .lp-content.lp-minty-spark-yuzu .fragrance-accordion__wrapper {
+    margin-top: 4.9vw;
+  }
+
+
+  .lp-content.lp-minty-spark-yuzu .fragrance-accordion-more {
+    padding-bottom: 4.8vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .fragrance__text {
+    font-size: 3.8vw;
+    line-height: 1.2;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .fragrance__img {
+    width: 84.4vw;
+    margin-top: 5.7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .fra-item__img {
+    width: 100vw;
+    margin: 10.6vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .obj__fra1 {
+    width: 10.7vw;
+    top: -6vw;
+    left: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .obj__fra2 {
+    width: 14.3vw;
+    top: -6vw;
+    right: 0;
+  }
+
+  /* ------------------------------
+        Key Ingredients
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .section__line {
+    top: -2.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki__title {
+    top: 10.5vw;
+    left: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki__main-text {
+    font-size: 3.6vw;
+    line-height: 1.2;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-accordion__wrapper {
+    width: 90.2vw;
+    margin: 0 auto;
+    padding: 10.7vw 0 11.2vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__wrapper {
+    width: 90.2vw;
+    flex-direction: column;
+    row-gap: 5.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail {
+    width: 90.2vw;
+    height: 78.1vw;
+    border-radius: 15px;
+    padding: 3.7vw 3vw 0 3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__top {
+    column-gap: 3.9vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__menthol {
+    height: 107vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__top-img {
+    width: 37.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__top-text {
+    font-size: 4.2vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__top-text sup {
+    font-size: 3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__top-text--mint {
+    padding-top: 5.6vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__text {
+    font-size: 3.1vw;
+    line-height: 1.2;
+    margin-top: 4.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__text span {
+    margin-top: 3.9vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-detail__text sup,
+  .lp-content.lp-minty-spark-yuzu .ki-detail__text span sup {
+    font-size: 2.4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ki-notes {
+    width: 90.2vw;
+    margin-top: 6.7vw;
+    padding-left: 2vw;
+  }
+
+  /* ------------------------------
+            Campaign
+------------------------------ */
+  .lp-content.lp-minty-spark-yuzu .campaign__inner,
+  .lp-content.lp-minty-spark-yuzu .sweet__inner {
+    padding: 11.2vw 0 13.5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .campaign__contents {
+    width: 100%;
+    margin: 4.7vw auto 0;
+  }
+
+  /* .campaign__label {
+  width: 91.4vw;
+  margin: 1.3vw auto 0;
+}
+
+.campaign__date {
+  font-size: 4vw;
+  margin-top: 2vw;
+}
+
+.campaign__title {
+  margin-top: 3.1vw;
+}
+
+.week {
+  font-size: 2.9vw;
+}
+
+.campaign__label--top {
+  margin-bottom: 1.5vw;
+} */
+
+  .lp-content.lp-minty-spark-yuzu .campaign__detail {
+    /* flex-direction: column; */
+    justify-content: center;
+    column-gap: 0;
+    column-gap: 2.8vw;
+    /* row-gap: 6.8vw; */
+  }
+
+  .lp-content.lp-minty-spark-yuzu .campaign__detail--miton {
+    width: 100%;
+    column-gap: 0;
+    margin: 4.1vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .campaign-text__s {
+    font-size: 3.6vw;
+    line-height: 1.3;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .campaign-text__l {
+    font-size: 5.6vw;
+    line-height: 1.2;
+    margin-top: 1vw;
+  }
+
+  /* .campaign-text__vol {
+  font-size: 3.8vw;
+}
+
+.size__text {
+  font-size: 2.7vw;
+  line-height: 1.4;
+} */
+
+  .lp-content.lp-minty-spark-yuzu .campaign__img {
+    width: 76.4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .tax {
+    font-size: 2.7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .products__wrapper {
+    width: 90.2vw;
+    border-radius: 20px;
+    margin: 8.4vw auto 0;
+    padding: 33px 0 21px 25px;
+    position: relative;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .products__label {
+    width: 35vw;
+    top: -3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .products__text {
+    font-size: 3.1vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .item-size__text {
+    font-size: 3.1vw;
+    line-height: 1.5;
+    margin-top: 4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sc-accordion__wrapper {
+    width: 83vw;
+    margin: 9.4vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sc-accordion {
+    margin-top: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sc-accordion__in {
+    line-height: 1.7;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sc-accordion-more {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sc-comment__list {
+    text-align-last: left;
+    padding: 6.2vw 5vw 6.2vw 5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .sc-comment__item {
+    font-size: 2.7vw;
+    line-height: 1.5;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .limited--cp {
+    width: 14vw;
+    height: 14vw;
+    top: 0;
+    right: 0vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .ltext--cp {
+    font-size: 3.38vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .obj__cp1 {
+    width: 20.9vw;
+    top: -6vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .obj__cp2 {
+    width: 13.6vw;
+    top: -3vw;
+    left: inherit;
+    right: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .obj__cp5 {
+    width: 23.9vw;
+    top: 109vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .obj__cp6 {
+    width: 31vw;
+    top: 130vw;
+  }
+
+  /* MENUアンカー */
+  .lp-content.lp-minty-spark-yuzu .open-menu {
+    position: fixed;
+    top: 105px;
+    right: -71px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu.fix {
+    position: fixed;
+    top: 110px;
+    transition: none;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu .open-menu-in {
+    transform: translateX(0%);
+    transition: all 0.8s cubic-bezier(.165, .84, .44, 1);
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu-out .open-menu.open {
+    right: -290px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu-out.view .open-menu {
+    right: 0px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu .btn {
+    position: relative;
+    z-index: 80;
+    width: 16.7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list {
+    width: 53.3vw;
+    top: 0.5vw;
+    right: -53.3vw;
+    height: auto;
+    background-color: #8A7635;
+    background-image: none;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu.open .open-menu-list {
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu .open-menu-frame2 {
+    padding: 2.1vw 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu.open .open-menu-in {
+    transform: translateX(-53.3vw);
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li a {
+    padding: 0 4.1vw 0 3.2vw;
+    font-size: 2.8vw;
+    line-height: 1;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li a svg {
+    font-size: 2vw;
+    left: 1.4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li a:hover {
+    background-image: none;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .open-menu .open-menu-list ul li a span {
+    padding: 12px 0px 12px 40px;
+    border-bottom: 1px solid rgba(120, 99, 32, 0.5);
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pagetop {
+    bottom: 11px;
+    left: 11px;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pagetop .pagetop-link a:hover {
+    opacity: 1;
+  }
+
+  /* POP UP 詳細 */
+  .lp-content.lp-minty-spark-yuzu .pop-up__in {
+    width: 89vw;
+    padding: 12vw 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up__sub-title {
+    font-size: 5.5vw;
+    line-height: 1.3;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up-block .pop-up__img {
+    margin-top: 5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up__text-wrapper {
+    width: 89vw;
+    margin-top: 5vw;
+    padding: 7vw 4vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up__table-title {
+    font-size: 4.7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up__table th {
+    width: 15%;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up__table td {
+    font-size: 4vw;
+    padding-left: 3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up__text {
+    font-size: 4vw;
+    font-feature-settings: "palt";
+    letter-spacing: 0.02em;
+    margin-top: 7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up__text3,
+  .lp-content.lp-minty-spark-yuzu .pop-up__btn a {
+    margin-top: 5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .comment__title {
+    font-size: 6vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .bcs {
+    padding: 2.2vw 0 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .bbg {
+    width: 47vw;
+    font-size: 3vw;
+    padding: 4.9vw 0;
+  }
+
+  /* 0801 */
+  .lp-content.lp-minty-spark-yuzu .limited-kit .special-kit-img__wrapper {
+    top: 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .limited-kit-img {
+    width: 65vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .collection-banner__title {
+    font-size: 10.1vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .title__obj {
+    width: 54.5vw;
+    margin-top: 3vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-arrow {
+    width: 3vw;
+    height: 5.4vw;
+    top: 45%;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-arrow.slick-prev.other-kit-prev,
+  .lp-content.lp-minty-spark-yuzu .slick-arrow.slick-prev.other-lineup-prev {
+    left: 2vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .slick-arrow.slick-next.other-kit-next,
+  .lp-content.lp-minty-spark-yuzu .slick-arrow.slick-next.other-lineup-next {
+    right: 2vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .campaign-banner__notes {
+    font-size: 3.4vw;
+    margin: 2vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .campaign__sub-title {
+    font-size: 4vw;
+    line-height: 1.3;
+    margin-top: 5vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .collaboration-banner__wrapper {
+    width: 90vw;
+    margin: 0 auto 7vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .collaboration__img {
+    width: 80vw;
+    margin: 2vw auto 0;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .pop-up__title img {
+    width: 89vw;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .other-lineup-prev,
+  .lp-content.lp-minty-spark-yuzu .other-lineup-next {
+    display: block;
+  }
+
+  .lp-content.lp-minty-spark-yuzu .serum__inner {
+  width: 100%;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 7.7vw;
+  margin: 7.3vw auto 0;
+}
+
+.lp-content.lp-minty-spark-yuzu .serum__catch {
+  font-size: 4.9vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .serum__img {
+  width: 88.2vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .new__icon {
+  width: 31.7vw;
+  right: -5vw;  
+  bottom: -3vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__wrapper {
+  width: 95.8vw;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+  margin: 8.8vw auto 0;
+  padding: 8.5vw 0 11.7vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .online__label {
+  width: 55.8vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__title {
+  margin-top: 3.5vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo-item__wrapper {
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 20.5vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__item {
+  width: 81.6vw;
+  margin: 0 auto;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__item--rsd {
+  margin-top: 3.6vw;
+  position: relative;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__item--rsd::after {
+  content: "";
+  display: block;
+  width: 56.8vw;
+  height: 1.8vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: -12vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__catch {
+  font-size: 4.9vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__img {
+  position: relative;
+  margin-top: 5.8vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .new__icon--duo {
+  width: 31.1vw;
+  top: -2.1vw;
+  left: -1.7vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__obj1 {
+  width: 18.3vw;
+  top: -6vw;
+  left: -2vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__obj2 {
+  width: 13vw;
+  top: -5vw;
+  right: -2vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__obj3 {
+  width: 14.3vw;
+  top: 142vw;
+  left: -2vw;
+}
+
+.lp-content.lp-minty-spark-yuzu .duo__obj4 {
+  width: 12.7vw;
+  top: 132vw;
+  right: -3vw;
+}
+
+}

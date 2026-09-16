@@ -1,0 +1,227 @@
+.custom__modal {
+  position: fixed; inset: 0; z-index: var(--z-index-modal,1300);
+  display: none; justify-content: space-around;
+  overflow-y: auto;
+}
+.custom__modal.active { display: flex; }
+.custom__modal.visible .custom__overlay { opacity: 1; }
+.custom__modal.visible .custom__content {
+  opacity: 1; transform: translateY(0);
+}
+
+.custom__overlay {
+  position: fixed; inset: 0; cursor: pointer;
+  background-color: var(--color-overlay);
+  opacity: 0; transition: opacity 0.35s;
+}
+
+.custom__content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  background-color: #FFFEF9;
+  padding: var(--spacing-10) var(--spacing-4);
+  opacity: 0;
+  transform: translateY(var(--spacing-5));
+  transition: opacity 0.35s, transform 0.35s;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+@media (min-width: 720px) {
+  .custom__content {
+    padding: var(--spacing-6) var(--spacing-6) var(--spacing-10);
+    position: relative;
+    width: 90vw;
+    height: fit-content;
+    max-width: 680px;
+    border-radius: 0;
+  }
+}
+
+.custom__modal-close {
+  position: absolute;
+  top: var(--spacing-6); right: var(--spacing-6);
+}
+@media (min-width: 720px) {
+  .custom__modal-close {
+    top: var(--spacing-4); right: var(--spacing-4);
+  }
+}
+
+.custom__modal-heading {
+   margin: var(--spacing-3) 0 var(--spacing-4);
+   @media (min-width: 720px) {
+    margin: var(--spacing-4) 0 var(--spacing-6);
+   }
+}
+
+.custom__modal-sub-heading {
+  margin: var(--spacing-4) 0;
+}
+
+.modal__actions {
+  display: flex; flex-direction: column;
+  align-items: center; gap: var(--spacing-6);
+}
+
+.custom__content__inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Engraving Button */
+.cart__form-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--spacing-6);
+}
+
+.cart__form-item .line-item-engraving-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: rgba(180, 151, 95, 0.1);
+  width: 100%;
+  padding: var(--spacing-3);
+  border-radius: 4px;
+  grid-column: 1 / -1;
+}
+
+.cart__form-item-details {
+  margin-left: 0px;
+}
+
+.cart__form-item .engraving-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Engraving Modal */
+.engraving-input {
+  width: 100%;
+}
+
+#engraving-modal-cart .engraving-modal__input-wrapper,
+#engraving-modal-cart p,
+#engraving-modal-cart select {
+  margin-bottom: var(--spacing-4);
+  @media (min-width: 720px) {
+    margin-bottom: var(--spacing-6);
+  }
+}
+
+.engraving-modal__engraving-input {
+  resize: none;
+}
+
+.engraving-modal__engraving-input::placeholder {
+  color: var(--color-text);
+  opacity: 0.5;
+}
+
+.engraving-modal__instructions {
+  line-height: 16px;
+  @media (min-width: 720px) {
+    line-height: 18px;
+    font-size: var(--font-size-body-100);
+  }
+}
+
+.engraving-modal__select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.engraving-modal__input-wrapper {
+  position: relative;
+}
+
+.engraving-modal__input-counter {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: var(--spacing-4);
+  font-size: var(--font-size-body-75);
+  color: var(--color-text);
+  opacity: 0.5;
+  line-height: 1.4;
+}
+
+.engraving-modal__select {
+  background-color: #FFFEF9;
+}
+
+.engraving-modal__select.has-placeholder {
+  color: #21212180;
+}
+
+.engraving-modal__select-arrow {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: var(--spacing-4);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Gift Bag Modal */
+.gift-bag-modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  @media (min-width: 720px) {
+    gap: var(--spacing-2);
+  }
+}
+
+.gift-bag-modal__variant-title {
+  font-weight: 700;
+  font-size: var(--font-size-body-75);
+}
+
+.gift-bag-modal__variants {
+  margin: var(--spacing-8) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  @media (min-width: 720px) {
+    margin: var(--spacing-6) 0;
+    gap: var(--spacing-4);
+  }
+}
+.gift-bag-modal__variant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gift-bag-modal__variant-price {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: var(--font-size-body-75);
+  gap: var(--spacing-2);
+  margin-left: var(--spacing-2);
+  @media (min-width: 400px) {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+.gift-bag-modal__variant-dimensions {
+  font-size: var(--font-size-body-50);
+  color: var(--color-text)
+}
+
+.gift-bag-modal__save-button {
+  width: 100%;
+}

@@ -1,0 +1,2594 @@
+.lp-content .swym-button,
+.lp-content .swym-button-bar,
+.lp-content .wishlist-button,
+.lp-content [class*='wishlist'],
+.lp-content [class*='favorite'] {
+	display: none !important;
+}
+
+
+.lp-content :where(.btn) {
+  all: revert;
+}
+
+
+.lp-content :where(.price) {
+  all: revert;
+}
+
+
+.lp-content :where(.image),
+.lp-content :where(.active) {
+  all: revert;
+}
+
+
+.lp-content :where(button) {
+  all: revert;
+}
+
+
+.lp-content :where(a) {
+  all: revert;
+}
+
+
+.lp-content :where(ul),
+.lp-content :where(ol) {
+  all: revert;
+}
+
+
+.lp-content :where(img) {
+  all: revert;
+}
+
+
+.lp-content :where(figure) {
+  all: revert;
+}
+
+
+.lp-content :where(input),
+.lp-content :where(textarea),
+.lp-content :where(select) {
+  all: revert;
+}
+
+
+.lp-content :where(.swiper-button-prev)::after,
+.lp-content :where(.swiper-button-next)::after {
+  content: none;
+  display: none;
+}
+
+
+.lp-content,
+.lp-content div,
+.lp-content span,
+.lp-content iframe,
+.lp-content h1,
+.lp-content h2,
+.lp-content h3,
+.lp-content h4,
+.lp-content h5,
+.lp-content h6,
+.lp-content p,
+.lp-content blockquote,
+.lp-content pre,
+.lp-content a,
+.lp-content code,
+.lp-content em,
+.lp-content img,
+.lp-content s,
+.lp-content small,
+.lp-content strong,
+.lp-content sub,
+.lp-content sup,
+.lp-content i,
+.lp-content dl,
+.lp-content dt,
+.lp-content dd,
+.lp-content ol,
+.lp-content ul,
+.lp-content li,
+.lp-content form,
+.lp-content label,
+.lp-content table,
+.lp-content tr,
+.lp-content th,
+.lp-content td,
+.lp-content article,
+.lp-content figure,
+.lp-content figcaption,
+.lp-content ruby,
+.lp-content section,
+.lp-content video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-style:inherit;
+  font-weight:inherit;
+  font-size:100%;
+  line-height:inherit;
+  vertical-align:baseline;
+}
+
+.lp-content {
+  line-height:1;
+}
+
+.lp-content ol,
+.lp-content ul {
+  list-style:none;
+}
+
+.lp-content table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+.lp-content th,
+.lp-content td {
+  font-weight:normal;
+  text-align:left;
+  vertical-align:middle;
+}
+
+.lp-content blockquote {
+  quotes:none;
+}
+
+.lp-content blockquote:before,
+.lp-content blockquote:after {
+  content:"";
+  content:none;
+}
+
+.lp-content a img {
+  border:none;
+}
+
+.lp-content article,
+.lp-content figcaption,
+.lp-content figure,
+.lp-content main,
+.lp-content section {
+  display:block;
+}
+
+@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+
+@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+
+.lp-content .fa-chevron-left:before {
+  content:"";
+}
+
+.lp-content .fa-chevron-right:before {
+  content:"";
+}
+
+.lp-content .fa-chevron-down:before {
+  content:"";
+}
+
+.lp-content {
+  background:#fff;
+  color:#412e17;
+  font-weight:500;
+  font-size:14px;
+  line-height:1.6;
+  /* !important 禁止: .font-yumin / .font-arno など個別セリフ指定を潰すため */
+  font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro",Helvetica,Arial,Roboto,"Droid Sans","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  word-break:break-all;
+}
+
+.lp-content div,
+.lp-content h1,
+.lp-content h2,
+.lp-content h3,
+.lp-content h4,
+.lp-content h5,
+.lp-content h6,
+.lp-content p,
+.lp-content dl,
+.lp-content dt,
+.lp-content dd,
+.lp-content ol,
+.lp-content ul,
+.lp-content li,
+.lp-content form,
+.lp-content input,
+.lp-content textarea,
+.lp-content button,
+.lp-content table,
+.lp-content tr,
+.lp-content th,
+.lp-content td,
+.lp-content article,
+.lp-content section,
+.lp-content img {
+  box-sizing:border-box;
+}
+
+.lp-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lp-content figure {
+  max-width: none;
+  margin: 0;
+}
+
+.lp-content table {
+  max-width:100%;
+  table-layout:fixed;
+}
+
+.lp-content a {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  outline:none;
+  color:#493528;
+  text-decoration:none;
+  transition:all .3s;
+}
+
+@media (hover: hover)and (pointer: fine) {
+  .lp-content a:hover {
+    opacity:.5;
+  }
+}
+
+.lp-content button {
+  outline:none;
+  font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro",Helvetica,Arial,Roboto,"Droid Sans","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important;
+  transition:all .3s;
+}
+
+.lp-content em,
+.lp-content strong {
+  font-weight:bold;
+}
+
+.lp-content iframe {
+  max-width:100%;
+}
+
+.lp-content .wrapper {
+  -webkit-backface-visibility:hidden;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  grid-template-columns:1fr;
+  min-height:100vh;
+  overflow:hidden;
+  backface-visibility:hidden;
+}
+
+.lp-content .categoryMenuHeader .categorySubMenu.wide .inner {
+  width:calc(100vw - (10px * 8));
+  margin-left:calc(50% - (50vw - (10px * 4)));
+  padding-bottom:0;
+}
+
+.lp-content .categoryMenuHeader .categorySubMenu.wide .subCategoryRectImageList {
+  grid-template-columns:repeat(auto-fill, minmax(200px, 303px));
+  justify-content:space-between;
+  padding-bottom:40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lp-content .categoryMenuHeader .categorySubMenu.wide .inner {
+    width:100%;
+    margin-left:0;
+    padding-right:20px;
+    padding-left:20px;
+  }
+
+  .lp-content .categoryMenuHeader .categorySubMenu.wide .subCategoryRectImageList {
+    grid-template-columns:repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .lp-content .categoryMenuHeader .spUtilityList>li>a .text {
+    display:block;
+    width:100%;
+    font-weight:700;
+    font-size:clamp(10px,3.125vw,12px);
+    line-height:1;
+    text-align:center;
+  }
+
+  .lp-content .categoryMenuHeader .categoryMenuTabTitleList .title.active>a {
+    background-color:#fff;
+    color:#493528;
+  }
+
+  .lp-content .categoryMenuHeader .categoryMenuTabContent.active {
+    display:block;
+  }
+
+  .lp-content .categoryMenuHeader .categoryMenu .hasChild.active::after {
+    display:none;
+  }
+
+  .lp-content .categoryMenuHeader .categorySubMenu.wide .inner {
+    padding:0;
+  }
+
+  .lp-content .categoryMenuHeader .categorySubMenu.wide .subCategoryRectImageList {
+    padding-bottom:0;
+  }
+
+  .lp-content .categoryMenuHeader .categorySubMenu .subCategoryTextList .subCategoryItem .hasChild.active::after {
+    display:none;
+  }
+}
+
+.lp-content .cartSlider.active {
+  opacity:1;
+  pointer-events:all;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data {
+  position:relative;
+  flex:1 0 0%;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .productName {
+  min-height:70px;
+  padding-top:15px;
+  padding-right:70px;
+  font-weight:700;
+  word-break:normal;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .productPrice {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .productPrice .qty {
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  font-weight:700;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .productPrice .qty span {
+  font-size:14px;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .productPrice .qty select {
+  width:85px;
+  height:35px;
+  padding:0 10px;
+  border:1px solid #b6b1b1;
+  border-radius:3px;
+  background-position:right 5px top 12px;
+  color:#412e17;
+  font-weight:700;
+  font-size:14px;
+  font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro",Helvetica,Arial,Roboto,"Droid Sans","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .productPrice .value {
+  flex:1 0 0%;
+  font-weight:700;
+  text-align:right;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .delete {
+  position:absolute;
+  top:15px;
+  right:0;
+  text-align:right;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .delete a {
+  display:inline-block;
+  padding-right:20px;
+  color:#a9947b;
+  text-decoration:none;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .delete a::before,
+.lp-content .cartSlider .body .cartSliderItem .data .delete a::after {
+  display:block;
+  position:absolute;
+  top:calc(50% - 1px);
+  right:0;
+  width:15px;
+  height:1px;
+  background-color:#412e17;
+  content:"";
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .delete a::before {
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .delete a::after {
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .giftboxItem {
+  margin-top:5px;
+  font-size:12px;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .giftboxItemList {
+  margin-top:5px;
+  padding:10px 0 10px 10px;
+  border-top:1px solid #c9c9c9;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .giftboxItem .item {
+  overflow:hidden;
+}
+
+.lp-content .cartSlider .body .cartSliderItem .data .giftboxItem .item .price {
+  display:block;
+  float:right;
+  text-align:right;
+}
+
+.lp-content .cartSlider .body .cartSliderItem.freeGift .data .productName {
+  padding-right:90px;
+}
+
+.lp-content .cartSlider .body .cartSliderItem.freeGift .label {
+  position:absolute;
+  top:15px;
+  right:0;
+  padding:4px 2px;
+  border:1px solid #b6b1b1;
+  background-color:#fff;
+  color:#5d4835;
+  font-size:12px;
+  line-height:1;
+}
+
+.lp-content .cartSlider .body .cartSliderFooter .total .value .num {
+  font-size:16px;
+}
+
+@media screen and (max-width: 990px) {
+  .lp-content .cartSlider.active .cartSliderBg {
+    opacity:1;
+  }
+
+  .lp-content .cartSlider.active .cartSliderWrapper {
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data {
+    padding-bottom:15px;
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data .productName {
+    height:auto;
+    min-height:0;
+    padding-top:15px;
+    padding-right:20px;
+    padding-bottom:10px;
+    font-weight:500;
+    line-height:1.3;
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data .productPrice .qty span {
+    display:none;
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data .productPrice .qty select {
+    width:65px;
+    font-weight:500;
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data .productPrice .value {
+    font-weight:500;
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data .delete {
+    top:9px;
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data .delete a {
+    padding-right:0;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data .delete a::before,
+  .lp-content .cartSlider .body .cartSliderItem .data .delete a::after {
+    top:calc(50% - 1px);
+  }
+
+  .lp-content .cartSlider .body .cartSliderItem .data .giftboxItemList {
+    padding-bottom:0;
+  }
+
+  .lp-content .cartSlider .body .cartSliderFooter .total .value .num {
+    font-size:14px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .lp-content .footerLinkBlock .title.active>a::after {
+    -webkit-transform:translateY(-50%) rotate(135deg);
+    top:calc(50% - 1px);
+    transform:translateY(-50%) rotate(135deg);
+  }
+}
+
+.lp-content button {
+  outline:none;
+  font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro",Helvetica,Arial,Roboto,"Droid Sans","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important;
+  transition:all .3s;
+}
+
+.lp-content .btPrimary .fas,
+.lp-content .btPrimary .far {
+  margin-right:10px;
+}
+
+.lp-content .btSecondary .fas,
+.lp-content .btSecondary .far {
+  margin-right:10px;
+}
+
+.lp-content .btAccent .fas,
+.lp-content .btAccent .far {
+  margin-right:10px;
+}
+
+.lp-content .btCallToAction .fas,
+.lp-content .btCallToAction .far {
+  margin-right:10px;
+}
+
+.lp-content .btDisabled .fas,
+.lp-content .btDisabled .far {
+  margin-right:10px;
+}
+
+.lp-content .btCancelCoupon .fas,
+.lp-content .btCancelCoupon .far {
+  margin-right:10px;
+}
+
+.lp-content .btUseCoupon .fas,
+.lp-content .btUseCoupon .far {
+  margin-right:10px;
+}
+
+.lp-content .btGhost .fas,
+.lp-content .btGhost .far {
+  margin-right:10px;
+}
+
+.lp-content textarea {
+  box-sizing:border-box;
+  padding:10px;
+  border:1px solid #bcbcbc;
+  outline:none;
+  background:none;
+  background-color:#f6f6f6;
+  color:#412e17;
+  font-weight:500;
+  font-size:14px;
+  font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro",Helvetica,Arial,Roboto,"Droid Sans","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important;
+}
+
+.lp-content textarea::-webkit-input-placeholder {
+  color:#ccc;
+}
+
+.lp-content textarea::-moz-placeholder {
+  color:#ccc;
+}
+
+.lp-content textarea::placeholder {
+  color:#ccc;
+}
+
+.lp-content textarea:-ms-input-placeholder {
+  color:#ccc;
+}
+
+.lp-content textarea::-ms-input-placeholder {
+  color:#ccc;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content textarea {
+    font-size:14px;
+  }
+
+  .lp-content textarea::-webkit-input-placeholder {
+    color:#ccc;
+  }
+
+  .lp-content textarea::-moz-placeholder {
+    color:#ccc;
+  }
+
+  .lp-content textarea::placeholder {
+    color:#ccc;
+  }
+
+  .lp-content textarea:-ms-input-placeholder {
+    color:#ccc;
+  }
+
+  .lp-content textarea::-ms-input-placeholder {
+    color:#ccc;
+  }
+}
+
+.lp-content select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  box-sizing:border-box;
+  appearance:none;
+  padding:10px 25px 12px 10px;
+  border:1px solid #bcbcbc;
+  outline:none;
+ 
+  color:#412e17;
+  font-weight:500;
+  font-size:14px;
+  font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro",Helvetica,Arial,Roboto,"Droid Sans","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important;
+  cursor:pointer;
+}
+
+.lp-content select::-ms-expand {
+  display:none;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content select {
+    font-size:14px;
+  }
+}
+
+.lp-content textarea {
+  width:100%;
+  min-height:100px;
+  font-family:"游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro",Helvetica,Arial,Roboto,"Droid Sans","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important;
+  resize:vertical;
+}
+
+.lp-content [data-role=modal].active [data-role=modalBox] {
+  top:0;
+  opacity:1;
+  transition:top .3s,opacity .2s;
+}
+
+.lp-content .section {
+  margin-top:15px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .section {
+    margin-top:10px;
+  }
+}
+
+.lp-content .searchBox input[type=text].searchBoxInput.active,
+.lp-content .searchBox input[type=search].searchBoxInput.active {
+  background-color:#fff;
+}
+
+.lp-content .stepNavigationItem.active {
+  background-color:#6f625a;
+  color:#fff;
+}
+
+.lp-content .formWrapper .lead {
+  margin-top:40px;
+  padding-right:45px;
+  padding-left:45px;
+  line-height:1.8;
+  text-align:center;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .formWrapper .lead {
+    margin-top:20px;
+    padding-right:25px;
+    padding-left:25px;
+    text-align:left;
+  }
+
+  .lp-content .formWrapper .lead.spCenter {
+    text-align:center;
+  }
+}
+
+.lp-content .formSectionTitle .label {
+  display:inline-block;
+  position:relative;
+  top:-2px;
+  margin-left:15px;
+  padding:3px 5px;
+  border:1px solid #b6b1b1;
+  color:#493528;
+  font-size:14px;
+  line-height:1;
+}
+
+.lp-content .productListItem>a:first-of-type:not([class]) .price {
+  margin-top:0;
+}
+
+.lp-content .productListItem .price {
+  margin-top:3px;
+  color:#493528;
+  font-size:14px;
+  line-height:1.2;
+}
+
+.lp-content .productListItem .fragrance {
+  min-height:1.2em;
+  color:#bfb4ac;
+  font-size:11px;
+  line-height:1.2;
+}
+
+.lp-content .productListItem .fragrance.emphasized {
+  color:#9a6c00;
+  font-size:14px;
+  word-break:break-word;
+}
+
+.lp-content .productList.slick-dotted .slick-arrow {
+  top:50px;
+}
+
+.lp-content .productList.ranking.slick-dotted .slick-arrow {
+  top:120px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .searchContent .searchFacet.active {
+    visibility:visible;
+    opacity:1;
+  }
+}
+
+.lp-content .searchResultListItem .badgeList .badgeListItem .badgeListItemText.type1 {
+  -webkit-transform:scale(0.65);
+  transform:scale(0.65);
+  font-size:14px;
+}
+
+.lp-content .searchResultListItem .badgeList .badgeListItem .badgeListItemText.type1 i {
+  display:inline-block;
+  font-size:10px;
+  white-space:nowrap;
+}
+
+.lp-content .searchResultListItem .badgeList .badgeListItem .badgeListItemText.type2 {
+  font-size:10px;
+}
+
+.lp-content .searchResultListItem .value .price {
+  display:inline-block;
+  margin-right:5px;
+  font-size:14px;
+}
+
+.lp-content .searchResultListItem .yotpo.bottomLine {
+  margin-top:10px;
+}
+
+.lp-content .searchResultListItem .yotpo.bottomLine:not(:has(.yotpo-bottomline)) {
+  display:none;
+}
+
+.lp-content .searchResultListItem .yotpo.bottomLine .yotpo-bottomline {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  float:none;
+}
+
+.lp-content .searchResultListItem .yotpo.bottomLine .yotpo-bottomline .text-m {
+  display:inline-block;
+  position:relative;
+  top:2px;
+  margin-left:5px;
+  color:#493528;
+  font-size:12px;
+}
+
+.lp-content .searchResultListItem .yotpo.bottomLine .yotpo-clr:only-child {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.lp-content .searchResultListItem .yotpo.bottomLine .yotpo-clr:only-child::before,
+.lp-content .searchResultListItem .yotpo.bottomLine .yotpo-clr:only-child::after {
+  display:inline-block;
+}
+
+.lp-content .searchResultListItem .yotpo.bottomLine .yotpo-clr:only-child::before {
+  width:100px;
+  height:20px;
+  content:"";
+}
+
+.lp-content .searchResultListItem .yotpo.bottomLine .yotpo-clr:only-child::after {
+  width:65px;
+  height:12px;
+  margin-left:5px;
+  content:"   ";
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .searchResultListItem .value .price {
+    font-size:12px;
+  }
+
+  .lp-content .searchResultListItem .yotpo.bottomLine .yotpo-bottomline .text-m {
+    min-width:65px;
+    font-size:10px;
+    text-align:center;
+  }
+
+  .lp-content .searchResultListItem .yotpo.bottomLine .yotpo-clr:only-child::after {
+    height:17px;
+  }
+}
+
+.lp-content .tabNavigation .tabBodyItem.active {
+  display:block;
+}
+
+.lp-content .favouriteListItem .price {
+  margin-top:7px;
+  font-size:14px;
+}
+
+.lp-content .favouriteListItem .price .tax {
+  display:inline-block;
+  margin-left:3px;
+  font-size:12px;
+}
+
+.lp-content .favouriteListItem .yotpo.bottomLine {
+  margin-top:10px;
+}
+
+.lp-content .favouriteListItem .yotpo.bottomLine .yotpo-bottomline {
+  display:flex;
+  justify-content:center;
+  float:none;
+}
+
+.lp-content .favouriteListItem .yotpo.bottomLine .yotpo-bottomline .text-m {
+  position:relative;
+  top:2px;
+  margin-left:5px;
+  color:#493528;
+  font-size:12px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .favouriteListItem .data {
+    position:relative;
+    flex:1 0 0%;
+    margin-left:20px;
+    padding-right:40px;
+    padding-bottom:50px;
+  }
+
+  .lp-content .favouriteListItem .price {
+    margin-top:7px;
+    font-size:14px;
+  }
+
+  .lp-content .favouriteListItem .price .tax {
+    display:inline-block;
+    margin-left:3px;
+    font-size:12px;
+  }
+
+  .lp-content .favouriteListItem .yotpo.bottomLine {
+    margin-top:5px;
+  }
+
+  .lp-content .favouriteListItem .yotpo.bottomLine .yotpo-bottomline {
+    justify-content:flex-start;
+  }
+}
+
+.lp-content .subscriptionProduct.productDetailTop .productSummary .subscriptionForm .fragranceListItem .selectFragranceButton.selected .price {
+  font-size:12px;
+}
+
+.lp-content #selectFragranceDialog .fragrance {
+  display:grid;
+  grid-template-rows:auto auto 1fr auto;
+  grid-template-columns:1fr;
+  text-align:center;
+}
+
+.lp-content #selectFragranceDialog .fragrance .description {
+  margin-top:4px;
+  font-size:12px;
+  text-align:left;
+}
+
+.lp-content #selectFragranceDialog .fragrance .price {
+  margin-top:10px;
+  font-size:13px;
+}
+
+.lp-content #selectFragranceDialog .fragrance .buttonContainer {
+  margin-top:10px;
+}
+
+.lp-content #selectFragranceDialog .fragrance .buttonContainer .btPrimary,
+.lp-content #selectFragranceDialog .fragrance .buttonContainer .btDisabled {
+  width:calc(100% - 10px);
+  padding:10px;
+  white-space:nowrap;
+}
+
+.lp-content .historySection.subscriptionDetailSection .subscriptionOrderListItem .detail a {
+  text-decoration:underline;
+}
+
+.lp-content .historySection.subscriptionDetailSection .subscriptionOrderListItem .delivery .label {
+  display:none;
+}
+
+@media screen and (max-width: 600px) {
+  .lp-content .historySection.subscriptionDetailSection .subscriptionOrderListItem .delivery .label {
+    display:inline;
+  }
+}
+
+.lp-content .orderListItem .subscriptionOrderList .item {
+  display:grid;
+  grid-template-columns:1fr 100px 120px;
+  margin-top:5px;
+}
+
+.lp-content .orderListItem .subscriptionOrderList .item .cycle {
+  grid-column:1;
+  padding-left:3em;
+  text-indent:-3em;
+}
+
+.lp-content .orderListItem .subscriptionOrderList .item .cyclePrice {
+  grid-column:2;
+  text-align:right;
+  white-space:nowrap;
+}
+
+.lp-content .orderListItem .subscriptionOrderList .item .cycleQty {
+  grid-column:3;
+  text-align:right;
+}
+
+.lp-content .orderListItem .subscriptionOrderList .item.sum {
+  padding-top:10px;
+  border-top:1px solid #c9c9c9;
+  font-size:14px;
+}
+
+.lp-content .orderListItem .subscriptionOrderList .item.sum .cycle {
+  font-weight:bold;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .orderListItem .subscriptionOrderList .item {
+    display:grid;
+    grid-template-columns:1fr auto auto;
+    gap:5px 5px;
+    line-height:1.4;
+  }
+
+  .lp-content .orderListItem .subscriptionOrderList .item .cycle {
+    grid-column:1;
+    padding-left:3em;
+    font-size:12px;
+    text-indent:-3em;
+  }
+
+  .lp-content .orderListItem .subscriptionOrderList .item .cyclePrice {
+    grid-column:2;
+    font-size:12px;
+  }
+
+  .lp-content .orderListItem .subscriptionOrderList .item .cycleQty {
+    grid-column:3;
+    font-size:12px;
+  }
+
+  .lp-content .orderListItem .subscriptionOrderList .item.sum .cycle {
+    grid-column:1/3;
+  }
+
+  .lp-content .orderListItem .subscriptionOrderList .item.sum .cyclePrice {
+    grid-column:3;
+  }
+}
+
+.lp-content .orderListTableFooter .sum.subscription .value {
+  min-width:0;
+}
+
+.lp-content .orderListTableFooter .sum.subscription .grandTotal .value {
+  font-weight:normal;
+  font-size:16px;
+}
+
+.lp-content .lineInviteSection .text {
+  flex:1 0 auto;
+}
+
+.lp-content .lineInviteSection .text .lineInviteHeading {
+  color:#00b900;
+  font-weight:700;
+  font-size:20px;
+  white-space:nowrap;
+}
+
+.lp-content .lineInviteSection .text .lineInviteHeading br {
+  display:none;
+}
+
+.lp-content .lineInviteSection .text .lineInviteLead {
+  margin-top:5px;
+  color:#000;
+  font-size:13px;
+  line-height:1.5;
+}
+
+@media screen and (max-width: 680px) {
+  .lp-content .lineInviteSection .text {
+    text-align:center;
+  }
+
+  .lp-content .lineInviteSection .text .lineInviteHeading {
+    font-size:20px;
+  }
+
+  .lp-content .lineInviteSection .text .lineInviteHeading br {
+    display:block;
+  }
+
+  .lp-content .lineInviteSection .text .lineInviteLead {
+    display:inline-block;
+    margin-top:10px;
+    font-size:14px;
+    text-align:justify;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .lp-content .lineInviteSection .text .lineInviteLead br {
+    display:none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .lp-content .lineInviteSection .text .lineInviteHeading {
+    font-size:16px;
+  }
+}
+
+.lp-content .slick-slide {
+  display:none;
+  outline:none;
+}
+
+.lp-content [dir=rtl] .slick-slide {
+  float:right;
+}
+
+.lp-content .slick-slide img {
+  display:block;
+}
+
+.lp-content .slick-slide.slick-loading img {
+  display:none;
+}
+
+.lp-content .slick-slide.dragging img {
+  pointer-events:none;
+}
+
+.lp-content .slick-initialized .slick-slide {
+  display:block;
+}
+
+.lp-content .slick-loading .slick-slide {
+  visibility:hidden;
+}
+
+.lp-content .slick-vertical .slick-slide {
+  display:block;
+  height:auto;
+  border:1px solid rgba(0,0,0,0);
+}
+
+.lp-content .slick-arrow.slick-hidden {
+  display:none;
+}
+
+.lp-content .slick-arrow {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -webkit-transform:translateY(-50%);
+  display:block;
+  appearance:none;
+  z-index:10;
+  position:absolute;
+  top:50%;
+  width:36px;
+  height:36px;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  transform:translateY(-50%);
+  border:0;
+  /* background ショートハンドだと各LPの background-image を消すことがある */
+  background-color:transparent;
+  text-indent:100%;
+  white-space:nowrap;
+  cursor:pointer;
+}
+
+.lp-content .slick-arrow::after {
+  display:block;
+  position:absolute;
+  top:50%;
+  width:10px;
+  height:10px;
+  content:"";
+  text-indent:0;
+}
+
+.lp-content .slick-arrow.slick-prev {
+  left:0;
+}
+
+.lp-content .slick-arrow.slick-prev::after {
+  -webkit-transform:translate(-50%, -50%) rotate(-45deg);
+  left:50%;
+  transform:translate(-50%, -50%) rotate(-45deg);
+  border-top:2px solid #493528;
+  border-left:2px solid #493528;
+}
+
+.lp-content .slick-arrow.slick-next {
+  right:0;
+}
+
+.lp-content .slick-arrow.slick-next::after {
+  -webkit-transform:translate(50%, -50%) rotate(45deg);
+  right:50%;
+  transform:translate(50%, -50%) rotate(45deg);
+  border-top:2px solid #493528;
+  border-right:2px solid #493528;
+}
+
+.lp-content .poplink_search .item {
+  position:relative !important;
+  padding:5px 40px 5px 5px !important;
+  border:2px solid rgba(0,0,0,0) !important;
+}
+
+.lp-content .poplink_search .item::after {
+  -webkit-transform:translateY(-50%) rotate(45deg);
+  display:block;
+  position:absolute;
+  top:50%;
+  right:10px;
+  width:7px;
+  height:7px;
+  transform:translateY(-50%) rotate(45deg);
+  border-top:2px solid #c7bda6;
+  border-right:2px solid #c7bda6;
+  content:"";
+}
+
+.lp-content .poplink_search .item>a {
+  display:flex !important;
+  opacity:1 !important;
+}
+
+.lp-content .poplink_search .item .item_left {
+  display:flex !important;
+  flex:0 0 auto;
+  align-items:center;
+  justify-content:center;
+}
+
+.lp-content .poplink_search .item .item_right {
+  flex:1 0 0%;
+  margin-top:15px !important;
+  padding-left:30px !important;
+}
+
+.lp-content .poplink_search .item .image_box {
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+}
+
+.lp-content .poplink_search .item .title {
+  color:#493528 !important;
+  font-size:14px !important;
+}
+
+.lp-content .poplink_search .item .any1,
+.lp-content .poplink_search .item .any2,
+.lp-content .poplink_search .item .any3 {
+  color:#493528 !important;
+  font-size:12px !important;
+}
+
+.lp-content .poplink_search .item .any1::before {
+  content:"￥";
+}
+
+.lp-content .poplink_search .item .any1::after {
+  content:"(税込)";
+}
+
+.lp-content .poplink_search .item .summary {
+  display:none;
+  font-size:12px !important;
+}
+
+.lp-content .poplink_search .item:hover {
+  border:2px solid #c7bda6 !important;
+  background-color:rgba(0,0,0,0) !important;
+  opacity:1 !important;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .poplink_search .item {
+    display:block !important;
+    width:100% !important;
+    min-height:0 !important;
+    max-height:none !important;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    border-bottom:1px solid #c7bda6 !important;
+  }
+
+  .lp-content .poplink_search .item:after {
+    right:25px;
+  }
+
+  .lp-content .poplink_search .item:hover {
+    border:0 !important;
+    border-bottom:1px solid #c7bda6 !important;
+  }
+
+  .lp-content .poplink_search .item>a {
+    display:block !important;
+    padding:5px 40px 5px 10px !important;
+    overflow:hidden !important;
+  }
+
+  .lp-content .poplink_search .item .image_box {
+    width:80px !important;
+    height:80px !important;
+    margin:0 10px 0 0 !important;
+    float:left;
+  }
+
+  .lp-content .poplink_search .item .image_box img {
+    width:auto !important;
+    max-width:100% !important;
+    height:auto !important;
+    max-height:100% !important;
+  }
+
+  .lp-content .poplink_search .item .title {
+    padding-top:10px !important;
+  }
+
+  .lp-content .poplink_search .item .any1 {
+    margin-top:5px !important;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content #popfind .searchResultSwitch .label {
+    z-index:2;
+    position:relative;
+    pointer-events:none;
+  }
+}
+
+.lp-content #popfind .searchCondition .condition .btClearCondition.active {
+  display:flex;
+  align-items:center;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content #popfind .searchCondition .facet.active {
+    display:block;
+  }
+}
+
+.lp-content ._priceinput ._buttons ._submit .fas,
+.lp-content ._priceinput ._buttons ._submit .far {
+  margin-right:10px;
+}
+
+@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);opacity:.2}50%{-webkit-transform:rotate(180deg);transform:rotate(180deg);opacity:1}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);opacity:.2}}
+
+@keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);opacity:.2}50%{-webkit-transform:rotate(180deg);transform:rotate(180deg);opacity:1}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);opacity:.2}}
+
+.lp-content .categoryTop .categoryListItem .subCategoryLink .subCategoryText .lead {
+  margin-top:15px;
+  padding-right:260px;
+  color:#493528;
+  font-size:14px;
+  line-height:20px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .categoryTop .categoryListItem .subCategoryLink .subCategoryText .lead {
+    margin-top:15px;
+    padding-right:0;
+    font-size:14px;
+    line-height:22px;
+  }
+}
+
+.lp-content .productDetailTop .mainImageList .slick-prev {
+  left:-140px;
+}
+
+.lp-content .productDetailTop .mainImageList .slick-next {
+  right:-140px;
+}
+
+.lp-content .productDetailTop .mainImage.slick-slide {
+  display:flex;
+  justify-content:center;
+}
+
+@media screen and (max-width: 990px) {
+  .lp-content .productDetailTop .mainImageList .slick-prev {
+    left:calc((100vw - 350px - 300px)/-2);
+  }
+
+  .lp-content .productDetailTop .mainImageList .slick-next {
+    right:calc((100vw - 350px - 300px)/-2);
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .productDetailTop .mainImageList .slick-prev {
+    left:0px;
+  }
+
+  .lp-content .productDetailTop .mainImageList .slick-next {
+    right:0px;
+  }
+}
+
+.lp-content .productSummary .name {
+  display:block;
+  font-weight:700;
+  font-size:20px;
+}
+
+.lp-content .productSummary .label {
+  display:block;
+  margin:20px auto 0;
+  font-size:12px;
+  text-align:center;
+}
+
+.lp-content .productSummary .label>li {
+  display:inline;
+}
+
+.lp-content .productSummary .label>li+li::before {
+  content:"、";
+}
+
+.lp-content .productSummary .value .price {
+  display:inline-block;
+  margin-right:5px;
+  font-size:16px;
+}
+
+.lp-content .productSummary .yotpo.bottomLine {
+  margin-top:20px;
+}
+
+.lp-content .productSummary .yotpo.bottomLine .yotpo-bottomline {
+  display:flex;
+  justify-content:center;
+  float:none;
+}
+
+.lp-content .productSummary .yotpo.bottomLine .yotpo-bottomline .text-m {
+  position:relative;
+  top:2px;
+  margin-left:5px;
+  color:#493528;
+  font-size:12px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .productSummary .name {
+    padding:0 20px;
+  }
+
+  .lp-content .productSummary .label {
+    font-size:11px;
+    text-align:left;
+  }
+
+  .lp-content .productSummary .value .price {
+    margin-right:0;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .cartInBlockFlexItem:first-child .label {
+    margin-top:0;
+    margin-left:0;
+  }
+
+  .lp-content .cartInBlockFlexItem:first-child .label .wrapping {
+    top:0;
+  }
+}
+
+.lp-content body>.cartInBlock .cartInBlockFlexItem:first-child .price {
+  margin-top:5px;
+}
+
+.lp-content body>.cartInBlock .price {
+  font-weight:700;
+  font-size:14px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content.cartInBlockFixed>.cartInBlock .cartInBlockFlexItem .price {
+    margin:0;
+  }
+
+  .lp-content.cartInBlockFixed>.cartInBlock .cartInBlockFlexItem .price {
+    font-size:11px;
+  }
+}
+
+.lp-content .productDescription .text {
+  margin-top:10px;
+  color:#5b4b41;
+  font-size:14px;
+  line-height:1.6;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .productDescription .productDescriptionTitle.active::before {
+    display:block;
+    position:absolute;
+    bottom:-2px;
+    left:18px;
+    width:calc(100% - (10px * 1.8 * 2));
+    height:2px;
+    background-color:#c8beb8;
+    content:"";
+  }
+
+  .lp-content .productDescription .productDescriptionTitle.active::after {
+    content:"－";
+  }
+
+  .lp-content .productDescription .productDescriptionBody.active {
+    display:block;
+    padding:16px 20px 13px;
+  }
+
+  .lp-content .productDescription .productDescriptionBody.active~.howToUseDetailContainer {
+    display:block;
+  }
+
+  .lp-content .productDescription .text {
+    font-size:13px;
+  }
+}
+
+.lp-content .tabContent_fragrance .text {
+  flex:1 0 0%;
+  margin-right:25px;
+}
+
+.lp-content .tabContent_fragrance .text .name_En {
+  font-weight:bold;
+  font-size:16px;
+  font-family:"Roboto Slab";
+}
+
+.lp-content .tabContent_fragrance .text .name_Jp {
+  font-size:14px;
+}
+
+.lp-content .tabContent_fragrance .text .description {
+  margin-top:10px;
+  padding:10px;
+  border:3px double #b8b09e;
+  background-color:#fff;
+  color:#493528;
+  font-size:14px;
+  line-height:1.5;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .tabContent_fragrance .text {
+    margin-top:20px;
+    margin-right:0;
+  }
+}
+
+.lp-content .descriptionBoxBody .youtube {
+  position:relative;
+  width:100%;
+  height:0;
+  padding-top:56.25%;
+  overflow:hidden;
+}
+
+.lp-content .descriptionBoxBody .youtube iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.lp-content .descriptionBoxBody .faq {
+  margin-top:-13px;
+  padding:0;
+  text-align:left;
+}
+
+.lp-content .descriptionBoxBody .faq+.faq {
+  margin-top:0;
+  border-top:1px solid #c8beb8;
+}
+
+.lp-content .descriptionBoxBody .faq:last-of-type dd {
+  padding-bottom:0;
+}
+
+.lp-content .descriptionBoxBody .faq.expanded dt::after {
+  -webkit-transform:translateY(-50%) rotate(-135deg);
+  transform:translateY(-50%) rotate(-135deg);
+}
+
+.lp-content .descriptionBoxBody .faq.expanded dt:hover {
+  background-color:rgba(0,0,0,0);
+}
+
+.lp-content .descriptionBoxBody .faq.expanded dd {
+  display:block;
+}
+
+.lp-content .descriptionBoxBody .faq dt,
+.lp-content .descriptionBoxBody .faq dd {
+  position:relative;
+  padding-right:50px;
+  padding-left:calc(50px + 2em);
+  font-size:14px;
+}
+
+.lp-content .descriptionBoxBody .faq dt::before,
+.lp-content .descriptionBoxBody .faq dd::before {
+  position:absolute;
+  left:50px;
+  font-size:16px;
+  font-family:"Roboto Slab";
+}
+
+.lp-content .descriptionBoxBody .faq dt {
+  position:relative;
+  padding-top:20px;
+  padding-bottom:20px;
+  cursor:pointer;
+  transition:all .3s;
+}
+
+.lp-content .descriptionBoxBody .faq dt:hover {
+  background-color:#f9f7f4;
+}
+
+.lp-content .descriptionBoxBody .faq dt::before {
+  top:17px;
+  content:"Q.";
+  color:#06c;
+}
+
+.lp-content .descriptionBoxBody .faq dt::after {
+  -webkit-transform:translateY(-50%) rotate(45deg);
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  right:50px;
+  width:8px;
+  height:8px;
+  transform:translateY(-50%) rotate(45deg);
+  border-right:1px solid rgba(73,53,40,.75);
+  border-bottom:1px solid rgba(73,53,40,.75);
+  content:"";
+}
+
+.lp-content .descriptionBoxBody .faq dd {
+  display:none;
+  padding-bottom:20px;
+}
+
+.lp-content .descriptionBoxBody .faq dd::before {
+  top:-2px;
+  content:"A.";
+  color:#c00;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .descriptionBox.expandable.hasBg.active {
+    width:100vw;
+    border-right:0;
+    border-left:0;
+    background-color:#f9f7f4;
+  }
+
+  .lp-content .descriptionBox.expandable .descriptionBoxTitle.active::before {
+    display:block;
+    position:absolute;
+    bottom:-2px;
+    left:18px;
+    width:calc(100% - (10px * 1.8 * 2));
+    height:2px;
+    background-color:#c8beb8;
+    content:"";
+  }
+
+  .lp-content .descriptionBox.expandable .descriptionBoxTitle.active::after {
+    content:"－";
+  }
+
+  .lp-content .descriptionBox.expandable .descriptionBoxBody.active {
+    display:block;
+    padding:13px 20px;
+  }
+
+  .lp-content .descriptionBox.expandable .descriptionBoxBody.active~.howToUseDetailContainer {
+    display:block;
+  }
+
+  .lp-content .descriptionBoxBody .faq {
+    padding:0;
+  }
+
+  .lp-content .descriptionBoxBody .faq dt,
+  .lp-content .descriptionBoxBody .faq dd {
+    padding-right:0;
+    padding-left:2em;
+  }
+
+  .lp-content .descriptionBoxBody .faq dt::before {
+    left:0;
+  }
+
+  .lp-content .descriptionBoxBody .faq dt::after {
+    right:4px;
+  }
+
+  .lp-content .descriptionBoxBody .faq dt:hover {
+    background-color:rgba(0,0,0,0);
+  }
+
+  .lp-content .descriptionBoxBody .faq dd::before {
+    left:0;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .yotpoReviewContainer .yotpoReviewContainerTitle .en {
+    display:none;
+    margin-right:15px;
+  }
+
+  .lp-content .yotpoReviewContainer .yotpoReviewContainerTitle.active {
+    width:100%;
+    padding:10px;
+    border:0;
+    border-bottom:1px solid #e3e3e3;
+    color:#111;
+    font-weight:500;
+    font-size:18px;
+    text-align:left;
+  }
+
+  .lp-content .yotpoReviewContainer .yotpoReviewContainerTitle.active .en {
+    display:block;
+    font-size:20px;
+    font-family:"Roboto Slab";
+  }
+
+  .lp-content .yotpoReviewContainer .yotpoReviewContainerTitle.active::after {
+    content:"－";
+  }
+
+  .lp-content .yotpoReviewContainer .yotpoReview.active {
+    display:block;
+  }
+}
+
+.lp-content .commonInformation .message .text {
+  font-weight:700;
+  text-align:center;
+}
+
+.lp-content .commonInformation .message .link {
+  margin-top:15px;
+  text-align:center;
+}
+
+.lp-content .commonInformation .message .link a {
+  display:inline-block;
+  position:relative;
+  padding-right:15px;
+  text-decoration:underline;
+}
+
+.lp-content .commonInformation .message .link a::before,
+.lp-content .commonInformation .message .link a::after {
+  -webkit-transform:translateY(-50%) rotate(45deg);
+  display:block;
+  position:absolute;
+  top:50%;
+  width:4px;
+  height:4px;
+  transform:translateY(-50%) rotate(45deg);
+  border-top:1px solid #493528;
+  border-right:1px solid #493528;
+  content:"";
+}
+
+.lp-content .commonInformation .message .link a::before {
+  right:0;
+}
+
+.lp-content .commonInformation .message .link a::after {
+  right:5px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .commonInformation .message .text {
+    text-align:left;
+  }
+
+  .lp-content .commonInformation .message .link {
+    margin-top:0;
+    text-align:right;
+  }
+}
+
+.lp-content .cartWrapper .lead {
+  margin-top:40px;
+  line-height:1.8;
+  text-align:center;
+}
+
+.lp-content .cartWrapper+.section {
+  margin-top:50px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .cartWrapper .lead {
+    margin-top:20px;
+  }
+}
+
+.lp-content .orderListItemInner .label {
+  display:inline-block;
+  position:relative;
+  top:-2px;
+  min-width:80px;
+  padding:6px 3px;
+  border:1px solid #b6b1b1;
+  background-color:#fff;
+  color:#493528;
+  font-size:11px;
+  line-height:1;
+  text-align:center;
+}
+
+.lp-content .orderListItemInner .label+.delete {
+  margin-left:15px;
+}
+
+.lp-content .orderListItemInner .price {
+  grid-row:1;
+  grid-column:2;
+  text-align:right;
+  white-space:nowrap;
+}
+
+.lp-content .orderListItemInner.title .price {
+  top:0;
+  color:#777;
+  font-size:16px;
+  text-align:center;
+}
+
+.lp-content .orderListItemInner .engravingInfoContainer .price {
+  margin-left:20px;
+}
+
+.lp-content .orderListItem.title .price {
+  top:0;
+  color:#777;
+  font-size:16px;
+  text-align:center;
+}
+
+.lp-content .orderListItem.title .price {
+  padding-right:1.2em;
+  text-align:right;
+}
+
+@media screen and (max-width: 990px) {
+  .lp-content .orderListTable .orderListItemInner .price {
+    top:0;
+    grid-row:2;
+    grid-column:1;
+    margin-top:5px;
+    padding-right:0;
+    text-align:left;
+  }
+
+  .lp-content .orderListTable .orderListItemInner .price:empty {
+    min-width:0;
+  }
+
+  .lp-content .orderListTable .orderListItemInner .label {
+    display:inline-block;
+    position:relative;
+    top:-1px;
+    min-width:70px;
+    padding:6px 2px;
+    font-size:12px;
+  }
+
+  .lp-content .orderListTable .orderListItemInner .label+.delete {
+    margin-left:10px;
+  }
+
+  .lp-content .orderListTable .orderListItemInner .engravingInfoContainer .price {
+    margin-left:10px;
+  }
+
+  .lp-content .orderList.orderConfirm .orderListItemInner .price {
+    display:block;
+    grid-row:2;
+    grid-column:1;
+    line-height:1;
+    text-align:right;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .formSection .orderListTableFooter .detail {
+    padding-right:5px;
+  }
+}
+
+.lp-content .orderListTableFooter .detail .title {
+  display:inline-block;
+  margin-right:15px;
+}
+
+.lp-content .orderListTableFooter .detail .value {
+  display:inline-block;
+}
+
+.lp-content .orderListTableFooter .detail .discount {
+  color:red;
+}
+
+.lp-content .orderListTableFooter .detail {
+  padding:15px 15px;
+  border-top:1px solid #b6b1b1;
+  font-size:16px;
+  text-align:right;
+}
+
+.lp-content .orderListTableFooter .sum .total .tax {
+  display:inline-block;
+  position:relative;
+  top:1px;
+  font-weight:500;
+  font-size:12px;
+}
+
+.lp-content .orderListTableFooter.confirm .detail .value {
+  min-width:150px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .orderListTableFooter.confirm .detail .value {
+    min-width:110px;
+  }
+}
+
+.lp-content .cartEditButton .fas,
+.lp-content .cartEditButton .far {
+  margin-right:10px;
+}
+
+.lp-content .popup.active {
+  opacity:1;
+  pointer-events:auto;
+}
+
+.lp-content #messageCardSelectDialog .selectMessageCardBox input[type=radio]+label .name {
+  display:block;
+  line-height:1.7;
+  white-space:nowrap;
+}
+
+.lp-content .remainingTimeContainer .expiredMessage.active {
+  opacity:1;
+}
+
+.lp-content .qaListItem_q.active::after {
+  -webkit-transform:translateY(-50%) rotate(135deg);
+  top:calc(50% - 3px);
+  right:28px;
+  transform:translateY(-50%) rotate(135deg);
+}
+
+.lp-content .contactSectionFooter .text {
+  flex:1 0 0%;
+}
+
+.lp-content .formBlock[data-contact-detail].active,
+.lp-content .formBlock[data-contact-detail-id].active {
+  display:flex;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .formBlock[data-contact-detail].active,
+  .lp-content .formBlock[data-contact-detail-id].active {
+    display:block;
+  }
+}
+
+.lp-content [data-contact-detail-id].active {
+  display:block;
+}
+
+.lp-content .newsMeta .type {
+  display:inline-block;
+}
+
+.lp-content .ordermadeGiftSection .giftboxOrderDetailBox .totalPrice .price {
+  font-size:16px;
+}
+
+.lp-content .ordermadeGiftSection .giftboxOrderDetailBox .totalPrice .tax {
+  font-size:12px;
+}
+
+.lp-content .ordermadeGiftRecommendSection .textContainer .text {
+  font-size:14px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .ordermadeGiftRecommendSection .textContainer .text {
+    font-size:min(13px,3.5vw);
+  }
+}
+
+.lp-content .giftProductList .giftProductListItem .data {
+  flex:1 0 0;
+}
+
+.lp-content .giftProductList .giftProductListItem .data .name {
+  display:flex;
+  flex-wrap:wrap;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.lp-content .giftProductList .giftProductListItem .data .name .fragrance {
+  width:100%;
+  font-weight:normal;
+  font-size:12px;
+}
+
+.lp-content .giftProductList .giftProductListItem .data .price {
+  font-size:16px;
+}
+
+.lp-content .giftProductList .giftProductListItem .data .price .tax {
+  font-size:12px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .giftProductList .giftProductListItem .data .name {
+    font-size:14px;
+  }
+
+  .lp-content .giftProductList .giftProductListItem .data .name .fragrance {
+    font-size:12px;
+  }
+
+  .lp-content .giftProductList .giftProductListItem .data .price {
+    font-size:13px;
+  }
+
+  .lp-content .giftProductList .giftProductListItem .data .price .tax {
+    font-size:11px;
+  }
+}
+
+.lp-content .bottomFixedContainer.active {
+  translate:0 0;
+  opacity:1;
+  pointer-events:all;
+}
+
+.lp-content .bottomFixedContainer .giftboxTotalPrice .label {
+  font-size:14px;
+}
+
+.lp-content .bottomFixedContainer .giftboxTotalPrice .price {
+  font-weight:bold;
+  font-size:24px;
+}
+
+.lp-content .bottomFixedContainer .giftboxTotalPrice .price .tax {
+  font-size:14px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .bottomFixedContainer .giftboxTotalPrice .label {
+    font-size:10px;
+  }
+
+  .lp-content .bottomFixedContainer .giftboxTotalPrice .price {
+    font-size:15px;
+  }
+
+  .lp-content .bottomFixedContainer .giftboxTotalPrice .price .tax {
+    font-size:10px;
+  }
+}
+
+.lp-content #giftboxDetailDialog .giftboxTotalPrice .label {
+  margin-right:24px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.lp-content #giftboxDetailDialog .giftboxTotalPrice .totalPrice .tax {
+  font-size:12px;
+}
+
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .slick-prev,
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .slick-next {
+  position:absolute;
+  top:50%;
+}
+
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .slick-prev {
+  left:35px;
+}
+
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .slick-next {
+  right:35px;
+}
+
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .name {
+  font-weight:bold;
+  font-size:24px;
+  line-height:1.4;
+  word-break:normal;
+}
+
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .fragrance {
+  margin-top:10px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .price {
+  margin-top:5px;
+  font-size:16px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .slick-prev {
+    left:5px;
+  }
+
+  .lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .slick-next {
+    right:5px;
+  }
+
+  .lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .name,
+  .lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .fragrance,
+  .lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .price {
+    text-align:center;
+  }
+
+  .lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .name {
+    font-size:16px;
+  }
+
+  .lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .fragrance {
+    font-size:14px;
+  }
+
+  .lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .productInfo .price {
+    font-size:11px;
+  }
+}
+
+.lp-content .giftboxRecommendListItem .textContainer .lead {
+  width:100%;
+  font-weight:bold;
+  font-size:12px;
+}
+
+.lp-content .giftboxRecommendListItem .textContainer .detail {
+  flex:1 0 0%;
+  font-size:12px;
+}
+
+.lp-content .giftboxRecommendListItem .textContainer .detail .noteText {
+  margin:.5em 0 0;
+  font-size:10px;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .giftboxRecommendListItem .textContainer .titleContainer .price {
+    font-size:14px;
+  }
+}
+
+.lp-content #giftboxResetConfirmDialog .text {
+  text-align:center;
+}
+
+.lp-content .toast .text {
+  color:#fff;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.lp-content .toast.active {
+  -webkit-transform:translateY(0);
+  transform:translateY(0);
+  opacity:1;
+  pointer-events:all;
+}
+
+.lp-content .historySectionBody.wide {
+  padding:20px 0 0;
+}
+
+.lp-content .orderItemTable .name {
+  width:auto;
+}
+
+.lp-content .orderItemTable .name a {
+  text-decoration:underline;
+}
+
+.lp-content .orderItemTable .price {
+  width:110px;
+  text-align:center;
+}
+
+.lp-content .orderItemTable .item {
+  font-size:12px;
+  word-break:normal;
+}
+
+.lp-content .orderItemTable .note .block .line {
+  display:block;
+}
+
+.lp-content .orderItemTable .note .block .line:empty {
+  display:inline-block;
+  content:"";
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .orderItemTable .name {
+    width:auto;
+  }
+
+  .lp-content .orderItemTable .price {
+    width:60px;
+  }
+
+  .lp-content .orderItemTable .item {
+    font-size:10px;
+  }
+}
+
+.lp-content .orderDetailTable td.detail {
+  padding-left:30px;
+  border-right:1px solid #493528;
+}
+
+.lp-content .orderDetailTable td.detail dl:not(:first-of-type) {
+  margin-top:5px;
+}
+
+.lp-content .orderDetailTable td.detail dl dt {
+  font-weight:700;
+  line-height:1.4;
+}
+
+.lp-content .orderDetailTable td.detail dl dd {
+  line-height:1.4;
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .orderDetailTable td.detail {
+    padding-right:10px;
+    padding-left:10px;
+  }
+}
+
+.lp-content .btRounded .fas,
+.lp-content .btRounded .far {
+  margin-right:10px;
+}
+
+.lp-content .mypageMenu.subscription img {
+  max-height:100px;
+}
+
+@media screen and (max-width: 700px) {
+  .lp-content .mypageMenu.subscription img {
+    width:50%;
+    max-height:none;
+  }
+}
+
+/* --- system/css/style.css から復帰（slick 未抽出分・.lp-content スコープ） --- */
+
+.lp-content .slick-track {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  align-content: bottom;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.lp-content .productList.ranking.slick-slider {
+  margin-top:0;
+  padding-top:30px;
+  overflow:hidden;
+}
+
+.lp-content .productList.ranking .slick-list {
+  overflow:visible;
+}
+
+.lp-content [data-role^=slider].slick-initialized {
+  opacity:1;
+}
+
+.lp-content .slick-dots {
+  display:block;
+  position:relative;
+  width:100%;
+  margin:10px 0 0;
+  padding:0;
+  list-style:none;
+  text-align:center;
+}
+
+.lp-content .slick-dots > li {
+  display:inline-block;
+  position:relative;
+  margin:0;
+  padding:0;
+  cursor:pointer;
+}
+
+.lp-content .slick-dots > li:not(:first-of-type) {
+  margin-left:20px;
+}
+
+.lp-content .slick-dots > li > button {
+  display:block;
+  width:0;
+  height:0;
+  padding:0;
+  border:0;
+  outline:none;
+  background:rgba(0,0,0,0);
+  color:rgba(0,0,0,0);
+  font-size:0;
+  line-height:0;
+  cursor:pointer;
+}
+
+.lp-content .slick-dots > li > button::before {
+  display:block;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background-color:#b4a094;
+  content:"";
+}
+
+.lp-content .slick-dots > li.slick-active > button::before {
+  background-color:#493528;
+}
+
+.lp-content .productDetailTop .slick-dots {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  width:580px;
+  margin-left:-140px;
+}
+
+.lp-content .productDetailTop .slick-dots > li {
+  box-sizing:border-box;
+  position:relative;
+  width:40px;
+  height:40px;
+  margin:0 0 5px;
+  border:1px solid rgba(0,0,0,0);
+  cursor:pointer;
+}
+
+.lp-content .productDetailTop .slick-dots > li:not(:first-of-type) {
+  margin-left:10px;
+}
+
+.lp-content .productDetailTop .slick-dots > li.slick-active {
+  border:1px solid #b5a98a;
+}
+
+.lp-content .productDetailTop .slick-dots > li img {
+  -webkit-transform:translate(-50%, -50%);
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:auto;
+  max-width:100%;
+  height:auto;
+  max-height:100%;
+  transform:translate(-50%, -50%);
+}
+
+@media screen and (max-width: 860px) {
+  .lp-content .productDetailTop .slick-dots {
+    width:100vw;
+    margin-left:0;
+  }
+}
+
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .slick-slider {
+  position:static;
+}
+
+.lp-content #giftboxProductDetailDialog[data-role=modal] .modalBody .slick-dots button:only-child {
+  display:none;
+}
+
+
+/* Shopify テーマ（Stiletto）プレビュー固有のレイアウト補正 */
+/*
+  テーマは sticky header 用に #main { margin-top: calc(var(--height-header) * -1) } を当てる。
+  LP をその中に置くと先頭がヘッダーに潜り表示崩れするため打ち消す。
+*/
+#main.lp-preview-host {
+  margin-top: 0;
+  overflow: visible;
+}
+
+#lp-preview-root.lp-content {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  max-width: none;
+  overflow: visible;
+  isolation: isolate;
+  min-height: 50vh;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* テーマの lazy-load / animation が LP 内へ波及しないように */
+#lp-preview-root.lp-content img,
+#lp-preview-root.lp-content picture,
+#lp-preview-root.lp-content video {
+  visibility: visible;
+}
+
+/*
+  inview アニメは各 LP JS（opacity:0 → inview で fade-in）に任せる。
+  以前の opacity:1 !important はアニメを無効化していたため削除。
+*/
+
+/* メニュー用オーバーレイが誤って前面に残らないように */
+.header-overlay {
+  pointer-events: none;
+}
+.header-overlay:not(.is-visible):not(.active):not([aria-hidden="false"]) {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* LP common — utilities（:where で個別LP CSSを潰さない） */
+
+:where(.lp-content) ._pc {
+  display: block !important;
+}
+:where(.lp-content) ._sp {
+  display: none !important;
+}
+
+:where(.lp-content) .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+:where(.lp-content) .rel-block {
+  position: relative;
+}
+
+:where(.lp-content) .rel-block .anchor {
+  position: absolute;
+  top: -90px;
+}
+
+/* Font Awesome visibility (theme may inject FA) */
+:where(.lp-content) i {
+  display: none;
+}
+.fontawesome-i2svg-active :where(.lp-content) i {
+  display: initial;
+}
+:where(.lp-content) svg.svg-inline--fa {
+  display: none;
+}
+.fontawesome-i2svg-active :where(.lp-content) svg.svg-inline--fa {
+  display: initial;
+}
+
+/* lower banner / The Collection — .lp-content div リセットより強く、個別LP上書きは残す */
+.lp-content .collection-banner__title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+.lp-content .font-capitalize {
+  text-transform: capitalize;
+}
+
+.lp-content .collection-banner__inner {
+  padding: 0 0 100px;
+}
+.lp-content .title__obj {
+  width: 395px;
+  margin: 38px auto 0;
+}
+.lp-content .collection__banner {
+  width: 856px;
+  margin: 33px auto 0;
+}
+.lp-content .collection__banner-first {
+  margin-top: 55px;
+}
+.lp-content .collection-banner img {
+  width: 100%;
+  display: block;
+}
+
+/* LP load error */
+.lp-load-error {
+  padding: 40px 20px;
+  color: #a00;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 960px) {
+  :where(.lp-content) ._pc {
+    display: none !important;
+  }
+  :where(.lp-content) ._sp {
+    display: block !important;
+  }
+
+  :where(.lp-content) .rel-block .anchor {
+    top: -60px;
+  }
+
+  :where(.lp-content) img {
+    width: 100%;
+  }
+
+  .lp-content .collection-banner__inner {
+    padding: 0 0 14.6vw;
+  }
+  .lp-content .title__obj {
+    width: 44.6vw;
+    line-height: 1;
+    margin: 3vw auto 0;
+  }
+  .lp-content .collection__banner {
+    width: 83.6vw;
+    margin: 4.8vw auto 0;
+  }
+  .lp-content .collection-banner__title {
+    font-size: 9vw;
+  }
+}
+
+/*
+  セリフ系ユーティリティ（全LP共通）
+  lp-system の游ゴシック / テーマの --font-heading|body に負けないよう
+  ここで !important 固定。子要素は inherit で親のセリフを維持。
+*/
+.lp-content.lp-content .font-yumin {
+  font-family: "游明朝", YuMincho, "Yu Mincho", "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", "Noto Serif JP", serif !important;
+}
+.lp-content.lp-content .font-arno {
+  font-family: arno-pro, "arno-pro", "Arno Pro", "EB Garamond", "Noto Serif JP",
+    "Times New Roman", Times, serif !important;
+}
+.lp-content.lp-content .font-garamond {
+  font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif !important;
+}
+.lp-content.lp-content .font-petrona {
+  font-family: Petrona, "EB Garamond", "Noto Serif JP", serif !important;
+}
+
+.lp-content.lp-content .font-yumin *:not(.font-arno):not(.font-garamond):not(.font-petrona):not(i):not(.fa):not(.fas):not(.far):not(.fab),
+.lp-content.lp-content .font-arno *:not(.font-yumin):not(.font-garamond):not(.font-petrona):not(i):not(.fa):not(.fas):not(.far):not(.fab),
+.lp-content.lp-content .font-garamond *:not(.font-yumin):not(.font-arno):not(.font-petrona):not(i):not(.fa):not(.fas):not(.far):not(.fab),
+.lp-content.lp-content .font-petrona *:not(.font-yumin):not(.font-arno):not(.font-garamond):not(i):not(.fa):not(.fas):not(.far):not(.fab) {
+  font-family: inherit !important;
+}

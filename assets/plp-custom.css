@@ -1,0 +1,90 @@
+/* Top Banner */
+.promo-banner:not(.promo-banner--has-image) {
+  display: none;
+}
+
+.promo-banner.section--vertical-padding-bottom-only {
+  padding-bottom: var(--spacing-2);
+}
+
+.promo-banner__content {
+  padding-left: 0;
+}
+
+.promo-banner__columns-inner {
+  display: flex;
+  gap: 5px;
+}
+
+.promo-banner__columns-inner:has(h2, h3, h4, h5, h6) {
+  flex-direction: column-reverse;
+}
+
+.promo-banner__columns-inner .promo-banner__column--alignment-mobile-left {
+  padding: 0;
+  width: 60%;
+}
+
+.promo-banner__columns-inner:not(:has(h2, h3, h4, h5, h6)) .promo-banner__giant-heading {
+  /* increase japanese title size when no english present */
+  --giant-heading-font-size: 18px !important;
+  --giant-heading-font-size-mobile: 16px !important;
+}
+
+.promo-banner__column-inner h1,
+.promo-banner__column-inner h2 {
+  letter-spacing: -0.03em;
+}
+
+.promo-banner__content {
+  min-height: 160px;
+}
+
+@media (min-width: 720px) {
+  .promo-banner__content {
+    justify-content: flex-start;
+  }
+
+  .promo-banner.section--vertical-padding-bottom-only {
+    padding-bottom: 0;
+  }
+
+  .promo-banner--has-image .promo-banner__content {
+  min-height: 300px;
+  }
+}
+
+/* Load More Button */
+.animation--collection-items .collection__infinite-trigger a {
+  background-color: #FFFEF9;
+  font-size: var(--font-size-body-75);
+}
+.pagination__footer {
+  font-size: var(--font-size-body-20)
+}
+
+/* SEO text */
+.rich-text.section {
+  margin-top: var(--spacing-4);
+  padding-top: var(--spacing-10);
+  padding-bottom: var(--spacing-20);
+}
+
+.rich-text__inner .rich-text__text {
+  margin-top: var(--spacing-6);
+}
+
+.rich-text__inner .rich-text__text p {
+  line-height: 1.2em;
+}
+
+@media (min-width: 720px) {
+  .rich-text__inner .rich-text__heading {
+    font-size: var(--font-size-heading-2-base);
+  }
+
+  .rich-text.section {
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-25);
+  }
+}

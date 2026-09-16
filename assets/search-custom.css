@@ -1,0 +1,9 @@
+.search-section form.search-form {
+  display: none;
+}
+
+@media (max-width: 719px) {
+  .search-section .search__divider {
+    display: none;
+  }
+}

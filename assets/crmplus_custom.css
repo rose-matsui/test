@@ -1,0 +1,368 @@
+/* SocialPlus フォームのカスタムスタイル */
+
+.socialplus-form-outer-wrapper {
+  padding: var(--spacing-20) 0 !important;
+}
+
+/* フォームのコンテナ */
+.socialplus-form-inner-wrapper {
+  max-width: 400px !important;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4) !important;
+  box-sizing: content-box !important;
+}
+
+/* ヘッダー */
+.socialplus-form-header {
+  font-size: var(--font-size-heading-2-base) !important;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 var(--spacing-10) !important;
+  @media (min-width: 768px) {
+    margin: 0 0 var(--spacing-12) !important;
+  }
+}
+
+.socialplus-form-header::after {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 8px;
+  margin: var(--spacing-4) auto;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2267%22%20height%3D%228%22%20viewBox%3D%220%200%2067%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M37.95%205.646C37.2159%205.18765%2036.4545%204.77461%2035.67%204.40906C35.6056%204.9247%2035.3568%205.39962%2034.9695%205.74609C34.5822%206.09257%2034.0826%206.28721%2033.563%206.29407C33.0635%206.28814%2032.5818%206.10817%2032.2007%205.78528C31.8195%205.46239%2031.5629%205.01674%2031.475%204.52502C30.7721%204.85627%2030.0902%205.2303%2029.433%205.64502C28.6427%206.16237%2027.9601%206.82806%2027.423%207.6051C25.688%205.4351%209.79602%204.7111%200.499023%204.2981V4.16211C9.79902%203.74911%2025.688%203.0241%2027.423%200.855103C27.9605%201.63181%2028.6431%202.2973%2029.433%202.81506C30.0798%203.22205%2030.7507%203.58936%2031.442%203.91504C31.4777%203.37483%2031.7158%202.868%2032.1088%202.49561C32.5018%202.12322%2033.0207%201.91263%2033.562%201.90601C34.1245%201.91353%2034.6617%202.14069%2035.0591%202.53882C35.4565%202.93695%2035.6826%203.47463%2035.689%204.03711C36.4664%203.67447%2037.2212%203.26498%2037.949%202.81104C38.7386%202.29338%2039.4204%201.62785%2039.957%200.851074C41.692%203.02007%2057.586%203.74508%2066.881%204.15808V4.29407C57.581%204.70707%2041.692%205.43207%2039.957%207.60107C39.4205%206.82593%2038.739%206.16196%2037.95%205.646V5.646Z%22%20fill%3D%22%23B4975F%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+.form-vertical {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  align-items: flex-end !important;
+  column-gap: var(--spacing-2);
+  > * {
+    order: 2 !important;
+    flex: 0 0 100%;
+  }
+}
+
+/* フォームフィールド */
+.socialplus-form-field {
+  margin-bottom: var(--spacing-6) !important;
+  width: 100%;
+}
+
+.socialplus-form-field-label {
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: var(--spacing-2) !important;
+  font-weight: 500;
+  font-size: var(--font-size-body-75) !important;
+}
+
+/* 必須チップ（全フィールドラベル共通） */
+.socialplus-form-field-label::after {
+  content: "必須";
+  display: inline-block;
+  margin-left: var(--spacing-2) !important;
+  padding: 0.2rem 0.4rem;
+  background: var(--color-border, #b4975e);
+  color: #fff;
+  border-radius: 4px;
+  line-height: 1.3;
+  font-size: var(--font-size-body-50) !important;
+}
+
+.socialplus-form-required-mark {
+  display: none;
+}
+
+/* 入力フィールドの共通スタイル */
+.socialplus-form-field-input,
+.socialplus-form-date-group select {
+  width: 100%;
+  height: 48px !important;
+  padding: var(--spacing-2) var(--spacing-3) !important;
+  border: 1px solid #b4975e;
+  margin-right: 0 !important;
+  background-color: #fffef9;
+}
+
+.socialplus-form-date-group select {
+  color: var(--color-text-meta);
+}
+
+.socialplus-form-field-input:focus,
+.socialplus-form-date-group select:focus {
+  border-color: #b4975e;
+  outline: none;
+}
+
+/* 名前フィールドのグループ（氏名）— 姓・名を横並び */
+.socialplus-form-field-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--spacing-2);
+  align-items: end;
+  order: 1 !important;
+  margin-right: 0 !important;
+  margin-bottom: var(--spacing-6) !important;
+}
+
+.socialplus-form-field-half {
+  padding-right: 0 !important;
+}
+
+.socialplus-form-field-group .socialplus-form-field {
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+
+/* 姓（last_name）のラベル */
+.socialplus-form-field-label[for="customer_last_name"] {
+  font-size: 0 !important;
+}
+
+.socialplus-form-field-label[for="customer_last_name"]::before {
+  content: "姓";
+  font-size: var(--font-size-body-75) !important;
+  font-weight: 500;
+}
+
+/* 名（first_name）のラベル */
+.socialplus-form-field-label[for="customer_first_name"] {
+  font-size: 0 !important;
+}
+
+.socialplus-form-field-label[for="customer_first_name"]::before {
+  content: "名";
+  font-size: var(--font-size-body-75) !important;
+  font-weight: 500;
+}
+
+/* 生年月日セレクト */
+.socialplus-form-date-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.socialplus-form-date-group select {
+  flex: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.2rem center;
+  padding-right: 2.5rem;
+}
+
+/* 誕生日のラベルテキスト変更 */
+.socialplus-form-field-label[for="customer_custom_fields_0_value"] {
+  font-size: 0 !important;
+}
+
+.socialplus-form-field-label[for="customer_custom_fields_0_value"]::before {
+  content: "誕生日";
+  font-size: var(--font-size-body-75) !important;
+  font-weight: 500;
+}
+
+/* メールのラベルテキスト変更 */
+.socialplus-form-field-label[for="customer_email"] {
+  font-size: 0 !important;
+}
+
+.socialplus-form-field-label[for="customer_email"]::before {
+  content: "メール";
+  font-size: var(--font-size-body-75) !important;
+  font-weight: 500;
+}
+
+/* チェックボックスのラベルテキスト変更 */
+.socialplus-inline-block[for="customer_accepts_marketing"] {
+  font-size: 0 !important;
+  margin-left: var(--spacing-2) !important;
+}
+
+.socialplus-inline-block[for="customer_accepts_marketing"]::after {
+  content: "メールマガジン登録";
+  font-size: var(--font-size-body-75) !important;
+  display: block;
+  margin-top: var(--spacing-1) !important;
+}
+
+/* エラー状態 */
+.socialplus-form-field-input.error {
+  border-color: #d02e2e;
+}
+
+/* 送信ボタン */
+.socialplus-form-submit {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* ボタンの基本スタイル */
+.socialplus-form-inner-wrapper .socialplus-form-submit .socialplus-form-submit-button.button.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 200px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  border: none;
+  border-radius: 0;
+  background: #b4975e;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ボタンのホバー状態 */
+.socialplus-form-inner-wrapper .socialplus-form-submit .socialplus-form-submit-button.button.btn:hover {
+  background: #756037;
+}
+
+/* ボタンのテキスト */
+.socialplus-form-inner-wrapper .socialplus-form-submit .socialplus-form-submit-button.button.btn::after {
+  content: "上記の内容で登録する";
+  display: block;
+  width: 100%;
+  font-size: var(--font-size-body-75) !important;
+  text-align: center;
+}
+
+/* クリアフィックス */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.socialplus-form-inline-block[type="checkbox"] {
+  margin-right: 0 !important;
+  transform: scale(1.5);
+  transform-origin: left;
+}
+
+/* リンクテキストの非表示と新しいテキストの表示 */
+.socialplus-form-links {
+  margin: 0 !important;
+  text-align: left !important;
+  font-size: var(--font-size-body-50) !important;
+  color: #333333;
+}
+
+.socialplus-form-links a {
+  display: none;
+}
+
+.socialplus-form-links::before {
+  content: '「上記の内容で登録する」をクリックする事で';
+}
+
+.socialplus-form-links a[href*="terms"],
+.socialplus-form-links a[href*="privacy"] {
+  display: inline;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 0;
+}
+
+.socialplus-form-links a[href*="terms"]::after {
+  content: '会員規約';
+  font-size: var(--font-size-body-50) !important;
+}
+
+.socialplus-form-links a[href*="privacy"]::before {
+  content: 'と';
+  font-size: var(--font-size-body-50) !important;
+  pointer-events: none;
+  display: inline-block; 
+  text-decoration: none !important;
+}
+
+.socialplus-form-links a[href*="privacy"]::after {
+  content: 'プライバシーポリシー';
+  font-size: var(--font-size-body-50) !important;
+}
+
+/* 最後のテキストを追加 */
+.socialplus-form-links::after {
+  content: 'に同意したものとみなします。';
+  margin-left: 0.2em;
+} 
+
+.socialplus-form-description {
+  display: none;
+}
+
+/* カナフィールドのラベル */
+/* 姓(カナ)（family_name_kana） */
+.socialplus-form-field-label[for="customer_custom_fields_1_value"] {
+  font-size: 0 !important;
+}
+
+.socialplus-form-field-label[for="customer_custom_fields_1_value"]::before {
+  content: "姓(カナ)";
+  font-size: var(--font-size-body-75) !important;
+  font-weight: 500;
+}
+
+/* 名(カナ)（given_name_kana） */
+.socialplus-form-field-label[for="customer_custom_fields_2_value"] {
+  font-size: 0 !important;
+}
+
+.socialplus-form-field-label[for="customer_custom_fields_2_value"]::before {
+  content: "名(カナ)";
+  font-size: var(--font-size-body-75) !important;
+  font-weight: 500;
+}
+
+/* セイ・メイを横並び（コンテナが無いため .form-vertical の row wrap で2列化） */
+.form-vertical > .socialplus-form-field:has(#customer_custom_fields_1_value),
+.form-vertical > .socialplus-form-field:has(#customer_custom_fields_2_value) {
+  flex: 1 1 0 !important;
+  min-width: 0;
+}
+
+/* フォームフィールドの表示順序変更 */
+/* 順: 姓・名 → 姓(フリガナ) → 名(フリガナ) → メール → 誕生日 → メールマガジン → 規約 → ボタン */
+.form-vertical > .socialplus-form-field-group {
+  order: 1 !important;
+}
+
+.form-vertical > .socialplus-form-field:has(#customer_custom_fields_1_value) {
+  order: 2 !important;
+}
+
+.form-vertical > .socialplus-form-field:has(#customer_custom_fields_2_value) {
+  order: 3 !important;
+}
+
+.form-vertical > .socialplus-form-field:has(#customer_email) {
+  order: 4 !important;
+}
+
+.form-vertical > .socialplus-form-field:has(.socialplus-form-date-group) {
+  order: 5 !important;
+}
+
+.form-vertical > .socialplus-form-field:has(#customer_accepts_marketing) {
+  order: 6 !important;
+}
+
+.form-vertical > .socialplus-form-links {
+  order: 7 !important;
+}
+
+.form-vertical > .socialplus-form-submit {
+  order: 8 !important;
+}
