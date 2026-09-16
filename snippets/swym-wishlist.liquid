@@ -1,0 +1,133 @@
+{{ 'swym-wishlist.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  <div class="account__header page__header">
+      <h1 class="account__heading ff-heading fs-heading-2-base">{{ 'customer.wishlist.title' | t }}</h1>
+  </div>
+{% endcomment %}
+
+{% render 'icon-button' with small: true, icon: 'close' %}
+
+<header class="wishlist__header page__header">
+	<h1 class="wishlist__heading ff-heading fs-heading-2-base ta-c">{{ 'customer.wishlist.title' | t }}</h1>
+</header>
+{% comment %} {{ page.content }} {% endcomment %}
+
+<script>
+  function addCustomButtons() {
+    const items = document.querySelectorAll('swym-storefront-layout-item');
+
+    items.forEach((item) => {
+      if (item.querySelector('.custom-swym-button')) return;
+
+      const lid = item.closest('#swym-storefront-layout-items-container')?.getAttribute('data-lid'); // not correct lid per item
+      const epi = item.getAttribute('data-epi');
+      const empi = item.getAttribute('data-empi');
+      const du = item.getAttribute('data-du');
+
+      let product = { epi, empi, du };
+
+      const templateButton = document.querySelector('.icon-button-close');
+      const btn = templateButton.cloneNode(true);
+      btn.className = 'custom-swym-button icon__close';
+
+      btn.addEventListener('click', (e) => {
+
+        
+        const onSuccess = () => {
+          console.log('Item removed from wishlist');
+        };
+        const onError = () => {
+          console.log('Error removing item from wishlist');
+        };
+        window._swat.deleteFromList(lid, product, onSuccess, onError);
+      });
+
+      item.appendChild(btn);
+    });
+  }
+
+  function updateButtonText() {
+    const buttons = document.querySelectorAll('.swym-storefront-layout-grid-item-add-to-cart-button');
+    if (!buttons) return;
+
+    buttons.forEach((button) => {
+      const currentText = button.textContent?.trim();
+
+      if (currentText === 'カートに追加済み') return; // 'Added to Cart'
+
+      if (button.disabled) {
+        button.textContent = '在庫切れ'; // 'Out of Stock'
+      } else {
+        button.textContent = 'カートに追加'; // 'Add to Cart'
+      }
+    });
+  }
+
+  // Custom function to add Yotpo widgets to product cards
+  function addYotpoWidgets() {
+    if (!window.yotpoWidgetsContainer?.initWidgets) return;
+
+    // Select all product items in the Swym wishlist layout
+    const items = document.querySelectorAll('swym-storefront-layout-item');
+
+    items.forEach((item) => {
+      if (item.querySelector('.yotpo-widget-instance')) return;
+
+      const productId = item.getAttribute('data-empi') || item.getAttribute('data-epi');
+      if (!productId) return;
+
+      // Create the Yotpo widget element
+      const widget = document.createElement('div');
+      widget.className = 'yotpo-widget-instance';
+      widget.setAttribute('data-yotpo-instance-id', '1347640');
+      widget.setAttribute('data-yotpo-product-id', productId);
+      widget.setAttribute('data-yotpo-cart-product-id', productId);
+      widget.setAttribute('data-yotpo-section-id', 'index');
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'product__rating';
+      wrapper.appendChild(widget);
+
+      // Insert the widget after the product title
+      const titleElement = item.querySelector('.swym-storefront-layout-grid-item-title');
+      if (!titleElement) return;
+      titleElement.insertAdjacentElement('afterend', wrapper);
+    });
+
+    // Initialize Yotpo widgets
+    try {
+      window.yotpoWidgetsContainer.initWidgets();
+    } catch (error) {
+      console.warn('Yotpo widget initialization failed:', error);
+    }
+  }
+
+  function onAttributeChange(mutationsList) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'data-lid') {
+        const target = mutation.target;
+        const lidValue = target.getAttribute('data-lid');
+        addCustomButtons();
+        updateButtonText();
+        addYotpoWidgets();
+      }
+    }
+  }
+
+  const targetSelector = '.swym-storefront-layout-items-container';
+  function observeDataLidAttribute() {
+    const target = document.querySelector(targetSelector);
+    if (!target) return;
+
+    const observer = new MutationObserver(onAttributeChange);
+    observer.observe(target, {
+      attributes: true,
+      attributeFilter: ['data-lid'],
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    observeDataLidAttribute();
+  });
+</script>

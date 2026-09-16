@@ -1,0 +1,76 @@
+{{ 'custom-modal.css' | asset_url | stylesheet_tag }}
+
+<div data-section-id="{{ section.id }}">
+<div id="engraving-modal-cart" class="custom__modal" data-custom-modal>
+  <div class="custom__overlay" data-overlay></div>
+  <div class="custom__content">
+    <button type="button" class="custom__modal-close" data-close>
+      {% render 'icon-button' with small: true, icon: 'close' %}
+    </button>
+    <div class="custom__content__inner">
+      <h3 class="custom__modal-heading fs-body-150 fs-body-bold ta-c">
+        {{ 'cart.engraving.modal.title' | t }}
+      </h3>
+      <h3 class="custom__modal-sub-heading fs-body-150 fs-body-bold ta-c">
+        {{ 'cart.engraving.modal.allowed_characters_heading' | t }}
+      </h3>
+      <p class="engraving-modal__instructions ff-body fs-body-75">
+        {{ 'cart.engraving.modal.allowed_characters_description' | t }} 
+        <a href="/pages/engraving_service" class="btn btn--text-link"> {{ 'cart.engraving.modal.learn_more' | t }}</a>
+      </p>
+      <p id="engraving-modal-instructions" class="engraving-modal__instructions ff-body fs-body-75">{{ 'cart.engraving.modal.instructions' | t }}</p>
+
+      <div class="engraving-modal__select-wrapper">
+        <select id="engraving-line-1" class="input fs-body-75 filter-group__label engraving-modal__select">
+          {% assign phrases = 'cart.engraving.modal.select_phrase_list' | t | split: "," %}
+          <option value="" disabled selected>{{ 'cart.engraving.modal.select_phrase_placeholder' | t }}</option>
+          {% for p in phrases %}
+            <option value="{{ p }}">{{ p }}</option>
+          {% endfor %}
+        </select>
+        <div class="engraving-modal__select-arrow">
+          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.4507 0.665412C10.5289 0.588207 10.6344 0.544922 10.7444 0.544922C10.8543 0.544922 10.9598 0.588207 11.0381 0.665412C11.0766 0.703376 11.1072 0.748628 11.1281 0.798535C11.149 0.848442 11.1598 0.902007 11.1598 0.956112C11.1598 1.01022 11.149 1.06378 11.1281 1.11369C11.1072 1.1636 11.0766 1.20885 11.0381 1.24681L6.29327 5.94481C6.21502 6.02202 6.10951 6.0653 5.99957 6.0653C5.88964 6.0653 5.78413 6.02202 5.70587 5.94481L0.961073 1.24681C0.922523 1.20885 0.891909 1.1636 0.871013 1.11369C0.850117 1.06378 0.839355 1.01022 0.839355 0.956112C0.839355 0.902007 0.850117 0.848442 0.871013 0.798535C0.891909 0.748628 0.922523 0.703376 0.961073 0.665412C1.03933 0.588207 1.14484 0.544922 1.25477 0.544922C1.3647 0.544922 1.47022 0.588207 1.54847 0.665412L5.99987 4.95001L10.4507 0.665412Z" fill="#B3975F"/>
+          </svg>
+        </div>
+      </div>
+      <div class="engraving-modal__input-wrapper">
+        <input
+          type="text"
+          id="engraving-line-2"
+          class="input engraving-modal__engraving-input fs-body-75"
+          inputmode="text"
+          maxlength="10"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          placeholder="{{ 'cart.engraving.modal.custom_text_placeholder' | t }}"
+        >
+        <div id="engraving-line-2-counter" class="engraving-modal__input-counter"></div>
+      </div>
+      <div class="engraving-modal__input-wrapper">
+        <input
+          type="text"
+          id="engraving-line-3"
+          class="input engraving-modal__engraving-input fs-body-75"
+          inputmode="text"
+          maxlength="10"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          placeholder="{{ 'cart.engraving.modal.custom_text_placeholder' | t }}"
+        >
+        <div id="engraving-line-3-counter" class="engraving-modal__input-counter"></div>
+      </div>
+      <div class="modal__actions">
+        <button id="engraving-save" type="button" class="btn btn--full btn--primary" data-save>
+          {{ 'cart.engraving.modal.submit_button' | t }}
+        </button>
+        <button type="button" class="btn btn--text-link" data-remove>
+          {{ 'cart.engraving.modal.remove_button' | t }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

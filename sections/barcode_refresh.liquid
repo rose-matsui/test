@@ -1,0 +1,112 @@
+{%- if template == 'customers/account' -%}
+  <script src="{{ 'JsBarcode.code128.min.js' | asset_url }}" defer></script>
+  <script defer>
+    window.addEventListener('load', () => {
+      if (typeof JsBarcode !== 'undefined') {
+        JsBarcode(".barcode").init();
+      }
+    });
+  </script>
+{% endif %}
+
+<script>
+  const MAX_TRIES = 30;
+  function isCegidIdPresent(htmlString = null) {
+    let container;
+
+    if (htmlString) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(htmlString, 'text/html');
+      container = doc.body;
+    } else {
+      container = document.body;
+    }
+
+    const barcode = container.querySelector('.barcode[jsbarcode-value]');
+    if (barcode) {
+      const value = barcode.getAttribute('jsbarcode-value');
+      return value && value.trim() !== '';
+    }
+
+    return false;
+  }
+
+  function renderBarcodes(context = document) {
+    if (typeof JsBarcode !== 'undefined') {
+      const barcodes = context.querySelectorAll('.barcode');
+      barcodes.forEach(el => JsBarcode(el).init());
+
+      const loader = context.querySelector('#barcode-loader');
+      const container = context.querySelector('#barcode-container');
+      if (loader) loader.style.display = 'none';
+      if (container) container.style.display = 'block';
+    }
+  }
+
+  function replaceSection(fullSectionId, html) {
+    const oldSection = document.querySelector(`#shopify-section-${fullSectionId}`);
+    if (!oldSection) return;
+
+    const temp = document.createElement('div');
+    temp.innerHTML = html;
+
+    const newSection = temp.querySelector(`#shopify-section-${fullSectionId}`);
+    if (!newSection) return;
+
+    oldSection.replaceWith(newSection);
+    renderBarcodes(newSection);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.__cegidPollingStarted) return;
+    window.__cegidPollingStarted = true;
+
+    const wrapper = document.getElementById('barcode');
+    if (!wrapper) return;
+
+    const fullSectionId = wrapper.dataset.sectionId;
+    const loader = wrapper.querySelector('#barcode-loader');
+    const fallback = wrapper.querySelector('#barcode-fallback');
+
+    let tries = 0;
+
+    const poll = async () => {
+      if (isCegidIdPresent()) {
+        clearInterval(interval);
+        renderBarcodes();
+        return;
+      }
+
+      try {
+        const res = await fetch(`/sections?sections=${fullSectionId}`);
+        const data = await res.json();
+
+        if (data[fullSectionId]) {
+          const html = data[fullSectionId];
+
+          if (isCegidIdPresent(html)) {
+            clearInterval(interval);
+            replaceSection(fullSectionId, html);
+            return;
+          }
+        }
+
+        tries++;
+
+        if (tries >= MAX_TRIES) {
+          clearInterval(interval);
+          if (loader) loader.style.display = 'none';
+          if (fallback) fallback.style.display = 'block';
+        }
+
+      } catch (err) {
+        console.error('Polling error:', err);
+        clearInterval(interval);
+        if (loader) loader.style.display = 'none';
+        if (fallback) fallback.style.display = 'block';
+      }
+    };
+
+    const interval = setInterval(poll, 1000);
+  });
+</script>

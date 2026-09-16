@@ -1,0 +1,82 @@
+{{ 'custom-modal.css' | asset_url | stylesheet_tag }}
+
+
+<div id="in-the-collection-modal">
+  <div data-custom-modal class="custom__modal">
+    <div data-overlay class="custom__overlay"></div>
+    <div class="custom__content pdp_collection_modal">
+      <button type="button" class="custom__modal-close " data-close>{% render 'icon-button' with small: true, icon: 'close' %}</button>
+
+      <h2 class="custom__modal-heading">{{ collection_meta.title }}</h2>
+      <div class="custom__body">
+        <div class="custom__details" data-collection-items-list>
+          <p id="collection-loading" class="loading-collection">…</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% comment %} Uses global custom modal `custom-modal.js` via ES module {% endcomment %}
+<script type="module">
+import { initCustomModal } from "{{ 'custom-modal.js' | asset_url }}";
+
+initCustomModal('{{ section.id }}', {
+  handleOpen: (openButton, modalElement) => {
+
+    const container = modalElement.querySelector('[data-collection-items-list]');
+    const loadingElement = document.getElementById('collection-loading');
+    const handle = openButton.dataset.collectionHandle;
+    const currentHandle = "{{ product.handle }}"
+
+    if (container.dataset.fetched) return;
+
+    loadingElement.style.display = '';
+    
+    fetch(`/collections/${handle}/products.json`)
+      .then(r => r.json())
+      .then(({ products }) => {
+        loadingElement.style.display = 'none';
+        const toShow = products.filter(p => p.handle !== currentHandle);
+        const formatCurrency = new Intl.NumberFormat(
+          navigator.language || '{{ shop.locale }}',
+          { style: 'currency', currency: '{{ shop.currency }}' }
+        );
+
+        toShow.forEach(product => {
+          const imgSrc = (product.images && product.images.length) ? product.images[0].src : '';
+          const price = product.price_min || product.variants[0].price;
+          const url = `/products/${product.handle}`;
+
+          const html = `
+            <a href="${url}" class="collection-product-link">
+              <div class="collection-product-item">
+                ${ imgSrc
+                  ? `<img src="${imgSrc}" class="collection-product-image" width="136" height="136">`
+                  : ''
+                }
+                <div class="collection-product-text">
+                  <p class="collection-product-title">${product.title}</p>
+                  <div class="collection-product-price">
+                    <p class="main-price">
+                      ${formatCurrency.format(parseFloat(price))}
+                    </p>
+                    <p class="taxes-notice">(税込)</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          `;
+          container.insertAdjacentHTML('beforeend', html);
+        });
+
+        container.dataset.fetched = 'true';
+      })
+      .catch(err => {
+        console.error('Collection load error:', err);
+        container.innerHTML = '<p class="error">could not load products</p>';
+      });
+  }
+});
+</script>

@@ -1,0 +1,1075 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_R64DQa": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_DBrdNm": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Sustainability",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "subheading_gqcUzd": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "SABONが大切にしているサスティナビリティ",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DBrdNm",
+        "subheading_gqcUzd"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 55,
+        "image": "shopify://shop_images/mv_5327737f-b72e-4681-aa59-fbbe517d8acd.jpg",
+        "image_mobile": "shopify://shop_images/mv-mobile.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#212121",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_K3tP3H": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fiaE97": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SABONは1997年の創業当初より、人にも環境にも優しい製品づくりを大切にしてきました。これからも地球環境に敬意を払い、自然に配慮した取り組みを広げていきます。</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_fiaE97"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "scroll_to_buttons_zqBqJf": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_PVQ3z7": {
+          "type": "button",
+          "settings": {
+            "button_label": "私たちのコミットメント",
+            "target_title": "私たちのコミットメント"
+          }
+        },
+        "button_BcBVWT": {
+          "type": "button",
+          "settings": {
+            "button_label": "自然に配慮した商品",
+            "target_title": "環境に配慮したネイチャーフレンドリーアイテム"
+          }
+        },
+        "button_VjytPm": {
+          "type": "button",
+          "settings": {
+            "button_label": "空きガラス容器で生活を豊かに",
+            "target_title": "空きガラス容器で生活を豊かに"
+          }
+        },
+        "button_UNyxHW": {
+          "type": "button",
+          "settings": {
+            "button_label": "会員様限定ネイチャーマイレージクラブ",
+            "target_title": "Sabon Customer Membership"
+          }
+        }
+      },
+      "block_order": [
+        "button_PVQ3z7",
+        "button_BcBVWT",
+        "button_VjytPm",
+        "button_UNyxHW"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h6",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 190,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_TTRjH3": {
+      "type": "rich-text",
+      "blocks": {
+        "accent_n7arzM": {
+          "type": "accent",
+          "settings": {
+            "accent": "Our Commitment"
+          }
+        },
+        "heading_CR6Hxz": {
+          "type": "heading",
+          "settings": {
+            "title": "私たちのコミットメント",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "spacer_7aUHd9": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "text_xBEh4m": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SABONが地球環境に配慮して、大切にしてきたことやアクションをご紹介します。</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_idexc7": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "image_FymbqJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_cm1.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 200
+          }
+        },
+        "text_7riUFj": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>1. SABONの心と感性が、<br/>人と自然をつなぐ</h3><p>1997年の創業当初よりSABONは環境にも配慮した製品を作り続けてきました。<br/>常に“ナチュラル”であることを追求するSABONでは、ヴィーガン処方の製品開発や自然由来のアルコールや防腐剤を使用していることも製品づくりの上で欠かせないもの。<br/>使うたび、そして蓋を開けるたびに、安らぎのひとときをお届けしたいーそんなSABONの心と感性が、人と自然を繋ぎます。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_GnQp6A": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "image_mVryw9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_cm2.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 200
+          }
+        },
+        "text_aNrJ8Q": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>2. 地球の豊かな水を守るために</h3><p>SABON直営店内でいつもお客様をお迎えするウォータースタンド。<br/>特別な存在感と独特の温かみを醸し出し、製品をご自身の肌で実感していただくためのSABON独自の体験でもあります。<br/>2021年5月からこのウォータースタンドに特別なアタッチメントを順次取り付け、水の使用量を従来の50％に減らし、地球の貴重な水源を守るサスティナブルな取り組みを行います。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_hAjCUA": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "image_KiGDPp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_cm3.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 200
+          }
+        },
+        "text_Rghttn": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>3. 地球の緑と、澄んだ<br/>空気を守るために</h3><p>地球の緑と澄んだ空気を守るという観点から、新たに以下の取り組みを行います。また、この取り組みにご参加いただくと、SABONネイチャーマイレージクラブのネイチャーマイルとして加算されます。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "accent_n7arzM",
+        "heading_CR6Hxz",
+        "spacer_7aUHd9",
+        "text_xBEh4m",
+        "spacer_idexc7",
+        "image_FymbqJ",
+        "text_7riUFj",
+        "spacer_GnQp6A",
+        "image_mVryw9",
+        "text_aNrJ8Q",
+        "spacer_hAjCUA",
+        "image_KiGDPp",
+        "text_Rghttn"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "collection_list_slider_8CmT3n": {
+      "type": "collection-list-slider",
+      "name": "t:sections.collection_list_slider.presets.name",
+      "settings": {
+        "heading": "Nature Friendly Items",
+        "heading_tag": "h2",
+        "subheading": "<h4>環境に配慮した<br/>ネイチャーフレンドリーアイテム</h4><p>繰り返し使えるサボン オリジナルアイテムを販売中</p>",
+        "link": "",
+        "link_text": "",
+        "columns": "4",
+        "mobile_columns": "2",
+        "collection_list": [],
+        "custom_thumbnail": false,
+        "collection_listing_aspect_ratio": "square",
+        "label_style": "overlay",
+        "overlay_hide_arrow": false,
+        "bold_text": false,
+        "overlay_title_background_style": "gradient",
+        "overlay_text_color": "#fff",
+        "overlay_title_background": "#000000",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_gVnYMf": {
+      "type": "rich-text",
+      "blocks": {
+        "accent_QWYAti": {
+          "type": "accent",
+          "settings": {
+            "accent": "Reuse Ideas for Glass"
+          }
+        },
+        "heading_YyWytK": {
+          "type": "heading",
+          "settings": {
+            "title": "空きガラス容器で生活を豊かに",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_y4wQD4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SABON商品の空きガラス容器のリサイクルは生活を豊かに、彩りを与えてくれます。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_nNBGzR": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "image_Vg9pfF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_glass.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 500,
+            "image_size_mobile": 350
+          }
+        },
+        "text_Hf4WzU": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>REUSE.  RENEW.  RELOVE.</strong></h4><p>製品の使用後、<br/>ガラス容器を再利用し</p><p>インテリアやフラワーベースとして<br/>新たな命を吹き込みながら</p><p>再び生活を潤し、愛を生み出す</p><p>未来へとつながるサイクルを紡ぎだす、地球に優しい活動を。</p><h4>Earth day is everyday.</h4>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_Yzf3kA": {
+          "type": "spacer",
+          "settings": {
+            "space": 64
+          }
+        },
+        "text_ygTQQN": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>REUSE IDEAS FOR GLASS [1]</h3><h6>空きガラス容器に<br/>⼊れる想い</h6><p>SABONは創業当初よりデザインの良いガラス瓶を見つけ、その瓶に似合うアイテムは何か想像しながら新しい商品を生み出してきました</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "image_7PDY8E": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_glass1.webp",
+            "content_width": "custom",
+            "forced_image_alignment": true,
+            "image_size": 500,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_mP64Y3": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "text_X3x7Dy": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>REUSE IDEAS FOR GLASS [2]</h3><p><strong>ガラス瓶だから、<br/>最後まで楽しめる</strong></p><p>SABONの商品は、瓶を開けるたびに広がる香りとお肌に乗せた瞬間から心地よいテクスチャーで最後まで飽きずにお使いいただけます。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "image_BAP3gJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_glass2.png",
+            "content_width": "custom",
+            "forced_image_alignment": true,
+            "image_size": 500,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_7cekaR": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "text_XMLXqE": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>REUSE IDEAS FOR GLASS [3]</h3><p><strong>使い終わっても、<br/>暮らしを豊かに</strong></p><p>「中身を使い終わった後の空き瓶をインテリアとして飾ったら、暮らしがより豊かになるのでは」SABONならではのこの想いも、SABONの商品がガラス瓶に入っている理由の一つです。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "image_mJeaWQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_glass3.webp",
+            "content_width": "custom",
+            "forced_image_alignment": true,
+            "image_size": 500,
+            "image_size_mobile": 350
+          }
+        }
+      },
+      "block_order": [
+        "accent_QWYAti",
+        "heading_YyWytK",
+        "text_y4wQD4",
+        "spacer_nNBGzR",
+        "image_Vg9pfF",
+        "text_Hf4WzU",
+        "spacer_Yzf3kA",
+        "text_ygTQQN",
+        "image_7PDY8E",
+        "spacer_mP64Y3",
+        "text_X3x7Dy",
+        "image_BAP3gJ",
+        "spacer_7cekaR",
+        "text_XMLXqE",
+        "image_mJeaWQ"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_VePJHj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kw4LE4": {
+          "type": "heading",
+          "settings": {
+            "title": "使い終わったガラス容器回収のご案内",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_7nnx8X": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ご使用済ガラス容器の回収を承ります。<br/>ご愛用いただいた製品の空きガラス容器は、SABONが責任をもって店舗のディスプレイや<br/>コラボレーションイベントなどでアップサイクルするほか、<br/>提携施設にて適正に加工され、リサイクル可能な資源として今後も活用されます。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_inrHYt": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "image_QEbgDR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_green.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 200
+          }
+        },
+        "spacer_4qfDGh": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "text_TwEkEy": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>対象店舗</h6><p>全国のSABON直営店舗<br/>※フルーツギャザリング、@cosme TOKYO、POP UP SHOP、アウトレット各店を除く</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_WxRFGK": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "text_EFKMWc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ガラス空き容器を店頭にお持ちくださったお客様には点数に関わらず、<br/>また、他のネイチャーチャレンジにご協力いただいた場合も、<br/>SABONネイチャーマイレージクラブにて１マイルを付与いたします。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kw4LE4",
+        "text_7nnx8X",
+        "spacer_inrHYt",
+        "image_QEbgDR",
+        "spacer_4qfDGh",
+        "text_TwEkEy",
+        "spacer_WxRFGK",
+        "text_EFKMWc"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "scroll_to_buttons_Ce4NNq": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_PqecCr": {
+          "type": "button",
+          "settings": {
+            "button_label": "詳細はこちら",
+            "target_title": "Nature Challenges"
+          }
+        }
+      },
+      "block_order": [
+        "button_PqecCr"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 300,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_tUQNid": {
+      "type": "rich-text",
+      "blocks": {
+        "text_g37XaY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>※スプレーノズルなどパーツが取り外せない製品の容器や他社製品は回収対象外となります。</p><p>※空きガラス容器を洗浄した上、フタやポンプを外してお持ちいただきますようご協力をお願いいたします。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_g37XaY"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_FpBTzm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UFARMm": {
+          "type": "heading",
+          "settings": {
+            "title": "Sabon Customer Membership",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "image_m4KqPz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_green.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 200
+          }
+        },
+        "spacer_MA9pid": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "subheading_CGc7aW": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "SABONと一緒に地球に優しいアクションをSABON ネイチャーマイレージクラブに是非ご参加ください",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_mM3CiT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>お客様と共に限りある資源を未来へつないでゆくため自然保護につながるアクションへご協力ください</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_VT7Apm": {
+          "type": "spacer",
+          "settings": {
+            "space": 64
+          }
+        },
+        "heading_HJhAFE": {
+          "type": "heading",
+          "settings": {
+            "title": "Nature Challenges",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_eeAQ8t": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1チャレンジ以上のご協力につき、１マイルを差し上げます。貯めていただいたマイル数に応じて、オリジナルアイテムと交換いたします。</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UFARMm",
+        "image_m4KqPz",
+        "spacer_MA9pid",
+        "subheading_CGc7aW",
+        "text_mM3CiT",
+        "spacer_VT7Apm",
+        "heading_HJhAFE",
+        "text_eeAQ8t"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_dAH49i": {
+      "type": "rich-text",
+      "blocks": {
+        "text_wzNWgw": {
+          "type": "text",
+          "settings": {
+            "text": "<ol><li>空きガラス容器のお持ち込み</li><li>MYスプーン、MYバッグ、MYハンカチのご使用</li><li>ネイチャーフレンドリーアイテムのご購入（ハートスプーン、エコトートバッグ、ハンカチタオル）</li><li>ラッピングまたは製品説明書ご不要のお申し出</li></ol><p></p><p><strong>ご利用における注意事項</strong></p><ul><li>クラブに入会いただくためには、SABON本会員であることが条件となります。</li><li>マイル加算には、LINEを使用します。</li><li>マイルは1回のご来店・ご購入につき１マイルまでが付与上限です。１回のご来店・ご購入で複数のネイチャーチャレンジにご協力いただいても、１マイルのみを付与させていただきます。</li><li>マイルは取得から１年間が有効期限となります。</li><li>３マイル目を付与されたお客様は、その場にてギフトと交換が可能です。</li><li>店舗の在庫状況によってはお好きな雑貨が選べないこともございますので、ご了承ください。</li></ul><p>〈①について〉</p><ul><li>空きガラス容器は全国のSABON直営店舗にて回収いたします。<br/>フルーツギャザリング、@cosme TOKYO、POP UP SHOP、アウトレット各店は対象外となります。</li><li>スプレーノズルなどパーツが取り外せない製品の容器や他社製品は回収対象外となります。</li><li>空きガラス容器を洗浄した上、フタやポンプを外してお持ちくださいますようご協力をお願いいたします。</li></ul><p>〈②～④について〉</p><ul><li>直営店舗で当社スタッフが、リストの活動どれかひとつにご協力いただいたことを確認の上、店内にてマイルを加算いたします。</li><li>直営店舗で商品を購入していただくことが条件となりますので、ご来店のみのお客様や公式オンラインストアなどでのご購入の場合には加算することはできません。</li></ul>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_wzNWgw"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_hczbip": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_C6VaYB": {
+          "type": "heading",
+          "settings": {
+            "title": "ご参加にはLINE ID連携が必要です",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "spacer_bKxxKy": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "text_U3Cpzx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ネイチャーマイレージクラブの他、様々な会員様向けサービスをご用意しています。心と感性がときめくSABONをご体感ください。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "button_6kz9KM": {
+          "type": "button",
+          "settings": {
+            "link": "https://page.line.me/830exmbx?openQrModal=true",
+            "link_text": "ともだち追加・ログイン",
+            "button_style": "btn--primary"
+          }
+        },
+        "text_CEVamh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>LINE ID連携にはサボンLINE公式アカウントの友だち追加が必要です。</p><p><a href=\"https://www.sabon.co.jp/customer_membership/#cooperation\">LINE ID連携詳細はこちら ＞</a></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_C6VaYB",
+        "spacer_bKxxKy",
+        "text_U3Cpzx",
+        "button_6kz9KM",
+        "text_CEVamh"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_YXehNL": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_YfDjpE": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/gift1_629fb7bd-94d7-45f5-971f-65adca50bef7.webp",
+            "image_width": 50,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h6",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>ハートスプーン</strong></p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_BMC38z": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/gift2_3e3a37e1-a109-4029-bb51-081d57d95697.webp",
+            "image_width": 50,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>RELOVE FLOWER<br/>ポプリ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_EmtVJX": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/gift3_2ee7408c-2943-47f3-b92f-8b1140763aff.webp",
+            "image_width": 50,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>コットンバッグfor ボディスクラブ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_YfDjpE",
+        "image_column_BMC38z",
+        "image_column_EmtVJX"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "Nature Friendly Gifts",
+        "heading_tag": "h2",
+        "subheading": "<p>ご協力への感謝を込めて、貯まったマイル数に応じてオリジナルギフトと交換いたします。</p><p><strong>3マイル</strong></p>",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "multi_column_KMqqXp": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_bGBcy9": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/gift5_6a1ba883-dffa-499f-be4c-60978bd47b37.webp",
+            "image_width": 50,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h6",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>エコトートバッグ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_Wyt43F": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/gift6_c6a78696-fb82-4b66-b8e7-63e05e487695.webp",
+            "image_width": 50,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>タオルハンカチ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_7BMTKF": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/gift7_a0830477-9694-46e9-9408-5e5febc09794.webp",
+            "image_width": 50,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>オーバルティンボックス</strong></p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_97XwJt": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/gift9_b84624bd-0d0f-4255-9770-c6eef2d59137.webp",
+            "image_width": 50,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>セラミック バスタブ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_bGBcy9",
+        "image_column_Wyt43F",
+        "image_column_7BMTKF",
+        "image_column_97XwJt"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "<p><strong>6マイル</strong></p>",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "4",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "rich_text_XEhf8j": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gaAjfG": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>※アイテムは予告なく変更になる場合があります。予めご了承ください。</em></p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_gaAjfG"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_kPgMxc": {
+      "type": "rich-text",
+      "blocks": {
+        "text_pMdzGU": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>ネイチャーマイレージクラブはSABON直営店限定のサービスです<br/><a href=\"https://www.sabon.co.jp/store\">お近くの店舗はこちら ＞</a></h5>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_pMdzGU"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_R64DQa",
+    "rich_text_K3tP3H",
+    "scroll_to_buttons_zqBqJf",
+    "rich_text_TTRjH3",
+    "collection_list_slider_8CmT3n",
+    "rich_text_gVnYMf",
+    "rich_text_VePJHj",
+    "scroll_to_buttons_Ce4NNq",
+    "rich_text_tUQNid",
+    "rich_text_FpBTzm",
+    "rich_text_dAH49i",
+    "rich_text_hczbip",
+    "multi_column_YXehNL",
+    "multi_column_KMqqXp",
+    "rich_text_XEhf8j",
+    "rich_text_kPgMxc"
+  ]
+}

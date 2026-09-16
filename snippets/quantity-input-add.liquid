@@ -1,0 +1,101 @@
+<div
+  class="quantity-input-add"
+  data-variant-id="{{ id }}"
+  data-max-allowed="{{ max_allowed }}"
+>
+  <button
+    type="button"
+    class="quantity-input-add__button quantity-subtract"
+    aria-label="Decrease quantity"
+    {% if initial_value == 0 or initial_value == '0' %}disabled{% endif %}
+  >
+    {% render 'icon', icon: 'minus-small' %}
+  </button>
+
+  <input
+    type="number"
+    value="{{ initial_value | default: 0 }}"
+    min="0"
+    class="quantity-input-add__input"
+    aria-label="Quantity"
+  >
+
+  <button
+    type="button"
+    class="quantity-input-add__button quantity-add"
+    aria-label="Increase quantity"
+  >
+    {% render 'icon', icon: 'plus-small' %}
+  </button>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.quantity-input-add').forEach(wrapper => {
+      // Prevent double initialization
+      if (wrapper.dataset.quantityInputInitialized === '1') return;
+      wrapper.dataset.quantityInputInitialized = '1';
+
+      const input = wrapper.querySelector('.quantity-input-add__input');
+      const addBtn = wrapper.querySelector('.quantity-add');
+      const subBtn = wrapper.querySelector('.quantity-subtract');
+      const variantId = parseInt(wrapper.dataset.variantId);
+      const maxAllowed = parseInt(wrapper.dataset.maxAllowed);
+      const section = wrapper.closest('.quantity-input-add-wrapper');
+  
+      if (!variantId || !input || !addBtn || !subBtn) return;
+  
+      // Disable add button if at or over limit
+      if (parseInt(input.value) >= maxAllowed) {
+        addBtn.disabled = true;
+        addBtn.classList.add('is-disabled');
+      }
+  
+      addBtn.addEventListener('click', async () => {
+        if (parseInt(input.value) >= maxAllowed) return;
+  
+        if (section) {
+          section.style.pointerEvents = 'none';
+          section.style.opacity = '0.5';
+        }
+
+        await fetch('/cart/add.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({ id: variantId, quantity: 1 })
+        });
+  
+        location.reload();
+      });
+  
+      subBtn.addEventListener('click', async () => {
+        const cart = await fetch('/cart.js').then(r => r.json());
+        const item = cart.items.find(i => i.variant_id === variantId);
+        if (!item) return;
+  
+        const newQty = item.quantity - 1;
+        if (newQty < 0) return;
+
+        if (section) {
+          section.style.pointerEvents = 'none';
+          section.style.opacity = '0.5';
+        }
+  
+        await fetch('/cart/change.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({ id: item.key, quantity: newQty })
+        });
+  
+        location.reload();
+      });
+    });
+  });
+</script>
+  

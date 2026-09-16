@@ -1,0 +1,325 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_R64DQa": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_DBrdNm": {
+          "type": "heading",
+          "settings": {
+            "title": "Make Your Skin Fall in Joy",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "accent_KN6pXp": {
+          "type": "accent",
+          "settings": {
+            "accent": "Body by Sabon"
+          }
+        },
+        "subheading_gqcUzd": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "豊富な種類のSABONのモイスチャライザー",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_DErkX4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>1/16(Thu)~キャンペーン開催！</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "image_NzQbpy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/kv_label.webp",
+            "image_size": 240,
+            "image_size_mobile": 230
+          }
+        }
+      },
+      "block_order": [
+        "heading_DBrdNm",
+        "accent_KN6pXp",
+        "subheading_gqcUzd",
+        "text_DErkX4",
+        "image_NzQbpy"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 55,
+        "image": "shopify://shop_images/kv_c48ea9b2-a8e7-48f4-8004-45283283c8be.jpg",
+        "image_mobile": "shopify://shop_images/kv-mobile_f3eb4de0-42d1-4169-9523-435da97074dc.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "flex-start_flex-start",
+        "text_color": "#212121",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_K3tP3H": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fiaE97": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>SABONのファンタジーフェアへようこそ。<br/>喜びとセルフケアが出会う場所</h4>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_qBYMea": {
+          "type": "text",
+          "settings": {
+            "text": "<p>五感を満たす自然由来の成分と心地よい香りを体験しながら、<br/>毎日のケアを贅沢な時間に変えましょう。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_Tc4zHa": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "image_a7hHRU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_item_lineup.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 300
+          }
+        },
+        "spacer_Jxpw6W": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        }
+      },
+      "block_order": [
+        "text_fiaE97",
+        "text_qBYMea",
+        "spacer_Tc4zHa",
+        "image_a7hHRU",
+        "spacer_Jxpw6W"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_collection_slider_eR8gz6": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "collection_HnBpTC": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "",
+            "collection_name": "Second collection"
+          }
+        }
+      },
+      "block_order": [
+        "collection_HnBpTC"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "Moisturizer Items",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 8,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_A7Yd8h": {
+      "type": "rich-text",
+      "blocks": {
+        "text_eY4AWN": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>*1オリーブ果実油（保湿） *2オリーブ葉エキス（保湿） *3ツボクサ葉エキス（整肌）</em></p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_eY4AWN"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_WChH9h": {
+      "type": "rich-text",
+      "blocks": {
+        "spacer_rkj7fk": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "heading_MkCJWD": {
+          "type": "heading",
+          "settings": {
+            "title": "あなたにぴったりのモイスチャライザーを見つけて",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "image_8CQPFz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_moisturizer.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 200
+          }
+        },
+        "button_WWiU6x": {
+          "type": "button",
+          "settings": {
+            "link": "https://www.sabon.co.jp/products/Bath_Bodycare/Body_Cream_Body_Milk/",
+            "link_text": "モイスチャライザーはこちら",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_rkj7fk",
+        "heading_MkCJWD",
+        "image_8CQPFz",
+        "button_WWiU6x"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_F4QQ8H": {
+      "type": "rich-text",
+      "blocks": {
+        "spacer_PLVAtQ": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "heading_NQVzJP": {
+          "type": "heading",
+          "settings": {
+            "title": "SABON公式アカウント友だち募集中",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_V3XF6Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>新商品やキャンペーンの情報をお届けしています。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "button_c6VqFp": {
+          "type": "button",
+          "settings": {
+            "link": "https://page.line.me/830exmbx?openQrModal=true",
+            "link_text": "友だち追加",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_PLVAtQ",
+        "heading_NQVzJP",
+        "text_V3XF6Q",
+        "button_c6VqFp"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_R64DQa",
+    "rich_text_K3tP3H",
+    "featured_collection_slider_eR8gz6",
+    "rich_text_A7Yd8h",
+    "rich_text_WChH9h",
+    "rich_text_F4QQ8H"
+  ]
+}

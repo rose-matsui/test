@@ -1,0 +1,57 @@
+{% comment %}
+  Cegid Id from test environment: SB00000039.
+  Must be set as a customer metafield "custom.cegid_id".
+{% endcomment %}
+<section class="customer-barcode customer account page account-section account-section--main">
+  <div class="page__inner">
+    <h3 class="barcode-title ff-heading fs-body-75">会員バーコード</h3>
+    <div id="barcode" data-section-id="{{ section.id }}">
+      {% if customer %}
+        <div id="barcode-loader">
+          {{ 'customer.barcode.loading' | t }}
+          <br/>
+          {{ 'customer.barcode.please_wait' | t }}
+          {% render 'loader' %}
+        </div>
+        <div id="barcode-container" style="display: none;">
+          {% assign cegid_id = customer.metafields.custom.cegid_id %}
+          {% if cegid_id %}
+            <div class="barcode-name">{{ customer.last_name }} {{ customer.first_name }}</div>
+            <svg class="barcode"
+              jsbarcode-format="CODE128"
+              jsbarcode-value="{{ cegid_id.value }}"
+              jsbarcode-height="66"
+              jsbarcode-width="2"
+              jsbarcode-fontSize="16"
+              jsbarcode-background="#FFFEF9">
+            </svg>
+          {% endif %}
+        </div>
+        <div id="barcode-fallback" style="display: none;">
+          {{ 'customer.barcode.not_found' | t }}
+          <br/>
+          {{ 'customer.barcode.please_reload' | t }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+  .barcode-name {
+    margin: var(--spacing-2) 0;
+  }
+  #barcode .loader{
+    height: 20px;
+  }
+  #barcode {
+    background: #FFFEF9;
+    padding: var(--spacing-8);
+    border: 1px solid var(--color-border);
+  }
+  #barcode-fallback,
+  #barcode-loader,
+  #barcode-container {
+    text-align: center;
+  }
+{% endstylesheet %}

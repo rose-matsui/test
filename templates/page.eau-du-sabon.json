@@ -1,0 +1,597 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_R64DQa": {
+      "type": "image-hero",
+      "blocks": {
+        "accent_6CH4Fq": {
+          "type": "accent",
+          "settings": {
+            "accent": "ふわりと舞うそよ風のように全身を包み込み、心に寄り添うオードトワレ"
+          }
+        },
+        "heading_DBrdNm": {
+          "type": "heading",
+          "settings": {
+            "title": "Eau de Sabon",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "image_JULKVq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/st.webp",
+            "image_size": 240,
+            "image_size_mobile": 200
+          }
+        }
+      },
+      "block_order": [
+        "accent_6CH4Fq",
+        "heading_DBrdNm",
+        "image_JULKVq"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 80,
+        "image": "shopify://shop_images/mv_8aaabd45-301c-41a0-b777-c3d8324e362e.jpg",
+        "image_mobile": "shopify://shop_images/mv_1.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#212121",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "scroll_to_buttons_zqBqJf": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_PVQ3z7": {
+          "type": "button",
+          "settings": {
+            "button_label": "お気に入りの香りを見つける",
+            "target_title": "Fragrance Finder"
+          }
+        },
+        "button_BcBVWT": {
+          "type": "button",
+          "settings": {
+            "button_label": "香りを重ね楽しむペアリングとは？",
+            "target_title": "About Pairing"
+          }
+        },
+        "button_VjytPm": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Click me",
+            "target_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_PVQ3z7",
+        "button_BcBVWT",
+        "button_VjytPm"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "気持ちを切り替えたい時や、ゆったりと過ごすおうち時間にも",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 210,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    },
+    "multi_column_xA38FM": {
+      "type": "multi-column",
+      "blocks": {
+        "column_qFf37V": {
+          "type": "column",
+          "settings": {
+            "accent": "",
+            "heading": "心に寄り添う9種の香り",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>やわらかく軽やかな香り立ちで、ペアリングにも最適</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "column_UmNJRw": {
+          "type": "column",
+          "settings": {
+            "accent": "",
+            "heading": "肌のことを大切に考えたナチュラル処方",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>トウモロコシ由来のナチュラルなアルコール*を使用したヴィーガン処方**</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "column_BPyFL9": {
+          "type": "column",
+          "settings": {
+            "accent": "",
+            "heading": "いつでも私らしく、選べる2サイズ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ラグジュアリーな佇まいの80mLと、気軽に持ち運べる30mLの2サイズ展開</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "column_qFf37V",
+        "column_UmNJRw",
+        "column_BPyFL9"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "What is “EAU de SABON”?",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "scroll_to_buttons_KgiNiX": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_FnR4YC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Energizing",
+            "target_title": "Energizing"
+          }
+        },
+        "button_bBrkfD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Refreshing",
+            "target_title": "Refreshing"
+          }
+        },
+        "button_jXpXPr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Relaxing",
+            "target_title": "Relaxing"
+          }
+        }
+      },
+      "block_order": [
+        "button_FnR4YC",
+        "button_bBrkfD",
+        "button_jXpXPr"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "Fragrance Finder",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 100,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_slider_wiUeNw": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "product_list_8XWU9c": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "eau-de-sabon-ginger-orange-30ml"
+            ],
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "product_list_8XWU9c"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "Energizing",
+        "heading_tag": "h2",
+        "subheading": "<p><strong>Item Lineup</strong></p><p>弾けるように明るく、アクセントになる香り<br/>1日の始まりやスポーツをするときに</p><h5>Ginger Orange</h5><p>豊かな果実感とスパイスが紡ぐ<br/>大人のフルーティ</p><h5>Citrus Blossom</h5><p>咲き誇る花々と陽気な果実の<br/>コンビネーション</p>",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_slider_UfnPGD": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "product_list_N3wDCh": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "eau-de-sabon-delicate-jasmine-30ml",
+              "eau-de-sabon-green-rose-30ml",
+              "eau-de-sabon-white-tea-30ml"
+            ],
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "product_list_N3wDCh"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "Refreshing",
+        "heading_tag": "h2",
+        "subheading": "<p><strong>Item Lineup</strong></p><p>自然を感じる、清々しく伸びやかな香り<br/>デイタイムの気持ち切り替えに</p><h5>Delicate Jasmine</h5><p>月明かりの下の澄んだ空気のような凛としたクリーンフローラル</p><h5>Green Rose</h5><p>自然の息吹を感じる<br/>咲きたてのフレッシュローズ</p><h5>White Tea</h5><p>陽だまりのように安らぐ、<br/>優美なシトラスノート</p>",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_slider_V3qHDH": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "product_list_9E7aJK": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "eau-de-sabon-patchouli-lavender-vanilla-30ml"
+            ],
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "product_list_9E7aJK"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "Relaxing",
+        "heading_tag": "h2",
+        "subheading": "<p><strong>Item Lineup</strong></p><p>静けさを感じる、深くゆったりとした香り<br/>ベッドタイムフレグランスとしても</p><h5>Patchouli LavenderVanilla</h5><p>エキゾティックな世界へと誘う、甘く魅惑的なオリエンタルノート</p><h5>Musk</h5><p>女性らしさを引き出す、気品あふれる優雅なハーモニー</p><h5>Rose Tea</h5><p>バラの紅茶から立ち上る柔らかなフルーティーローズ</p>",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_hdhjLQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tBVNwj": {
+          "type": "heading",
+          "settings": {
+            "title": "About Pairing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_UkahzK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>異なる香りのオー ドゥ サボンやモイスチャライザーを重ねて楽しむペアリングがおすすめです。</p><p>カテゴリ内はもちろん、隣り合うカテゴリの組み合わせは好相性です。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_6pjaJm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_about.png",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 600,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_ta8DEj": {
+          "type": "spacer",
+          "settings": {
+            "space": 64
+          }
+        }
+      },
+      "block_order": [
+        "heading_tBVNwj",
+        "text_UkahzK",
+        "image_6pjaJm",
+        "spacer_ta8DEj"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_JMRtp7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Yd7Dqy": {
+          "type": "heading",
+          "settings": {
+            "title": "ペアリング例をご紹介！",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Yd7Dqy"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_collection_slider_iAaC7c": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "product_list_HgUNfm": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "eau-de-sabon-citrus-blossom-80ml",
+              "eau-de-sabon-white-tea-30ml"
+            ],
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "product_list_HgUNfm"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "1. パワーを感じたい朝",
+        "heading_tag": "h2",
+        "subheading": "<h5>Energizing + Refreshing</h5>",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_slider_iPbnrU": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "product_list_kzVxfU": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "eau-de-sabon-green-rose-30ml",
+              "hand-cream-delicate-jasmine-30ml"
+            ],
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "product_list_kzVxfU"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "2. 気持ちを切り替えたい昼下り",
+        "heading_tag": "h2",
+        "subheading": "<h5>Refreshing + Refreshing</h5>",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_slider_jBCbhe": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "product_list_w6MU63": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "eau-de-sabon-patchouli-lavender-vanilla-80ml"
+            ],
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "product_list_w6MU63"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "3. リラックスしたい夜",
+        "heading_tag": "h2",
+        "subheading": "<h5>Relaxing + Relaxing</h5>",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_bQXYti": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FpfmqL": {
+          "type": "heading",
+          "settings": {
+            "title": "Engraving Service",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_bifimX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>お買い上げいただいた「オー ドゥ サボン」のキャップに一部店舗にて刻印サービスも実施します。</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "button_HQLGHp": {
+          "type": "button",
+          "settings": {
+            "link": "https://www.sabon.co.jp/news/20210624",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_FQiVYx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_eng.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 200
+          }
+        },
+        "text_7GfHNj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*変性アルコール（ベース成分）<br/>**動物由来原料を含まない</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FpfmqL",
+        "text_bifimX",
+        "button_HQLGHp",
+        "image_FQiVYx",
+        "text_7GfHNj"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_R64DQa",
+    "scroll_to_buttons_zqBqJf",
+    "multi_column_xA38FM",
+    "scroll_to_buttons_KgiNiX",
+    "featured_collection_slider_wiUeNw",
+    "featured_collection_slider_UfnPGD",
+    "featured_collection_slider_V3qHDH",
+    "rich_text_hdhjLQ",
+    "rich_text_JMRtp7",
+    "featured_collection_slider_iAaC7c",
+    "featured_collection_slider_iPbnrU",
+    "featured_collection_slider_jBCbhe",
+    "rich_text_bQXYti"
+  ]
+}

@@ -1,0 +1,281 @@
+<div
+  class="
+    section
+    section--full-width
+    {{ section.settings.section_padding }}
+  "
+>
+  <div class="section-introduction animation--section-introduction">
+    {% unless section.settings.title == blank %}
+      <{{ section.settings.heading_tag }}
+        class="
+        multi-column__heading section-introduction__heading ff-heading {{ section.settings.heading_font_class }}
+        "
+        style="color: {{ section.settings.text_color }};"
+      >
+        {{ section.settings.title }}
+      </{{ section.settings.heading_tag }}>
+    {% endunless %}
+  </div>
+  
+  <div
+    class="
+    custom-buttons
+    {% if section.settings.button_text_bold %}
+    sbn-bold
+    {% endif %}
+    "
+    style="
+    --color-background-button: {{ section.settings.button_background_color }};
+    --color-text-button: {{ section.settings.button_text_color }};
+    --min-width-buttons: {{ section.settings.buttons_min_width }}px;
+    "
+  >
+    {% for block in section.blocks %}
+      <div
+        class="
+        button-block__button
+        custom-button__item
+        "
+      >
+        <a
+          href="#"
+          class="
+            btn btn--primary sbn-button
+          "
+          data-scroll-title="{{ block.settings.target_title | escape }}"
+        >
+          <span>
+            {{ block.settings.button_label }}
+          </span>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<script>
+(function () {
+  const normalize = (text) => (text || '').replace(/[\s\u3000]+/g, '').toLowerCase();
+
+  const isVisible = (el) => !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+
+  const findTargetSection = (title) => {
+    const needle = normalize(title);
+    if (!needle) return null;
+
+    const headings = document.querySelectorAll(
+      'h1, h2, h3, h4, h5, h6, .section-introduction__heading'
+    );
+
+    for (const heading of headings) {
+      if (normalize(heading.textContent) !== needle) continue;
+      if (!isVisible(heading)) continue;
+
+      const section =
+        heading.closest('.shopify-section') ||
+        heading.closest('[id^="shopify-section-"]') ||
+        heading.closest('section[id]');
+
+      if (section && section.id) return section;
+    }
+
+    return null;
+  };
+
+  const bindHrefs = () => {
+    document.querySelectorAll('[data-scroll-title]').forEach((button) => {
+      const section = findTargetSection(button.dataset.scrollTitle);
+      if (section) {
+        button.setAttribute('href', `#${section.id}`);
+      }
+    });
+  };
+
+  document.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-scroll-title]');
+    if (!button) return;
+
+    const section = findTargetSection(button.dataset.scrollTitle);
+    if (!section) {
+      console.warn(`No matching section found for: "${button.dataset.scrollTitle}"`);
+      return;
+    }
+
+    event.preventDefault();
+    button.setAttribute('href', `#${section.id}`);
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bindHrefs);
+  } else {
+    bindHrefs();
+  }
+
+  window.addEventListener('load', bindHrefs);
+  setTimeout(bindHrefs, 800);
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Scroll-to Buttons",
+  "tag": "section",
+  "class": "sbn-custom custom-buttons",
+  "enabled_on": {
+    "templates": ["page"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.multi_column.settings.title.label",
+      "default": "Scroll-to Buttons"
+    },
+    {
+      "id": "heading_tag",
+      "type": "select",
+      "label": "t:shared.section_blocks.heading.settings.heading_tag.label",
+      "default": "h2",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h2"
+        },
+        {
+          "value": "h3",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h3"
+        },
+        {
+          "value": "h4",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h4"
+        },
+        {
+          "value": "h5",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h5"
+        },
+        {
+          "value": "h6",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h6"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "heading_font_class",
+      "label": "t:shared.settings.heading_font_class.label",
+      "default": "fs-heading-3-base",
+      "options": [
+        {
+          "value": "fs-heading-3-base",
+          "label": "t:shared.settings.heading_font_class.option_small"
+        },
+        {
+          "value": "fs-heading-2-base",
+          "label": "t:shared.settings.heading_font_class.option_medium"
+        },
+        {
+          "value": "fs-heading-1-base",
+          "label": "t:shared.settings.heading_font_class.option_large"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "range",
+      "id": "buttons_min_width",
+      "label": "Button min width",
+      "min": 100,
+      "max": 300,
+      "step": 10,
+      "default": 100,
+      "unit": "px"
+    },
+    {
+      "id": "button_text_bold",
+      "type": "checkbox",
+      "label": "Bold Text",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:shared.settings.text_color.label",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Buttons color",
+      "default": "#b4975f"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Buttons text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "t:shared.settings.section_style.section_padding.label",
+      "default": "section--vertical-padding-none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_none", "value": "section--vertical-padding-none"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_both", "value": "section--vertical-padding-top-bottom"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_top", "value": "section--vertical-padding-top-only"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_bottom", "value": "section--vertical-padding-bottom-only"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Click me"
+        },
+        {
+          "type": "text",
+          "id": "target_title",
+          "label": "Target Title",
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scroll-to Buttons",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "button"
+        },
+        {
+          "type": "button"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

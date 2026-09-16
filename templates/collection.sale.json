@@ -1,0 +1,413 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_breadcrumbs": false,
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "focal_point": "center",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 30,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "sales_banner": {
+      "type": "sales-banner",
+      "settings": {
+        "min_height": 500,
+        "min_height_mobile": 500,
+        "sale_type": "UP TO 50% OFF *",
+        "sale_amount": "SALE",
+        "sale_unit": "none",
+        "terms_and_conditions": "* Optional note and terms.",
+        "terms_vertical_offset": 0,
+        "sale_font_size": 150,
+        "sale_font_size_mobile": 150,
+        "currency_symbol_position": "before",
+        "heading": "Announce your sale",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "text": "<p>Highlight sale campaigns, discounts, and promotions.</p>",
+        "link": "",
+        "link_text": "",
+        "button_style": "btn--secondary",
+        "link_2": "",
+        "link_text_2": "",
+        "button_style_2": "btn--secondary",
+        "focal_point": "center",
+        "mobile_focal_point": "center",
+        "text_color": "#fcff8c",
+        "button_background_color": "#fcff8c",
+        "button_text_color": "#000000",
+        "background_color": "#faf7c3",
+        "color_overlay": "#750e00",
+        "color_overlay_gradient": "linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(224, 224, 224, 1) 98%)",
+        "overlay_opacity": 23,
+        "layout": "two-columns",
+        "enable_animation": true,
+        "show_frame": false,
+        "full_width": true,
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "image_with_text": {
+      "type": "image-with-text",
+      "blocks": {
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "Accent"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to tell customers about your sale.</p>",
+            "text_font_class": "fs-body-200"
+          }
+        },
+        "button_1": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--primary"
+          }
+        },
+        "button_2": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["accent", "heading", "text", "button_1", "button_2"],
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "center",
+        "aspect_ratio": "square",
+        "focal_point": "center",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "center",
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "multi_column": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_1": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Sale Collection</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_2": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Sale Collection</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_3": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Sale Collection</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_4": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Sale Collection</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_5": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "center",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Sale Collection</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_1",
+        "image_column_2",
+        "image_column_3",
+        "image_column_4",
+        "image_column_5"
+      ],
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "large",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 16,
+        "row_spacing_mobile": 36,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "grid": {
+      "type": "grid",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 500,
+            "mobile_height": 360,
+            "media_fit": "cover",
+            "focal_point": "center",
+            "mobile_focal_point": "center",
+            "text_position": "flex-start_flex-end",
+            "accent": "Sale",
+            "title": "Product Name",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>Use this text to highlight a discounted product.</p>",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "Shop Now",
+            "button_style": "btn--primary",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#ffffff",
+            "button_background_color": "#faf7c3",
+            "button_text_color": "#22292d",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 1) 96%)",
+            "overlay_opacity": 20
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 500,
+            "mobile_height": 360,
+            "media_fit": "cover",
+            "focal_point": "center",
+            "mobile_focal_point": "center",
+            "text_position": "flex-start_flex-end",
+            "accent": "Sale",
+            "title": "Product Name",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>Use this text to highlight a discounted product.</p>",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "Shop Now",
+            "button_style": "btn--primary",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#ffffff",
+            "button_background_color": "#faf7c3",
+            "button_text_color": "#22292d",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 1) 96%)",
+            "overlay_opacity": 20
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "width": "33",
+            "height": 500,
+            "mobile_height": 360,
+            "media_fit": "cover",
+            "focal_point": "center",
+            "mobile_focal_point": "center",
+            "text_position": "flex-start_flex-end",
+            "accent": "Sale",
+            "title": "Product Name",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>Use this text to highlight a discounted product.</p>",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "Shop Now",
+            "button_style": "btn--primary",
+            "background_color": "rgba(0,0,0,0)",
+            "text_color": "#ffffff",
+            "button_background_color": "#faf7c3",
+            "button_text_color": "#22292d",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.15) 22%, rgba(0, 0, 0, 1) 96%)",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": ["item_1", "item_2", "item_3"],
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "content_alignment": "left",
+        "enable_animation": true,
+        "full_width": false,
+        "spacing": 24,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "columns_desktop": "4",
+        "columns_mobile": "2",
+        "rows": "4",
+        "show_item_count": true,
+        "show_sort": true,
+        "show_filters": true,
+        "enable_sticky_filter_bar": true,
+        "desktop_filter_location": "sidebar",
+        "collapse_filter_bar": false,
+        "enable_sticky_filter_sidebar": true,
+        "collapse_filter_groups_desktop": true,
+        "collapse_filter_groups_mobile": true,
+        "show_swatch_filters": true,
+        "show_chip_filters": true,
+        "chip_layout": "3col",
+        "pagination": "click",
+        "enable_animation": true,
+        "divider_style": "solid"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "sales_banner",
+    "image_with_text",
+    "multi_column",
+    "grid",
+    "product-grid"
+  ]
+}

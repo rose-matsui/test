@@ -1,0 +1,41 @@
+{% comment %} 
+  Pass in:
+  - prod: object The product object
+{% endcomment %}
+
+{% liquid
+  assign btn_label = "Add to Cart"
+
+  if prod.available
+    assign release_date = prod.metafields.custom.release_date | date: "%s"
+    assign today = 'now' | date: "%s"
+    if today < release_date
+      assign btn_label = 'products.product.preorder' | t
+    else
+      assign btn_label = 'products.product.add_to_cart' | t
+    endif 
+  else
+    assign btn_label = 'products.product.sold_out' | t
+  endif
+
+  assign current_variant = prod.selected_or_first_available_variant
+%}
+
+<button
+  type="button"
+  class="btn btn--full btn--primary sbn-btn"
+  data-quick-shop-trigger="quick-add"
+  data-product-id="{{ current_variant.id }}"
+  tabindex="0"
+  {% unless current_variant.available %}
+    aria-disabled="true" disabled
+  {% endunless %}
+  aria-label="{{ btn_label }}"
+>
+  <span>
+    {{ btn_label }}
+  </span>
+  <div class="btn__loading-wrap">
+    <div class="btn__loading-bar"></div>
+  </div>
+</button>

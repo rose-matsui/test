@@ -1,0 +1,52 @@
+{% doc %}
+This snippet updates the href attributes of the matched elements to be the same
+as data-href, this prevents Elevar from capturing the wrong impressions.
+Internally Elevar selects everything that has a product link, it does it by
+using a selector that roughly seems like "[href=*]" and then filters the ones
+that link to "/product", as a result Elevar captures more impressions than
+search results.
+
+@param {string} selector - The query selector to match anchor elements
+
+@example
+{% render 'navigation-data-href', selector: '.meganav__product-list a[data-href]' %}
+{% enddoc %}
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const selector = {{ selector | json }}
+    function updateHrefs() {
+      const links = document.querySelectorAll(selector);
+      links.forEach(function (link) {
+        link.setAttribute('href', link.getAttribute('data-href'));
+        link.removeAttribute('data-href')
+      });
+    }
+    // Not browsing search results page, so no need to care about dl_view_search_results.
+    if(location.pathname !== '/search') {
+      updateHrefs();
+      return;
+    }
+    const startedAt = Date.now();
+    const intervalId = setInterval(function () {
+      const elapsedMs = Date.now() - startedAt;
+      if (elapsedMs >= 5_000) {
+        // Max wait time reached, update hrefs anyway.
+        updateHrefs();
+        clearInterval(intervalId);
+        return;
+      }
+      if (!Array.isArray(window.ElevarDataLayer)) {
+        return;
+      }
+      const eventTriggered = window.ElevarDataLayer.some(function (item) {
+        return item && item.event === 'dl_view_search_results';
+      });
+      if (eventTriggered) {
+        // ElevarDataLayer already has dl_view_search_results, so update hrefs.
+        updateHrefs();
+        clearInterval(intervalId);
+      }
+    }, 500)
+  });
+</script>

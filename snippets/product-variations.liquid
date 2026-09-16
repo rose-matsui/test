@@ -1,0 +1,115 @@
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<div
+  class='product-variations product-variations--{{ type }}'
+  {% if type == 'scents' %}
+    data-component='ProductVariations'
+  {% endif %}
+>
+  <h2 class='type-paragraph font-bold text-black text-opacity-50 mb-1.5 inline-flex'>
+    {% if type == 'scents' %}
+      {{ 'products.product.variants.scent' | t }}
+    {% elsif type == 'sizes' %}
+      {{ 'products.product.variants.size' | t }}
+    {% endif %}
+  </h2>
+  <div class='mb-4'>
+    {% if type == 'scents' %}
+      <div class="scent-slider-wrapper">
+        <div class="swiper scent-slider">
+          <div class="swiper-wrapper">
+              <div class='swiper-slide'>
+                <span
+                  class='block aspect-square rounded product-variations__cell product-variations__cell--current'
+                  data-label='{{ product.metafields.custom.scent.value }}'
+                >
+                  <img src='{{ product.featured_image.src | image_url: width: 114, height: 114 }}'
+                    width='114'
+                    height='114'
+                    loading='lazy'
+                    class='w-full h-full object-cover'
+                  >
+                </span>
+                <h3 class='text-center font-bold leading-4 mt-2'>
+                  {{ product.metafields.custom.scent.value }}
+                </h3>
+              </div>
+  
+              {% for the_variant in product.metafields.custom.scent_options.value %}
+                {% unless the_variant.metafields.custom.scent_options.value
+                    == product.metafields.custom.scent_options.value
+                %}
+                  <div class='swiper-slide'>
+                    <a
+                      href='{{ the_variant.handle }}'
+                      class='block aspect-square rounded product-variations__cell'
+                      data-label='{{ the_variant.metafields.custom.scent.value }}'
+                    >
+                      <img src='{{ the_variant.featured_image.src | image_url: width: 114, height: 114 }}'
+                        width='114'
+                        height='114'
+                        loading='lazy'
+                        class='w-full h-full object-cover'
+                      >
+                    </a>
+                    <h3 class='text-center leading-4 mt-2'>
+                      {{ the_variant.metafields.custom.scent.value }}
+                    </h3>
+                  </div>
+                {% endunless %}
+              {% endfor %}
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    {% elsif type == 'sizes' %}
+      <div class='grid grid-cols-3 grid-rows-none gap-2.5'>
+        <div
+          href='{{ product.handle }}'
+          class='type-paragraph font-bold text-center py-4 px-3 rounded product-variations__cell product-variations__cell--current'
+          data-label='{{ product.metafields.custom.size.value }}'
+        >
+          {{ product.metafields.custom.size.value }}
+        </div>
+        {% for the_variant in product.metafields.custom.size_options.value limit:3 %}
+            <a
+              href='{{ the_variant.url }}'
+              class='type-paragraph text-center py-4 px-3 rounded product-variations__cell'
+              data-label='{{ the_variant.metafields.custom.size.value }}'
+            >
+              {{ the_variant.metafields.custom.size.value }}
+            </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+  const scent_carousel = new Swiper('.product-variations .swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 'auto',
+    spaceBetween: 5,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        //slidesPerView: 3,
+        spaceBetween: 5
+      },
+      768: {
+        //slidesPerView: 4,
+        spaceBetween: 5
+      },
+      1200: {
+        //slidesPerView: 5,
+        spaceBetween: 5
+      }
+    }
+  });
+</script>

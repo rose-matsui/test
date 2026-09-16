@@ -1,0 +1,89 @@
+{% layout 'default' %}
+{{ 'template-store.css' | asset_url | stylesheet_tag }}
+
+{% assign address_lines_string = metaobject.address_lines %}
+{% assign address_lines_cleaned = address_lines_string | remove: '[' | remove: ']' | remove: '"' %}
+{% assign address_lines = address_lines_cleaned | split: ',' %}
+
+
+{% assign business_hours_string = metaobject.business_hours %}
+{% assign business_hours_cleaned = business_hours_string | remove: '[' | remove: ']' | remove: '"' %}
+{% assign business_hours = business_hours_cleaned | split: ',' %}
+
+<section class="store-detail">
+  {% if metaobject.image %}
+    <div class="store-detail__image-container">
+      <img 
+        src="{{ metaobject.image | image_url }}"
+        alt="{{ metaobject.title }}"
+        class="store-detail__image"
+        width="100%"
+        height="100%">
+    </div>
+  {% endif %}
+  <div class="store-detail__title-container">
+    <h1 class="store-detail__title">{{ metaobject.name }}</h1>
+  </div>
+
+  <div class="store-detail__main-area">
+    <div class="store-detail__content">
+      <div class="store-detail__content-item">
+        <h2 class="store-detail__content-item-title">{{ 'store.address' | t }}</h2>
+        <p class="store-detail__content-item-value">
+          {% for line in address_lines %}
+            {{ line }}<br>
+          {% endfor %}
+        </p>
+      </div>
+
+      <div class="store-detail__content-item">
+        <h2 class="store-detail__content-item-title">{{ 'store.phone' | t }}</h2>
+        <p class="store-detail__content-item-value">{{ metaobject.phone }}</p>
+      </div>
+
+      <div class="store-detail__content-item">
+        <h2 class="store-detail__content-item-title">{{ 'store.opening_times' | t }}</h2>
+        <p class="store-detail__content-item-value">
+          {% for hour in business_hours %}
+            {{ hour }}<br>
+          {% endfor %}
+        </p>
+      </div>
+      {% if metaobject.directions %}
+      <div class="store-detail__content-item">
+        <h2 class="store-detail__content-item-title">{{ 'store.access' | t }}</h2>
+        <p class="store-detail__content-item-value">{{ metaobject.directions }}</p>
+      </div>
+      {% endif %}
+
+      <div class="store-detail__route-button-container">
+        <button class="store-detail__button btn btn--full btn--primary"
+          onclick="window.open('https://www.google.com/maps/dir/?api=1&destination={{ metaobject.address_lines | url_encode }}', '_blank')">
+          {{ 'store.get_directions' | t }}
+        </button>
+      </div>
+
+    </div>
+
+    <div class="store-detail__map-container"> 
+      <iframe
+        width="100%"
+        height="100%"
+        frameborder="0"
+        style="border:0;"
+        src="{{ metaobject.map_embed_url }}"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <div class="store-detail__back-button-container"> 
+    <button 
+      class="store-detail__back-button btn btn--secondary"
+      onclick="window.location.href='/pages/store'">
+      {{ 'store.back_to_store_list' | t }}
+    </button>
+  </div>
+</section>

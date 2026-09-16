@@ -1,0 +1,20 @@
+{% liquid
+  comment
+  Renders a marketing push in the cart (banner with rich text).
+  Only displayed if show_cart_push is true.
+
+  Pass these variables into snippet:
+  * cart_push_banner: { Object } The image to be rendered as banner.
+  * cart_push_text: String
+  endcomment
+%}
+<div class="cart_push">
+{%- if cart_push_banner != blank -%}
+  {%- render 'image' with image: cart_push_banner, wrapper_class: 'cart_push_banner', prioritize_loading: false -%}
+{%- endif -%}
+{%- if cart_push_banner != blank -%}
+  <div class="rich-text__inner">
+    {{ cart_push_text }}
+  </div>
+{%- endif -%}
+</div>

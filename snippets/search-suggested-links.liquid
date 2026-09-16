@@ -1,0 +1,27 @@
+{%- if settings.quick_search_suggested_heading != blank -%}
+  <h4 class="quick-search__suggested-header ff-body fs-body-100 t-subdued">
+    {{ settings.quick_search_suggested_heading }}
+  </h4>
+{%- endif -%}
+
+{%- comment -%}
+  Quick links are configured as numbered theme settings (quick_link_label_1..N / quick_link_url_1..N).
+  Because these IDs are statically defined in settings_schema.json, this loop must stay bounded to that max.
+  If schema adds more numbered fields, increase quick links limit.
+{%- endcomment -%}
+{%- for i in (1..10) -%}
+  {%- liquid
+    assign label_key = 'quick_link_label_' | append: i
+    assign url_key = 'quick_link_url_' | append: i
+    assign suggested_label = settings[label_key] | strip
+    assign suggested_url = settings[url_key] | strip
+  -%}
+
+  {%- if suggested_label != blank and suggested_url != blank -%}
+    <a class="quick-search__result" href="{{ suggested_url | escape }}">
+      <div class="quick-search__result-details ff-body fs-body-75">
+        <div class="quick-search__result-heading">{{ suggested_label | escape }}</div>
+      </div>
+    </a>
+  {%- endif -%}
+{%- endfor -%}

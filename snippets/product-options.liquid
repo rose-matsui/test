@@ -1,0 +1,52 @@
+<div class="product-options-wrapper">
+
+  <div class="product-options-header">
+    <h3 class="product-options-title">{{ block.settings.header_title }}</h3>   
+    <p class="product-options-subtitle">{{ block.settings.header_subtitle }}</p>
+  </div>
+
+  <div class="product-options-content">
+
+    {% comment %} Engraving BLock {% endcomment %}
+    {% if product.metafields.custom.product_option_engraving.value != blank %}
+      <div class="product-option-block">
+        <div class="product-block-image">
+          <img width="120" height="120" src="{{ block.settings.engraving_image | image_url }}">
+        </div>
+        <div class="product-block-text">
+          <h4>{{ block.settings.engraving_title }}</h4>
+          <p>{{ block.settings.engraving_description }}</p>
+        </div>
+      </div>
+    {% endif %}
+
+
+    {% comment %} Gift Wrapping Block {% endcomment %}
+    {% if product.metafields.custom.product_option_gift_wrapping.value != blank %}
+      <div class="product-option-block">
+        <div class="product-block-image">
+          <img width="120" height="120" src="{{ block.settings.wrapping_image | image_url }}">
+        </div>
+        <div class="product-block-text">
+          <h4>{{ block.settings.wrapping_title }}</h4>
+          <p>{{ block.settings.wrapping_description }}</p>
+        </div>
+      </div>
+    {% endif %}
+
+
+    {% comment %} Add-On Block {% endcomment %}
+    {% if product.metafields.custom.product_option_addon.value != blank %}
+      <div class="product-option-block">
+        <div class="product-block-image">
+          <img width="120" height="120" src="{{ block.settings.addon_image | image_url }}">
+        </div>
+        <div class="product-block-text">
+          <h4>{{ block.settings.addon_title }}</h4>
+          <p>{{ block.settings.addon_description }}</p>
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+</div>

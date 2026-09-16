@@ -1,0 +1,139 @@
+{{ 'template-customers.css' | asset_url | stylesheet_tag }}
+<section
+  class="
+    customer account page account-section section--vertical-padding-top-bottom
+  "
+>
+  <div class="account__container page__inner">
+    <div class="account__breadcrumbs account__breadcrumbs--center">
+      <ul class="breadcrumbs ff-body fs-body-100">
+        <li class="breadcrumbs__item">
+          <a href="{{ routes.account_url }}" class="btn btn--text-link">{{ 'customer.account.title' | t }}</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__break">&nbsp;&nbsp;&#47;&nbsp;&nbsp;</li>
+        <li class="breadcrumbs__item">{{ 'customer.account.nav_links.purchase_history' | t }}</li>
+      </ul>
+    </div>
+
+    <header class="account__header page__header">
+      <h1 class="account__heading ff-heading fs-heading-2-base">{{ 'customer.account.nav_links.purchase_history' | t }}</h1>
+    </header>
+
+    <div class="account__sections ff-body fs-body-100">
+      <div id="account-orders" class="account__main">
+        {% paginate customer.orders by 20 %}
+          {% if customer.orders.size != 0 %}
+            <table class="account__table smart-table account__table--expanded">
+              <thead>
+                <tr class="ta-l">
+                  <th class="fs-body-bold" scope="col">{{ 'customer.orders.order_number' | t }}</th>
+                  <th class="fs-body-bold" scope="col"></th>
+                  <th class="fs-body-bold" scope="col">{{ 'customer.orders.date' | t }}</th>
+                  <th class="fs-body-bold" scope="col">{{ 'customer.orders.payment_status' | t }}</th>
+                  <th class="fs-body-bold" scope="col">{{ 'customer.orders.fulfillment_status' | t }}</th>
+                  <th class="fs-body-bold ta-r" scope="col">{{ 'customer.orders.total' | t }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for order in customer.orders %}
+                  <tr class="ta-l">
+                    <td data-label="{{ 'customer.orders.order_number' | t }}" scope="row">
+                      <a
+                        href="{{ order.customer_url }}"
+                        aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"
+                        class="btn btn--text-link"
+                      >
+                        {{ order.name }}
+                      </a>
+                    </td>
+                    <td data-label="source_name">
+                      {% if order.source_name == 'web' %}
+                        <span class="fs-body-bold source_name">{{ 'customer.order.web' | t }}</span>
+                      {% elsif order.source_name == 'pos' %}
+                        <span class="fs-body-bold source_name">{{ 'customer.order.pos' | t }}</span>
+                      {% else %}
+                      {% endif %}
+                    </td>
+                    <td data-label="{{ 'customer.orders.date' | t }}">
+                      {{ order.created_at | time_tag: format: 'date' }}
+                    </td>
+                    <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
+                    <td data-label="{{ 'customer.orders.fulfillment_status' | t }}">
+                      {{ order.fulfillment_status_label }}
+                    </td>
+                    <td class="ta-r" data-label="{{ 'customer.orders.total' | t }}">{{ order.total_price | money }}</td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          {% else %}
+            <h4 class="account__my-orders-heading">{{ 'account.orders.title' | t }}</h4>
+            <div class="account__no-orders">
+              <p>{{ 'account.orders.none' | t }}</p>
+            </div>
+          {% endif %}
+          {%- if paginate.pages > 1 -%}
+            {% render 'pagination', paginate: paginate, type: 'account.orders_paginate' %}
+          {%- endif -%}
+        {% endpaginate %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:sections.main_customer_account.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_style.header_style.content"
+    },
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "t:shared.settings.section_style.divider_style.label",
+      "default": "none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_none",
+          "value": "none"
+        },
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_solid",
+          "value": "solid"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "t:shared.settings.section_style.section_padding.label",
+      "default": "section--vertical-padding-bottom-only",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_none",
+          "value": "section--vertical-padding-none"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_both",
+          "value": "section--vertical-padding-top-bottom"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_top",
+          "value": "section--vertical-padding-top-only"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_bottom",
+          "value": "section--vertical-padding-bottom-only"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}

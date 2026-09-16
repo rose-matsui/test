@@ -1,0 +1,91 @@
+{%- assign has_addon = false -%}
+{%- assign max_spoons_allowed = 0 -%}
+{%- assign displayed_spoon_variants = '' -%}
+{%- assign spoon_variant_ids = '' -%}
+
+{%- comment %}
+  Step 1: Build list of valid spoon variant IDs from metaobject (master reference)
+{%- endcomment -%}
+{% for product in metaobjects.addon.scrub_spoon.products.value %}
+  {% assign spoon_variant_ids = spoon_variant_ids | append: product.variants.first.id | append: ',' %}
+{% endfor %}
+{% assign spoon_variant_ids_array = spoon_variant_ids | split: ',' %}
+
+{% comment %}
+  Count max spoons allowed based on parent products with addon
+{% endcomment %}
+{%- for item in cart.items -%}
+  {% assign addon = item.product.metafields.custom.product_option_addon.value %}
+  {% if addon and addon.products %}
+    {% assign has_addon = true %}
+    {% assign max_spoons_allowed = max_spoons_allowed | plus: item.quantity %}
+  {% endif %}
+{%- endfor -%}
+
+
+{% if has_addon %}
+  <div class="cart__product-options" id="cart__product-options-box">
+    {% if section.settings.section_title_options %}
+      <div class="cart__product-options__header section-header">
+        <h3 class="section-header__title ff-heading fs-heading-2">
+          {{ section.settings.section_title_options }}
+        </h3>
+      </div>
+    {% endif %}
+
+    <div class="cart__product-options__items quantity-input-add-wrapper">
+      <h3 class="cart__product-options__product-addon-subtitle">{{ 'cart.options.spoons' | t }}</h3>
+
+      {% for item in cart.items %}
+        {% assign addon = item.product.metafields.custom.product_option_addon.value %}
+        {% if addon and addon.products %}
+          <div class="cart__product-options__product-addon">
+            <div class="cart__product-options__products">
+              {% for product in addon.products.value %}
+                {% assign variant_id = product.variants.first.id | append: '' %}
+              
+                {% unless displayed_spoon_variants contains variant_id %}
+                  {% assign displayed_spoon_variants = displayed_spoon_variants | append: variant_id | append: ',' %}
+              
+                  {% assign matching_item = cart.items | where: "variant_id", product.variants.first.id | first %}
+                  {% assign variant_quantity = matching_item.quantity | default: 0 %}
+              
+                  <div class="cart__product-options__product">
+                    <div class="cart__product-options__product-info">
+                      <div class="cart__product-options__product-image">
+                        <img 
+                          src="{{ product.featured_image | img_url: 'small' }}" 
+                          alt="{{ product.title }}" 
+                          width="100%" height="100%"
+                        />
+                      </div>
+                      <p class="cart__product-options__product-title">{{ product.title }}</p>  
+                    </div>
+                    <div class="cart__product-options__product-price">
+                      <p class="cart__product-options__product-price-text">
+                        {% if product.price == 0 %}
+                          無料
+                        {% else %}
+                          {{ product.price | money }} (税込)
+                        {% endif %}
+                      </p>
+                      {% assign max_allowed = 20 %}
+                      {% if product.price == 0 %}
+                        {% assign max_allowed = max_spoons_allowed %}
+                      {% endif %}
+                      {% render 'quantity-input-add' with 
+                        id: product.variants.first.id, 
+                        initial_value: variant_quantity,
+                        max_allowed: max_allowed,
+                      %}
+                    </div>
+                  </div>
+                {% endunless %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

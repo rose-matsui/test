@@ -1,0 +1,537 @@
+{%- liquid
+  assign background_exists = true
+  if section.settings.background_color == blank or section.settings.background_color == 'rgba(0,0,0,0)'
+    assign background_exists = false
+  endif
+
+  assign key_ingredients_refs = product.metafields.custom.key_ingredients.value
+  assign key_ingredients_count = 0
+
+  comment
+    key_ingredients_count determines how many columns to display (desktop), as well as the image size for each ingredient.
+    The original section allowed up to 6 columns, the current design only supports either 2 or 3 columns.
+    In case of additional ingredients being added in the future, make sure to limit the number of columns and set the image size accordingly.
+  endcomment
+  if key_ingredients_refs != blank
+    assign key_ingredients_count = key_ingredients_refs.size
+  endif
+
+  assign render_key_ingredients = false
+  if key_ingredients_count == 2 or key_ingredients_count == 3
+    assign render_key_ingredients = true
+  endif
+
+  assign ingredient_image_width_ratio = 1.0
+-%}
+
+{%- capture ingredient_image_sizes -%}
+  (min-width: 720px) calc(calc(100vw - calc(2 * clamp(18px, 3.3vw, 3.3vw))) / {{ key_ingredients_count }} * {{ ingredient_image_width_ratio }}), calc(100vw - calc(2 * 3.3vw))
+{%- endcapture -%}
+
+{% if render_key_ingredients %}
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="multi-column"
+  data-slider-on-mobile="{{ section.settings.enable_slider_mobile }}"
+  data-mobile-columns-per-view="{{ section.settings.columns_mobile }}"
+  class="
+    multi-column
+    {% if section.settings.background_behind_columns and background_exists %}
+      multi-column--background-behind-column
+    {% endif %}
+    multi-column--intro-alignment-{{ section.settings.heading_alignment }}
+    multi-column--column-content-alignment-desktop-{{ section.settings.column_alignment }}
+    multi-column--column-content-alignment-mobile-{{ section.settings.column_alignment_mobile }}
+    multi-column--column-content-vertical-alignment-{{ section.settings.content_vertical_alignment }}
+    multi-column--column-content-padding-{{ section.settings.content_background_padding }}
+    {% if settings.enable_section_animations and section.settings.enable_animation %}
+      animation
+      animation--multi-column
+    {% endif %}
+  "
+  style="
+    --color-text: {{ section.settings.text_color }};
+    --color-section-background: {{ section.settings.background_color }};
+    --grid-columns-desktop: {{ key_ingredients_count }};
+    --grid-columns-mobile: {{ section.settings.columns_mobile }};
+    --grid-gap-column-desktop: {{ section.settings.column_spacing }}px;
+    --grid-gap-column-mobile: {{ section.settings.column_spacing_mobile }}px;
+    --grid-gap-row-desktop: {{ section.settings.row_spacing }}px;
+    --grid-gap-row-mobile: {{ section.settings.row_spacing_mobile }}px;
+    {% render 'overlay-button-vars', color_button_text: section.settings.button_text_color, color_button_background: section.settings.button_background_color %}
+  "
+>
+  <div
+    class="
+      multi-column__inner
+      section
+      {{ section.settings.section_padding }}
+      section--divider-{{ section.settings.divider_style }}
+      carousel
+      swiper
+    "
+  >
+    <div class="multi-column__introduction section-introduction animation--section-introduction">
+      {% unless section.settings.title == blank %}
+        <{{ section.settings.heading_tag }} class="multi-column__heading section-introduction__heading ff-heading {{ section.settings.heading_font_class }}">
+          {{ section.settings.title }}
+        </{{ section.settings.heading_tag }}>
+      {% endunless %}
+
+      {% unless section.settings.subheading == blank %}
+        <div class="multi-column__subheading section-introduction__subheading rte ff-body fs-body-100">
+          {{ section.settings.subheading }}
+        </div>
+      {% endunless %}
+    </div>
+    <div class="multi-column__grid carousel__wrapper swiper-wrapper">
+      {% comment %}
+      {%- for block in section.blocks -%}
+        {%- render 'multi-column-item', block: block, columns: section.settings.columns -%}
+      {%- endfor -%}
+      {% endcomment %}
+      {% for ingredient in key_ingredients_refs %}
+        <div class="multi-column__grid-item carousel__slide swiper-slide">
+          <div class="multi-column__grid-item-inner">
+            <figure
+              class="multi-column__grid-item-image-figure"
+              data-image-crop-circle="false"
+              style="--image-max-width: 100%;"
+            >
+              <div class="multi-column__grid-item-image-wrapper">
+                {%- render 'image',
+                  wrapper_class: 'multi-column__grid-item-image',
+                  image: ingredient.image.value,
+                  sizes: ingredient_image_sizes,
+                  aspect_ratio: 'square',
+                  focal_point: 'image_presentation',
+                  include_placeholder: true
+                -%}
+              </div>
+            </figure>
+
+            {% unless ingredient.name.value == blank and ingredient.description.value == blank %}
+              <div class="multi-column__grid-item-text-container">
+                {% unless ingredient.accent.value == blank %}
+                  <p class="multi-column__grid-item-accent fs-accent">
+                    {{ ingredient.accent.value }}
+                  </p>
+                {% endunless %}
+                {% unless ingredient.name.value == blank %}
+                  <h3 class="multi-column__grid-item-heading ff-heading fs-heading-3-base">
+                    {{ ingredient.name.value }}
+                  </h3>
+                {% endunless %}
+
+                {% unless ingredient.description.value == blank %}
+                  <div
+                    class="multi-column__grid-item-text ff-body fs-body-75 rte"
+                    style="--text-max-width: 100%;"
+                  >
+                    {{ ingredient.description.value | newline_to_br }}
+                  </div>
+                {% endunless %}
+              </div>
+            {% endunless %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Ingredients - Multicolumn",
+  "tag": "section",
+  "class": "sbn-custom key-ingredients",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.multi_column.settings.title.label",
+      "default": "Multi-column"
+    },
+    {
+      "id": "heading_tag",
+      "type": "select",
+      "label": "t:shared.section_blocks.heading.settings.heading_tag.label",
+      "default": "h2",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h2"
+        },
+        {
+          "value": "h3",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h3"
+        },
+        {
+          "value": "h4",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h4"
+        },
+        {
+          "value": "h5",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h5"
+        },
+        {
+          "value": "h6",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h6"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": "t:shared.section_blocks.heading.settings.heading_tag.info"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "t:sections.multi_column.settings.subheading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_class",
+      "label": "t:shared.settings.heading_font_class.label",
+      "default": "fs-heading-3-base",
+      "options": [
+        {
+          "value": "fs-heading-3-base",
+          "label": "t:shared.settings.heading_font_class.option_small"
+        },
+        {
+          "value": "fs-heading-2-base",
+          "label": "t:shared.settings.heading_font_class.option_medium"
+        },
+        {
+          "value": "fs-heading-1-base",
+          "label": "t:shared.settings.heading_font_class.option_large"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.multi_column.settings.heading_alignment.label",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:shared.settings.alignment_horizontal.option_left"
+        },
+        {
+          "value": "center",
+          "label": "t:shared.settings.alignment_horizontal.option_center"
+        },
+        {
+          "value": "right",
+          "label": "t:shared.settings.alignment_horizontal.option_right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_alignment",
+      "label": "t:sections.multi_column.settings.content_vertical_alignment.label",
+      "default": "top",
+      "options": [
+        {
+          "value": "top",
+          "label": "t:sections.multi_column.settings.content_vertical_alignment.option_top"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.multi_column.settings.content_vertical_alignment.option_center"
+        },
+        {
+          "value": "bottom",
+          "label": "t:sections.multi_column.settings.content_vertical_alignment.option_bottom"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "content_background_padding",
+      "label": "t:sections.multi_column.settings.content_background_padding.label",
+      "info": "t:sections.multi_column.settings.content_background_padding.info",
+      "default": "medium",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.multi_column.settings.content_background_padding.option_small"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.multi_column.settings.content_background_padding.option_medium"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.multi_column.settings.content_background_padding.option_large"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.multi_column.settings.header__desktop_layout.content"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "t:sections.multi_column.settings.columns.label",
+      "default": "4",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.multi_column.settings.columns.option_1"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.multi_column.settings.columns.option_2"
+        },
+        {
+          "value": "3",
+          "label": "t:sections.multi_column.settings.columns.option_3"
+        },
+        {
+          "value": "4",
+          "label": "t:sections.multi_column.settings.columns.option_4"
+        },
+        {
+          "value": "5",
+          "label": "t:sections.multi_column.settings.columns.option_5"
+        },
+        {
+          "value": "6",
+          "label": "t:sections.multi_column.settings.columns.option_6"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "column_spacing",
+      "label": "t:sections.multi_column.settings.column_spacing.label",
+      "min": 4,
+      "max": 48,
+      "step": 4,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "row_spacing",
+      "label": "t:sections.multi_column.settings.row_spacing.label",
+      "min": 4,
+      "max": 48,
+      "step": 4,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "column_alignment",
+      "label": "t:sections.multi_column.settings.column_alignment.label",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:shared.settings.alignment_horizontal.option_left"
+        },
+        {
+          "value": "center",
+          "label": "t:shared.settings.alignment_horizontal.option_center"
+        },
+        {
+          "value": "right",
+          "label": "t:shared.settings.alignment_horizontal.option_right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:sections.multi_column.settings.header__mobile_layout.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_slider_mobile",
+      "label": "t:sections.multi_column.settings.enable_slider_mobile.label",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "t:sections.multi_column.settings.columns.label",
+      "default": "2",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.multi_column.settings.columns.option_1"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.multi_column.settings.columns.option_2"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "column_spacing_mobile",
+      "label": "t:sections.multi_column.settings.column_spacing.label",
+      "min": 4,
+      "max": 48,
+      "step": 4,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "row_spacing_mobile",
+      "label": "t:sections.multi_column.settings.row_spacing.label",
+      "min": 4,
+      "max": 48,
+      "step": 4,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "column_alignment_mobile",
+      "label": "t:sections.multi_column.settings.column_alignment.label",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:shared.settings.alignment_horizontal.option_left"
+        },
+        {
+          "value": "center",
+          "label": "t:shared.settings.alignment_horizontal.option_center"
+        },
+        {
+          "value": "right",
+          "label": "t:shared.settings.alignment_horizontal.option_right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "t:shared.settings.header_color.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "background_behind_columns",
+      "label": "t:sections.multi_column.settings.background_behind_columns.label",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:shared.settings.background_color.label"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:shared.settings.text_color.label",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "t:shared.settings.buttons_background_color.label",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "t:shared.settings.button_text_color.label",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_style.header_style.content"
+    },
+    {
+      "id": "enable_animation",
+      "type": "checkbox",
+      "label": "t:shared.settings.section_style.enable_animation.label",
+      "info": "t:shared.settings.section_style.enable_animation.info",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "t:shared.settings.section_style.divider_style.label",
+      "default": "none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_none",
+          "value": "none"
+        },
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_solid",
+          "value": "solid"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "t:shared.settings.section_style.section_padding.label",
+      "default": "section--vertical-padding-top-bottom",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_none",
+          "value": "section--vertical-padding-none"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_both",
+          "value": "section--vertical-padding-top-bottom"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_top",
+          "value": "section--vertical-padding-top-only"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_bottom",
+          "value": "section--vertical-padding-bottom-only"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Key Ingredients - Multicolumn",
+      "category": "Custom",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "bottom",
+        "content_background_padding": "small",
+        "columns": "3",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": true,
+        "background_color": "#fffef9",
+        "text_color": "#212121",
+        "button_background_color": "#212121",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    }
+  ]
+}
+{% endschema %}

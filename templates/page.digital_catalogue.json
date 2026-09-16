@@ -1,0 +1,2089 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_HNpeNx": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_L9T6hN": {
+          "type": "heading",
+          "settings": {
+            "title": "Item Lineup",
+            "heading_tag": "h2",
+            "heading_font_class": "sbn-heading-xl"
+          }
+        },
+        "text_B6F4fw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>五感を満たし、心の隅々まで潤す<br/>心と感性がときめくSABONへようこそ</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_L9T6hN",
+        "text_B6F4fw"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "original",
+        "desktop_height": 70,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/item_kv_pc.jpg",
+        "image_mobile": "shopify://shop_images/item_kv_sp.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#493528",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "scroll_to_buttons_qYqMMU": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_NDKUMr": {
+          "type": "button",
+          "settings": {
+            "button_label": "ボディケアライン",
+            "target_title": "Body Care Line"
+          }
+        },
+        "button_fwUJ4z": {
+          "type": "button",
+          "settings": {
+            "button_label": "フェイスケアライン",
+            "target_title": "Fresh & Glow"
+          }
+        },
+        "button_nk7AV7": {
+          "type": "button",
+          "settings": {
+            "button_label": "ヘアケアライン",
+            "target_title": "Hair Care Line"
+          }
+        },
+        "button_hBnyjP": {
+          "type": "button",
+          "settings": {
+            "button_label": "その他ラインナップ",
+            "target_title": "Other Items"
+          }
+        }
+      },
+      "block_order": [
+        "button_NDKUMr",
+        "button_fwUJ4z",
+        "button_nk7AV7",
+        "button_hBnyjP"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 230,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_hero_yazQVF": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_pBkmDh": {
+          "type": "heading",
+          "settings": {
+            "title": "Body Care Line",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "subheading_RnrAy8": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ボディケアライン",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_akTMTQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>五感を満たし、心の隅々まで潤すボディケアライン</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pBkmDh",
+        "subheading_RnrAy8",
+        "text_akTMTQ"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/list_body_pc.jpg",
+        "image_mobile": "shopify://shop_images/list_body_sp_jpg.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#493528",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "multi_column_VcrafE": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_4kcPFP": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10106731_HydratingShowerOil500mL_DelicateJasmine_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/hydrating-shower-oil?filter.p.m.custom.size=500mL&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "肌の渇きに、<br>潤いのシャワーを",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ハイドレイティング<br/>シャワーオイル L<br/>¥5,280(税込)/500mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/hydrating-shower-oil?filter.p.m.custom.size=500mL&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_i8wYBD": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10106941_HydratingShowerOil300mL_DelicateJasmine_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/hydrating-shower-oil?filter.p.m.custom.size=300mL&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "肌の渇きに、<br>潤いのシャワーを",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ハイドレイティング<br/>シャワーオイル S<br/>¥3,740(税込)/300mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/hydrating-shower-oil?filter.p.m.custom.size=300mL&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_cbe86x": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10201221_2455_ShowerOilN_OliveBliss_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/shower-oil?filter.p.m.custom.size=400mL&filter.p.m.custom.size=450mL&filter.p.m.custom.size=500mL&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ボタニカルオイルたっぷりの<br>泡立ち豊かな<br>ボディソープ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>シャワーオイル L<br/>¥4,950(税込)/500mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/shower-oil?filter.p.m.custom.size=400mL&filter.p.m.custom.size=450mL&filter.p.m.custom.size=500mL&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_mWKCBG": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/55401191_ShowerOilS_OliveBliss_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/shower-oil?filter.p.m.custom.size=235mL&filter.p.m.custom.size=300mL&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "植物オイルが潤しながら<br>豊かな泡が<br>汚れを落とす",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>シャワーオイル S<br/>¥3,520(税込)/300mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/shower-oil?filter.p.m.custom.size=235mL&filter.p.m.custom.size=300mL&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_JM6DdR": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10208081_2117_01.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/shower-oil?filter.p.m.custom.size=100mL&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "初めて使う方にもおすすめの<br>お試しサイズの<br>シャワーオイル",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>シャワーオイル(100mL)<br/>¥1,320(税込)/100mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/shower-oil?filter.p.m.custom.size=100mL&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_4kcPFP",
+        "image_column_i8wYBD",
+        "image_column_cbe86x",
+        "image_column_mWKCBG",
+        "image_column_JM6DdR"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "洗う(インバス)",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_FJpiPt": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_XJCNmk": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10202721_2157_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/body-scrub?filter.p.m.custom.size=600g&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "1つ3役で驚きの<br>滑らかな肌へ導く<br>ボディスクラブ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ボディスクラブ L<br/>¥6,600(税込)/600g</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/body-scrub?filter.p.m.custom.size=600g&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_PPmkhx": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10203021_2148_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/body-scrub?filter.p.m.custom.size=320g&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "気軽に試せるSサイズ<br>肌と心がときめく<br>新感覚ボディスクラブ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ボディスクラブ S<br/>¥4,290(税込)/320g</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/body-scrub?filter.p.m.custom.size=320g&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_trzpCj": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/55306791_2136_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/body-scrub?filter.p.m.custom.size=60g&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "初めて使う方におすすめの<br>お試しサイズの<br>ボディスクラブ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ボディスクラブ(60g)<br/>¥1,320(税込)/60g</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/body-scrub?filter.p.m.custom.size=60g&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_XJCNmk",
+        "image_column_PPmkhx",
+        "image_column_trzpCj"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "磨く(インバス)",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_44mt9R": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_BMcfiB": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10102881_BeautyOilN_PatchouliLavenderVanilla_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/beauty-oil",
+            "small_caption": "",
+            "accent": "",
+            "heading": "肌と髪に輝きと<br>しなやかさを与える<br>香り豊かなブレンドオイル",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ビューティーオイル<br/>¥5,060(税込)/100mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/beauty-oil",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_BMcfiB"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "やわらげる",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_A9xtbQ": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_NrNkxe": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/30303281_BodyLotionBottleP-L-V.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/body-lotion?filter.p.m.custom.size=200mL&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "潤い溢れる<br>ベルベットのような肌へ導く<br>ボディローション",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ボディローション（ボトル）<br/>¥4,620(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/body-lotion?filter.p.m.custom.size=200mL&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_drhnNq": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/30300911_236_SilkyBodyMilk_PatchouliLavenderVanilla_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/silky-body-milk",
+            "small_caption": "",
+            "accent": "",
+            "heading": "濃密なミルクを思わせる<br>滑らかなテクスチャーの<br>ボディミルク",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>シルキーボディミルク<br/>¥5,060(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/silky-body-milk",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_jen8Gq": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/30308711_Body_Gelee_PLV.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/body-gelee",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ひんやりした感触で<br>潤し香る<br>フレグランスジュレ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ボディジュレ<br/>¥4,620(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/body-gelee",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_PA69eh": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/30308071_RepairBodyCream_PLV.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/repair-body-cream",
+            "small_caption": "",
+            "accent": "",
+            "heading": "潤いバリアを巡らせて<br>乾燥ダメージを集中ケアする<br>ボディ用クリーム",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>リペアボディクリーム<br/>¥5,060(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/repair-body-cream",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_8TTqcA": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/55404471_MoistureGift_PatchouliLavenderVanilla_3.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "/collections/body-lotion?filter.p.m.custom.size=50mL&filter.p.m.custom.size=150mL&sort_by=best-selling",
+            "small_caption": "",
+            "accent": "",
+            "heading": "潤い溢れる<br>ベルベットのような肌へ導く<br>ボディローション",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ボディローション（チューブ）<br/>¥2,200(税込) /50mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "/collections/body-lotion?filter.p.m.custom.size=50mL&filter.p.m.custom.size=150mL&sort_by=best-selling",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_NrNkxe",
+        "image_column_drhnNq",
+        "image_column_jen8Gq",
+        "image_column_PA69eh",
+        "image_column_8TTqcA"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "潤す（アウトバス）",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_UxD7Bp": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_Keb9QJ": {
+          "type": "heading",
+          "settings": {
+            "title": "Fresh & Glow",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "subheading_iWLDzy": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "フェイスケアライン",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_cGrhPi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“フレッシュ＆グロー”な肌へ導くSABON流フェイスケア</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Keb9QJ",
+        "subheading_iWLDzy",
+        "text_cGrhPi"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/face_kv_pc.jpg",
+        "image_mobile": "shopify://shop_images/face_kv_sp.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#493528",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "multi_column_LDU8gc": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_iQFGWP": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/40404041_CleansingOil.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/40404041",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ローズの香りと<br>植物オイルで<br>心地よくメイクオフ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>クレンジングオイル<br/>¥4,290(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/40404041",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_iQFGWP"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "落とす",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_q94PqU": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_bMPbdK": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/60402751_2532_FacePolisherN_Refresing_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/face-polisher",
+            "small_caption": "",
+            "accent": "",
+            "heading": "毛穴の目立たない<br>柔肌を１品で叶える、<br>2in1スクラブ洗顔",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>フェイスポリッシャー<br/>¥3,960(税込)/125mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/face-polisher",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_bMPbdK"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "洗う・磨く",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_KkHJ8N": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_CgPxUD": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/60407381_RoseWaterinOil150ml_20220928.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/60407381",
+            "small_caption": "",
+            "accent": "",
+            "heading": "朝露のような<br>みずみずしさに満たされる<br>二層式マルチミスト",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ローズ＊1ウォーターインオイル<br/>¥6,710(税込)/150mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/60407381",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_CgPxUD"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "潤す",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_z6FAzK": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_YiwgFT": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/60407371_RoseSerumInOil50ml_20220928.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/60407371",
+            "small_caption": "",
+            "accent": "",
+            "heading": "シルクのような<br>輝きのオーラをまとう<br>凝縮美容オイル",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ローズ＊2,3セラムインオイル<br/>¥12,100(税込)/50mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/60407371",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_QXUTQG": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/60408801_RoseHydratingSerum_FloralMarine_1_20241212.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/60408801",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ダブルの発酵ヒアルロン酸<sup>*5*6</sup>で<br>ハリあふれるつや肌へ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ローズハイドレイティングセラム<br/>¥12,100(税込)/50mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/60408801",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_YiwgFT",
+        "image_column_QXUTQG"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "満たす",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_VLCCzC": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_mxnQ3t": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/60407421_RoseSoftCream80ml_withoutspatula_20220928.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/60407421",
+            "small_caption": "",
+            "accent": "",
+            "heading": "上質な潤いで<br>ベルベットのようにつやめく<br>肌を叶えるクリーム",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ローズ＊1,2ソフトクリーム<br/>¥12,100(税込)/80mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/60407421",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_GwBchT": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/itemlineup_rosewatergelee.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/60400731",
+            "small_caption": "",
+            "accent": "",
+            "heading": "うるおい弾ける<br>保湿ジェルで<br>ぷりぷりのハリつや肌に",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ローズ＊1ウォータージュレ<br/>¥12,100(税込)/80mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/60400731",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_mxnQ3t",
+        "image_column_GwBchT"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "弾む",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_Jd74qD": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_qLNxGi": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/61300221_DeadSea3-in-1FacialScrubMask200ml.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/61300221",
+            "small_caption": "",
+            "accent": "",
+            "heading": "光を放つ清らかな<br>素肌を叶える<br>漆黒のスクラブマスク",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>3in1 マスク＆スクラブ<br/>¥8,140(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/61300221",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_L9T6RG": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/40404131_FloralGeleeMask.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/40404131",
+            "small_caption": "",
+            "accent": "",
+            "heading": "花びら<sup>＊4</sup>入りジュレの<br>集中保湿マスク",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>フローラルジュレマスク<br/>¥6,380(税込)/125mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/40404131",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_DXXCxR": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/60400741_2112_01.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/60400741",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ハリに満ち、輝きをまとう<br>オーラあふれる目もとを叶える<br>アイトリートメント",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ローズアイバーム<br/>¥8,030(税込)/15mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/60400741",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_qLNxGi",
+        "image_column_L9T6RG",
+        "image_column_DXXCxR"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "Special Care",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_Dcpkn4": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Vb4x7Y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>＊1 ダマスクバラ花水（保湿）＊2 ダマスクバラ花油（保湿）＊3 ダマスクバラ花（保湿）＊4 ガリカバラ花（整肌）＊5 ヒアルロン酸（保湿）＊6 ヒアルロン酸Na（保湿）<br/><br/></p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_Vb4x7Y"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_AUAEpC": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_8CcPB4": {
+          "type": "heading",
+          "settings": {
+            "title": "Hair Care Line",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "subheading_niNQdm": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ヘアケアライン",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_xp4cYt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>厳選された自然の恵みを注ぎ込む贅沢なヘアケアライン</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8CcPB4",
+        "subheading_niNQdm",
+        "text_xp4cYt"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/hair_kv_pc.jpg",
+        "image_mobile": "shopify://shop_images/hair_kv_sp.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#493528",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "multi_column_EKy6Ea": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_dgTMFj": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/31000831_ScalpScrubCoolingMint300grJar_20241212.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/head-scrub",
+            "small_caption": "",
+            "accent": "",
+            "heading": "頭皮をすこやかに<br>整える",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ヘッドスクラブ<br/>¥5,830(税込)/300g</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/head-scrub",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_dgTMFj"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "磨く（インバス）",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_9wCWWM": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_qYrmrb": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/55407501_2498_RepairShampoo_GreenRose_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/repair-shampoo",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ダメージをいたわり、<br>うるふわヘアに<br>洗い上げる",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>リペアシャンプー<br/>¥3,740(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/repair-shampoo",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_H7bhA7": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/55403591_2569_Refresh_HairCareKit_3.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/31002621",
+            "small_caption": "",
+            "accent": "",
+            "heading": "べたつく頭皮を<br>さっぱり爽快に<br>洗い上げる",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ローシャンプー<br/>¥3,740(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/31002621",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_6KdCJx": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/51004091_LowShampoo_DelicateJasmine_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/51004091",
+            "small_caption": "",
+            "accent": "",
+            "heading": "頭皮の潤いを守りながら、<br>しっとりと髪を洗い上げる<br>シャンプー",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ローシャンプー<br/>¥3,300(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/51004091",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_qYrmrb",
+        "image_column_H7bhA7",
+        "image_column_6KdCJx"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "洗う（インバス）",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_qHTrq6": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_dTwfiq": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/55407501_2737_ShampooConditionerKit_GreenRose_3.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/repair-conditioner",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ダメージをリペアし、<br>さらつやヘアに導く",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>リペアコンディショナー<br/>¥3,740(税込)/190mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/repair-conditioner",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_pAUx9Y": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/31001781_2507_RepairMask_DelicateJasmine_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/repair-mask",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ダメージをリペアし、<br>強くしなやかな髪が続く",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>リペアマスク<br/>¥5,500(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/repair-mask",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_dTwfiq",
+        "image_column_pAUx9Y"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "潤す（インバス）",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_ngdKtj": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_meUfeh": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/31001831_2508_ShineHairVinegarN__1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/31001831",
+            "small_caption": "",
+            "accent": "",
+            "heading": "頭皮から毛先まで<br>清潔に整え、<br>輝きを与える",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>シャインヘアビネガー<br/>¥3,850(税込)/190mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/31001831",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_k87BTU": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/31001991_2503_CushionHairBrush__1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/31001991",
+            "small_caption": "",
+            "accent": "",
+            "heading": "からまりがちな<br>ダメージヘアを<br>さらさらに",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>クッション ヘアブラシ<br/>¥3,960(税込)</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/31001991",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_meUfeh",
+        "image_column_k87BTU"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "整える（インバス）",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_hmpzgc": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_bfhNpa": {
+          "type": "heading",
+          "settings": {
+            "title": "Other Items",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "subheading_M6HKxT": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "その他アイテム",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bfhNpa",
+        "subheading_M6HKxT"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/oude_kv_pc.jpg",
+        "image_mobile": "shopify://shop_images/oude_kv_sp.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#493528",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "multi_column_gFCqBD": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_Rkcin9": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10205541_61221000002HandSoapBottleJasmine200ml_New22.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/hand-soap",
+            "small_caption": "",
+            "accent": "",
+            "heading": "洗うたびにきめ細やかで<br>上質な手肌に整える<br>ハンドソープ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ハンドソープ<br/>¥2,420(税込)/200mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/hand-soap",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_LUza66": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/55407581_2741_4stepBodyCareKitN_PatchouliLavenderVanilla_5.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/hand-cream-30",
+            "small_caption": "",
+            "accent": "",
+            "heading": "サラサラなのにしっかり潤う<br>日常使いにおすすめの<br>ハンドクリーム",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ハンドクリーム<br/>¥1,650(税込)/30mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/hand-cream-30",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_JdeCc7": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10309691_2395_ButterHandCreamN_DelicateJasmine_2.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/butter-hand-cream",
+            "small_caption": "",
+            "accent": "",
+            "heading": "荒れがちな手肌も<br>しっとりと潤う<br>高保湿の濃密ハンドクリーム",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>バターハンドクリーム<br/>¥1,980(税込)/30mL<br/>¥3,190(税込)/75mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/butter-hand-cream",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_Rkcin9",
+        "image_column_LUza66",
+        "image_column_JdeCc7"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "Hand Care",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_r64EMd": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_i7V8Ux": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10300621_52021000004Feet-CoolingMistFeetLegs100ml.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://products/10300621",
+            "small_caption": "",
+            "accent": "",
+            "heading": "いつでも好きなタイミングで<br>脚を爽快にリフレッシュ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>リフレッシングミスト<br/>フット&レッグ<br/>¥2,200(税込)/100mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://products/10300621",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_i7V8Ux"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "Foot Care",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "5",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_KzniPj": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_DbKEYx": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10106671_2720_WelcomeKit26_PatchouliLavenderVanilla_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/welcome-kit",
+            "small_caption": "",
+            "accent": "",
+            "heading": "今日から始める<br>SABONのボディケア習慣",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>Body Care</strong><br/>ウェルカムキット<br/>¥3,850(税込)</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/welcome-kit",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_QnGwdQ": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/60308921_EAU_de_SABON_DJ.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/eau-de-sabon",
+            "small_caption": "",
+            "accent": "",
+            "heading": "そよ風のように<br>全身を包み込む<br>オードトワレ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>Fragrance</strong><br/>オー ドゥ サボン<br/>¥4,070(税込)/30mL<br/>¥7,150(税込) /80mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/eau-de-sabon",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_U4YxME": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/40409821_1919_01.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/aroma",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ラグジュアリーな装いと<br>優しく広がる香りで<br>空間を演出するアロマ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>Home</strong><br/>アロマ<br/>¥4,840(税込)/100mL<br/>¥7,480(税込)/245mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/aroma",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_Md7kPt": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/FabricMistJasmineYlangYlang300ml.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/fabric-mist",
+            "small_caption": "",
+            "accent": "",
+            "heading": "洋服やベッドリネンに<br>やわらかい香りを添える<br>ファブリックミスト",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>Home</strong><br/>ファブリックミスト<br/>¥2,090(税込)/100mL<br/>¥3,520(税込)/300mL</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/fabric-mist",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_PzUbBP": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/55406561_2122_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/bath-ball",
+            "small_caption": "",
+            "accent": "",
+            "heading": "やわらかな泡と香りで<br>夢心地のバスタイムを",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>Bath Additive</strong><br/>バスボール<br/>¥990(税込)</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/bath-ball",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_MVcYYk": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/10208091_BathSalt_DelicateJasmine_1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://collections/bath-salt",
+            "small_caption": "",
+            "accent": "",
+            "heading": "心まで潤す<br>ひとときを演出する<br>バスソルト",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>Bath Additive</strong><br/>バスソルト<br/>¥3,300(税込)/300g</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "shopify://collections/bath-salt",
+            "link_text": "もっと見る",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_DbKEYx",
+        "image_column_QnGwdQ",
+        "image_column_U4YxME",
+        "image_column_Md7kPt",
+        "image_column_PzUbBP",
+        "image_column_MVcYYk"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "Other",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "6",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#ac976e",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_HNpeNx",
+    "scroll_to_buttons_qYqMMU",
+    "image_hero_yazQVF",
+    "multi_column_VcrafE",
+    "multi_column_FJpiPt",
+    "multi_column_44mt9R",
+    "multi_column_A9xtbQ",
+    "image_hero_UxD7Bp",
+    "multi_column_LDU8gc",
+    "multi_column_q94PqU",
+    "multi_column_KkHJ8N",
+    "multi_column_z6FAzK",
+    "multi_column_VLCCzC",
+    "multi_column_Jd74qD",
+    "rich_text_Dcpkn4",
+    "image_hero_AUAEpC",
+    "multi_column_EKy6Ea",
+    "multi_column_9wCWWM",
+    "multi_column_qHTrq6",
+    "multi_column_ngdKtj",
+    "image_hero_hmpzgc",
+    "multi_column_gFCqBD",
+    "multi_column_r64EMd",
+    "multi_column_KzniPj"
+  ]
+}

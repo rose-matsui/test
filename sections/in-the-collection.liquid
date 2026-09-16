@@ -1,0 +1,176 @@
+{% assign show_animations = false %}
+{% assign prioritize_loading = false %}
+{% assign collection_meta = product.metafields.custom.in_the_collection.value %}
+{%- capture image_sizes -%}
+    (min-width: 720px) calc(calc(50vw - clamp(18px, 3.3vw, 3.3vw)), calc(100vw - 80px)
+{%- endcapture -%}
+
+{% if product.metafields.custom.in_the_collection.value != blank %}
+
+<div
+  id="in-the-collection-wrapper"
+  class="
+    image-with-text
+    image-with-text--justify-center
+    image-with-text--image-center
+    {% unless section.settings.image_caption == blank %}
+      image-with-text--has-image-caption
+    {% endunless %}
+    section section--divider-none
+    section--vertical-padding-top-bottom
+    {% if show_animations %}
+      animation
+      animation--image-with-text
+    {% endif %}
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="image-with-text"
+  style="
+    --sbn-background-color: {{ section.settings.background_color }};
+    --color-text: {{ section.settings.text_color }};
+    --color-text-alpha-60: {{ section.settings.text_color | color_modify: 'alpha', 0.6 }};
+    --color-text-link: {{ section.settings.text_color }};
+    --text-alignment: center;
+    --small-image-placeholder-color: {{ settings.color_text | color_modify: 'alpha', 0.7 }};
+    {% render 'overlay-button-vars' with color_button_text: "#fffef9", color_button_background: "#b4975e" %}
+    --sbn-aspect-ratio: {%- case section.settings.aspect_ratio -%}
+      {%- when "portrait" -%}0.667
+      {%- when "landscape" -%}1.5
+      {%- when "square" -%}1
+      {%- else -%}1
+    {%- endcase -%};
+  "
+>
+
+  {% render 'in-the-collection-modal' with
+    collection_meta: collection_meta
+    product: product
+  %}
+
+  <div class="image-with-text__inner">
+    <div class="image-with-text__content">
+      <div class="image-with-text__image-container">
+        <div class="image-with-text__image-container-inner">
+          <figure class="image-with-text__image-wrapper">
+            {%-
+              render 'image' with
+              wrapper_class: "image-with-text__image",
+              image: collection_meta.metafields.custom.in_the_collection_image,
+              sizes: image_sizes,
+              aspect_ratio: section.settings.aspect_ratio,
+              focal_point: "center",
+              include_placeholder: true,
+              animate: show_animations,
+              prioritize_loading: prioritize_loading
+            -%}
+
+            {%- unless section.settings.image_caption == blank -%}
+              <figcaption class="image-with-text__image-caption ff-body fs-body-50">
+                {{ section.settings.image_caption }}
+              </figcaption>
+            {%- endunless -%}
+          </figure>
+        </div>
+      </div>
+
+      <div class="image-with-text__text-container">
+        <div
+          class="
+            image-with-text__text-container-inner
+            section-blocks
+            {% if show_animations %}animation--section-blocks{% endif %}
+          "
+        >
+          <h2 class="image-with-text__text-container-heading ff-heading fs-heading-display-3 section-blocks__heading">
+            {{ collection_meta.title }}
+          </h2>
+          <div
+            class="button-block__button
+                  button-block__button--justify-center
+                  button-block__button--justify-mobile-center
+                  image-with-text__text-container-button
+                  section-blocks__button"
+          >
+            <button
+              class="btn btn--overlay btn--primary"
+              data-custom-modal-open
+              data-collection-handle="{{ collection_meta.handle }}"
+            >
+              <span>{{ section.settings.button_label }}</span>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+
+{% schema %}
+{
+  "name": "PDP In The Collection",
+  "tag": "section",
+  "class": "sbn-custom in-the-collection",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "In The Collection"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "コレクションを見る"
+    },
+    {
+      "type": "select",
+      "id": "aspect_ratio",
+      "label": "t:shared.settings.aspect_ratio.label",
+      "default": "landscape",
+      "options": [
+        {
+          "value": "square",
+          "label": "t:shared.settings.aspect_ratio.option_square"
+        },
+        {
+          "value": "portrait",
+          "label": "t:shared.settings.aspect_ratio.option_portrait"
+        },
+        {
+          "value": "landscape",
+          "label": "t:shared.settings.aspect_ratio.option_landscape"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:shared.settings.background_color.label"
+    },
+  ],
+  "presets": [
+    {
+      "name": "In The Collection",
+      "category": "Custom",
+      "settings": {
+        "button_label": "コレクションを見る",
+        "text_color": "#b4975e",
+        "background_color": "#FFFEF9"
+      }
+    }
+  ]
+}
+{% endschema %}

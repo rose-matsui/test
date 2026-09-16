@@ -1,0 +1,350 @@
+<!doctype html>
+
+<!--
+  ___                 ___           ___           ___
+       /  /\                     /__/\         /  /\         /  /\
+      /  /:/_                    \  \:\       /  /:/        /  /::\
+     /  /:/ /\  ___     ___       \  \:\     /  /:/        /  /:/\:\
+    /  /:/ /:/ /__/\   /  /\  ___  \  \:\   /  /:/  ___   /  /:/  \:\
+   /__/:/ /:/  \  \:\ /  /:/ /__/\  \__\:\ /__/:/  /  /\ /__/:/ \__\:\
+   \  \:\/:/    \  \:\  /:/  \  \:\ /  /:/ \  \:\ /  /:/ \  \:\ /  /:/
+    \  \::/      \  \:\/:/    \  \:\  /:/   \  \:\  /:/   \  \:\  /:/
+     \  \:\       \  \::/      \  \:\/:/     \  \:\/:/     \  \:\/:/
+      \  \:\       \__\/        \  \::/       \  \::/       \  \::/
+       \__\/                     \__\/         \__\/         \__\/
+
+  --------------------------------------------------------------------
+  #  Stiletto v3.4.0
+  #  Documentation: https://help.fluorescent.co/v/stiletto
+  #  Purchase: https://themes.shopify.com/themes/stiletto/
+  #  A product by Fluorescent: https://fluorescent.co/
+  --------------------------------------------------------------------
+-->
+
+<html class="no-js" lang="{{ request.locale.iso_code }}" style="--announcement-height: 1px;">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% render 'meta-description' %}
+    
+    <link rel="canonical" href="{{ canonical_url }}">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    
+    <!-- To remove Priori Sans Unused? <link rel="stylesheet" href="https://use.typekit.net/fxj5ksa.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@400;600&display=swap" rel="stylesheet">
+
+    {% if request.path contains '/apps/socialplus/customers' %}
+      <link rel="stylesheet" href="{{ 'crmplus_custom.css' | asset_url }}">
+    {% endif %}
+    
+    {%- if settings.favicon != blank -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" type="image/png">
+    {%- endif -%}
+
+    {{ 'theme-override.css' | asset_url | stylesheet_tag }}
+
+    {% comment %} Swym Wishlist global logic for login and cookies {% endcomment %}
+    {% render 'swym-custom' %}
+
+    <script src="{{ 'cookie-events.js' | asset_url }}" defer></script>
+
+    {%- capture seo_title -%}
+      {%- if request.page_type == 'search' and search.performed == true -%}
+        {{ 'search.heading' | t: count: search.results_count }}:
+        {{ 'search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+      {%- else -%}
+        {{ page_title }}
+      {%- endif -%}
+      {%- if current_tags -%}
+        {%- assign meta_tags = current_tags | join: ', ' -%}
+        &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+      {%- endif -%}
+      {%- if current_page != 1 -%}
+        &ndash; {{ 'general.meta.page' | t: page: current_page }}
+      {%- endif -%}
+      {%- assign escaped_page_title = page_title | escape -%}
+      {%- unless escaped_page_title contains shop.name -%}
+        &ndash; {{ shop.name }}
+      {%- endunless -%}
+    {%- endcapture -%}
+    <title>{{ seo_title | strip }}</title>
+
+    {% render 'social-meta-tags' %}
+
+    {% render 'theme-setup' %}
+    {% render 'theme-setting-vars' %}
+    {%- render 'theme-globals' -%}
+
+    {{ content_for_header }}
+
+    <!-- Start KARTE Tag -->
+    <script>!function(n){if(!window[n]){var o=window[n]=function(){var n=[].slice.call(arguments);return o.x?o.x.apply(0,n):o.q.push(n)};o.q=[],o.i=Date.now(),o.allow=function(){o.o="allow"},o.deny=function(){o.o="deny"}}}("krt")</script>
+    <script async src="https://cdn-edge.karte.io/e85e57d4d424ef67a626c5bd9ce16a8d/edge.js"></script>
+    <!-- End KARTE Tag -->
+    <!-- STRIGHT ONE Banner Script Start -->
+<script type="module" src="https://cdn01.stright.bizris.com/js/cookie_consent_setting.js?banner_type=banner" charset="UTF-8" data-site-id="SIT-5cb5588c-73fb-47ae-9aae-ac8bd046eec1"></script>
+<!-- STRIGHT ONE Banner Script End -->
+
+<!-- STRIGHT Consent Shopify Customer Privacy API -->
+<script src="{{ 'consent-sync.js' | asset_url }}" defer></script>
+  </head>
+
+  <body class="template-{{ request.page_type | handle }}">
+    <div class="page">
+      {% if settings.enable_page_transitions %}
+        {% render 'page-transition-overlay' %}
+      {% endif %}
+
+      <div class="theme-editor-scroll-offset"></div>
+
+      <div class="header__space" data-header-space></div>
+
+      {% sections 'header-group' %}
+      {% sections 'overlay-group' %}
+
+      {%- if settings.enable_quick_search -%}
+        {% render 'quick-search' %}
+      {%- endif -%}
+
+      <div class="header-overlay" data-header-overlay>
+        <div class="header-overlay__inner"></div>
+      </div>
+
+      <main id="main" class="main">
+        {% comment %} Swym Wishlist page content {% endcomment %}
+        {% if template.name == 'page' and template.suffix == 'swym' %}{% render 'swym-wishlist' %}{% endif %}
+
+        {{ content_for_layout }}
+      </main>
+
+      {% sections 'footer-group' %}
+
+      {% render 'store-availability-drawer' %}
+      {% render 'quick-view-modal' %}
+      {% render 'modal' %}
+      {% render 'back-to-top' %}
+    </div>
+
+    <script>
+    // karte login
+    (function() {
+      const STORAGE_KEY = "krt_login_state";
+      const currentState = '{{ customer.id | default: "guest" }}';
+      const prevState = sessionStorage.getItem(STORAGE_KEY);
+      if (prevState === currentState) return;
+
+      sessionStorage.setItem(STORAGE_KEY, currentState);
+      try {
+        krt("send", "login", {
+          status: currentState !== "guest",
+        });
+      } catch(e) {
+        if ("krt" in window) {
+          krt("send", "_error", { message: e.message });
+        } else {
+          console.warn("tracker was not loaded");
+        }
+      }
+    })();
+    </script>
+    
+    <script>
+    // karte favorite
+    (function() {
+      function onSwymLoadCallback(swat) {
+        let wishlistCacheMap = new Map();
+
+        function getHandleFromUrl(url) {
+          if (!url) return "";
+          return url.split("/").pop().split("?")[0];
+        }
+
+        function getItemKey(item) {
+          const handle = getHandleFromUrl(item.du);
+          return String(handle || item.empi || item.sku || "");
+        }
+
+        function updateWishlistCache(lists) {
+          wishlistCacheMap.clear();
+          const favList = lists.find((list) => list.lname === "My Wishlist");
+          if (!favList || !favList.listcontents) return;
+
+          favList.listcontents.forEach((item) => {
+            const key = getItemKey(item);
+            if (key) {
+              wishlistCacheMap.set(key, {
+                source: item.source || "normal",
+                rawItem: item
+              });
+            }
+          });
+        }
+
+        async function fetchProductTitle(handle) {
+          if (!handle) return "";
+          try {
+            const response = await fetch(`/products/${handle}.js`);
+            if (response.ok) {
+              const product = await response.json();
+              return product.title || "";
+            }
+          } catch (error) {
+            console.warn("Failed to fetch product title:", error);
+          }
+          return "";
+        }
+
+        function fetchAndHandleLists(eventData, eventType) {
+          const eventTargetItemData = eventData.detail.d;
+          const targetKey
+            = getHandleFromUrl(eventTargetItemData && eventTargetItemData.du)
+            || (eventTargetItemData && (eventTargetItemData.empi || eventTargetItemData.sku))
+            || "";
+
+          const onSuccess = async function(lists) {
+            const favList = lists.find((list) => list.lname === "My Wishlist");
+            if (!favList) return;
+
+            let changedSource = null;
+
+            if (eventType === "add") {
+              const addedItem = favList.listcontents.find((item) => !wishlistCacheMap.has(getItemKey(item)));
+              if (addedItem) {
+                changedSource = addedItem.source;
+              } else {
+                changedSource = eventTargetItemData.source;
+              }
+            } else if (eventType === "remove") {
+              let removedItemFound = false;
+
+              if (targetKey && wishlistCacheMap.has(targetKey)) {
+                changedSource = wishlistCacheMap.get(targetKey).source;
+                removedItemFound = true;
+              } else {
+                const currentKeys = new Set(favList.listcontents.map(getItemKey));
+                for (let [key, cachedData] of wishlistCacheMap.entries()) {
+                  if (!currentKeys.has(key)) {
+                    changedSource = cachedData.source;
+                    removedItemFound = true;
+                    break;
+                  }
+                }
+              }
+
+              if (!removedItemFound) {
+                console.log("No actual item removed from the list. Skipping tracking.");
+                return;
+              }
+            }
+
+            if (changedSource === "auto-wishlist") {
+              updateWishlistCache(lists);
+              return;
+            }
+
+
+            const exceptAutoAddItems = favList.listcontents.filter((item) => {
+              return item.source !== "auto-wishlist";
+            });
+
+            const mappedItems = exceptAutoAddItems.map((item) => ({
+              item_code: item.sku,
+              name: item.sku && (item.dt || ""),
+              price: item.sku && (item.pr || 0),
+              item_page_url: item.sku && (item.du || ""),
+              image: item.sku && (item.iu || ""),
+            }));
+
+            const sendData = {
+              items: mappedItems,
+              length: mappedItems.length,
+            };
+
+            const isRemoveEvent = eventType === "remove";
+            const handle = getHandleFromUrl(eventTargetItemData.du);
+            const image
+              = /^\/\//.test(eventTargetItemData.iu)
+                ? `https:${eventTargetItemData.iu}`
+                : eventTargetItemData.iu;
+
+            let targetName = eventTargetItemData.dt;
+            if (isRemoveEvent || !targetName) {
+              const fetchedTitle = await fetchProductTitle(handle);
+              if (fetchedTitle) {
+                targetName = fetchedTitle;
+              }
+            }
+
+            const targetPrefix = isRemoveEvent ? "removed_" : "";
+            sendData[targetPrefix + "item_code"] = handle || eventTargetItemData.empi || "";
+            sendData[targetPrefix + "name"] = targetName || "";
+            sendData[targetPrefix + "price"] = eventTargetItemData.pr || 0;
+            sendData[targetPrefix + "item_page_url"] = eventTargetItemData.du || "";
+            sendData[targetPrefix + "image"] = image || "";
+
+            const blankPrefix = isRemoveEvent ? "" : "removed_";
+            sendData[blankPrefix + "item_code"] = "";
+            sendData[blankPrefix + "name"] = "";
+            sendData[blankPrefix + "price"] = 0;
+            sendData[blankPrefix + "item_page_url"] = "";
+            sendData[blankPrefix + "image"] = "";
+
+            updateWishlistCache(lists);
+
+            try {
+              krt("send", "favorite", sendData);
+            } catch(e) {
+              if ("krt" in window) {
+                krt("send", "_error", { message: e.message });
+              } else {
+                console.warn("tracker was not loaded");
+              }
+            }
+          };
+
+          const onError = function(error) {
+            console.log("Error while fetching all Lists", error);
+          };
+
+          swat.fetchLists({
+            callbackFn: onSuccess,
+            errorFn: onError
+          });
+        }
+
+        swat.fetchLists({
+          callbackFn: (lists) => updateWishlistCache(lists),
+          errorFn: (err) => console.log("Initial wishlist fetch error:", err)
+        });
+
+        swat.evtLayer.addEventListener("sw:addedtowishlist", function(data) {
+          fetchAndHandleLists(data, "add");
+        });
+        swat.evtLayer.addEventListener("sw:removedfromwishlist", function(data) {
+          fetchAndHandleLists(data, "remove");
+        });
+      }
+
+      window.SwymCallbacks = window.SwymCallbacks || [];
+      window.SwymCallbacks.push(onSwymLoadCallback);
+    })();
+    </script>
+
+    {{ '//www.youtube.com/iframe_api' | script_tag }}
+    {{ '//cdn.shopify.com/shopifycloud/shopify-plyr/v1.0/shopify-plyr.css' | stylesheet_tag }}
+
+  </body>
+  <link
+    rel="preload"
+    fetchpriority="low"
+    href="{{ 'theme-deferred.css' | asset_url }}"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
+  <noscript><link rel="stylesheet" href="{{ 'theme-deferred.css' | asset_url }}"></noscript>
+</html>

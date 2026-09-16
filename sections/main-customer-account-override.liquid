@@ -1,0 +1,222 @@
+<section
+  class="
+    customer account page account-section account-section--main
+  "
+>
+  <div class="account__container page__inner">
+    
+    <div class="account__blocks">
+      <h3 class="ff-heading fs-body-75">連携サービス</h3>
+      {% for block in section.blocks %}
+        {% render block %}
+      {% endfor %}
+    </div>
+
+
+    <div class="account__sections account__main ff-body fs-body-100">
+      <div class="account__menu">
+        <h3 class="ff-heading fs-body-75">{{ 'customer.account.nav_links.menu' | t }}</h3>
+
+        <div class="account__menu-list">
+          <a class="account__menu-item" href="{{ routes.account_url }}?view=history">
+            <span class="account__menu-item-left">
+              <span class="account__menu-icon">{% render 'icon' with icon: 'package-closed' %}</span>
+              <span>{{ 'customer.account.nav_links.purchase_history' | t }}</span>
+            </span>
+            <span class="account__menu-chevron">{% render 'icon' with icon: 'chevron' %}</span>
+          </a>
+
+          <a class="account__menu-item" href="{{ routes.account_addresses_url }}">
+            <span class="account__menu-item-left">
+              <span class="account__menu-icon">{% render 'icon' with icon: 'map-pin' %}</span>
+              <span>{{ 'customer.account.nav_links.address_book_add_edit' | t }}</span>
+            </span>
+            <span class="account__menu-chevron">{% render 'icon' with icon: 'chevron' %}</span>
+          </a>
+
+          <a class="account__menu-item" href="/account/login#recover">
+            <span class="account__menu-item-left">
+              <span class="account__menu-icon">{% render 'icon' with icon: 'padlock' %}</span>
+              <span>{{ 'customer.account.nav_links.password' | t }}</span>
+            </span>
+            <span class="account__menu-chevron">{% render 'icon' with icon: 'chevron' %}</span>
+          </a>
+
+          <a class="account__menu-item" href="/pages/favorites">
+            <span class="account__menu-item-left">
+              <span class="account__menu-icon">{% render 'icon' with icon: 'wishlist' %}</span>
+              <span>{{ 'customer.account.nav_links.favorite_products' | t }}</span>
+            </span>
+            <span class="account__menu-chevron">{% render 'icon' with icon: 'chevron' %}</span>
+          </a>
+        </div>
+        <div class="account__menu-logout">
+          <a class="logout btn btn--primary" href="{{ routes.account_logout_url }}">
+            {{- 'account.log_out' | t -}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+// karte identify
+const prefecture = "{{customer.default_address.province}}";
+const city = "{{customer.default_address.city}}";
+const address1 = "{{customer.default_address.address1}}";
+const addressString = prefecture + city + address1;
+
+try {
+  krt("send", "identify", {
+    user_id: "{{customer.id}}",
+    email: "{{customer.email}}",
+    phone: "{{customer.default_address.phone}}" ? "{{customer.default_address.phone}}" : null,
+    address: addressString ? addressString : null,
+    first_name: "{{customer.first_name}}",
+    last_name: "{{customer.last_name}}",
+    postcode: "{{customer.default_address.zip}}" ? "{{customer.default_address.zip}}" : null,
+  });
+} catch(e) {
+  if ("krt" in window) {
+    krt("send", "_error", { message: e.message });
+  } else {
+    console.warn("tracker was not loaded");
+  }
+}
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main_customer_account.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_style.header_style.content"
+    },
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "t:shared.settings.section_style.divider_style.label",
+      "default": "none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_none",
+          "value": "none"
+        },
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_solid",
+          "value": "solid"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "t:shared.settings.section_style.section_padding.label",
+      "default": "section--vertical-padding-bottom-only",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_none",
+          "value": "section--vertical-padding-none"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_both",
+          "value": "section--vertical-padding-top-bottom"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_top",
+          "value": "section--vertical-padding-top-only"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_bottom",
+          "value": "section--vertical-padding-bottom-only"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+.account-section--main .page__inner {
+    max-width: 760px !important;
+}
+#main .socialplus-association-component {
+  max-width: 100%;
+  margin: 0px;
+}
+#main .socialplus-association-component .socialplus-association-row {
+  border: 1px solid var(--color-border);
+  background-color: #fffef9 !important;
+}
+#main .socialplus-association-component .socialplus-association-button {
+  background: var(--color-text-link);
+  color: #ffffff;
+  font-weight: normal;
+  min-width: 96px;
+}
+.socialplus-association-component .socialplus-association-status-associated {
+  color: #06C755 !important;
+}
+.account__container {
+  padding-top: 0px;
+}
+.account__blocks,
+.account__sections {
+  padding-top: var(--spacing-10);
+} 
+h3.ff-heading {
+  margin-bottom: var(--spacing-2);
+}
+.account__menu-list {
+  border: 1px solid var(--color-border);
+  background-color: #fffef9;
+}
+.account__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 54px;
+  padding: 0 var(--spacing-4);
+}
+.account__menu-item + .account__menu-item {
+  border-top: 1px solid var(--color-border);
+}
+.account__menu-item-left {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+.account__menu-icon .icon,
+.account__menu-chevron .icon {
+  display: inline-flex;
+}
+.account__menu-chevron .icon.icon-chevron {
+  transform: rotate(270deg);
+}
+.account__menu-icon svg {
+  width: 20px;
+  height: 20px;
+}
+.account__menu-chevron svg {
+  width: 16px;
+  height: 16px;
+}
+.account__menu-logout {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-6);
+}
+.account__menu-logout .btn {
+  min-height: 54px;
+  width: 300px;
+}
+{% endstylesheet %}

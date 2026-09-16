@@ -1,0 +1,1366 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_R64DQa": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_DBrdNm": {
+          "type": "heading",
+          "settings": {
+            "title": "Head Scrub",
+            "heading_tag": "h2",
+            "heading_font_class": "sbn-heading-xxl"
+          }
+        },
+        "text_ECqYgy": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>豊かな香りに包まれながら、ゆるぎない土壌を整え、理想的な美髪へ。</strong></p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DBrdNm",
+        "text_ECqYgy"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "original",
+        "desktop_height": 70,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/hs_kv_pc.jpg",
+        "image_mobile": "shopify://shop_images/hs_kv_sp.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#f9f4ed",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_ciG3gV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_6gNPEQ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "自然由来成分95%＊1配合『頭皮タイプ×エッセンシャルオイル』で選べる４種類のラインナップ",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_n3cktR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*1 水を含む／ISO 16128準拠 *2 ユーカリ葉/枝油（保湿・着香）</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6gNPEQ",
+        "text_n3cktR"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 1000
+      }
+    },
+    "scroll_to_buttons_VxGLBb": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_84Yzib": {
+          "type": "button",
+          "settings": {
+            "button_label": "Clarifying (ユーカリ*2)",
+            "target_title": "Clarifying"
+          }
+        },
+        "button_ygddFx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Replenishing (ゼラニウム)",
+            "target_title": "Replenishing"
+          }
+        },
+        "button_TJG9tb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Refreshing (ミント)",
+            "target_title": "Refreshing"
+          }
+        },
+        "button_ELe9nK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Relaxing (ラベンダー)",
+            "target_title": "Relaxing"
+          }
+        }
+      },
+      "block_order": [
+        "button_84Yzib",
+        "button_ygddFx",
+        "button_TJG9tb",
+        "button_ELe9nK"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 210,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "collapsible_row_list_VmhbzR": {
+      "type": "collapsible-row-list",
+      "blocks": {
+        "item_FnahUE": {
+          "type": "item",
+          "settings": {
+            "expand_by_default": false,
+            "icon": "none",
+            "title": "ご使用方法",
+            "text": "<p>使用前に髪全体を予洗いし、濡らした頭皮にテーブルスプーン約1杯分を塗布します。指の腹で小さな円を描くようにやさしくマッサージすると、軽く泡立ちます。その後、ぬるま湯で丁寧に洗い流し、いつものシャンプー、ヘアマスク等をご使用ください。</p><h6><strong>使用頻度</strong></h6><p>使用回数は週２回までが目安です。</p>",
+            "content_width": "custom",
+            "image_size": 200,
+            "image_size_mobile": 200
+          }
+        }
+      },
+      "block_order": [
+        "item_FnahUE"
+      ],
+      "name": "t:sections.collapsible_row_list.presets.name",
+      "settings": {
+        "title": "How to Use",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "subheading": "",
+        "subheading_tag": "h3",
+        "subheading_font_class": "fs-heading-5-base",
+        "heading_alignment": "center",
+        "item_heading_font": "heading",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "scroll_to_buttons_khKfFP": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_jMhpcc": {
+          "type": "button",
+          "settings": {
+            "button_label": "動画で使用方法を見る",
+            "target_title": "ヘッドスクラブの使用方法"
+          }
+        }
+      },
+      "block_order": [
+        "button_jMhpcc"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 100,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "image_with_text_r69Ndr": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fPpqVM": {
+          "type": "heading",
+          "settings": {
+            "title": "Clarifying",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_Lwtht9": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "クラリファイング（ユーカリ＊1）",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "heading_QdtW94": {
+          "type": "heading",
+          "settings": {
+            "title": "頭皮汚れを死海の湖泥<sup>＊2</sup>が吸着、<br>ふわりと軽やかな髪へ",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_jFJKLi": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "オーガニックユーカリのエッセンシャルオイル<sup>＊1</sup>配合",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_XKxEAw": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>[ 環境ストレス＊3 ] [ ごわつき ]</strong></p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_GXB8wJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ヘッドスクラブ クラリファイング<br/>¥6,160(税込)/300g</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_DcmGM6": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/31001811",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fPpqVM",
+        "subheading_Lwtht9",
+        "heading_QdtW94",
+        "subheading_jFJKLi",
+        "text_XKxEAw",
+        "text_GXB8wJ",
+        "button_DcmGM6"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/img_clarifying.png",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#D4C6AD",
+        "text_color": "#242424",
+        "button_background_color": "#ac976d",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    },
+    "image_with_text_VaMVTU": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_hFefRV": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>今日から始める頭皮ケア<br/>まずはトライアルサイズで</h5>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_eGke8J": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ヘッドスクラブ クラリファイング<br/>¥2,860(税込)/90g</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_6DTrmg": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/31001821",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "text_VV7CEg": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>＊1 ユーカリ葉/枝油（保湿・着香）<br/>＊2 海シルト（洗浄補助）<br/>＊3 花粉・ほこり・乾燥などを洗い流すこと</em></p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": [
+        "text_hFefRV",
+        "text_eGke8J",
+        "button_6DTrmg",
+        "text_VV7CEg"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/img_clarifying_small_10917f94-ab51-4722-a1b1-fbb91ff63387.jpg",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#D4C6AD",
+        "text_color": "#242424",
+        "button_background_color": "#ac976d",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_with_text_wUwQAY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CKRXbY": {
+          "type": "heading",
+          "settings": {
+            "title": "Replenishing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_cbezw9": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "リプレニッシング(ゼラニウム)",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "heading_eLkEfA": {
+          "type": "heading",
+          "settings": {
+            "title": "エイジングサイン<sup>＊1</sup>が気になる頭皮をケアしハリのある髪へ",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_eEC96T": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "オーガニックゼラニウムエッセンシャルオイル<sup>＊2</sup>配合",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_G9VtLE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>[ ハリ・コシの減少 ] [ ボリューム不足・ツヤのなさ ]</strong></p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_gFc8Ti": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ヘッドスクラブ リプレニッシング<br/>¥5,830(税込)/300g</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_fXKwiW": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/31000851",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CKRXbY",
+        "subheading_cbezw9",
+        "heading_eLkEfA",
+        "subheading_eEC96T",
+        "text_G9VtLE",
+        "text_gFc8Ti",
+        "button_fXKwiW"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/img_rep.png",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#FEE6DE",
+        "text_color": "#242424",
+        "button_background_color": "#ac976d",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    },
+    "image_with_text_iG6mj6": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_4zhifx": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>今日から始める頭皮ケア<br/>まずはトライアルサイズで</h5>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_6wi8WC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ヘッドスクラブ リプレニッシング<br/>¥2,640(税込)/90g</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_XxHf63": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/31000881",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "text_mz4Ley": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>＊1 年齢に伴う頭皮の乾燥や過剰な皮脂等<br/>＊2 ニオイテンジクアオイ油(保湿・着香)</em></p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": [
+        "text_4zhifx",
+        "text_6wi8WC",
+        "button_XxHf63",
+        "text_mz4Ley"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/img_geranium_smallsize.jpg",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#FEE6DE",
+        "text_color": "#242424",
+        "button_background_color": "#ac976d",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_with_text_rFWJGJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9pz7he": {
+          "type": "heading",
+          "settings": {
+            "title": "Refreshing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_AzxAzB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "リフレッシング(ミント)",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "heading_B3Lped": {
+          "type": "heading",
+          "settings": {
+            "title": "オイリー頭皮をクールに磨き<br>さらさらな髪へ",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_37U69x": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "オーガニックミントエッセンシャルオイル<sup>＊</sup>配合",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_ttJpYa": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>[ べたつき ] [ におい ]</strong></p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_LLG9th": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ヘッドスクラブ リフレッシング<br/>¥5,830(税込)/300g</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_wG49Hy": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/31000831",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9pz7he",
+        "subheading_AzxAzB",
+        "heading_B3Lped",
+        "subheading_37U69x",
+        "text_ttJpYa",
+        "text_LLG9th",
+        "button_wG49Hy"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/img_ref.png",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#B8D5C4",
+        "text_color": "#242424",
+        "button_background_color": "#ac976d",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    },
+    "image_with_text_4ajDeV": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_7fkLCR": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>今日から始める頭皮ケア<br/>まずはトライアルサイズで</h5>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_BBjDBj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ヘッドスクラブ リフレッシング<br/>¥2,640(税込)/90g</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_cTVEqt": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/31000861",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "text_8rqFnX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>＊ セイヨウハッカ油(保湿・着香)</em></p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": [
+        "text_7fkLCR",
+        "text_BBjDBj",
+        "button_cTVEqt",
+        "text_8rqFnX"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/img_ref_s.jpg",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#B8D5C4",
+        "text_color": "#242424",
+        "button_background_color": "#ac976d",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_with_text_xeDaKV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JbgRBm": {
+          "type": "heading",
+          "settings": {
+            "title": "Relaxing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_gtk3Yj": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "リラクシング(ラベンダー)",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "heading_wGFYAr": {
+          "type": "heading",
+          "settings": {
+            "title": "ドライ頭皮をしっとりと潤し<br>つやめく髪へ",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_Mp4pP3": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "オーガニックラベンダーエッセンシャルオイル<sup>＊</sup>配合",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_byfL6E": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>[ 乾燥 ] [ ぱさつき ]</strong></p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_UbRE3r": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ヘッドスクラブ リラクシング<br/>¥5,830(税込)/300g</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_jg6NTD": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/31000841",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JbgRBm",
+        "subheading_gtk3Yj",
+        "heading_wGFYAr",
+        "subheading_Mp4pP3",
+        "text_byfL6E",
+        "text_UbRE3r",
+        "button_jg6NTD"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/img_rel.png",
+        "aspect_ratio": "square",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#D9CDD6",
+        "text_color": "#242424",
+        "button_background_color": "#ac976d",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    },
+    "image_with_text_AzkPpA": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_Yecige": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>今日から始める頭皮ケア<br/>まずはトライアルサイズで</h5>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "text_zRtCpH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ヘッドスクラブ リラクシング<br/>¥2,640(税込)/90g</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button_gzCGPJ": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://products/31000871",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "text_RwnNyB": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>＊ ラベンダー油、ラバンデュラハイブリダ油(保湿・着香)</em></p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": [
+        "text_Yecige",
+        "text_zRtCpH",
+        "button_gzCGPJ",
+        "text_RwnNyB"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "center",
+        "image": "shopify://shop_images/img_rel_s.jpg",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#D9CDD6",
+        "text_color": "#242424",
+        "button_background_color": "#ac976d",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_slider_GBmYPc": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "product_list_rfLNFK": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "55402541",
+              "55402531"
+            ],
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "product_list_rfLNFK"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "Special Kit",
+        "heading_tag": "h2",
+        "subheading": "<p>今日から始める３STEPヘアケア習慣</p>",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 3,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_ntEnNz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vk4WjC": {
+          "type": "heading",
+          "settings": {
+            "title": "ヘッドスクラブの使用方法",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_J8cDfB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "週2回、シャンプー前にお使いください。",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_AD3BbK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ジェラートのような濃密なテクスチャーで頭皮に密着し、<br/>余分な皮脂や汚れを取り除きながらすっきりと磨きます。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_jpRhVX": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>STEP 1</strong></h3>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "play_button_97c7Ua": {
+          "type": "play-button",
+          "settings": {
+            "video_source": "shopify",
+            "video": "shopify://files/videos/howto_movie1.mp4",
+            "video_url": "",
+            "image": "shopify://shop_images/howto_movie1.jpg",
+            "aspect_ratio": "natural",
+            "large_thumbnail": true,
+            "text": "",
+            "icon_style": "outline"
+          }
+        },
+        "text_MQwz8z": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>STEP 2</strong></h3>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "play_button_BRz6ii": {
+          "type": "play-button",
+          "settings": {
+            "video_source": "shopify",
+            "video": "shopify://files/videos/howto_movie2.mp4",
+            "video_url": "",
+            "image": "shopify://shop_images/howto_movie2.jpg",
+            "aspect_ratio": "natural",
+            "large_thumbnail": true,
+            "text": "",
+            "icon_style": "outline"
+          }
+        },
+        "text_nEzdUD": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>STEP 3</strong></h3>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "play_button_yUKGwn": {
+          "type": "play-button",
+          "settings": {
+            "video_source": "shopify",
+            "video": "shopify://files/videos/howto_movie3.mp4",
+            "video_url": "",
+            "image": "shopify://shop_images/howto_movie3.jpg",
+            "aspect_ratio": "natural",
+            "large_thumbnail": true,
+            "text": "",
+            "icon_style": "outline"
+          }
+        },
+        "text_EMtrkV": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>STEP 4</strong></h3>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "play_button_BGq8nq": {
+          "type": "play-button",
+          "settings": {
+            "video_source": "shopify",
+            "video": "shopify://files/videos/howto_movie4.mp4",
+            "video_url": "",
+            "image": "shopify://shop_images/howto_movie4.jpg",
+            "aspect_ratio": "natural",
+            "large_thumbnail": true,
+            "text": "",
+            "icon_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vk4WjC",
+        "subheading_J8cDfB",
+        "text_AD3BbK",
+        "text_jpRhVX",
+        "play_button_97c7Ua",
+        "text_MQwz8z",
+        "play_button_BRz6ii",
+        "text_nEzdUD",
+        "play_button_yUKGwn",
+        "text_EMtrkV",
+        "play_button_BGq8nq"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_4i4JAm": {
+      "type": "rich-text",
+      "blocks": {
+        "spacer_9GyUkz": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "heading_GVFLmY": {
+          "type": "heading",
+          "settings": {
+            "title": "Special Movie",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_3hECmF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SABONのヘアケアはスクラブから始まる。<br/>まるでスパのような心地よさとともに頭皮を磨き上げるヘッドスクラブ。<br/><br/>死海のミネラルを注ぐ湖泥*1と清々しく香るユーカリ*2を配合した「クラリファイング」が新たに加わり、全4種のラインナップに。<br/>自然が紡ぐエッセンシャルオイルの香りに包まれながら、<br/>ゆるぎない土壌を整え、理想的な美髪へ。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_N7TyEt": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>＊1 海シルト（洗浄補助） ＊2 ユーカリ葉/枝油（保湿・着香）</em></p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "spacer_9GyUkz",
+        "heading_GVFLmY",
+        "text_3hECmF",
+        "text_N7TyEt"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "video_DWjkEh": {
+      "type": "video",
+      "blocks": {
+        "play_button_GTnhUY": {
+          "type": "play-button",
+          "settings": {
+            "text": "Watch now",
+            "button_layout": "full",
+            "icon_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "play_button_GTnhUY"
+      ],
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "video_source": "external",
+        "video_url": "https://www.youtube.com/watch?list=TLGG1LOPjp2-DCEwODAxMjAyNg&time_continue=24&v=-ncYcMbPkVM&embeds_referring_euri=https%3A%2F%2Fwww.sabon.co.jp%2F&embeds_referring_origin=https%3A%2F%2Fwww.sabon.co.jp&source_ve_path=NzY3NTg",
+        "loop": false,
+        "media_aspect_ratio": "landscape_wide_alt",
+        "focal_point": "image_presentation",
+        "text_position": "center_center",
+        "text_position_mobile": "center",
+        "button_background_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_text": "#ffffff",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 40,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "multi_column_MAUntD": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_9agGVD": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/hs_ing1.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "ミネラル豊富な死海の塩＊1",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>美を育む源・死海。高い美容効果をもたらすといわれるミネラルを豊富に含む死海の塩＊1を贅沢に配合。汚れや不要な角質を取り除きながら、繊細な頭皮をなめらかに整え、すこやかで美しい頭皮へと導きます。</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_dqfhPa": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/hs_ing2.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "頭皮タイプに合わせた４種のオーガニックエッセンシャルオイル",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>オイリー、ドライ、エイジングサイン＊5、環境ストレス＊6という４つの頭皮悩みのために配合されたオーガニックのエッセンシャルオイル。厳選された質の高いオイルをセレクト。</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_6XYgNB": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/hs_ing3.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "美髪のための３種のフラワーエキス",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>美しい髪の質感を叶えるために厳選したカレンデュラ＊2、マロウ＊3、ハイビスカス＊4の３種のフラワーエキスが、乾燥やダメージを受けた髪に潤いを与え、ハリ、コシのある、輝きに満ちた弾むような髪に導きます。<br/><br/></p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_9agGVD",
+        "image_column_dqfhPa",
+        "image_column_6XYgNB"
+      ],
+      "custom_css": [
+        "h2,h3,h4,h5,h6 {font-family: \"游明朝\", YuMincho, \"ヒラギノ明朝 ProN\", \"Hiragino Mincho ProN\", \"MS 明朝\", \"MS P明朝\", serif;}"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "Ingredients",
+        "heading_tag": "h2",
+        "subheading": "<p>理想の髪を叶える秘密のレシピ</p>",
+        "heading_font_class": "fs-heading-1-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 20,
+        "row_spacing": 20,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#212121",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_gU9pNP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cMPPXV": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_TQm69j": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>＊1 海塩(洗浄補助・整肌) <br/>＊2 トウキンセンカ花エキス(整肌)<br/>＊3 ゼニアオイ花エキス(保湿)<br/>＊4 ハイビスカス花エキス(保湿)<br/>＊5 年齢に伴う頭皮の乾燥や過剰な皮脂等<br/>＊6 花粉・ほこり・乾燥などを洗い流すこと</em></p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cMPPXV",
+        "text_TQm69j"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_XYD7JK": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_nFQrAh": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/banner_showeroil.webp",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://pages/hydrating_shower_oil",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_jgcrHN": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/banner_gift.webp",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://pages/gift",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_TgrJUR": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/banner_itemlineup.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "shopify://pages/digital_catalogue",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_nFQrAh",
+        "image_column_jgcrHN",
+        "image_column_TgrJUR"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "The Collection",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "show_text_right_mobile": false,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "full",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_R64DQa",
+    "rich_text_ciG3gV",
+    "scroll_to_buttons_VxGLBb",
+    "collapsible_row_list_VmhbzR",
+    "scroll_to_buttons_khKfFP",
+    "image_with_text_r69Ndr",
+    "image_with_text_VaMVTU",
+    "image_with_text_wUwQAY",
+    "image_with_text_iG6mj6",
+    "image_with_text_rFWJGJ",
+    "image_with_text_4ajDeV",
+    "image_with_text_xeDaKV",
+    "image_with_text_AzkPpA",
+    "featured_collection_slider_GBmYPc",
+    "rich_text_ntEnNz",
+    "rich_text_4i4JAm",
+    "video_DWjkEh",
+    "multi_column_MAUntD",
+    "rich_text_gU9pNP",
+    "multi_column_XYD7JK"
+  ]
+}

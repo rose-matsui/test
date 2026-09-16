@@ -1,0 +1,39 @@
+{% comment %}
+  LP共通アセット。jQuery は LP 用に先読みし、テーマの $ は noConflict で戻す。
+{% endcomment %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Noto+Serif+JP:wght@400;500;600&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap"
+>
+
+<link rel="stylesheet" href="https://use.typekit.net/rws0kxa.css">
+<script src="https://kit.fontawesome.com/65ac16562c.js" crossorigin="anonymous" data-ot-ignore></script> 
+
+{{ 'lp-slick.css' | asset_url | stylesheet_tag }}
+{{ 'lp-common.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'jquery.min.js' | asset_url }}"></script>
+<script>if (window.jQuery) window.jQuery.noConflict();</script>
+<script src="{{ 'jquery.matchHeight.min.js' | asset_url }}" defer></script>
+<script src="{{ 'jquery.inview.min.js' | asset_url }}" defer></script>
+<script src="{{ 'lp-slick.min.js' | asset_url }}" defer></script>
+<script src="{{ 'lp-common.js' | asset_url }}" defer></script>
+
+
+
+
+<style>
+  /*select無さそうなのでコメントアウト
+  .lp-content select {
+      background:none;
+      background-image:url(../images/selectbox_arrow.svg);
+      background-position:right 5px center;
+      background-size:12px 8px;
+      background-repeat:no-repeat;
+      background-color:#f6f6f6;
+  }*/
+</style>

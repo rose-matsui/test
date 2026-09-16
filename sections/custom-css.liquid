@@ -1,0 +1,14 @@
+{% comment %}
+  Use this file to dynamically inject css file per template
+{% endcomment %}
+{% if template.name == 'collection' %}
+  {{ 'plp-custom.css' | asset_url | stylesheet_tag: preload: true }}
+{% endif %}
+
+{% if template.name == 'search' %}
+  {{ 'search-custom.css' | asset_url | stylesheet_tag: preload: true }}
+{% endif %}
+
+{% if template.name == 'product' %}
+  {{ 'product-custom.css' | asset_url | stylesheet_tag: preload: true }}
+{% endif %}

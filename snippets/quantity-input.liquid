@@ -1,0 +1,150 @@
+{%- liquid
+  assign quantity_limit_enabled = false
+  if enable_purchase_limit == true or enable_purchase_limit == 'true'
+    assign quantity_limit_enabled = true
+  endif
+
+  assign quantity_limit_max = max_purchase_quantity | plus: 0
+  if quantity_limit_max < 1
+    assign quantity_limit_enabled = false
+  endif
+-%}
+
+<div class="quantity-input-wrap">
+  <div class="quantity-input">
+    <button
+      type="button"
+      class="quantity-input__button product__quantity-subtract-item"
+      data-subtract-quantity
+      aria-label="{{ 'general.accessibility.quantity_subtract' | t }}"
+    >
+      {% render 'icon' with icon: 'minus-small' %}
+    </button>
+    <label class="visually-hidden" for="Quantity-Input-{{ id }}">{{ 'products.product.quantity' | t }}</label>
+    <input
+      type="number"
+      name="updates[]"
+      id="Quantity-Input-{{ id }}"
+      value="{{ initial_value }}"
+      min="1"
+      {% if quantity_limit_enabled %}max="{{ quantity_limit_max }}"{% endif %}
+      pattern="[0-9]*"
+      class="quantity-input__input"
+      data-quantity-input
+      aria-label="{{ 'general.accessibility.quantity' | t }}"
+    >
+    <button
+      type="button"
+      class="quantity-input__button product__quantity-add-item"
+      data-add-quantity
+      aria-label="{{ 'general.accessibility.quantity_add' | t }}"
+    >
+      {% render 'icon' with icon: 'plus-small' %}
+    </button>
+  </div>
+  <p
+    class="quantity-input__limit-error fs-body-50 hidden"
+    data-quantity-limit-error
+    data-limit-message="{% if quantity_limit_max == 1 %}この商品は１点までしかご購入いただけません{% else %}この商品は{{ quantity_limit_max }}点までしかご購入いただけません{% endif %}"
+    aria-live="polite"
+  ></p>
+</div>
+
+<script>
+  (function () {
+    if (window.__quantityInputLimitInit) return;
+    window.__quantityInputLimitInit = true;
+
+    var MIN_QTY = 1;
+
+    function getMaxQuantity(input) {
+      if (!(input instanceof HTMLInputElement)) return null;
+      var maxAttr = input.getAttribute('max');
+      if (!maxAttr) return null;
+      var parsed = parseInt(maxAttr, 10);
+      if (Number.isNaN(parsed) || parsed < MIN_QTY) return null;
+      return parsed;
+    }
+
+    function clampQuantity(input) {
+      if (!input) return;
+      var maxQuantity = getMaxQuantity(input);
+      var value = parseInt(input.value, 10);
+      if (Number.isNaN(value)) {
+        input.value = MIN_QTY;
+        return;
+      }
+      if (value < MIN_QTY) input.value = MIN_QTY;
+      if (maxQuantity !== null && value > maxQuantity) input.value = maxQuantity;
+    }
+
+    function updateLimitError(input) {
+      if (!(input instanceof HTMLInputElement)) return;
+      var wrapper = input.closest('.quantity-input');
+      if (!wrapper) return;
+      var errorContainer = wrapper.closest('.quantity-input-wrap');
+      if (!errorContainer) return;
+      var errorElement = errorContainer.querySelector('[data-quantity-limit-error]');
+      if (!errorElement) return;
+      var maxQuantity = getMaxQuantity(input);
+      if (maxQuantity === null) {
+        errorElement.textContent = '';
+        errorElement.classList.add('hidden');
+        return;
+      }
+
+      var value = parseInt(input.value, 10);
+      var isAtLimit = !Number.isNaN(value) && value >= maxQuantity;
+
+      if (isAtLimit) {
+        errorElement.textContent = errorElement.dataset.limitMessage || ('この商品は' + maxQuantity + '点までしかご購入いただけません');
+        errorElement.classList.remove('hidden');
+      } else {
+        errorElement.textContent = '';
+        errorElement.classList.add('hidden');
+      }
+    }
+
+    function enforceAndSync(input) {
+      clampQuantity(input);
+      updateLimitError(input);
+    }
+
+    document.addEventListener('change', function (event) {
+      var input = event.target;
+      if (!(input instanceof HTMLInputElement)) return;
+      if (!input.matches('[data-quantity-input]')) return;
+      enforceAndSync(input);
+    }, true);
+
+    document.addEventListener('input', function (event) {
+      var input = event.target;
+      if (!(input instanceof HTMLInputElement)) return;
+      if (!input.matches('[data-quantity-input]')) return;
+      updateLimitError(input);
+    }, true);
+
+    document.addEventListener('click', function (event) {
+      var addButton = event.target.closest('[data-add-quantity]');
+      if (!addButton) return;
+      var wrapper = addButton.closest('.quantity-input');
+      if (!wrapper) return;
+      var input = wrapper.querySelector('[data-quantity-input]');
+      if (!(input instanceof HTMLInputElement)) return;
+      var maxQuantity = getMaxQuantity(input);
+      if (maxQuantity === null) return;
+
+      enforceAndSync(input);
+      var currentValue = parseInt(input.value, 10);
+      if (!Number.isNaN(currentValue) && currentValue >= maxQuantity) {
+        event.preventDefault();
+        event.stopPropagation();
+        updateLimitError(input);
+      }
+    }, true);
+
+    document.querySelectorAll('[data-quantity-input]').forEach(function (input) {
+      enforceAndSync(input);
+    });
+  })();
+</script>

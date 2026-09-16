@@ -1,0 +1,43 @@
+{% layout 'default' %}
+
+<section class="max-w-3xl mx-auto px-4 py-10 space-y-6">
+  <h1 class="text-3xl font-bold">{{ metaobject.title }}</h1>
+
+  {% if metaobject.image %}
+    <img src="{{ metaobject.image | image_url }}" alt="{{ metaobject.title }}" class="mb-4 rounded-lg">
+  {% endif %}
+
+  <div>
+    <h2 class="font-semibold text-lg">住所</h2>
+    <p>{{ metaobject.address }}</p>
+  </div>
+
+  <div>
+    <h2 class="font-semibold text-lg">電話番号</h2>
+    <p>{{ metaobject.phone }}</p>
+  </div>
+
+  <div>
+    <h2 class="font-semibold text-lg">営業時間</h2>
+    <p>{{ metaobject.opening_times }}</p>
+  </div>
+
+  <div>
+    <h2 class="font-semibold text-lg">アクセス</h2>
+    <p>{{ metaobject.access }}</p>
+  </div>
+
+  {% if metaobject.latitude and metaobject.longitude %}
+    <div>
+      <h2 class="font-semibold text-lg">Googleマップ</h2>
+      <iframe
+        width="100%"
+        height="300"
+        style="border:0;"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps?q={{ metaobject.latitude }},{{ metaobject.longitude }}&z=16&output=embed">
+      </iframe>
+    </div>
+  {% endif %}
+</section>

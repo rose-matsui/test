@@ -1,0 +1,462 @@
+{{ 'template-customers.css' | asset_url | stylesheet_tag }}
+{% paginate customer.addresses by 6 %}
+  <section
+    class="
+      customer account page account-section
+      section--divider-{{ section.settings.divider_style }}
+      {{ section.settings.section_padding }}
+    "
+    data-section-id="{{ section.id }}"
+    data-section-type="addresses"
+  >
+    <div class="account__container page__inner">
+      <div class="account__breadcrumbs account__breadcrumbs--center">
+        <ul class="breadcrumbs ff-body fs-body-100">
+          <li class="breadcrumbs__item">
+            <a href="{{ routes.account_url }}" class="btn btn--text-link">{{ 'customer.account.title' | t }}</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__break">&nbsp;&nbsp;&#47;&nbsp;&nbsp;</li>
+          <li class="breadcrumbs__item">{{ 'customer.addresses.title' | t }}</li>
+        </ul>
+      </div>
+
+      <header class="account__header page__header">
+        <h1 class="account__heading ff-heading fs-heading-2-base">{{ 'customer.addresses.title' | t }}</h1>
+        <div class="addresses__new">
+          <button
+            type="button"
+            id="AddressNewButton"
+            class="btn btn--primary"
+            aria-expanded="false"
+            aria-owns="AddressNewForm"
+            data-open="new"
+          >
+            {{ 'customer.addresses.add_new' | t }}
+          </button>
+        </div>
+      </header>
+
+      <div class="addresses__modal popover" data-address-modal="new">
+        <div class="addresses__overlay" data-overlay></div>
+        <div class="addresses__content" data-scroll-lock-ignore>
+          <button
+            type="button"
+            data-close
+            class="addresses__modal-close"
+            aria-label="{{ 'general.accessibility.close_modal' | t }}"
+          >
+            {% render 'icon-button' with small: true, icon: 'close' %}
+          </button>
+
+          {% form 'customer_address', customer.new_address, return_to: routes.account_addresses_url %}
+            <h2 class="addresses__modal-heading ff-heading fs-heading-2-base ta-c">
+              {{ 'customer.addresses.add_new' | t }}
+            </h2>
+
+            <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
+            <input
+              type="text"
+              id="AddressLastNameNew"
+              class="input"
+              name="address[last_name]"
+              value="{{ form.last_name }}"
+              autocomplete="family-name"
+            >
+
+            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
+            <input
+              type="text"
+              id="AddressFirstNameNew"
+              class="input"
+              name="address[first_name]"
+              value="{{ form.first_name }}"
+              autocomplete="given-name"
+            >
+
+            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+            <input
+              type="text"
+              id="AddressZipNew"
+              class="input"
+              name="address[zip]"
+              value="{{ form.zip }}"
+              autocapitalize="characters"
+              autocomplete="postal-code"
+            >
+
+            <div id="AddressProvinceContainer_{{ form.id }}" class="addresses__province-wrapper">
+              <label for="AddressProvince_{{ form.id }}">{{ 'customer.addresses.province' | t }}</label>
+              <select
+                {% comment %} id="AddressProvince_{{ form.id }}" {% endcomment %}
+                class="input"
+                name="address[province]"
+                autocomplete="address-level1"
+              >
+                {% assign prefectures = "北海道,青森県,岩手県,宮城県,秋田県,山形県,福島県,茨城県,栃木県,群馬県,埼玉県,千葉県,東京都,神奈川県,新潟県,富山県,石川県,福井県,山梨県,長野県,岐阜県,静岡県,愛知県,三重県,滋賀県,京都府,大阪府,兵庫県,奈良県,和歌山県,鳥取県,島根県,岡山県,広島県,山口県,徳島県,香川県,愛媛県,高知県,福岡県,佐賀県,長崎県,熊本県,大分県,宮崎県,鹿児島県,沖縄県" | split: "," %}
+            
+                {% for pref in prefectures %}
+                  <option value="{{ pref }}" {% if form.province == pref %}selected{% endif %}>{{ pref }}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+            <input
+              type="text"
+              id="AddressCityNew"
+              class="input"
+              name="address[city]"
+              value="{{ form.city }}"
+              autocomplete="address-level2"
+            >
+
+            <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
+            <input
+              type="text"
+              id="AddressAddress1New"
+              class="input"
+              name="address[address1]"
+              value="{{ form.address1 }}"
+              autocomplete="street-address address-line1"
+            >
+
+            <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
+            <input
+              type="text"
+              id="AddressAddress2New"
+              class="input"
+              name="address[address2]"
+              value="{{ form.address2 }}"
+              autocomplete="street-address address-line2"
+            >
+
+            <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
+            <input
+              type="text"
+              id="AddressCompanyNew"
+              class="input"
+              name="address[company]"
+              value="{{ form.company }}"
+              autocomplete="organization"
+            >
+
+            <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
+            <input
+              type="tel"
+              id="AddressPhoneNew"
+              class="input"
+              name="address[phone]"
+              value="{{ form.phone }}"
+              autocomplete="phone"
+              pattern="[0-9\-]*"
+              oninvalid="this.setCustomValidity('有効な電話番号を入力してください（数字とハイフン「-」のみ使用できます）。')"
+              oninput="this.setCustomValidity('')"
+            >
+
+            <label for="AddressCountry_{{ form.id }}" style="display:none">{{ 'customer.addresses.country' | t }}</label>
+            <select
+              id="AddressCountry_{{ form.id }}"
+              class="input"
+              name="address[country]"
+              data-form-id="{{ form.id }}"
+              data-default="{{ form.country }}"
+              autocomplete="country"
+              data-country-option
+              style="display:none;"
+              disabled
+            >
+              {{ country_option_tags }}
+            </select>
+            <input type="hidden" name="address[country]" value="Japan" />
+
+            <div class="addresses__checkbox-wrapper">
+              {{ form.set_as_default_checkbox }}
+              <label for="address_default_address_new" class="fs-body-100">
+                {{ 'customer.addresses.set_default' | t }}
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">{{ 'customer.addresses.add' | t }}</button>
+            <button type="button" class="btn btn--text-link addresses__cancel" data-close>
+              {{ 'customer.addresses.cancel' | t }}
+            </button>
+          {% endform %}
+        </div>
+      </div>
+
+      <div class="addresses__list">
+        {%- for address in customer.addresses -%}
+          <div class="addresses__item">
+            {% if address == customer.default_address %}
+              <h2 class="ff-body fs-body-100 fs-body-bold">{{ 'customer.addresses.default' | t }}</h2>
+            {% endif %}
+
+            {{ address | format_address }}
+
+            <ul class="fs-body-75">
+              <li>
+                <button
+                  type="button"
+                  class="btn btn--text-link"
+                  data-edit="{{ address.id }}"
+                  data-open="{{ address.id }}"
+                >
+                  {{ 'customer.addresses.edit' | t }}
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="btn btn--text-link"
+                  data-target="{{ address.url }}"
+                  data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+                  data-remove
+                >
+                  {{ 'customer.addresses.delete' | t }}
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="addresses__modal popover" data-address-modal="{{ address.id }}">
+            <div class="addresses__overlay" data-overlay></div>
+            <div class="addresses__content" data-scroll-lock-ignore>
+              <button
+                type="button"
+                data-close
+                class="addresses__modal-close"
+                aria-label="{{ 'general.accessibility.close_modal' | t }}"
+              >
+                {% render 'icon-button' with small: true, icon: 'close' %}
+              </button>
+
+              {% form 'customer_address', address, return_to: routes.account_addresses_url %}
+                <h2 class="addresses__modal-heading ff-heading fs-heading-2-base ta-c">
+                  {{ 'customer.addresses.edit_address' | t }}
+                </h2>
+
+                <label for="AddressLastName_{{ form.id }}">{{ 'customer.addresses.last_name' | t }}</label>
+                <input
+                  type="text"
+                  id="AddressLastName_{{ form.id }}"
+                  class="input"
+                  name="address[last_name]"
+                  value="{{ form.last_name }}"
+                  autocomplete="family-name"
+                >
+
+                <label for="AddressFirstName_{{ form.id }}">{{ 'customer.addresses.first_name' | t }}</label>
+                <input
+                  type="text"
+                  id="AddressFirstName_{{ form.id }}"
+                  class="input"
+                  name="address[first_name]"
+                  value="{{ form.first_name }}"
+                  autocomplete="given-name"
+                >
+
+                <label for="AddressZip_{{ form.id }}">{{ 'customer.addresses.zip' | t }}</label>
+                <input
+                  type="text"
+                  id="AddressZip_{{ form.id }}"
+                  class="input"
+                  name="address[zip]"
+                  value="{{ form.zip }}"
+                  autocapitalize="characters"
+                  autocomplete="postal-code"
+                >
+
+                <div
+                  id="AddressProvinceContainer_{{ form.id }}"
+                  class="addresses__province-wrapper"
+                >
+                  <label for="AddressProvince_{{ form.id }}">{{ 'customer.addresses.province' | t }}</label>
+                  <select
+                    {% comment %} id="AddressProvince_{{ form.id }}" {% endcomment %}
+                    class="input"
+                    name="address[province]"
+                    autocomplete="address-level1"
+                  >
+                    {% assign prefectures = "北海道,青森県,岩手県,宮城県,秋田県,山形県,福島県,茨城県,栃木県,群馬県,埼玉県,千葉県,東京都,神奈川県,新潟県,富山県,石川県,福井県,山梨県,長野県,岐阜県,静岡県,愛知県,三重県,滋賀県,京都府,大阪府,兵庫県,奈良県,和歌山県,鳥取県,島根県,岡山県,広島県,山口県,徳島県,香川県,愛媛県,高知県,福岡県,佐賀県,長崎県,熊本県,大分県,宮崎県,鹿児島県,沖縄県" | split: "," %}
+                
+                    {% for pref in prefectures %}
+                      <option value="{{ pref }}" {% if form.province == pref %}selected{% endif %}>{{ pref }}</option>
+                    {% endfor %}
+                  </select>
+                </div>
+
+                <label for="AddressCity_{{ form.id }}">{{ 'customer.addresses.city' | t }}</label>
+                <input
+                  type="text"
+                  id="AddressCity_{{ form.id }}"
+                  class="input"
+                  name="address[city]"
+                  value="{{ form.city }}"
+                  autocomplete="address-level2"
+                >
+
+                <label for="AddressAddress1_{{ form.id }}">{{ 'customer.addresses.address1' | t }}</label>
+                <input
+                  type="text"
+                  id="AddressAddress1_{{ form.id }}"
+                  class="input"
+                  name="address[address1]"
+                  value="{{ form.address1 }}"
+                  autocomplete="street-address address-line1"
+                >
+
+                <label for="AddressAddress2_{{ form.id }}">{{ 'customer.addresses.address2' | t }}</label>
+                <input
+                  type="text"
+                  id="AddressAddress2_{{ form.id }}"
+                  class="input"
+                  name="address[address2]"
+                  value="{{ form.address2 }}"
+                  autocomplete="street-address address-line2"
+                >
+
+                <label for="AddressCompany_{{ form.id }}">{{ 'customer.addresses.company' | t }}</label>
+                <input
+                  type="text"
+                  id="AddressCompany_{{ form.id }}"
+                  class="input"
+                  name="address[company]"
+                  value="{{ form.company }}"
+                  autocomplete="organization"
+                >
+
+                <label for="AddressPhone_{{ form.id }}">{{ 'customer.addresses.phone' | t }}</label>
+                <input
+                  type="tel"
+                  id="AddressPhone_{{ form.id }}"
+                  class="input"
+                  name="address[phone]"
+                  value="{{ form.phone }}"
+                  autocomplete="phone"
+                  pattern="[0-9\-]*"
+                  oninvalid="this.setCustomValidity('有効な電話番号を入力してください（数字とハイフン「-」のみ使用できます）。')"
+                  oninput="this.setCustomValidity('')"
+                >
+
+                <label for="AddressCountry_{{ form.id }}" style="display:none">{{ 'customer.addresses.country' | t }}</label>
+                <select
+                  id="AddressCountry_{{ form.id }}"
+                  class="input address-country-option"
+                  data-form-id="{{ form.id }}"
+                  name="address[country]"
+                  data-default="{{ form.country }}"
+                  data-country-option
+                  autocomplete="country"
+                  style="display:none;"
+                  disabled
+                >
+                  {{ country_option_tags }}
+                </select>
+                <input type="hidden" name="address[country]" value="Japan" />
+
+                <div class="addresses__checkbox-wrapper">
+                  {{ form.set_as_default_checkbox }}
+                  <label for="address_default_address_{{ form.id }}" class="fs-body-100">
+                    {{ 'customer.addresses.set_default' | t }}
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">{{ 'customer.addresses.update' | t }}</button>
+                <button
+                  type="button"
+                  class="btn btn--text-link addresses__cancel"
+                  data-form-id="{{ form.id }}"
+                  data-close
+                >
+                  {{ 'customer.addresses.cancel' | t }}
+                </button>
+              {% endform %}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      {%- if paginate.pages > 1 -%}
+        {% render 'pagination', paginate: paginate, type: 'general.pagination.addresses' %}
+      {%- endif -%}
+    </div>
+  </section>
+{% endpaginate %}
+
+<script type="text/javascript">
+// karte identify
+const prefecture = "{{customer.default_address.province}}";
+const city = "{{customer.default_address.city}}";
+const address1 = "{{customer.default_address.address1}}";
+const addressString = prefecture + city + address1;
+
+try {
+  krt("send", "identify", {
+    user_id: "{{customer.id}}",
+    email: "{{customer.email}}",
+    phone: "{{customer.default_address.phone}}",
+    address: addressString,
+    first_name: "{{customer.first_name}}",
+    last_name: "{{customer.last_name}}",
+    postcode: "{{customer.default_address.zip}}",
+  });
+} catch(e) {
+  if ("krt" in window) {
+    krt("send", "_error", { message: e.message });
+  } else {
+    console.warn("tracker was not loaded");
+  }
+}
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main_customer_addresses.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_style.header_style.content"
+    },
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "t:shared.settings.section_style.divider_style.label",
+      "default": "none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_none",
+          "value": "none"
+        },
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_solid",
+          "value": "solid"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "t:shared.settings.section_style.section_padding.label",
+      "default": "section--vertical-padding-bottom-only",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_none",
+          "value": "section--vertical-padding-none"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_both",
+          "value": "section--vertical-padding-top-bottom"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_top",
+          "value": "section--vertical-padding-top-only"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_bottom",
+          "value": "section--vertical-padding-bottom-only"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,197 @@
+{% assign min_subtotal = section.settings.minimum_cart_subtotal | default: 1 %}
+{% if cart.total_price >= min_subtotal %}
+  <div
+    class="cart__free-samples"
+    id="cart__free-samples-box"
+    data-collection-handle="{{ section.settings.cart_free_samples_collection }}"
+    data-min-cart__subtotal="{{ section.settings.minimum_cart_subtotal }}"
+    data-free-item-limit="2"
+  >
+    {% if section.settings.section_title %}
+      <div class="cart__free-samples__header section-header">
+        <h3 class="section-header__title ff-heading fs-heading-2">
+          {{ section.settings.section_title }}
+        </h3>
+      </div>
+    {% endif %}
+    <div class="cart__free-samples__items-container">
+      <span class="cart__free-samples__items-container-title fs-body-75">
+        {{ section.settings.counter_text }}： <span data-free-samples-counter>0/0</span>
+      </span>
+      <ul class="cart__free-samples__items"></ul>
+    </div>
+  </div>
+
+  <script>
+    (async function () {
+      const container = document.getElementById('cart__free-samples-box');
+      if (!container) return;
+
+      const productList = container.querySelector('.cart__free-samples__items');
+      const counterDisplay = container.querySelector('[data-free-samples-counter]');
+      const collectionHandle = container.dataset.collectionHandle;
+      let freeItemLimit = Number(container.dataset.freeItemLimit);
+      const minCartSubtotal = Number(container.dataset.minCartSubtotal);
+
+      // Flag to prevent concurrent requests
+      let isProcessing = false;
+
+      const [collectionResponse, cartResponse] = await Promise.all([
+        fetch(`/collections/${collectionHandle}/products.json`),
+        fetch('/cart.js'),
+      ]);
+      const { products: freeSamplesCollection } = await collectionResponse.json();
+      // Free limit item to 1 when collection has only 1 product
+      freeItemLimit = Math.min(freeItemLimit, freeSamplesCollection.length);
+      const cart = await cartResponse.json();
+      const cartItems = cart.items || [];
+
+      // Free samples already in cart
+      const sampleVariantIds = new Set(freeSamplesCollection.map((p) => p.variants[0].id));
+
+      const freeSamplesInCart = cartItems.filter((item) => sampleVariantIds.has(item.variant_id));
+      const selectedVariantIds = new Set(freeSamplesInCart.map((item) => item.variant_id));
+      const cartItemKeyByVariantId = new Map(freeSamplesInCart.map((item) => [item.variant_id, item.key]));
+
+      const updateCounter = () => {
+        if (counterDisplay) counterDisplay.textContent = `${selectedVariantIds.size}/${freeItemLimit}`;
+
+        const limitReached = selectedVariantIds.size >= freeItemLimit;
+
+        container.querySelectorAll('.cart__free-samples__checkbox').forEach((input) => {
+          const variantId = Number(input.value);
+          const isSelected = selectedVariantIds.has(variantId);
+          input.checked = isSelected;
+          input.disabled = limitReached && !isSelected;
+
+          const labelElement = input.closest('.product-card__label');
+          const cardElement = input.closest('.product-card');
+          if (labelElement) labelElement.classList.toggle('is-selected', isSelected);
+          if (cardElement) cardElement.classList.toggle('is-selected', isSelected);
+        });
+
+        container.querySelectorAll('.product-card__select-button').forEach((button) => {
+          const variantId = Number(button.dataset.variantId);
+          const isSelected = selectedVariantIds.has(variantId);
+          button.disabled = limitReached && !isSelected;
+          button.classList.toggle('is-selected', isSelected);
+          button.setAttribute('aria-pressed', String(isSelected));
+        });
+      };
+
+      const buildSampleItemsList = (imgSrc, title, handle, variantId) => {
+        const li = document.createElement('li');
+        li.className = 'cart__free-samples__item product-card';
+        const label = document.createElement('label');
+        label.className = 'product-card__label';
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.name = 'free-sample';
+        checkbox.className = 'cart__free-samples__checkbox';
+        checkbox.value = variantId;
+
+        if (selectedVariantIds.has(variantId)) checkbox.checked = true;
+        const img = document.createElement('img');
+        img.src = imgSrc || '';
+        img.alt = title;
+
+        const imgDiv = document.createElement('div');
+        imgDiv.className = 'product-card__image';
+        imgDiv.appendChild(img);
+
+        const productTitle = document.createElement('h3');
+        productTitle.className = 'product-card__title fs-product-card-title';
+        productTitle.textContent = title;
+
+        const selectButton = document.createElement('button');
+        selectButton.type = 'button';
+        selectButton.className = 'product-card__select-button';
+        selectButton.dataset.variantId = variantId;
+        selectButton.setAttribute('aria-pressed', String(selectedVariantIds.has(variantId)));
+
+        selectButton.addEventListener('click', async () => {
+          if (isProcessing) return;
+          
+          const isSelected = selectedVariantIds.has(variantId);
+          if (!isSelected && selectedVariantIds.size >= freeItemLimit) return;
+
+          isProcessing = true;
+          container.style.pointerEvents = 'none';
+          container.style.opacity = '0.5';
+
+          try {
+            if (isSelected) {
+              const lineKey = cartItemKeyByVariantId.get(variantId);
+              if (lineKey) {
+                const changeResponse = await fetch('/cart/change.js', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+                  body: JSON.stringify({ id: lineKey, quantity: 0 }),
+                });
+                if (!changeResponse.ok) throw new Error('Failed to remove free sample from cart');
+              }
+              selectedVariantIds.delete(variantId);
+              cartItemKeyByVariantId.delete(variantId);
+            } else {
+              if (selectedVariantIds.size >= freeItemLimit) return;
+
+              const addResponse = await fetch('/cart/add.js', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+                body: JSON.stringify({ id: variantId, quantity: 1 }),
+              });
+              if (!addResponse.ok) throw new Error('Failed to add free sample to cart');
+
+              const addedItem = await addResponse.json();
+              selectedVariantIds.add(variantId);
+              if (addedItem?.key) cartItemKeyByVariantId.set(variantId, addedItem.key);
+            }
+
+            updateCounter();
+          } catch (error) {
+            window.location.reload();
+          } finally {
+            container.style.pointerEvents = '';
+            container.style.opacity = '';
+            isProcessing = false;
+          }
+        });
+
+        const contentDiv = document.createElement('div');
+        contentDiv.className = 'product-card__content';
+        contentDiv.appendChild(productTitle);
+        contentDiv.appendChild(selectButton);
+
+        label.appendChild(checkbox);
+        label.appendChild(imgDiv);
+        label.appendChild(contentDiv);
+        li.appendChild(label);
+        return li;
+      };
+
+      // Initial visibility update
+      container.style.display = cart.total_price < minCartSubtotal ? 'none' : '';
+
+      // Render the product list
+      if (!freeSamplesCollection.length) {
+        const message = document.createElement('p');
+        message.className = 'fs-body-100 t-opacity-60';
+        message.textContent = 'No free samples available.';
+        productList.appendChild(message);
+        return;
+      }
+
+      for (const product of freeSamplesCollection) {
+        const imgSrc = product.images?.[0]?.src || '';
+        const title = product.title;
+        const handle = product.handle;
+        const variantId = product.variants[0].id;
+        const listItem = buildSampleItemsList(imgSrc, title, handle, variantId);
+        productList.appendChild(listItem);
+      }
+
+      updateCounter();
+    })();
+  </script>
+{% endif %}

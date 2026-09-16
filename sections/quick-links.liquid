@@ -1,0 +1,241 @@
+<div
+  class="
+    section
+    {{ section.settings.section_padding }}
+    {% if section.settings.content_width == 'custom' %}
+      sbn-custom-content-width
+    {% endif %}
+  "
+  style="
+    {% if section.settings.content_width == 'custom' %}
+      --content-width: {{ section.settings.custom_content_width }}px;
+    {% endif %}
+  "
+>
+  <div class="section-introduction animation--section-introduction">
+    {% unless section.settings.title == blank %}
+      <{{ section.settings.heading_tag }}
+        class="
+        multi-column__heading section-introduction__heading ff-heading {{ section.settings.heading_font_class }}
+        "
+        style="color: {{ section.settings.text_color }};"
+      >
+        {{ section.settings.title }}
+      </{{ section.settings.heading_tag }}>
+    {% endunless %}
+  </div>
+  
+  <div
+    class="
+    quick-links-buttons
+    {% if section.settings.button_text_bold %}
+    sbn-bold
+    {% endif %}
+    "
+    style="
+    --color-background-button: {{ section.settings.button_background_color }};
+    --color-text-button: {{ section.settings.button_text_color }};
+    --min-width-buttons: {{ section.settings.buttons_min_width }}px;
+    "
+  >
+    {% for i in (1..10) %}
+      {% assign label_key = 'quick_link_label_' | append: i %}
+      {% assign url_key = 'quick_link_url_' | append: i %}
+      {% assign quick_label = settings[label_key] %}
+      {% assign quick_url = settings[url_key] %}
+
+      {% unless quick_label == blank %}
+        <div
+          class="
+          button-block__button
+          custom-button__item
+          "
+        >
+          <a
+            href="{% if quick_url != blank %}{{ quick_url }}{% else %}#{% endif %}"
+            class="
+              btn btn--{{ section.settings.button_style }} sbn-button
+            "
+          >
+            <span>{{ quick_label | escape }}</span>
+          </a>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Quick Links Buttons",
+  "tag": "section",
+  "class": "sbn-custom custom-buttons-wrap",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.multi_column.settings.title.label",
+      "default": "Quick Links Buttons"
+    },
+    {
+      "id": "heading_tag",
+      "type": "select",
+      "label": "t:shared.section_blocks.heading.settings.heading_tag.label",
+      "default": "h2",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h2"
+        },
+        {
+          "value": "h3",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h3"
+        },
+        {
+          "value": "h4",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h4"
+        },
+        {
+          "value": "h5",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h5"
+        },
+        {
+          "value": "h6",
+          "label": "t:shared.section_blocks.heading.settings.heading_tag.options.h6"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "heading_font_class",
+      "label": "t:shared.settings.heading_font_class.label",
+      "default": "fs-heading-3-base",
+      "options": [
+        {
+          "value": "fs-heading-3-base",
+          "label": "t:shared.settings.heading_font_class.option_small"
+        },
+        {
+          "value": "fs-heading-2-base",
+          "label": "t:shared.settings.heading_font_class.option_medium"
+        },
+        {
+          "value": "fs-heading-1-base",
+          "label": "t:shared.settings.heading_font_class.option_large"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "radio",
+      "id": "button_style",
+      "label": "Button style",
+      "default": "primary",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "buttons_min_width",
+      "label": "Button min width",
+      "min": 100,
+      "max": 300,
+      "step": 10,
+      "default": 100,
+      "unit": "px"
+    },
+    {
+      "id": "button_text_bold",
+      "type": "checkbox",
+      "label": "Bold Text",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:shared.settings.text_color.label",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Buttons color",
+      "default": "#b4975f"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Buttons text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "t:shared.settings.section_style.section_padding.label",
+      "default": "section--vertical-padding-none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_none", "value": "section--vertical-padding-none"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_both", "value": "section--vertical-padding-top-bottom"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_top", "value": "section--vertical-padding-top-only"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_bottom", "value": "section--vertical-padding-bottom-only"
+        }
+      ]
+    },
+    {
+      "type": "radio",
+      "id": "content_width",
+      "label": "t:shared.settings.section_style.content_width.label",
+      "options": [
+        {
+          "value": "full",
+          "label": "t:shared.settings.section_style.content_width.option_full"
+        },
+        {
+          "value": "custom",
+          "label": "t:shared.settings.section_style.content_width.option_custom"
+        }
+      ],
+      "default": "full"
+    },
+    {
+      "type": "range",
+      "id": "custom_content_width",
+      "label": "t:shared.settings.section_style.custom_content_width.label",
+      "unit": "px",
+      "min": 400,
+      "max": 1000,
+      "step": 50,
+      "default": 700
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quick Links Buttons",
+      "category": "Custom",
+      "settings": {
+        "button_style": "secondary",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  ]
+}
+{% endschema %}

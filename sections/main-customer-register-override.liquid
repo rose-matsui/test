@@ -1,0 +1,482 @@
+{{ 'template-customers.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  1) "store_code" logic:
+    - Extracted from URL
+    - Saved in localStorage (to prevent loss during Shopify redirect 
+    for failed form submission)
+    - Passed to the redirect URL if found from localStorage
+  2) Redirect logic:
+    - Form's "return_to" set to "return_to: routes.account_register_url, 
+    in order to display potential errors on the registration page
+    - Logged in customers (once succesfully registered) are redirected 
+    to "checkout_url" if param is found and valid, or
+    to "/account" page (routes.account_url)
+{% endcomment %}
+<script>
+  (function() {
+    // Remove any old checkout_url
+    try { localStorage.removeItem('checkout_url'); } catch (_) {}
+
+    const params = new URLSearchParams(window.location.search);
+    const storeCode = params.get('store_code');
+    const checkoutUrl = params.get('checkout_url');
+    if (storeCode) {
+      localStorage.setItem('store_code', storeCode);
+    }
+    const getSafeCheckoutUrl = (rawCheckoutUrl) => {
+      if (!rawCheckoutUrl) return null;
+      try {
+        const u = new URL(rawCheckoutUrl, window.location.origin);
+        return u.origin === window.location.origin ? u : null;
+      } catch (_) {
+        return null;
+      }
+    };
+
+    // If logged in, redirect
+    const isLoggedIn = {{ customer | json }};
+    if (isLoggedIn) {
+      let targetUrl = '{{ routes.account_url }}';
+      const savedStoreCode = localStorage.getItem('store_code');
+      const safeCheckoutUrl = getSafeCheckoutUrl(checkoutUrl);
+
+      if (safeCheckoutUrl) {
+        targetUrl = safeCheckoutUrl.toString();
+        localStorage.removeItem('store_code');
+      } else if (savedStoreCode) {
+        targetUrl += `?store_code=${encodeURIComponent(savedStoreCode)}`;
+        localStorage.removeItem('store_code');
+      }
+      window.location.href = targetUrl;
+    }
+  })();
+</script>
+
+<section
+  class="
+    customer login page account-section
+    section--divider-{{ section.settings.divider_style }}
+    {{ section.settings.section_padding }}
+  "
+  data-section-id="{{ section.id }}"
+  data-section-type="register"
+>
+  <div class="login__inner page__inner">
+    <header class="login__header page__header">
+      <h1 class="login__heading article__heading ff-heading fs-heading-2-base">{{ 'customer.register.title' | t }}</h1>
+    </header>
+
+    {% for block in section.blocks %}
+      {% render block %}
+      {% if block.id contains "crm_plus_on_line_signup" %}
+        <div class="separator">
+          <span style="fs-body-75">{{ 'general.accessibility.or' | t }}</span>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    <div class="login__main">
+      {%- assign formId = 'RegisterForm' -%}
+      {% form 'create_customer', id: formId, class: 'login__form', return_to: routes.account_register_url %}
+        {%- assign success_msg = 'customer.register.success' | t -%}
+        {%- render 'form-status', form: form, form_id: formId, success_message: success_msg -%}
+
+        <div id="birthday-error" class="form-status__message form-status__message--error fs-body-75" style="display: none;">
+          <ul tabindex="0" data-form-status="">
+              <li>
+                <a href="#RegisterForm-email" class="form-status__link">
+                  {{ 'customer.register.birthday_error' | t }}
+                </a>
+              </li>
+          </ul>
+        </div>
+
+        <div class="field name-field">
+          <label>{{ 'customer.register.name' | t }}<span class="required-chip">{{ 'general.accessibility.required' | t }}</span></label>
+          <input
+            type="text"
+            name="customer[last_name]"
+            id="{{ formId }}-LastName"
+            class="input"
+            required
+            placeholder="{{ 'customer.register.last_name' | t }}"
+            aria-label="{{ 'customer.register.last_name' | t }}"
+            {% if form.last_name %}
+              value="{{ form.last_name }}"
+            {% endif %}
+            autocomplete="family-name"
+          >
+
+          <input
+            type="text"
+            name="customer[first_name]"
+            id="{{ formId }}-FirstName"
+            class="input"
+            required
+            placeholder="{{ 'customer.register.first_name' | t }}"
+            aria-label="{{ 'customer.register.first_name' | t }}"
+            {% if form.first_name %}
+              value="{{ form.first_name }}"
+            {% endif %}
+            autocomplete="given-name"
+          >
+        </div>
+
+        <div class="field kana-field">
+          <label>{{ 'customer.register.kana' | t }}<span class="required-chip">{{ 'general.accessibility.required' | t }}</span></label>
+          <input
+            type="text"
+            name="customer[note][family_name_kana]"
+            id="{{ formId }}-family_name_pronunciation"
+            class="input"
+            required
+            aria-required="true"
+            placeholder="{{ 'customer.register.last_name_kana' | t }}"
+            aria-label="{{ 'customer.register.last_name_kana' | t }}"
+            autocomplete="off"
+          >
+          <p id="{{ formId }}-family_name_pronunciation-error" class="kana-error-message fs-body-75"></p>
+
+          <input
+            type="text"
+            name="customer[note][given_name_kana]"
+            id="{{ formId }}-given_name_pronunciation"
+            class="input"
+            required
+            aria-required="true"
+            placeholder="{{ 'customer.register.first_name_kana' | t }}"
+            aria-label="{{ 'customer.register.first_name_kana' | t }}"
+            autocomplete="off"
+          >
+          <p id="{{ formId }}-given_name_pronunciation-error" class="kana-error-message fs-body-75"></p>
+        </div>
+
+        <label for="{{ formId }}-email">{{ 'customer.register.email' | t }}<span class="required-chip">{{ 'general.accessibility.required' | t }}</span></label>
+        <input
+          type="email"
+          name="customer[email]"
+          id="{{ formId }}-email"
+          class="input {% if form.errors contains 'email' %} input--error{% endif %}"
+          required
+          {% if form.email %}
+            value="{{ form.email }}"
+          {% endif %}
+          autocorrect="off"
+          autocapitalize="off"
+          autocomplete="email"
+          aria-required="true"
+          {%- if form.errors contains 'email' -%}
+            class="input--error"
+            aria-invalid="true"
+            aria-describedby="{{ formId }}-email-error"
+          {%- endif -%}
+        >
+
+        <label for="{{ formId }}-password">{{ 'customer.register.password' | t }}<span class="required-chip">{{ 'general.accessibility.required' | t }}</span></label>
+        <input
+          type="password"
+          name="customer[password]"
+          id="{{ formId }}-password"
+          class="input {% if form.errors contains 'password' %} input--error{% endif %}"
+          required
+          aria-required="true"
+          {%- if form.errors contains 'password' -%}
+            class="input--error"
+            aria-invalid="true"
+            aria-describedby="{{ formId }}-password-error"
+          {%- endif -%}
+        >
+
+        {% assign current_year = 'now' | date: '%Y' %}
+        {% assign start_year = current_year | minus: 100 %}
+
+        <div class="field birthday-field">
+          <label for="{{ formId }}-birth-year">{{ 'account.birthday' | t }}<span class="required-chip">{{ 'general.accessibility.required' | t }}</span></label>
+          <div class="birthday-selects" style="display:flex; gap:0.5rem;">
+
+            <select id="{{ formId }}-birth-year" class="input" required>
+              <option value="" class="--color-text-input">{{ 'general.accessibility.year' | t }}</option>
+              {%- for y in (start_year..current_year) reversed -%}
+                <option value="{{ y }}">{{ y }}</option>
+              {%- endfor -%}
+            </select>
+
+            <select id="{{ formId }}-birth-month" class="input" required>
+              <option value="">{{ 'general.accessibility.month' | t }}</option>
+              {%- for m in (1..12) -%}
+                <option value="{{ m }}">{{ m }}</option>
+              {%- endfor -%}
+            </select>
+
+            <select id="{{ formId }}-birth-day" class="input" required>
+              <option value="">{{ 'general.accessibility.day' | t }}</option>
+              {%- for d in (1..31) -%}
+                <option value="{{ d }}">{{ d }}</option>
+              {%- endfor -%}
+            </select>
+          </div>
+
+          <!-- Hidden input that actually submits to Shopify -->
+          <input
+            type="hidden"
+            name="customer[note][Birthday]"
+            id="{{ formId }}-birthday"
+          />
+        </div>
+
+        <div class="accepts-marketing addresses__checkbox-wrapper">
+          <input type="hidden" name="customer[accepts_marketing]" value="false" />
+          <input type="checkbox" id="accepts-marketing" name="customer[accepts_marketing]"  checked/>
+          <label for="accepts-marketing" class="fs-body-100">
+            {{ 'customer.register.accept_marketing' | t }}
+          </label>
+        </div>       
+
+        <div class="field terms-text">
+          <p class="fs-body-50">
+            {{ 'customer.register.terms_html' | t }}
+          </p>
+        </div>
+        
+        <button type="submit" class="btn btn--primary btn--full btn--large">
+          {{ 'customer.register.submit' | t }}
+        </button>
+      {% endform %}
+    </div>
+  </div>
+</section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form               = document.getElementById('{{ formId }}');
+  const yearSelect         = document.getElementById('{{ formId }}-birth-year');
+  const monthSelect        = document.getElementById('{{ formId }}-birth-month');
+  const daySelect          = document.getElementById('{{ formId }}-birth-day');
+  const hiddenBirthday     = document.getElementById('{{ formId }}-birthday');
+  const errorDiv           = document.getElementById('birthday-error');
+  const lastNameKanaInput  = document.getElementById('{{ formId }}-family_name_pronunciation');
+  const firstNameKanaInput = document.getElementById('{{ formId }}-given_name_pronunciation');
+  const lastNameKanaError  = document.getElementById('{{ formId }}-family_name_pronunciation-error');
+  const firstNameKanaError = document.getElementById('{{ formId }}-given_name_pronunciation-error');
+
+  if (!form || !yearSelect || !monthSelect || !daySelect || !hiddenBirthday || !errorDiv || !lastNameKanaInput || !firstNameKanaInput || !lastNameKanaError || !firstNameKanaError) {
+    return;
+  }
+
+  const KATAKANA_REGEX = /^[\u30A0-\u30FFー・　]+$/;
+  const kanaFormatMessage = {{ 'customer.register.kana_format_error' | t | json }};
+
+  const kanaFields = [
+    { input: lastNameKanaInput, errorNode: lastNameKanaError },
+    { input: firstNameKanaInput, errorNode: firstNameKanaError }
+  ];
+
+  const validateKanaField = ({ input, errorNode }) => {
+    const value = input.value.trim();
+    const hasFormatError = value !== '' && !KATAKANA_REGEX.test(value);
+
+    if (hasFormatError) {
+      input.classList.add('input--error');
+      input.setAttribute('aria-invalid', 'true');
+      input.setAttribute('aria-describedby', errorNode.id);
+      errorNode.textContent = kanaFormatMessage;
+      errorNode.style.display = 'block';
+      return false;
+    }
+
+    input.classList.remove('input--error');
+    input.removeAttribute('aria-invalid');
+    input.removeAttribute('aria-describedby');
+    errorNode.textContent = '';
+    errorNode.style.display = 'none';
+    return true;
+  };
+
+  kanaFields.forEach((field) => {
+    if (field.input.value) validateKanaField(field);
+    field.input.addEventListener('input', () => validateKanaField(field));
+  });
+
+  // How many days that month has (handles leap years)
+  const getDaysInMonth = (y, m) => new Date(y, m, 0).getDate();
+  // “3” → “03”
+  const pad2           = n => n.toString().padStart(2, '0');
+
+  // Called only when YEAR or MONTH changes
+  function rebuildDayOptions() {
+    const y = parseInt(yearSelect.value,  10) || new Date().getFullYear();
+    const m = parseInt(monthSelect.value, 10);
+    if (!m) return;
+
+    const maxDay   = getDaysInMonth(y, m);
+    const previous = parseInt(daySelect.value, 10);
+
+    // reset to the “日” placeholder
+    daySelect.options.length = 1;
+    for (let d = 1; d <= maxDay; d++) {
+      daySelect.add(new Option(d, d));
+    }
+
+    // restore if still valid
+    daySelect.value = (previous && previous <= maxDay)
+      ? previous
+      : '';
+  }
+
+  // Always keep hidden in YYYY-MM-DD or blank
+  function syncHiddenDate() {
+    const y = yearSelect.value;
+    const m = monthSelect.value;
+    const d = daySelect.value;
+    hiddenBirthday.value = (y && m && d)
+      ? `${y}-${pad2(m)}-${pad2(d)}`
+      : '';
+  }
+
+  // YEAR/MONTH change → rebuild days + sync + hide error
+  yearSelect.addEventListener('change', () => {
+    rebuildDayOptions();
+    syncHiddenDate();
+    errorDiv.style.display = 'none';
+  });
+  monthSelect.addEventListener('change', () => {
+    rebuildDayOptions();
+    syncHiddenDate();
+    errorDiv.style.display = 'none';
+  });
+
+  // DAY change → only sync + hide error
+  daySelect.addEventListener('change', () => {
+    syncHiddenDate();
+    errorDiv.style.display = 'none';
+  });
+
+  // CAPTURE-phase submit → runs before Stiletto’s JS
+  form.addEventListener('submit', e => {
+    rebuildDayOptions();
+    syncHiddenDate();
+
+    const invalidKanaField = kanaFields.find((field) => !validateKanaField(field));
+    const isBirthdayValid = Boolean(hiddenBirthday.value);
+
+    if (!isBirthdayValid || invalidKanaField) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+
+      errorDiv.style.display = isBirthdayValid ? 'none' : 'block';
+
+      if (invalidKanaField) {
+        invalidKanaField.input.focus();
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, { capture: true });
+});
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main_customer_register.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_style.header_style.content"
+    },
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "t:shared.settings.section_style.divider_style.label",
+      "default": "none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_none",
+          "value": "none"
+        },
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_solid",
+          "value": "solid"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "t:shared.settings.section_style.section_padding.label",
+      "default": "section--vertical-padding-bottom-only",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_none",
+          "value": "section--vertical-padding-none"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_both",
+          "value": "section--vertical-padding-top-bottom"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_top",
+          "value": "section--vertical-padding-top-only"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_bottom",
+          "value": "section--vertical-padding-bottom-only"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5em 0;
+  color: #666;
+  font-size: 14px;
+  width: 100%;
+  max-width: var(--login-max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-outer);
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.separator::before {
+  margin-right: 0.75em;
+}
+
+.separator::after {
+  margin-left: 0.75em;
+}
+
+.account-section .required-chip {
+  display: inline-block;
+  margin-left: var(--spacing-2);
+  padding: 0.2rem 0.4rem;
+  background: var(--color-border);
+  color: #fff;
+  border-radius: 4px;
+  line-height: 1.3;
+  font-size:var(--font-size-body-50);
+}
+
+.kana-error-message {
+  color: var(--color-error, #b42318);
+  margin: 0 0 var(--spacing-5);
+  display: none;
+}
+{% endstylesheet %}

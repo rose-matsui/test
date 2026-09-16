@@ -1,0 +1,1704 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_zUxP9U": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_gnJfaV": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ブランド初の常設SPA訪れるたびに喜びに出合う、花と緑あふれるオアシス",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "spacer_NfhXhN": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "heading_LXMPQ9": {
+          "type": "heading",
+          "settings": {
+            "title": "SABON l'Atelier SPA",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "spacer_fwQn7V": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "text_8YbetH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SABON l’Atelier SPAは、<br/>現代を生きるすべての人たちが、<br/>いつでも立ち寄り、忘れかけていたときを取り戻す場所。</p><p>花と緑にあふれるオアシスのように、心と体にひとときのやすらぎをもたらします。</p><p>ここにしかない喜びと驚きを、あなたに。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gnJfaV",
+        "spacer_NfhXhN",
+        "heading_LXMPQ9",
+        "spacer_fwQn7V",
+        "text_8YbetH"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "video_LhwKbc": {
+      "type": "video",
+      "blocks": {
+        "play_button_GPttYY": {
+          "type": "play-button",
+          "settings": {
+            "text": "Watch now",
+            "button_layout": "full",
+            "icon_style": "outline"
+          }
+        }
+      },
+      "block_order": [
+        "play_button_GPttYY"
+      ],
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "video_source": "external",
+        "video_url": "https://www.youtube.com/watch?v=pzeUzab3UYY",
+        "loop": false,
+        "media_aspect_ratio": "landscape_wide_alt",
+        "focal_point": "image_presentation",
+        "text_position": "center_center",
+        "text_position_mobile": "center",
+        "button_background_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_text": "#ffffff",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 40,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_UBc9eV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_8KHirA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SABON l’Atelier SPA (サボン アトリエ スパ）<br/>東京都目黒区上目黒1-17-3<br/>TEL : 03-3711-0505</p><p>営業時間 : 12:00～20:00<br/>定休日 : 不定休<br/>イベント実施に伴い営業時間が異なる場合がございます</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_8KHirA"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "scroll_to_buttons_jacN6e": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_KT4zn4": {
+          "type": "button",
+          "settings": {
+            "button_label": "SPA",
+            "target_title": "SPA"
+          }
+        },
+        "button_bc6Abz": {
+          "type": "button",
+          "settings": {
+            "button_label": "AFTERNOON TEA cafe ~pop up~",
+            "target_title": "AFTERNOON TEA CAFE"
+          }
+        },
+        "button_4dk8Mp": {
+          "type": "button",
+          "settings": {
+            "button_label": "engraving service",
+            "target_title": "Engraving Service"
+          }
+        },
+        "button_6JwX6n": {
+          "type": "button",
+          "settings": {
+            "button_label": "flower gift",
+            "target_title": "Flower Shop"
+          }
+        },
+        "button_wPEhFz": {
+          "type": "button",
+          "settings": {
+            "button_label": "EVENT / WORKSHOP ~Limited & Reservation~",
+            "target_title": "EVENT / WORK SHOP"
+          }
+        },
+        "button_rAN4dk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Nature Mileage Club",
+            "target_title": "Nature Mileage Club"
+          }
+        }
+      },
+      "block_order": [
+        "button_KT4zn4",
+        "button_bc6Abz",
+        "button_4dk8Mp",
+        "button_6JwX6n",
+        "button_wPEhFz",
+        "button_rAN4dk"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "Contents",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 100,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "navigation_buttons_XQeFqA": {
+      "type": "navigation-buttons",
+      "blocks": {
+        "button_fk68cJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "スパご予約受付中",
+            "url": "https://sabon.resv.jp/"
+          }
+        }
+      },
+      "block_order": [
+        "button_fk68cJ"
+      ],
+      "name": "Navigation Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 100,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_dEMGmq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TGVq4W": {
+          "type": "heading",
+          "settings": {
+            "title": "SPA",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "image_QHDptG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo1.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_NnwEr6": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "text_DxDfXk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SABONの世界観を余すところなく堪能できる、ブランド初の常設SPA。</p><p>クラシックなデザインのバスタブで心も体も解き放ち、卓越したセラピストのSABONオリジナルメソッドによるオールハンドのトリートメントで、一人ひとりの中に眠る、未知なる美しさと活力を目覚めさせます。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_37HJJi": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "image_rcBGt4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo2.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 300,
+            "image_size_mobile": 300
+          }
+        },
+        "spacer_AidxGQ": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        }
+      },
+      "block_order": [
+        "heading_TGVq4W",
+        "image_QHDptG",
+        "spacer_NnwEr6",
+        "text_DxDfXk",
+        "spacer_37HJJi",
+        "image_rcBGt4",
+        "spacer_AidxGQ"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_ptgHak": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_bMd8qw": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/menu_rec1_f38baf12-554d-46a6-80ea-3b28baad051e.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "60min.¥19,800（税込）",
+            "heading": "Dead Sea Journey",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ボディスクラブによる全身の角質ケアと発汗で心身をリセットしたい方へ</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_nW6WCd": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/menu_rec2_b7bbf735-4a43-45dc-b04d-95c780532953.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "45min. <初回限定>¥14,850（税込）",
+            "heading": "Blooming Journey",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>オイルトリートメントで疲れをリリースし、<br/>肌を潤いで満たしたい方へ</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_jFE4yR": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/menu_rec3_bf18a088-fa76-4d66-b54c-062d1bc929b6.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "45min. <初回限定>¥14,850（税込）",
+            "heading": "Decolletage + Rose Facial",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>デコルテのケアに加え、フェイストリートメントで幸福美肌をかなえたい方へ</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_bMd8qw",
+        "image_column_nW6WCd",
+        "image_column_jFE4yR"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "Recommended MENU",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_bNhB8q": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kaNh4T": {
+          "type": "heading",
+          "settings": {
+            "title": "初回限定MENU",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_nTDt8M": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>対象者：SABON Customer Membershipにご登録の方</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_BzzP4W": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "text_WCfCEp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Blooming Journey</strong>　45min.　¥14,850（税込）</p><p>ボディ：オイルトリートメント（下肢と背面、または、下肢、腹部とデコルテのいずれかを選択）</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_8h8zH3": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "text_MDDRCB": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Decolletage + Rose Facial</strong>　45min.　¥14,850（税込）</p><p>ボディ：オイルトリートメント（デコルテ）<br/>フェイス：クレンジング／洗顔＆スクラブ／トリートメント／仕上げ</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kaNh4T",
+        "text_nTDt8M",
+        "spacer_BzzP4W",
+        "text_WCfCEp",
+        "spacer_8h8zH3",
+        "text_MDDRCB"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_GH7hMJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CJW779": {
+          "type": "heading",
+          "settings": {
+            "title": "MENU",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_6xBG86": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>心も体も冴えわたるようにリフレッシュしたい方へ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_4dGghB": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Dead Sea Journey</strong>　60min.　¥19,800（税込）</p><p>ボディ：入浴／ボディスクラブ（脚・背中・腕・腹部）／ボディラップ／ドライヘッドスパ</p><p><strong>Dead Sea Journey + Rose Facial</strong>　90min.　¥27,500（税込）</p><p>+フェイス：クレンジング/洗顔＆スクラブ/トリートメント/仕上げ</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_YX3qGa": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "text_VTjdM8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>都会の喧騒を忘れ、心も体も自然の安らぎに包まれたい方へ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_FJCrVC": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Blooming Journey</strong>　60min.　¥19,800（税込）</p><p>ボディ：入浴／オイルトリートメント（大腿部・腹部・デコルテまたは脚・背中）／ドライヘッドスパ</p><p><strong>Blooming Journey</strong>　90min.　¥25,300（税込）</p><p>ボディ：入浴/オイルトリートメント（脚・背中・腕・デコルテ・腹部)）/ドライヘッドスパ</p><p><strong>Blooming Journey+ Rose Facial</strong>　120min.　¥36,300（税込）</p><p>+フェイス：クレンジング/洗顔＆スクラブ/トリートメント/仕上げ</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_a8KzJb": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "text_pypRpd": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>やわらかくすっきりとしたボディラインと、つややかな極上の肌を目指す方へ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_WkPzHV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Oasis Journey</strong>　120min.　¥30,800（税込）</p><p>ボディ：入浴／ボディスクラブ（脚・背中・腕・腹部）／ボディラップ／ドライヘッドスパ／<br/>オイルトリートメント（脚・背中・腕・デコルテ・腹部）</p><p><strong>Oasis Journey + Rose Facial Euphoria</strong>　180min.　¥49,500（税込）</p><p>+フェイス: クレンジング/洗顔＆スクラブ/トリートメント/シートマスク＆ジュレマスク/仕上げ</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_hqDDK8": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "text_qDBGpK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>美しいデコルテと、幸福美肌を目指す方へ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_wYkqTX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Decolletage ＋Rose Facial</strong>　60min.　¥19,800（税込）</p><p>ボディ：入浴／オイルトリートメント（デコルテ）<br/>フェイス：クレンジング／洗顔＆スクラブ／トリートメント／仕上げ</p><p>※ボディトリートメントに使用する製品の香りは、人気の4種からお選びいただけます。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_BE3rnK": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "text_xDGx73": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>スクラブ洗顔で、肌をすっきりさせたい方へ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_PzUJW7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Chillax Journey(チラックスジャーニー) </strong>　25min.　¥6,600（税込）</p><p>※フェイスポリッシャー 125mLをご購入の場合は¥2,640（税込）にてご体験いただけます</p><p>内容：肌診断（測定器使用）／クレンジング／洗顔＆スクラブ／トリートメント／仕上げ</p><p>※マッサージは含みません<br/>※ご予約は1日2回11:00～と19:00～にて承ります<br/>※メイクアップ用品はご持参ください</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_WFdKXq": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "heading_ga7iEB": {
+          "type": "heading",
+          "settings": {
+            "title": "Brida SPA MENU",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_wnPVGp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>晴れの日を迎えるプレ花嫁様に向けたスペシャルメニュー</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_Y4Nadd": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Bridal SPA MENU</strong>(1day) Total 100min.¥33,000（税込）<br/>ボディ：入浴／ボディスクラブ（背中・腕）／オイルトリートメント（背中・腕・デコルテ）フェイス：クレンジング／トリートメント／ジュレマスク／仕上げ</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "button_kBzjNq": {
+          "type": "button",
+          "settings": {
+            "link": "https://sabon.resv.jp/contents/punit_dtl.php?pkind=30&x=1716537554&keyid=3",
+            "link_text": "ブライダルスパメニューの詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "heading_TagpjM": {
+          "type": "heading",
+          "settings": {
+            "title": "Option",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_M6cVpR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ご希望に合わせて、お選びいただけます</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_WjxeBi": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Dead Sea Collection</strong>　¥2,200（税込）</p><p>対象MENU：Dead Sea Journey 60min. / Dead Sea Journey + Rose Facial 90min. /<br/>Oasis Journey 120min. / Oasis Journey + Rose Facial Euphoria 180min.</p><p><strong>Rose W Mask</strong>　10min.　¥3,300（税込）</p><p>※フェイストリートメントを含むMENUのみ追加可能</p><p><strong>Rose Eye Treatment</strong>　15min.　¥4,950（税込）</p><p>※フェイストリートメントを含むMENUにのみ追加可能</p><p><strong>Foot Treatment</strong>　20min.　¥6,600（税込）</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CJW779",
+        "text_6xBG86",
+        "text_4dGghB",
+        "spacer_YX3qGa",
+        "text_VTjdM8",
+        "text_FJCrVC",
+        "spacer_a8KzJb",
+        "text_pypRpd",
+        "text_WkPzHV",
+        "spacer_hqDDK8",
+        "text_qDBGpK",
+        "text_wYkqTX",
+        "spacer_BE3rnK",
+        "text_xDGx73",
+        "text_PzUJW7",
+        "spacer_WFdKXq",
+        "heading_ga7iEB",
+        "text_wnPVGp",
+        "text_Y4Nadd",
+        "button_kBzjNq",
+        "heading_TagpjM",
+        "text_M6cVpR",
+        "text_WjxeBi"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_Ne9bzU": {
+      "type": "rich-text",
+      "blocks": {
+        "button_LdUM6M": {
+          "type": "button",
+          "settings": {
+            "link": "https://sabon.resv.jp/",
+            "link_text": "ご予約受付中",
+            "button_style": "btn--primary"
+          }
+        },
+        "button_fiPkCU": {
+          "type": "button",
+          "settings": {
+            "link": "https://sabon.resv.jp/contents/punit_dtl.php?pkind=80&x=1695127477&keyid=8",
+            "link_text": "SPA Ticketの詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_LdUM6M",
+        "button_fiPkCU"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-none",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_kFQGqe": {
+      "type": "rich-text",
+      "blocks": {
+        "button_7aknbd": {
+          "type": "button",
+          "settings": {
+            "link": "https://sabon.resv.jp/contents/punit_dtl.php?pkind=30&x=1713498465&keyid=3",
+            "link_text": "ブライダルスパメニューの詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "button_GCdQFq": {
+          "type": "button",
+          "settings": {
+            "link": "https://sabon.resv.jp/contents/punit_dtl.php?pkind=70&x=1713498470&keyid=7",
+            "link_text": "期間限定MENUなどの詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_7aknbd",
+        "button_GCdQFq"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_DhhCbR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QyLEMW": {
+          "type": "heading",
+          "settings": {
+            "title": "AFTERNOON TEA CAFE",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_6fkWdP": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "POP UP",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "spacer_at7QNz": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "text_EnBC6Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SABONの世界観をご堪能いただけるアフタヌーンティーカフェが期間限定で登場予定<strong>。</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_FRa3bM": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "text_kPKmAw": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Coming Soon</strong></p><p>開催のお知らせはメールやLINE等でお届けいたします。<br/>まだ会員で無いお客様はSABON Customer Membership登録をお願いいたします。<br/>【ご登録はこちらから】<a href=\"https://www.sabon.co.jp/customer_membership/\">https://www.sabon.co.jp/customer_membership/</a></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QyLEMW",
+        "subheading_6fkWdP",
+        "spacer_at7QNz",
+        "text_EnBC6Q",
+        "spacer_FRa3bM",
+        "text_kPKmAw"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_ejmNC4": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_djzdHA": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/photo7_a9fb5316-976d-40e5-b5eb-96fbbc34fc01.jpg",
+            "image_width": 75,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "美しいカリグラフィーの文字でメッセージ",
+            "heading": "Calligraphy Service",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>¥7,000（税込）以上ご購入のお客様にSABONオリジナルタグにお好きなメッセージをお描きします。SABONオリジナルメッセージカード ¥385（税込）へのサービスも可能です。</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_ThFdRy": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/photo8_830a0ec0-df72-4f39-ab7f-d223b2737973.jpg",
+            "image_width": 75,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "ご購入の製品に",
+            "heading": "Engraving Service",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>¥7,000（税込）以上ご購入のお客様に対象製品にお好きな文字を刻印いたします。</p><p>対象製品：ボディスクラブ 600g／ボディスクラブ 320g／ハートスプーン／ビューティーオイル 100mL／ボディジュレ 200mL／ローズウォーターインオイル 150mL</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_NaVTzn": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/photo9_7877f9cc-d345-4d18-a808-07bcb7aad4e4.jpg",
+            "image_width": 75,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "バードチャーム≪数量限定≫",
+            "heading": "Engraving Service",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>¥7,000（税込）以上ご購入のお客様に、バードチャームにお名前を刻印し、製品に添えられます。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_djzdHA",
+        "image_column_ThFdRy",
+        "image_column_NaVTzn"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "PERSONAL SERVICE",
+        "heading_tag": "h2",
+        "subheading": "<p>Calligraphy & Engraving</p><p>お気に入りのSABON製品が、さらに自分だけの大切なものになり、特別なギフトとしても喜ばれます。</p>",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_VrDTLG": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jXpdkg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>※両サービスとも、入れられるメッセージ・文字数には限りがございます<br/>※混雑時にはお待ちいただく場合がございます<br/>※バードチャームは数量限定のため、なくなり次第終了となりますのでご了承ください</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_PgHeUg": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "subheading_AF64WA": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "電話注文を承っております",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_QwRWDL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SABON l’Atelier SPA：03-3711-0505</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_jXpdkg",
+        "spacer_PgHeUg",
+        "subheading_AF64WA",
+        "text_QwRWDL"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_PXtYGX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HM7AFm": {
+          "type": "heading",
+          "settings": {
+            "title": "FLOWER SHOP",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_GTLJ3W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>花々の美しさを永く楽しめるように<br/>様々な手法でアップサイクルした<br/>「RELOVE FLOWER」を通して<br/>“Bloomiglives”をお届けします</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_eyyGGT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo3.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 400,
+            "image_size_mobile": 200
+          }
+        }
+      },
+      "block_order": [
+        "heading_HM7AFm",
+        "text_GTLJ3W",
+        "image_eyyGGT"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_KQr3TD": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_eTJRPk": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/photo4_709d0882-7657-47f2-b934-6a6b215cca91.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "RELOVE FLOWERブーケ",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>L　¥2,750（税込）<br/>S　¥1,650（税込）</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_hUVTKp": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/photo5_07a383aa-8c53-4ca5-835c-757a4833e9f3.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "3 STEP Mini RELOVE FLOWER Gift",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>¥4,400（税込）</p><p>＜キット内容＞<br/>シャワーオイル 100ｍL<br/>ボディスクラブ 60g<br/>シルキーボディミルク 50mL<br/>BOX<br/>RELOVE FLOWER</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_DkeVrR": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/photo6_7d7b14b3-f790-4a11-a3b9-52e31b848680.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "2 STEP RELOVE FLOWER Gift",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>¥8,910（税込）</p><p>＜キット内容＞<br/>ボディスクラブ 320g<br/>シャワーオイル 300mL<br/>BOX<br/>RELOVE FLOWER</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_pc39zV": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/photo5_07a383aa-8c53-4ca5-835c-757a4833e9f3.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "3 STEP RELOVE FLOWER Gift",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>¥16,830（税込）</p><p>＜キット内容＞<br/>シャワーオイル 500mL<br/>ボディスクラブ 600g<br/>ボディローション 200mL<br/>BOX<br/>RELOVE FLOWER</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_eTJRPk",
+        "image_column_hUVTKp",
+        "image_column_DkeVrR",
+        "image_column_pc39zV"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "<h6>ドライフラワーへとアップサイクルしたRELOVE FLOWERを、SABONを代表する4種の香りをイメージしたデザインのブーケやギフトセットに</h6>",
+        "heading_font_class": "fs-heading-1-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "4",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_rYrXdX": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gKACBF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ドライフラワーへとアップサイクルしたRELOVE FLOWERを、SABONを代表する4種の香りをイメージしたデザインのブーケやギフトセットに</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_pGGK4p": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "image_UyMLaf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo4.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 200,
+            "image_size_mobile": 200
+          }
+        },
+        "text_npLWVz": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>RELOVE FLOWERブーケ</h6><p>L　¥2,750（税込）<br/>S　¥1,650（税込）</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_tYXh6c": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "image_nyftT7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo10.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 200,
+            "image_size_mobile": 200
+          }
+        },
+        "text_rUrik4": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>3 STEP Mini RELOVE FLOWER Gift</h6><p>¥4,400（税込）</p><p>＜キット内容＞<br/>シャワーオイル 100ｍL<br/>ボディスクラブ 60g<br/>シルキーボディミルク 50mL<br/>BOX<br/>RELOVE FLOWER</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_8thgfA": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "image_cfzmDB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo6.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 200,
+            "image_size_mobile": 200
+          }
+        },
+        "text_JRRcHM": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>2 STEP RELOVE FLOWER Gift</h6><p>¥8,910（税込）</p><p>＜キット内容＞<br/>ボディスクラブ 320g<br/>シャワーオイル 300mL<br/>BOX<br/>RELOVE FLOWER</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_TQH3fb": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "image_F7FYaN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo5.jpg",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 200,
+            "image_size_mobile": 200
+          }
+        },
+        "text_wczPTi": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>3 STEP RELOVE FLOWER Gift</h6><p>¥16,830（税込）</p><p>＜キット内容＞<br/>シャワーオイル 500mL<br/>ボディスクラブ 600g<br/>ボディローション 200mL<br/>BOX<br/>RELOVE FLOWER</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_Bq9HrQ": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "text_QcE4Ak": {
+          "type": "text",
+          "settings": {
+            "text": "<p>キットの香りは『パチュリ・ラベンダー・バニラ』、『デリケート・ジャスミン』、『グリーン・ローズ』、『ホワイトティー』、『トーキョー（３STEP Mini RELOVE FLOWER Giftを除く）』からお選びいただきます。</p><p>※電話注文を承っております<br/>SABON l’Atelier SPA：03-3711-0505</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_gKACBF",
+        "spacer_pGGK4p",
+        "image_UyMLaf",
+        "text_npLWVz",
+        "spacer_tYXh6c",
+        "image_nyftT7",
+        "text_rUrik4",
+        "spacer_8thgfA",
+        "image_cfzmDB",
+        "text_JRRcHM",
+        "spacer_TQH3fb",
+        "image_F7FYaN",
+        "text_wczPTi",
+        "spacer_Bq9HrQ",
+        "text_QcE4Ak"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_NUWTJp": {
+      "type": "rich-text",
+      "blocks": {
+        "text_MXLFc4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>※キットの香りは『パチュリ・ラベンダー・バニラ』、『デリケート・ジャスミン』、『グリーン・ローズ』、『ホワイトティー』、『トーキョー（３STEP Mini RELOVE FLOWER Giftを除く）』からお選びいただきます。</p><p>※電話注文を承っております<br/>SABON l’Atelier SPA：03-3711-0505</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_MXLFc4"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "rich_text_mVdyfm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VCkVyK": {
+          "type": "heading",
+          "settings": {
+            "title": "EVENT / WORK SHOP",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_rWMLg4": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "LIMITED & RESERVATION ONLY",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_gDEHbV": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>SABON l’Atelier SPA 限定サービス</h6><p>ビューティーアドバイザーがお好きな香りの製品での２種のトリートメントサービスを実施</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_aNEkad": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        }
+      },
+      "block_order": [
+        "heading_VCkVyK",
+        "subheading_rWMLg4",
+        "text_gDEHbV",
+        "spacer_aNEkad"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_xVTtzp": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_hdRfrP": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/event_img_0529_2_9c0ab219-0cba-45f4-9982-cb4de6de8449.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "SABONを代表する『ボディスクラブ』をはじめとするボディケア製品を使用した、ハンドトリートメントサービス",
+            "accent": "",
+            "heading": "ハンドトリートメントサービス（約15分・無料）",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>対象者：ご来店の方</p><p>※店内が混雑している場合には、お待ちいただくこともございます。予めご了承ください。</p><p>※イベント開催期間は、サービスを提供できかねる場合がございますので、あらかじめご了承ください。</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_LzhgKR": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/event_img_0529_3_f989f399-ec28-4d0f-a387-d1d60c08979a.jpg",
+            "image_width": 75,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "指先まで潤いに包まれて洗練された手肌へと導くハンドケア製品を使用した、事前予約制のハンド＆アーム トリートメントサービス",
+            "accent": "",
+            "heading": "ハンド＆アーム トリートメントサービス（約30分・無料）",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>対象者：Customer Membershipにご登録の上、製品をご購入いただいた方予約方法：次回ご来店日時をビューティーアドバイザーまでお申し付けください</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_hdRfrP",
+        "image_column_LzhgKR"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "2",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "multi_column_UTRLQw": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_bMEjT7": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/event_img2_5fa46f7a-2ede-4c50-91c7-f9406f731941.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "初回ご購入時から3ヶ月位内に¥7,000（税込）以上ご購入の方へ『RELOVE FLOWER ポプリジャー』をプレゼント",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>※マイページのクーポン画面にボディスクラブプレゼントクーポンが付与されている方が対象です<br/>※クーポン画面では「ボディスクラブプレゼントクーポン」ですが、l’Atelier SPAではオリジナルポプリをプレゼントします</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_zepUGx": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/event_img3_68292e8a-0ff4-4281-b07c-33b6c4546cf4.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "お誕生日月に¥11,000（税込）以上ご購入の方へ『RELOVE FLOWERブーケ S』をプレゼント",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>※マイページのクーポン画面にバースデーギフトクーポンが付与されている方が対象です</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_bMEjT7",
+        "image_column_zepUGx"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "『SABON FLOWER SHOP』より、SABOＮが提案するナチュラルなライフスタイルを体感いただける、オリジナルアイテムをプレゼントいたします。",
+        "heading_tag": "h6",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "2",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_N7z6kg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rfjdkc": {
+          "type": "heading",
+          "settings": {
+            "title": "Nature Mileage Club",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_aWd8Ph": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SABON l’Atelier SPAでは、使い終わったガラス容器を回収しています。<br/>SABONが責任をもって、店舗でのディスプレイやコラボレーションイベントなどで<br/>アップサイクルする活動を企画、推進します。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_GAptTb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/nmc_c6debc54-d8e9-43d4-817e-97ab7063dbfc.png",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 200,
+            "image_size_mobile": 200
+          }
+        },
+        "text_6LWWD9": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>お買い物で地球に優しい<br/>アクションを</h6><p>不要になったSABONのガラス容器を洗浄した上、<br/>SABON l’Atelier SPAにお持ちいただいた方には、<br/>ネイチャーマイレージクラブの1マイルを付与いたします*。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "button_QhrBYT": {
+          "type": "button",
+          "settings": {
+            "link": "https://www.sabon.co.jp/sustainable/#Naturemileage_club",
+            "link_text": "ネイチャーマイレージクラブの詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "text_dmN7zQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>＊マイルの付与はネイチャーマイレージクラブに準じます。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "spacer_AAJgwL": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "subheading_HjjmEV": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Nature Friendly Gift",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_N3XaD3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>３マイル貯めた際のネイチャーフレンドリーギフトとして、『SABON FLOWER SHOP』の『RELOVE FLOWERポプリ』をプレゼント。<br/>ご自宅にあるガラス容器と共に、ポプリポットとしてお楽しみいただけます。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_FqEwpi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/popuri.png",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 200,
+            "image_size_mobile": 200
+          }
+        }
+      },
+      "block_order": [
+        "heading_rfjdkc",
+        "text_aWd8Ph",
+        "image_GAptTb",
+        "text_6LWWD9",
+        "button_QhrBYT",
+        "text_dmN7zQ",
+        "spacer_AAJgwL",
+        "subheading_HjjmEV",
+        "text_N3XaD3",
+        "image_FqEwpi"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_zUxP9U",
+    "video_LhwKbc",
+    "rich_text_UBc9eV",
+    "scroll_to_buttons_jacN6e",
+    "navigation_buttons_XQeFqA",
+    "rich_text_dEMGmq",
+    "multi_column_ptgHak",
+    "rich_text_bNhB8q",
+    "rich_text_GH7hMJ",
+    "rich_text_Ne9bzU",
+    "rich_text_kFQGqe",
+    "rich_text_DhhCbR",
+    "multi_column_ejmNC4",
+    "rich_text_VrDTLG",
+    "rich_text_PXtYGX",
+    "multi_column_KQr3TD",
+    "rich_text_rYrXdX",
+    "rich_text_NUWTJp",
+    "rich_text_mVdyfm",
+    "multi_column_xVTtzp",
+    "multi_column_UTRLQw",
+    "rich_text_N7z6kg"
+  ]
+}

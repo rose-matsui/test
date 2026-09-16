@@ -1,0 +1,202 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-customer-login-override",
+      "blocks": {
+        "crm_plus_on_line_error_banner_FwbR8J": {
+          "type": "shopify://apps/crm-plus-on-line-line-up/blocks/error-banner/dfcb190e-14c5-48cb-b5be-c67ed2b16b21",
+          "settings": {}
+        },
+        "crm_plus_on_line_signin_DBFRjc": {
+          "type": "shopify://apps/crm-plus-on-line-line-up/blocks/signin/dfcb190e-14c5-48cb-b5be-c67ed2b16b21",
+          "settings": {
+            "line": true,
+            "apple": false,
+            "yahoo": false,
+            "google": false,
+            "facebook": false,
+            "twitter": false,
+            "callback_url": "",
+            "highlight_last_login": false
+          }
+        }
+      },
+      "block_order": [
+        "crm_plus_on_line_error_banner_FwbR8J",
+        "crm_plus_on_line_signin_DBFRjc"
+      ],
+      "settings": {
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "rich_text_HrbKMH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Fp8Gfr": {
+          "type": "heading",
+          "settings": {
+            "title": "会員のお客様には様々な特典があります。",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-3-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_n7at4h": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>購入履歴の確認や、お気に入り製品の登録が可能です。ご注文後30分以内のキャンセルも可能になります。</li><li>2回目以降のお買物は住所入力が不要になります。</li><li>購入金額によってポイントが貯まり、ギフトと交換できます。</li><li>新製品や限定品などに関するメールマガジンをお送りします。</li></ul>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "spacer_bNNw64": {
+          "type": "spacer",
+          "settings": {
+            "space": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fp8Gfr",
+        "text_n7at4h",
+        "spacer_bNNw64"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-only",
+        "content_width": "custom",
+        "custom_content_width": 800
+      }
+    },
+    "multi_column_GGJVEQ": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_9JCc6V": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/a0c53b5be90947aceb3977c4be1403a8763451cc.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>特典１<br/></strong>最新情報をお届け 新製品・限定品などの情報をいち早くお届け。</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_Kk74WN": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/47332a2133d583bacf0bbf9b6e1b3a7eb456b896.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>特典２</strong><br/>ポイントが貯まる・使える ご購入金額に応じてポイントが貯まり、貯めたポイントはギフトと交換可能。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_8qyUgR": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/825a410e68f236b1af02c9cf19d50e537bf5c7d5.jpg",
+            "image_width": 100,
+            "aspect_ratio": "square",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p><strong>特典３</strong><br/>お買い物がもっと便利に ご購入履歴やメンバーステージ、ポイント数はいつでも確認可能。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_9JCc6V",
+        "image_column_Kk74WN",
+        "image_column_8qyUgR"
+      ],
+      "disabled": true,
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 16,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "show_text_right_mobile": true,
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "custom",
+        "custom_content_width": 800
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_HrbKMH",
+    "multi_column_GGJVEQ"
+  ]
+}

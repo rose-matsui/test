@@ -1,0 +1,1625 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_R64DQa": {
+      "type": "image-hero",
+      "blocks": {
+        "accent_6CH4Fq": {
+          "type": "accent",
+          "settings": {
+            "accent": "ふわりと舞うそよ風のように全身を包み込み、心に寄り添うオードトワレ"
+          }
+        },
+        "heading_DBrdNm": {
+          "type": "heading",
+          "settings": {
+            "title": "Eau de Sabon",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "text_ECqYgy": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>Minidful of Your Feelings</strong></em></p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "accent_6CH4Fq",
+        "heading_DBrdNm",
+        "text_ECqYgy"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/kv-mobil3.jpg",
+        "image_mobile": "shopify://shop_images/kv-mobil3.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "flex-start_flex-start",
+        "text_color": "#212121",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "scroll_to_buttons_zqBqJf": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_PVQ3z7": {
+          "type": "button",
+          "settings": {
+            "button_label": "お気に入りの香りを見つける",
+            "target_title": "Fragrance Finder"
+          }
+        },
+        "button_BcBVWT": {
+          "type": "button",
+          "settings": {
+            "button_label": "香りを重ね楽しむペアリングとは？",
+            "target_title": "About Pairing"
+          }
+        },
+        "button_VjytPm": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Click me",
+            "target_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_PVQ3z7",
+        "button_BcBVWT",
+        "button_VjytPm"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "気持ちを切り替えたい時や、ゆったりと過ごすおうち時間にも",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 100,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_TTRjH3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CR6Hxz": {
+          "type": "heading",
+          "settings": {
+            "title": "What is “EAU de SABON”?",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_xBEh4m": {
+          "type": "text",
+          "settings": {
+            "text": "<h6><strong>心に寄り添う9種の香り</strong></h6><p>やわらかく軽やかな香り立ちで、<br/>ペアリングにも最適</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "text_7riUFj": {
+          "type": "text",
+          "settings": {
+            "text": "<h6><strong>肌のことを大切に考えた<br/>ナチュラル処方</strong></h6><p>トウモロコシ由来のナチュラルな<br/>アルコール*を使用したヴィーガン処方**</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        },
+        "text_aNrJ8Q": {
+          "type": "text",
+          "settings": {
+            "text": "<h6><strong>いつでも私らしく、選べる2サイズ</strong></h6><p>ラグジュアリーな佇まいの80mLと<br/>気軽に持ち運べる30mLの2サイズ展開</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CR6Hxz",
+        "text_xBEh4m",
+        "text_7riUFj",
+        "text_aNrJ8Q"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "scroll_to_buttons_KgiNiX": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_FnR4YC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Energizing",
+            "target_title": "Energizing"
+          }
+        },
+        "button_bBrkfD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Refreshing",
+            "target_title": "Refreshing"
+          }
+        },
+        "button_jXpXPr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Relaxing",
+            "target_title": "Relaxing"
+          }
+        }
+      },
+      "block_order": [
+        "button_FnR4YC",
+        "button_bBrkfD",
+        "button_jXpXPr"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "Fragrance Finder",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 100,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_46HQxE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fNUjMh": {
+          "type": "heading",
+          "settings": {
+            "title": "Energizing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_jXterD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Item Lineup",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_9iAnkY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>弾けるように明るく、アクセントになる香り1日の始まりやスポーツをするときに</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fNUjMh",
+        "subheading_jXterD",
+        "text_9iAnkY"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_product_ChppkT": {
+      "type": "featured-product",
+      "blocks": {
+        "text_8yLCWn": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Ginger Orange</h3><p>豊かな果実感とスパイスが紡ぐ<br/>大人のフルーティ</p>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_aYUT4J": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_UfjMYz": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_A3PPRy": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_rFcKeJ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_XjJFQQ": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_8yLCWn",
+        "product_header_aYUT4J",
+        "variant_picker_UfjMYz",
+        "quantity_selector_A3PPRy",
+        "buy_buttons_rFcKeJ",
+        "description_XjJFQQ"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_product_YDjhRY": {
+      "type": "featured-product",
+      "blocks": {
+        "text_y9R3i6": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Citrus Blossom</h3><p>咲き誇る花々と陽気な果実の<br/>コンビネーション</p>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_B4CVnx": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_EwwxQd": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_iXCkQD": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_Jjkifb": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_KwFzTb": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_y9R3i6",
+        "product_header_B4CVnx",
+        "variant_picker_EwwxQd",
+        "quantity_selector_iXCkQD",
+        "buy_buttons_Jjkifb",
+        "description_KwFzTb"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_m64jJL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3rDNhN": {
+          "type": "heading",
+          "settings": {
+            "title": "Refreshing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_g8BQck": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Item Lineup",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_NmNcHD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>自然を感じる、清々しく伸びやかな香りデイタイムの気持ち切り替えに</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3rDNhN",
+        "subheading_g8BQck",
+        "text_NmNcHD"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_product_Mp4XM7": {
+      "type": "featured-product",
+      "blocks": {
+        "text_Rge9dB": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Delicate Jasmine</h3><p>月明かりの下の澄んだ空気のような<br/>凛としたクリーンフローラル</p>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_iTF3RL": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_AdWdCc": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_JVrkDy": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_Bwj9bN": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_ngQ3Xt": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_Rge9dB",
+        "product_header_iTF3RL",
+        "variant_picker_AdWdCc",
+        "quantity_selector_JVrkDy",
+        "buy_buttons_Bwj9bN",
+        "description_ngQ3Xt"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_product_JjPA9G": {
+      "type": "featured-product",
+      "blocks": {
+        "text_mWkagk": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Green Rose</h3><p>自然の息吹を感じる<br/>咲きたてのフレッシュローズ</p>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_6iFVkL": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_hxwPpt": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_gexP9L": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_zXt3DV": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_aUJpYr": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_mWkagk",
+        "product_header_6iFVkL",
+        "variant_picker_hxwPpt",
+        "quantity_selector_gexP9L",
+        "buy_buttons_zXt3DV",
+        "description_aUJpYr"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_product_GhNRpM": {
+      "type": "featured-product",
+      "blocks": {
+        "text_TqwcWJ": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>White Tea</h3><p>陽だまりのように安らぐ、<br/>優美なシトラスノート</p>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_XkLzeE": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_DBNqQp": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_cw9gwE": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_U334gj": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_FjVAk9": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_TqwcWJ",
+        "product_header_XkLzeE",
+        "variant_picker_DBNqQp",
+        "quantity_selector_cw9gwE",
+        "buy_buttons_U334gj",
+        "description_FjVAk9"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_id7pgM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_q9Q9cj": {
+          "type": "heading",
+          "settings": {
+            "title": "Relaxing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_tmjYCF": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Item Lineup",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_ATFCrT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>静けさを感じる、深くゆったりとした香り<br/>ベッドタイムフレグランスとしても</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_q9Q9cj",
+        "subheading_tmjYCF",
+        "text_ATFCrT"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_product_D6eCgY": {
+      "type": "featured-product",
+      "blocks": {
+        "text_hMt6Eb": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Patchouli Lavender　Vanilla</h3><p>エキゾティックな世界へと誘う、<br/>甘く魅惑的なオリエンタルノート</p>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_QyJANg": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_tpLAJi": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_MigrQi": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_FtraJ9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_33B4Vm": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_hMt6Eb",
+        "product_header_QyJANg",
+        "variant_picker_tpLAJi",
+        "quantity_selector_MigrQi",
+        "buy_buttons_FtraJ9",
+        "description_33B4Vm"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_product_kC7GpX": {
+      "type": "featured-product",
+      "blocks": {
+        "text_8KhFmf": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Musk</h3><p>女性らしさを引き出す、<br/>気品あふれる優雅なハーモニー</p>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_XBaA8f": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_AdcgQR": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_8JmK3y": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_ArhVBe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_EwYhyN": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_8KhFmf",
+        "product_header_XBaA8f",
+        "variant_picker_AdcgQR",
+        "quantity_selector_8JmK3y",
+        "buy_buttons_ArhVBe",
+        "description_EwYhyN"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_product_96D6Jw": {
+      "type": "featured-product",
+      "blocks": {
+        "text_VF7jAY": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Rose Tea</h3><p>バラの紅茶から立ち上る<br/>柔らかなフルーティーローズ</p>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_kEKpeT": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_QDcVhw": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_zxjVnr": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_VCBFip": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_iUNFy3": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_VF7jAY",
+        "product_header_kEKpeT",
+        "variant_picker_QDcVhw",
+        "quantity_selector_zxjVnr",
+        "buy_buttons_VCBFip",
+        "description_iUNFy3"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_hdhjLQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tBVNwj": {
+          "type": "heading",
+          "settings": {
+            "title": "About Pairing",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_UkahzK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>異なる香りのオー ドゥ サボンやモイスチャライザーを重ねて楽しむペアリングがおすすめです。</p><p>カテゴリ内はもちろん、隣り合うカテゴリの組み合わせは好相性です。</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_6pjaJm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_about.png",
+            "content_width": "custom",
+            "image_size": 400,
+            "image_size_mobile": 200
+          }
+        },
+        "spacer_ta8DEj": {
+          "type": "spacer",
+          "settings": {
+            "space": 64
+          }
+        },
+        "heading_XaCrex": {
+          "type": "heading",
+          "settings": {
+            "title": "1. パワーを感じたい朝",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tBVNwj",
+        "text_UkahzK",
+        "image_6pjaJm",
+        "spacer_ta8DEj",
+        "heading_XaCrex"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_product_F9rJha": {
+      "type": "featured-product",
+      "blocks": {
+        "text_NtxaUD": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Energizing</h3>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_V8VxQ4": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_77Qzft": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_GBxYyt": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_8VJ7hw": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_TDnARK": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_NtxaUD",
+        "product_header_V8VxQ4",
+        "variant_picker_77Qzft",
+        "quantity_selector_GBxYyt",
+        "buy_buttons_8VJ7hw",
+        "description_TDnARK"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_product_ckwFiK": {
+      "type": "featured-product",
+      "blocks": {
+        "text_LPkwiG": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Refreshing</h3>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_VEhnJa": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_n38kFr": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_i6HPhR": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_kXmp7r": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_FrRDdi": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_LPkwiG",
+        "product_header_VEhnJa",
+        "variant_picker_n38kFr",
+        "quantity_selector_i6HPhR",
+        "buy_buttons_kXmp7r",
+        "description_FrRDdi"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_V4W8C8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jKDtFn": {
+          "type": "heading",
+          "settings": {
+            "title": "2. 気持ちを切り替えたい昼下り",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jKDtFn"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_product_CMY6PT": {
+      "type": "featured-product",
+      "blocks": {
+        "text_K97tc6": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Refreshing</h3>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_QBxExh": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_r9xPCm": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_Jm3kmz": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_LQUXj8": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_RDnmVj": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_K97tc6",
+        "product_header_QBxExh",
+        "variant_picker_r9xPCm",
+        "quantity_selector_Jm3kmz",
+        "buy_buttons_LQUXj8",
+        "description_RDnmVj"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_product_NarAFE": {
+      "type": "featured-product",
+      "blocks": {
+        "text_aMqXWT": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Refreshing</h3>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_bdbMKL": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_bWAPyz": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_8MzR6Y": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_w3xFDH": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_QB4ftQ": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_aMqXWT",
+        "product_header_bdbMKL",
+        "variant_picker_bWAPyz",
+        "quantity_selector_8MzR6Y",
+        "buy_buttons_w3xFDH",
+        "description_QB4ftQ"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_iPdq6G": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FUzmMB": {
+          "type": "heading",
+          "settings": {
+            "title": "3. リラックスしたい夜",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FUzmMB"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_product_ehbtrE": {
+      "type": "featured-product",
+      "blocks": {
+        "text_7hPE8y": {
+          "type": "text",
+          "settings": {
+            "text_font_class": "fs-body-100",
+            "text": "<h3>Relaxing</h3>",
+            "column_placement": "right"
+          }
+        },
+        "product_header_thpxXy": {
+          "type": "product_header",
+          "settings": {
+            "title_tag": "h2",
+            "show_divider": true,
+            "show_vendor": true,
+            "show_sku": true,
+            "show_discount": true,
+            "discount_format": "percent_off",
+            "show_product_rating": false,
+            "show_sale_badge": true,
+            "show_custom_badges": true
+          }
+        },
+        "variant_picker_G8wQUd": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Size",
+            "variant_popup_icon": "none",
+            "variant_popup_text": "Size guide",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "3col"
+          }
+        },
+        "quantity_selector_PKB8d4": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
+          }
+        },
+        "buy_buttons_wpeMnp": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description_pLUkjh": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "title_tag": "h3",
+            "text_font_class": "fs-body-100",
+            "column_placement": "right",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
+          }
+        }
+      },
+      "block_order": [
+        "text_7hPE8y",
+        "product_header_thpxXy",
+        "variant_picker_G8wQUd",
+        "quantity_selector_PKB8d4",
+        "buy_buttons_wpeMnp",
+        "description_pLUkjh"
+      ],
+      "name": "t:sections.featured_product.presets.name",
+      "settings": {
+        "featured_product": "",
+        "show_featured_media_first": false,
+        "gallery_size": "medium",
+        "enable_video_looping": true,
+        "enable_product_lightbox": true,
+        "image_aspect_ratio": "portrait",
+        "enable_gift_card_recipient": true,
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_bQXYti": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FpfmqL": {
+          "type": "heading",
+          "settings": {
+            "title": "Engraving Service",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_bifimX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>お買い上げいただいた「オー ドゥ サボン」のキャップに一部店舗にて刻印サービスも実施します。</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "button_HQLGHp": {
+          "type": "button",
+          "settings": {
+            "link": "https://www.sabon.co.jp/news/20210624",
+            "link_text": "詳細はこちら",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_FQiVYx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/i_eng.webp",
+            "content_width": "custom",
+            "image_size": 300,
+            "image_size_mobile": 200
+          }
+        },
+        "text_7GfHNj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*変性アルコール（ベース成分）<br/>**動物由来原料を含まない</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FpfmqL",
+        "text_bifimX",
+        "button_HQLGHp",
+        "image_FQiVYx",
+        "text_7GfHNj"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_R64DQa",
+    "scroll_to_buttons_zqBqJf",
+    "rich_text_TTRjH3",
+    "scroll_to_buttons_KgiNiX",
+    "rich_text_46HQxE",
+    "featured_product_ChppkT",
+    "featured_product_YDjhRY",
+    "rich_text_m64jJL",
+    "featured_product_Mp4XM7",
+    "featured_product_JjPA9G",
+    "featured_product_GhNRpM",
+    "rich_text_id7pgM",
+    "featured_product_D6eCgY",
+    "featured_product_kC7GpX",
+    "featured_product_96D6Jw",
+    "rich_text_hdhjLQ",
+    "featured_product_F9rJha",
+    "featured_product_ckwFiK",
+    "rich_text_V4W8C8",
+    "featured_product_CMY6PT",
+    "featured_product_NarAFE",
+    "rich_text_iPdq6G",
+    "featured_product_ehbtrE",
+    "rich_text_bQXYti"
+  ]
+}

@@ -1,0 +1,70 @@
+{{ 'template-customers.css' | asset_url | stylesheet_tag }}
+<section
+  id="customer-account-welcome"
+  class="
+    customer account page account-section account-section--main
+    section--divider-{{ section.settings.divider_style }}
+    {{ section.settings.section_padding }}
+  "
+>
+  <div class="page__inner">
+    <header class="account__header page__header">
+      <h1 class="account__heading ff-heading fs-heading-2-base">{{ 'account.title' | t }}</h1>
+
+      <div class="account__subheading fs-body-100">
+        {{ 'account.welcome_nameless' | t }}
+      </div>
+    </header>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "t:sections.main_customer_account.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:shared.settings.section_style.header_style.content"
+    },
+    {
+      "type": "select",
+      "id": "divider_style",
+      "label": "t:shared.settings.section_style.divider_style.label",
+      "default": "none",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_none",
+          "value": "none"
+        },
+        {
+          "label": "t:shared.settings.section_style.divider_style.option_solid",
+          "value": "solid"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "t:shared.settings.section_style.section_padding.label",
+      "default": "section--vertical-padding-bottom-only",
+      "options": [
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_none",
+          "value": "section--vertical-padding-none"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_both",
+          "value": "section--vertical-padding-top-bottom"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_top",
+          "value": "section--vertical-padding-top-only"
+        },
+        {
+          "label": "t:shared.settings.section_style.section_padding.option_bottom",
+          "value": "section--vertical-padding-bottom-only"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

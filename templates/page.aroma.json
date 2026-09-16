@@ -1,0 +1,1352 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_R64DQa": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_DBrdNm": {
+          "type": "heading",
+          "settings": {
+            "title": "Home Fragrance",
+            "heading_tag": "h2",
+            "heading_font_class": "sbn-heading-xl"
+          }
+        },
+        "text_ECqYgy": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SABONの上質な香りで<br/>心満たされる優雅なライフスタイルを</strong></p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DBrdNm",
+        "text_ECqYgy"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "custom",
+        "desktop_height": 70,
+        "mobile_height": 80,
+        "image": "shopify://shop_images/kv-desktop_288c92d1-e37a-419b-b9c3-2c2b1116848a.jpg",
+        "image_mobile": "shopify://shop_images/kv-mobile.png",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#599559",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 10,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_9cHiBk": {
+      "type": "rich-text",
+      "blocks": {
+        "image_ENW3yp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/label_candle.webp",
+            "content_width": "custom",
+            "forced_image_alignment": true,
+            "image_size": 470,
+            "image_size_mobile": 200
+          }
+        },
+        "spacer_KanA8b": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "heading_dGmFzk": {
+          "type": "heading",
+          "settings": {
+            "title": "アロマ",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base",
+            "text_color": "#212121"
+          }
+        },
+        "text_YQ3Vrk": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>花々が咲き誇る庭園の美しい香りのハーモニーが<br/>いつものお部屋を華やかに彩り、心満たされる魅惑の空間へ</strong></p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "image_ENW3yp",
+        "spacer_KanA8b",
+        "heading_dGmFzk",
+        "text_YQ3Vrk"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "scroll_to_buttons_hYmiBD": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_HtH6Bq": {
+          "type": "button",
+          "settings": {
+            "button_label": "FRESH 心弾む清々しい香り",
+            "target_title": "FRESH"
+          }
+        },
+        "button_FhBJfn": {
+          "type": "button",
+          "settings": {
+            "button_label": "PEACEFUL 心が静かに整う澄んだ香り",
+            "target_title": "PEACEFUL"
+          }
+        },
+        "button_DrbWBg": {
+          "type": "button",
+          "settings": {
+            "button_label": "COZY 心が安らぎに包まれる優しい香り",
+            "target_title": "COZY"
+          }
+        }
+      },
+      "block_order": [
+        "button_HtH6Bq",
+        "button_FhBJfn",
+        "button_DrbWBg"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 150,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "scroll_to_buttons_73V47k": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_Q8gLfe": {
+          "type": "button",
+          "settings": {
+            "button_label": "ファブリックミスト",
+            "target_title": "ファブリックミスト"
+          }
+        },
+        "button_ywV6FW": {
+          "type": "button",
+          "settings": {
+            "button_label": "キャンドル",
+            "target_title": "Candle Collection"
+          }
+        }
+      },
+      "block_order": [
+        "button_Q8gLfe",
+        "button_ywV6FW"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 150,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_LyimyN": {
+      "type": "rich-text",
+      "blocks": {
+        "accent_LDnwg7": {
+          "type": "accent",
+          "settings": {
+            "accent": "FRESH"
+          }
+        },
+        "heading_iaR9RF": {
+          "type": "heading",
+          "settings": {
+            "title": "心弾む清々しい香り",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_VtTwbt": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Green Rose & Magnolia",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_HBqJPf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "グリーン・ローズ＆マグノリア",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_babqwC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>咲きたての花々のフレッシュな香り</p><p>ローズの新鮮さにマグノリアの繊細さをブレンドした自然の喜びに満ちたフレッシュ・フローラル</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_aNzjPR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_gr.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_fe3RKa": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_djmQED": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Ginger Orange & Lime",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_p7mHjd": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ジンジャー・オレンジ＆ライム",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_XgQ7mJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>はじけるように爽やかな香り</p><p>オレンジとカフィアライムがはじけるような活力を与えるトニック・フルーティ</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_mJD6ak": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_gg.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_YJCDeM": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_nGXird": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Citrus Blossom & Bergamot",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_GfMR9d": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "シトラス・ブロッサム＆ベルガモット",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_KJYBYh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>果実と花が奏でる華やかな香り</p><p>ベルガモットのフレッシュなファンタジーにオレンジの花やフルーティーなピーチが甘く香るシャイニー・シトラス</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_4qX68y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_cb.png",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_4b8qnB": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_yjqi3L": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Gentleman",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_466BaB": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ジェントルマン",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_4gbatd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>清潔感あふれる凛とした香り</p><p>ローズマリーやアンバーの格調高い個性が輝くクリーンでエレガントなアロマティック・シトラス</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_AWpAdD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_gen.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_cQKy6y": {
+          "type": "border",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "accent_LDnwg7",
+        "heading_iaR9RF",
+        "subheading_VtTwbt",
+        "subheading_HBqJPf",
+        "text_babqwC",
+        "image_aNzjPR",
+        "border_fe3RKa",
+        "subheading_djmQED",
+        "subheading_p7mHjd",
+        "text_XgQ7mJ",
+        "image_mJD6ak",
+        "border_YJCDeM",
+        "subheading_nGXird",
+        "subheading_GfMR9d",
+        "text_KJYBYh",
+        "image_4qX68y",
+        "border_4b8qnB",
+        "subheading_yjqi3L",
+        "subheading_466BaB",
+        "text_4gbatd",
+        "image_AWpAdD",
+        "border_cQKy6y"
+      ],
+      "name": "FRESH",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_collection_grid_YH6HYr": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "product_list_mNx7Mm": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "aroma-green-rose-magnolia-245ml",
+              "aroma-ginger-orange-lime-245ml",
+              "aroma-citrus-blossom-bergamot-245ml",
+              "aroma-gentleman-245ml"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "product_list_mNx7Mm"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 4,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_r8AAby": {
+      "type": "rich-text",
+      "blocks": {
+        "accent_H3zqQ9": {
+          "type": "accent",
+          "settings": {
+            "accent": "PEACEFUL"
+          }
+        },
+        "heading_tWWFxK": {
+          "type": "heading",
+          "settings": {
+            "title": "心が静かに整う澄んだ香り",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_RHVFwd": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Jasmine & Hyacinth",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_ic39C7": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ジャスミン＆ヒヤシンス",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_YkyNfU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>優しく透き通るような繊細な香り</p><p>ジャスミンのエレガンスに透き通るスズランと優しいブルーヒヤシンスが繊細な輝きを放つルミナス・フローラル</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_6P3DW8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_js.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_ebGR7M": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_XMgNtH": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Cherry Blossom & Pear",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_g4L8bt": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "チェリーブロッサム＆ペアー",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_ygrYQn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>夢のように甘く愛らしい香り</p><p>愛らしいチェリーブロッサムとみずみずしい梨が奏でる夢のようなデリシャス・フローラル</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_pHNGdB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_chb.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_VafRJX": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_ayrqpf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "White Tea & Osmanthus",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_yfzYrg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ホワイトティー＆オスマンサス",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_JFB4fp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>陽だまりのように安らぐ優美な香り</p><p>繊細なホワイトティーと柔らかなアプリコットのようなキンモクセイが奏でる華やかなフレッシュ・シトラス</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_Wp7BJN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_wt.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_jrBxWa": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_KwxhrX": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Lavender Apple & Anise",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_bbXk8N": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ラベンダー・アップル＆アニス",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_wc6mhN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>穏やかに広がる澄んだ香り</p><p>ラベンダーとアニスフラワーのフレッシュさに、アップルの甘さを融合したナチュラル・フルーティ</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_aKim3g": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_gen.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_QmB4Vh": {
+          "type": "border",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "accent_H3zqQ9",
+        "heading_tWWFxK",
+        "subheading_RHVFwd",
+        "subheading_ic39C7",
+        "text_YkyNfU",
+        "image_6P3DW8",
+        "border_ebGR7M",
+        "subheading_XMgNtH",
+        "subheading_g4L8bt",
+        "text_ygrYQn",
+        "image_pHNGdB",
+        "border_VafRJX",
+        "subheading_ayrqpf",
+        "subheading_yfzYrg",
+        "text_JFB4fp",
+        "image_Wp7BJN",
+        "border_jrBxWa",
+        "subheading_KwxhrX",
+        "subheading_bbXk8N",
+        "text_wc6mhN",
+        "image_aKim3g",
+        "border_QmB4Vh"
+      ],
+      "name": "PEACEFUL",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_collection_grid_WfMVVp": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "product_list_M9yxT9": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "aroma-jasmine-hyacinth-245ml",
+              "aroma-cherry-blossom-pear-245ml",
+              "aroma-white-tea-osmanthus-245ml",
+              "aroma-lavender-apple-anise-245ml"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "product_list_M9yxT9"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 4,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_KMVKcU": {
+      "type": "rich-text",
+      "blocks": {
+        "accent_8D9GRt": {
+          "type": "accent",
+          "settings": {
+            "accent": "COZY"
+          }
+        },
+        "heading_HXCHxL": {
+          "type": "heading",
+          "settings": {
+            "title": "心が安らぎに包まれる優しい香り",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_bq9aVi": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Patchouli Lavender Vanilla",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_bzAwi8": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "パチュリ・ラベンダー・バニラ",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_9EiyJy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>エキゾティックで魅惑的な香り</p><p>ユーカリとラベンダーの清々しさやパチュリの個性が際立ち、バニラの余韻が記憶に刻まれるオリエンタルノート</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_cNgfy8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_plv.png",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_MiV8wH": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_ne8yHn": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Rose Tea & Violet",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_RnU8Dc": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ローズティー＆バイオレット",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_dr69YK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>心癒される柔らかな香り</p><p>柔らかなローズとバイオレットが織りなす甘く優しいパウダリー・フローラル</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_RWaUCm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_rt.png",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_BGCCMw": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_KWimUw": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "White Musk & Peony",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_9GfnTH": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ホワイトムスク＆ピオニー",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_AxhkDc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>透明感あふれる洗練された香り</p><p>洗練されたピオニーや咲き誇る花々に包まれるムスキー・フローラル</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_La66Bm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pira_wm.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_rABUwH": {
+          "type": "border",
+          "settings": {}
+        },
+        "image_PLp3zc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cozy_obj13.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        }
+      },
+      "block_order": [
+        "accent_8D9GRt",
+        "heading_HXCHxL",
+        "subheading_bq9aVi",
+        "subheading_bzAwi8",
+        "text_9EiyJy",
+        "image_cNgfy8",
+        "border_MiV8wH",
+        "subheading_ne8yHn",
+        "subheading_RnU8Dc",
+        "text_dr69YK",
+        "image_RWaUCm",
+        "border_BGCCMw",
+        "subheading_KWimUw",
+        "subheading_9GfnTH",
+        "text_AxhkDc",
+        "image_La66Bm",
+        "border_rABUwH",
+        "image_PLp3zc"
+      ],
+      "name": "COZY",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_collection_grid_JKfzch": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "product_list_gWrYCq": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "aroma-patchouli-lavender-vanilla-245ml",
+              "aroma-rose-tea-violet-245ml",
+              "aroma-white-musk-peony-245ml"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "product_list_gWrYCq"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 4,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "collection_list_slider_kMig7Y": {
+      "type": "collection-list-slider",
+      "name": "t:sections.collection_list_slider.presets.name",
+      "settings": {
+        "heading": "ファブリックミスト",
+        "heading_tag": "h2",
+        "subheading": "<p>洋服やベッドリネンにやわらかい香りを添える</p>",
+        "link": "shopify://collections",
+        "link_text": "",
+        "columns": "4",
+        "mobile_columns": "2",
+        "collection_list": [],
+        "custom_thumbnail": false,
+        "collection_listing_aspect_ratio": "square",
+        "label_style": "overlay",
+        "overlay_hide_arrow": false,
+        "bold_text": false,
+        "overlay_title_background_style": "gradient",
+        "overlay_text_color": "#fff",
+        "overlay_title_background": "#000000",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_hero_PY8JE9": {
+      "type": "image-hero",
+      "blocks": {
+        "image_EwkRmE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/label_new.webp",
+            "image_size": 100,
+            "image_size_mobile": 120
+          }
+        },
+        "heading_3WAYFC": {
+          "type": "heading",
+          "settings": {
+            "title": "Candle Collection",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "text_PppbXD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>その日の気分に合わせて選べる5種の香り</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "image_EwkRmE",
+        "heading_3WAYFC",
+        "text_PppbXD"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "custom",
+        "desktop_height": 50,
+        "mobile_height": 70,
+        "image": "shopify://shop_images/mv_candle.jpg",
+        "image_mobile": "shopify://shop_images/mv_candle_1_-mobile.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-start",
+        "text_color": "#282524",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 20,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_fW6RUU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YEKHGy": {
+          "type": "heading",
+          "settings": {
+            "title": "自分時間を光と香りで幻想的に彩るキャンドル",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "subheading_WrMt4z": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "SABONの上質なアロマキャンドルで香りに心満たされる優雅なライフスタイルを楽しんで",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "spacer_8JgUHk": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "subheading_KdHnFX": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Jasmine & Hyacinth",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_P7kaiR": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ジャスミン＆ヒヤシンス",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_7qTCpV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ルミナス・フローラル<br/>透き通るような輝きを放つ香り</strong></p><p>咲き誇るジャスミンが青空のようなブルーヒヤシンスのみずみずしく澄んだ香りに彩られ、白い花々のきらめきによって格調高いハーモニーを奏でます</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_FzjBpU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_jh_flower.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_3e8XEB": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "image_BpwT9K": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_jh_pyramid.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_8nrjrr": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_CDaMQQ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "White Tea & Osmanthus",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_Tpm3FV": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "ホワイトティー & オスマンサス",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_jfRJND": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>フレッシュ・シトラス<br/>陽だまりのように明るく優美な香り</strong></p><p>繊細なホワイトティーに青々としたミントリーフがフレッシュさを添え、ヴァーベナが甘酸っぱいアクセントをもたらしキンモクセイが柔らかな余韻で包み込みます</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_D94gLg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_wo_flower.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_dL889D": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "image_96gBb7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_wo_pyramid.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_UDWiLD": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_b4i4Td": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Patchouli Lavender Vanilla",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_riRVfa": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "パチュリ・ラベンダー・バニラ",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_giB7e3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>オリエンタル<br/>エキゾティックで魅惑的な香り</strong></p><p>印象的なパチュリにユーカリやラベンダーの清々しさをブレンドしクリーミーなバニラの甘さとリッチなレザーアコードが洗練された大人の魅力へと高めます</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_9U8kxF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_plv_flower.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_pM77Kp": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "image_yTryy7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_plv_pyramid.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_FmYPY6": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_c8CeVX": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Cotton Flower & Sage",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_k8m96J": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "コットンフラワー ＆ セージ",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_pHkV7g": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>パウダリー・フローラル<br/>心癒される柔らかな香り</strong></p><p>軽やかなコットンフラワーとベルベットのような深いセージのデュオが心を穏やかに落ち着かせパウダリーなバイオレットやヘリオトロープが優しい癒しを与えます</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_GbwLjw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_cs_flower.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_YgpMKf": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "image_jKnr96": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_cs_pyramid.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "border_CX3x7V": {
+          "type": "border",
+          "settings": {}
+        },
+        "subheading_MyLM9w": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Amber & Myrrh",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-4-base"
+          }
+        },
+        "subheading_AMPHhm": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "アンバー ＆ ミルラ",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        },
+        "text_MXrmwQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>オリエンタル<br/>深淵へと誘う神秘的な香り</strong></p><p>センシュアルなアンバーとミステリアスなミルラが甘いバニラや温かなインセンスと混ざり合い複雑で深みのある高貴な香りへ昇華します</p>",
+            "text_font_class": "fs-body-100",
+            "align_last": false
+          }
+        },
+        "image_AnkphF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_am_flower.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        },
+        "spacer_NqPwVL": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "image_x99qJU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/img_am_pyramid.webp",
+            "content_width": "custom",
+            "forced_image_alignment": false,
+            "image_size": 450,
+            "image_size_mobile": 350
+          }
+        }
+      },
+      "block_order": [
+        "heading_YEKHGy",
+        "subheading_WrMt4z",
+        "spacer_8JgUHk",
+        "subheading_KdHnFX",
+        "subheading_P7kaiR",
+        "text_7qTCpV",
+        "image_FzjBpU",
+        "spacer_3e8XEB",
+        "image_BpwT9K",
+        "border_8nrjrr",
+        "subheading_CDaMQQ",
+        "subheading_Tpm3FV",
+        "text_jfRJND",
+        "image_D94gLg",
+        "spacer_dL889D",
+        "image_96gBb7",
+        "border_UDWiLD",
+        "subheading_b4i4Td",
+        "subheading_riRVfa",
+        "text_giB7e3",
+        "image_9U8kxF",
+        "spacer_pM77Kp",
+        "image_yTryy7",
+        "border_FmYPY6",
+        "subheading_c8CeVX",
+        "subheading_k8m96J",
+        "text_pHkV7g",
+        "image_GbwLjw",
+        "spacer_YgpMKf",
+        "image_jKnr96",
+        "border_CX3x7V",
+        "subheading_MyLM9w",
+        "subheading_AMPHhm",
+        "text_MXrmwQ",
+        "image_AnkphF",
+        "spacer_NqPwVL",
+        "image_x99qJU"
+      ],
+      "name": "Candle",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "featured_collection_grid_DWLCbW": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "product_list_mFwKdf": {
+          "type": "product_list",
+          "settings": {
+            "product_list": []
+          }
+        }
+      },
+      "block_order": [
+        "product_list_mFwKdf"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 4,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_R64DQa",
+    "rich_text_9cHiBk",
+    "scroll_to_buttons_hYmiBD",
+    "scroll_to_buttons_73V47k",
+    "rich_text_LyimyN",
+    "featured_collection_grid_YH6HYr",
+    "rich_text_r8AAby",
+    "featured_collection_grid_WfMVVp",
+    "rich_text_KMVKcU",
+    "featured_collection_grid_JKfzch",
+    "collection_list_slider_kMig7Y",
+    "image_hero_PY8JE9",
+    "rich_text_fW6RUU",
+    "featured_collection_grid_DWLCbW"
+  ]
+}

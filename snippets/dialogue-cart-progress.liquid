@@ -1,0 +1,319 @@
+{% comment %}
+  Cart Progress Bar — Snippet
+  ---------------------------------------------------------------------------
+  Renders a cart progress bar with one or more reward milestones, plus an
+  optional side container for custom assets.
+
+  USAGE (defaults):
+    {% render 'cart-progress-bar' %}
+
+  USAGE (override any param):
+    {% render 'cart-progress-bar',
+        tiers: '5000:You are [amount] away from Free Shipping!|10000:Only [amount] away from a Free Gift!',
+        price_basis: 'original_total_price',
+        display_mode: 'target',
+        congrats_text: '🎉 All rewards unlocked!',
+        layout_split: '50-50',
+        fill_color: '#000000',
+        side_html: '<img src="...">'
+    %}
+
+  PARAMETERS (all optional — fall back to the hardcoded defaults below):
+    tiers          String. Pipe-separated milestones. Each milestone is
+                   "amount_in_cents:message". Use [amount] in the message as
+                   the placeholder. e.g. '5000:Add [amount] for free shipping!'
+    price_basis    'total_price' (after discounts) | 'original_total_price'
+    display_mode   'delta' (amount remaining) | 'target' (goal amount)
+    congrats_text  Text shown once all tiers are reached.
+    layout_split   '50-50' | '66-33' | '33-66' | '75-25' | '25-75'
+    layout_gap     Number (px) gap between bar and side container.
+    side_html      Raw HTML injected into the desktop side container.
+
+    Styling: bg_color, text_color, highlight_color, text_size, text_align,
+             track_color, fill_color, bar_height, bar_radius,
+             padding_y, padding_x
+
+    Container border: border_width (px, 0 = no border), border_color,
+             border_radius (px)
+  ---------------------------------------------------------------------------
+{% endcomment %}
+
+{%- liquid
+  # ---- Hardcoded defaults (overridable via render params) ----
+  assign cpb_tiers = tiers | default: '1000000:Add [amount] more for Free Shipping!|1550000:Only [amount] away from a Free Gift!'
+  assign cpb_show_track = false
+  if show_track == true
+    assign cpb_show_track = true
+  endif
+  assign cpb_price_basis = price_basis | default: 'total_price'
+  assign cpb_display_mode = display_mode | default: 'delta'
+  assign cpb_congrats_text = congrats_text | default: '🎉 You have unlocked VIP Status!'
+
+  assign cpb_layout_split = layout_split | default: '66-33'
+  assign cpb_layout_gap = layout_gap | default: 20
+  assign cpb_side_html = side_html | default: ''
+
+  assign cpb_bg_color = bg_color | default: ''
+  assign cpb_text_color = text_color | default: '#000000'
+  assign cpb_highlight_color = highlight_color | default: '#000000'
+  assign cpb_text_size = text_size | default: 14
+  assign cpb_text_align = text_align | default: 'left'
+  assign cpb_track_color = track_color | default: '#F9F4ED'
+  assign cpb_fill_color = fill_color | default: '#B4975E'
+  assign cpb_bar_height = bar_height | default: 8
+  assign cpb_bar_radius = bar_radius | default: 4
+  assign cpb_padding_y = padding_y | default: 10
+  assign cpb_padding_x = padding_x | default: 10
+
+  # ---- Container border (off by default: width 0 = no border) ----
+  assign cpb_border_width = border_width | default: 1
+  assign cpb_border_color = border_color | default: '#B4975E'
+  assign cpb_border_radius = border_radius | default: 0
+
+  # Unique-ish id so multiple instances don't collide. Pass `instance_id`
+  # to render multiple bars on one page.
+  assign cpb_uid = instance_id | default: 'cpb-default'
+
+  # Split tiers string into an array of "amount:message" entries
+  assign cpb_tier_list = cpb_tiers | split: '|'
+-%}
+
+<div class="cpb-wrapper" id="{{ cpb_uid }}-container" data-cpb-instance="{{ cpb_uid }}">
+  <div class="cpb-layout cpb-split--{{ cpb_layout_split }}">
+
+    <div class="cpb-main">
+      <div class="cpb-content">
+        <p class="cpb-text" id="{{ cpb_uid }}-message">
+          Loading rewards...
+        </p>
+
+        
+        {%- if cpb_show_track == true -%}
+        <div class="cpb-track">
+          <div class="cpb-fill" id="{{ cpb_uid }}-fill" style="width: 0%;"></div>
+
+          {%- for tier in cpb_tier_list -%}
+            {%- assign tier_amount = tier | split: ':' | first -%}
+            <div class="cpb-marker" data-goal="{{ tier_amount }}" style="left: 0%;"></div>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+
+      </div>
+    </div>
+
+    {%- if cpb_side_html != blank -%}
+      <div class="cpb-side" id="{{ cpb_uid }}-side-container">
+        <div class="cpb-side-block">
+          {{ cpb_side_html }}
+        </div>
+      </div>
+    {%- else -%}
+      {%- comment -%} Empty container kept for JS injection targeting (hidden via :empty) {%- endcomment -%}
+      <div class="cpb-side" id="{{ cpb_uid }}-side-container"></div>
+    {%- endif -%}
+
+  </div>
+</div>
+
+<style>
+  #{{ cpb_uid }}-container {
+    padding: {{ cpb_padding_y }}px {{ cpb_padding_x }}px;
+    background-color: {{ cpb_bg_color }};
+    width: 100%;
+    box-sizing: border-box;
+    {%- if cpb_border_width > 0 %}
+    border: {{ cpb_border_width }}px solid {{ cpb_border_color }};
+    {%- endif %}
+    border-radius: {{ cpb_border_radius }}px;
+  }
+
+  /* Layout: stacked on mobile, flex row on desktop */
+  #{{ cpb_uid }}-container .cpb-layout {
+    display: flex;
+    flex-direction: column;
+    gap: {{ cpb_layout_gap }}px;
+    align-items: stretch;
+  }
+  #{{ cpb_uid }}-container .cpb-main { min-width: 0; }
+  #{{ cpb_uid }}-container .cpb-side {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  /* Hide empty side container so it doesn't add gap when no content */
+  #{{ cpb_uid }}-container .cpb-side:empty { display: none; }
+
+  @media screen and (min-width: 750px) {
+    #{{ cpb_uid }}-container .cpb-layout {
+      flex-direction: row;
+      align-items: center;
+    }
+    /* Width splits — main / side */
+    #{{ cpb_uid }}-container .cpb-split--50-50 .cpb-main { flex: 1 1 50%; }
+    #{{ cpb_uid }}-container .cpb-split--50-50 .cpb-side { flex: 1 1 50%; }
+
+    #{{ cpb_uid }}-container .cpb-split--66-33 .cpb-main { flex: 1 1 66.66%; }
+    #{{ cpb_uid }}-container .cpb-split--66-33 .cpb-side { flex: 1 1 33.33%; }
+
+    #{{ cpb_uid }}-container .cpb-split--33-66 .cpb-main { flex: 1 1 33.33%; }
+    #{{ cpb_uid }}-container .cpb-split--33-66 .cpb-side { flex: 1 1 66.66%; }
+
+    #{{ cpb_uid }}-container .cpb-split--75-25 .cpb-main { flex: 1 1 75%; }
+    #{{ cpb_uid }}-container .cpb-split--75-25 .cpb-side { flex: 1 1 25%; }
+
+    #{{ cpb_uid }}-container .cpb-split--25-75 .cpb-main { flex: 1 1 25%; }
+    #{{ cpb_uid }}-container .cpb-split--25-75 .cpb-side { flex: 1 1 75%; }
+
+    #{{ cpb_uid }}-container .cpb-side:empty { display: none; }
+  }
+
+  #{{ cpb_uid }}-container .cpb-text {
+    margin: 0 0 8px 0;
+    text-align: {{ cpb_text_align }};
+    color: {{ cpb_text_color }};
+    font-size: {{ cpb_text_size }}px;
+    font-weight: bold;
+    font-family: inherit;
+  }
+  #{{ cpb_uid }}-container .cpb-track {
+    width: 100%;
+    height: {{ cpb_bar_height }}px;
+    background-color: {{ cpb_track_color }};
+    border-radius: {{ cpb_bar_radius }}px;
+    position: relative;
+    overflow: hidden;
+  }
+  #{{ cpb_uid }}-container .cpb-fill {
+    height: 100%;
+    background-color: {{ cpb_fill_color }};
+    border-radius: {{ cpb_bar_radius }}px;
+    transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+  }
+  #{{ cpb_uid }}-container .cpb-highlight {
+    color: {{ cpb_highlight_color }};
+  }
+</style>
+
+<script>
+  (function() {
+    const uid = {{ cpb_uid | json }};
+
+    // 1. Configuration
+    const config = {
+      moneyFormat: {{ shop.money_format | json }},
+      currencySymbol: {{ cart.currency.symbol | json }},
+      priceBasis: {{ cpb_price_basis | json }},   // 'total_price' or 'original_total_price'
+      displayMode: {{ cpb_display_mode | json }}, // 'delta' or 'target'
+      congratsText: {{ cpb_congrats_text | json }},
+      tiers: [
+        {%- for tier in cpb_tier_list -%}
+          {%- assign tier_parts = tier | split: ':' -%}
+          {%- assign tier_amount = tier_parts | first -%}
+          {%- comment -%} Rejoin remaining parts in case the message contains a ':' {%- endcomment -%}
+          {%- assign tier_msg = tier_parts[1] -%}
+
+          {
+            amount: {{ tier_amount | times: 1 }},
+            text: {{ tier_msg | json }}
+          }{%- unless forloop.last -%},{%- endunless -%}
+        {%- endfor -%}
+      ]
+    };
+
+    // Sort tiers ascending so logic works regardless of input order
+    config.tiers.sort((a, b) => a.amount - b.amount);
+    const maxGoal = config.tiers.length > 0 ? config.tiers[config.tiers.length - 1].amount : 0;
+
+    // Helper: Format Money
+    function formatMoney(cents) {
+      return config.currencySymbol + (cents / 100).toFixed(2);
+    }
+
+    // Core Logic: Update Bar
+ function updateProgressBar(cart) {
+  const currentVal = cart[config.priceBasis];
+    console.log('CPB debug → priceBasis:', config.priceBasis, 'currentVal:', currentVal, 'cart:', cart);
+
+  const fillEl = document.getElementById(uid + '-fill');
+  const msgEl = document.getElementById(uid + '-message');
+  if (!msgEl) return;
+
+  // 1. Percentage (capped at 100%) — only if the track/fill exists
+  if (fillEl) {
+    let percentage = 0;
+    if (maxGoal > 0) {
+      percentage = (currentVal / maxGoal) * 100;
+    }
+    if (percentage > 100) percentage = 100;
+    fillEl.style.width = percentage + '%';
+  }
+
+  // 2. Next goal
+  let nextTier = config.tiers.find(tier => currentVal < tier.amount);
+
+  // 3. Text
+  if (nextTier) {
+    const delta = nextTier.amount - currentVal;
+    let message = nextTier.text;
+
+    if (config.displayMode === 'delta') {
+      message = message.replace('[amount]', '<span class="cpb-highlight">' + formatMoney(delta) + '</span>');
+    } else {
+      message = message.replace('[amount]', '<span class="cpb-highlight">' + formatMoney(nextTier.amount) + '</span>');
+    }
+    msgEl.innerHTML = message;
+  } else {
+    msgEl.innerHTML = config.congratsText;
+  }
+}
+
+    // Fetch Cart Initial State
+    function initCart() {
+      fetch(window.Shopify.routes.root + 'cart.js')
+        .then(res => res.json())
+        .then(cart => updateProgressBar(cart))
+        .catch(err => console.error('Error loading cart', err));
+    }
+
+    // LISTENERS: AJAX cart updates via fetch
+    const originalFetch = window.fetch;
+    window.fetch = function() {
+      return originalFetch.apply(this, arguments).then((response) => {
+        if (response.url.includes('/cart/add') || response.url.includes('/cart/change') || response.url.includes('/cart/update')) {
+          response.clone().json().then(data => {
+             if (data.token) {
+               if (!data.total_price && !data.original_total_price) {
+                  initCart();
+               } else {
+                  updateProgressBar(data);
+               }
+             } else {
+               initCart();
+             }
+          }).catch(() => initCart());
+        }
+        return response;
+      });
+    };
+
+    // Older themes: XHR
+    const originalOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function() {
+        this.addEventListener("load", function() {
+            if (this._url && (this._url.includes('/cart/add') || this._url.includes('/cart/change'))) {
+                initCart();
+            }
+        });
+        originalOpen.apply(this, arguments);
+    };
+
+    // Init
+    document.addEventListener('DOMContentLoaded', initCart);
+    document.addEventListener('shopify:section:load', initCart);
+  })();
+</script>

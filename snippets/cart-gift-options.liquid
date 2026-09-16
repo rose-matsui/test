@@ -1,0 +1,40 @@
+{% assign gift_bag_product = all_products['paper_bag'] %}
+{% if gift_bag_product == blank %}
+  {% assign gift_bag_product = all_products['ペーパーバッグ'] %}
+{% endif %}
+
+<div class="cart__gift-options" id="cart__gift-options-box">
+  {% if section.settings.section_title_gift_options %}
+    <div class="cart__gift-options__header section-header">
+      <h3 class="section-header__title ff-heading fs-heading-2">
+        {{ section.settings.section_title_gift_options }}
+      </h3>
+    </div>
+  {% endif %}
+
+  <div class="cart__gift-options__items">
+    <div class="cart__gift-options__products">
+      {% if gift_bag_product %}
+        <div class="cart__gift-options__product">
+          <div class="cart__gift-options__product-info">  
+            <div class="cart__gift-options__product-image">
+              <img 
+                src="{{ gift_bag_product.featured_image | img_url: 'small' }}" 
+                alt="{{ gift_bag_product.title }}" 
+                width="100%" height="100%"
+              />
+            </div>
+            <p class="cart__gift-options__product-title">{{ gift_bag_product.title }}</p>
+          </div>
+          <button 
+            type="button"
+            class="cart__gift-options__select-button"
+            data-custom-modal-open
+            data-gift-bag-key="{{ gift_bag_product.key }}"
+          >
+          </button>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

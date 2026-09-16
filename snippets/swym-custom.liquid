@@ -1,0 +1,107 @@
+<!-- Custom Code to Add Wishlist behind Login + cookies. -->
+<script defer>
+  //  preferences cookies check
+  {% if customer %}
+  function interceptWishlistClick(event) {
+    const allowed = window.Shopify?.customerPrivacy?.preferencesProcessingAllowed?.();
+    if (allowed === false) {
+      event.preventDefault();
+      window.privacyBanner?.showPreferences?.();
+    }
+  }
+
+  document.addEventListener('click', function(event) {
+    if (event.target.closest('.header__icon-touch--wishlist')) {
+      interceptWishlistClick(event);
+    }
+  }, true);
+  {% endif %}
+
+    function swymCallbackFn(swat) {
+      var isLoggedIn;
+      {% if customer %}
+      isLoggedIn = true;
+      {% else %}
+      isLoggedIn = false;
+      {% endif %}
+      if (isLoggedIn == false) {
+        SwymUtils.getHostedURL = function() {
+          /*    	Navigate to login page on click of swym-icons for wishlist page.*/
+          return "/account/login";
+        }
+        //       Override launchpoints.
+        swat.ui.open = function(){
+          console.log("Not Logged IN!");
+          swymRedirectToLogin();
+        }
+        //       Override default API implementations.
+        swat.api.addToWishList = function(){
+          console.log("Not Logged IN!");
+          swymRedirectToLogin();
+        }
+  
+  //       Override API for Pop-up
+        swat.ui.uiRef.addToWishlist =function(){
+          console.log("Not Logged IN!");
+          swymRedirectToLogin();
+        }
+      }
+      function swymRedirectToLogin(customURL){
+        var accountsPageURL = customURL || window.origin + "/account/login";
+        window.location = accountsPageURL;
+      }
+    }
+    if (!window.SwymCallbacks) {
+      window.SwymCallbacks = [];
+    }
+    window.SwymCallbacks.push(swymCallbackFn);
+  </script>
+
+<script defer>
+  function swymCallbackFn(swat){
+    // your API calls go here
+    document.addEventListener("swym:collections-loaded", function(){
+      swat.initializeActionButtons("body");
+    })
+  }
+  if(!window.SwymCallbacks){
+    window.SwymCallbacks = [];
+  }
+  window.SwymCallbacks.push(swymCallbackFn);
+
+</script>
+
+<script>
+window.SwymCallbacks = window.SwymCallbacks || [];
+
+window.SwymCallbacks.push(function(swat) {
+  const eventName = 'sw:addedtowishlist';
+  
+  const listener = function(e) {
+    setTimeout(function() {
+      window.WishlistPlusPDPButtonAPI.initializePDPButton(_swat);
+    }, 1000); 
+  };
+  
+  swat.evtLayer.addEventListener(eventName, listener);
+});
+</script>
+
+<style>
+.product-item__wishlist-btn.swym-button.swym-add-to-wishlist-view-product {
+  right: 1.5rem !important;
+  top: 1rem;
+  left: auto !important;
+  position: absolute;
+  z-index: 3;
+}
+
+.product-item__wishlist-btn.swym-button.swym-add-to-wishlist-view-product:after {
+    color: #b4975d !important;
+    font-size: 1.4rem;
+}
+
+.swym-advanced-wishlist-collections-container {
+    display: none;
+}
+</style>

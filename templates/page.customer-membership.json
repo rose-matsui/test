@@ -1,0 +1,602 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_animation": true,
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "image_hero_R64DQa": {
+      "type": "image-hero",
+      "blocks": {
+        "heading_DBrdNm": {
+          "type": "heading",
+          "settings": {
+            "title": "SABON Customer Membership",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2"
+          }
+        },
+        "subheading_gqcUzd": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "サボンカスタマーメンバーシップ",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DBrdNm",
+        "subheading_gqcUzd"
+      ],
+      "name": "t:sections.image_hero.presets.name",
+      "settings": {
+        "full_width_desktop": true,
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 50,
+        "image": "shopify://shop_images/mv-desktop.jpg",
+        "image_mobile": "shopify://shop_images/mv-desktop.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "top",
+        "media_link": "",
+        "text_position": "flex-start_center",
+        "text_position_mobile": "center_flex-end",
+        "text_color": "#212121",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_K3tP3H": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fiaE97": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>心と感性がときめくサボンの世界をお楽しみいただける、様々な会員様向けのサービスをご用意しています。</h5>",
+            "text_font_class": "fs-body-200",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "text_fiaE97"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "scroll_to_buttons_zqBqJf": {
+      "type": "scroll-to-buttons",
+      "blocks": {
+        "button_PVQ3z7": {
+          "type": "button",
+          "settings": {
+            "button_label": "新着情報",
+            "target_title": "プロモーションや商品の最新情報をお届け"
+          }
+        },
+        "button_BcBVWT": {
+          "type": "button",
+          "settings": {
+            "button_label": "バースデー",
+            "target_title": "お誕生月にスペシャルギフトをプレゼント"
+          }
+        },
+        "button_VjytPm": {
+          "type": "button",
+          "settings": {
+            "button_label": "先行予約",
+            "target_title": "商品の先行ご予約のご案内"
+          }
+        },
+        "button_UNyxHW": {
+          "type": "button",
+          "settings": {
+            "button_label": "イベント",
+            "target_title": "特別イベントやワークショップへのご招待"
+          }
+        }
+      },
+      "block_order": [
+        "button_PVQ3z7",
+        "button_BcBVWT",
+        "button_VjytPm",
+        "button_UNyxHW"
+      ],
+      "name": "Scroll-to Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h6",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 100,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "navigation_buttons_6rg6yq": {
+      "type": "navigation-buttons",
+      "blocks": {
+        "button_FzdbXp": {
+          "type": "button",
+          "settings": {
+            "button_label": "会員登録する",
+            "url": "/account/register"
+          }
+        }
+      },
+      "block_order": [
+        "button_FzdbXp"
+      ],
+      "name": "Navigation Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 300,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "multi_column_D6F9zm": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_7MexLr": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/ms_01.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "プロモーションや商品の最新情報をお届け",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>その時期にぴったりの新商品や、期間限定プロモーションなどの情報をメールやLINEでお届けします。</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_phy8Cb": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/ms_02.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "お誕生月にスペシャルギフトをプレゼント",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>お誕生月中にご利用いただける限定クーポンギフトをお贈りします。</p><ul><li>オンラインストアまたは直営店でお買い上げいただいた際に使用可能です。</li><li>クーポンはマイページ内、「クーポン一覧」にございます。詳細条件はクーポンに記載しておりますのでご確認くださいませ。</li></ul>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_qdKRMw": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/ms_03.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "商品の先行ご予約のご案内",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>限定商品などを非会員のお客様よりも一足早くご予約いただくことができます。</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_kzLFF9": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/ms_04.jpg",
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "特別イベントやワークショップへのご招待",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>SABONの世界観をご堪能いただけるイベントや、商品を一層楽しめるワークショップへご招待します。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_7MexLr",
+        "image_column_phy8Cb",
+        "image_column_qdKRMw",
+        "image_column_kzLFF9"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "入会特典詳細",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "2",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "navigation_buttons_Vq4axV": {
+      "type": "navigation-buttons",
+      "blocks": {
+        "button_FGTHCQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "会員登録する",
+            "url": "/account/register"
+          }
+        }
+      },
+      "block_order": [
+        "button_FGTHCQ"
+      ],
+      "name": "Navigation Buttons",
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-3-base",
+        "buttons_min_width": 300,
+        "button_text_bold": false,
+        "text_color": "#000000",
+        "button_background_color": "#b4975f",
+        "button_text_color": "#ffffff",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text_46HQxE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fNUjMh": {
+          "type": "heading",
+          "settings": {
+            "title": "LINE ID連携でお買い物が便利に！",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "spacer_pAh4E8": {
+          "type": "spacer",
+          "settings": {
+            "space": 24
+          }
+        },
+        "subheading_jXterD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "LINE ID 連携はこちら",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "button_96WY43": {
+          "type": "button",
+          "settings": {
+            "link": "https://page.line.me/830exmbx?openQrModal=true",
+            "link_text": "友だち追加・ログイン",
+            "button_style": "btn--primary"
+          }
+        },
+        "text_9fNeTP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>※LINE ID連携にはサボンLINE公式アカウントの友だち追加が必要です。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fNUjMh",
+        "spacer_pAh4E8",
+        "subheading_jXterD",
+        "button_96WY43",
+        "text_9fNeTP"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
+    "multi_column_bLJPiJ": {
+      "type": "multi-column",
+      "blocks": {
+        "image_column_g3LBWC": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/me_01.jpg",
+            "image_width": 75,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "below_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "1",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>SABON公式サイトで新規会員登録してください。※すでに会員の方は不要です。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_K7VgUx": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/me_02.jpg",
+            "image_width": 75,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "below_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "2",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>LINEトーク画面で「サボンメンバーズカード」のボタンを押してください。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_eKQikN": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/me_03.jpg",
+            "image_width": 75,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "below_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "3",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>バーコード下部にある「すでに会員の方」ボタンを押してください。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_RcCt4a": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/me_04.jpg",
+            "image_width": 75,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "below_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "4",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>ログイン画面で会員登録時のメールアドレスとパスワードを入力しマイページが表示されます。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_column_FhJpJQ": {
+          "type": "image_column",
+          "settings": {
+            "image": "shopify://shop_images/me_05.jpg",
+            "image_width": 75,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "below_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "5",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>LINEトーク画面へ戻り、「サボンメンバーズカード」ボタンを押すと「連携済み」と表示されます。</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_g3LBWC",
+        "image_column_K7VgUx",
+        "image_column_eKQikN",
+        "image_column_RcCt4a",
+        "image_column_FhJpJQ"
+      ],
+      "name": "t:sections.multi_column.presets.name",
+      "settings": {
+        "title": "LINE ID 連携の方法",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "medium",
+        "columns": "3",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "center",
+        "background_behind_columns": false,
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "rich_text_gVnYMf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YyWytK": {
+          "type": "heading",
+          "settings": {
+            "title": "LINE ID 連携はこちら",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base",
+            "text_color": "#212121"
+          }
+        },
+        "button_fifTBp": {
+          "type": "button",
+          "settings": {
+            "link": "https://page.line.me/830exmbx?openQrModal=true",
+            "link_text": "友だち追加・ログイン",
+            "button_style": "btn--primary"
+          }
+        },
+        "text_4pTkxw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>※LINE ID連携にはサボンLINE公式アカウントの友だち追加が必要です。</p>",
+            "text_font_class": "fs-body-75",
+            "align_last": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YyWytK",
+        "button_fifTBp",
+        "text_4pTkxw"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "border": false,
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_hero_R64DQa",
+    "rich_text_K3tP3H",
+    "scroll_to_buttons_zqBqJf",
+    "navigation_buttons_6rg6yq",
+    "multi_column_D6F9zm",
+    "navigation_buttons_Vq4axV",
+    "rich_text_46HQxE",
+    "multi_column_bLJPiJ",
+    "rich_text_gVnYMf"
+  ]
+}

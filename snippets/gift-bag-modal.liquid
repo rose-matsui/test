@@ -1,0 +1,170 @@
+{{ 'custom-modal.css' | asset_url | stylesheet_tag }}
+{% assign gift_bag_product = all_products['paper_bag'] %}
+
+{% if gift_bag_product == blank %}
+  {% assign gift_bag_product = all_products['ペーパーバッグ'] %}
+{% endif %}
+
+<div data-section-id="{{ section.id }}">
+<div id="gift-bag-modal-cart" class="custom__modal" data-custom-modal>
+  <div class="custom__overlay" data-overlay></div>
+  <div class="custom__content">
+    <button type="button" class="custom__modal-close" data-close>
+      {% render 'icon-button' with small: true, icon: 'close' %}
+    </button>
+    <div class="custom__content__inner">
+      <h3 class="custom__modal-heading fs-body-150 fs-body-bold ta-c">
+        {{ 'cart.gift_bag.modal.title' | t }}
+      </h3>
+      <div class="gift-bag-modal__content">
+        <p class="ff-body fs-body-75">{{ 'cart.gift_bag.modal.instructions1' | t }}</p>
+        <p class="ff-body fs-body-75">{{ 'cart.gift_bag.modal.instructions2' | t }}</p>
+      </div>
+      {% if gift_bag_product %}
+        <div class="gift-bag-modal__variants">
+          {% for variant in gift_bag_product.variants %}
+            {% assign bag_infos = shop.metaobjects.bag_size_info.values %}
+            {% assign variant_id_string = variant.id | append: '' %}
+            {% assign current_info = bag_infos | where: 'variant_id', variant_id_string | first %}
+
+            <div class="gift-bag-modal__variant" data-variant-id="{{ variant.id }}">
+              <div class="gift-bag-modal__variant-info">
+                <p class="gift-bag-modal__variant-title">
+                  {{ variant.title }}
+                  {{ 'cart.gift_bag.modal.select_size' | t }}
+                </p>
+                {% if current_info %}
+                  <p class="gift-bag-modal__variant-dimensions">{{ current_info.dimensions }}</p>
+                {% endif %}
+              </div>
+              <div class="gift-bag-modal__variant-price">
+                <p>
+                  {{ variant.price | money_without_currency -}}
+                  {{- 'cart.gift_bag.modal.price' | t }}
+                </p>
+
+                <div
+                  class="quantity-gift-bag-add"
+                  data-variant-id="{{ variant.id }}"
+                  data-max-allowed="20"
+                >
+                  <button
+                    type="button"
+                    class="quantity-gift-bag-add__button quantity-subtract"
+                    aria-label="Decrease quantity"
+                    {% if initial_value == 0 or initial_value == '0' %}
+                      disabled
+                    {% endif %}
+                  >
+                    {% render 'icon', icon: 'minus-small' %}
+                  </button>
+
+                  <input
+                    type="number"
+                    value="{{ initial_value | default: 0 }}"
+                    min="0"
+                    class="quantity-gift-bag-add__input"
+                    aria-label="Quantity"
+                    readonly
+                  >
+
+                  <button
+                    type="button"
+                    class="quantity-gift-bag-add__button quantity-add"
+                    aria-label="Increase quantity"
+                  >
+                    {% render 'icon', icon: 'plus-small' %}
+                  </button>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      <div class="gift-bag-modal__actions ta-c mt-4">
+        <button id="gift-bag-modal-save" class="gift-bag-modal__save-button btn btn--primary">
+          {{ 'cart.gift_bag.modal.add_to_cart' | t }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+  const GiftBagModalState = {
+    selections: {},
+
+    setQuantity(variantId, quantity) {
+      if (quantity > 0) {
+        this.selections[variantId] = quantity;
+      } else {
+        delete this.selections[variantId];
+      }
+    },
+
+    getSelections() {
+      return Object.entries(this.selections).map(([id, quantity]) => ({
+        id: parseInt(id),
+        quantity,
+      }));
+    },
+
+    clear() {
+      this.selections = {};
+    },
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.quantity-gift-bag-add').forEach((wrapper) => {
+      const input = wrapper.querySelector('.quantity-gift-bag-add__input');
+      const addBtn = wrapper.querySelector('.quantity-add');
+      const subBtn = wrapper.querySelector('.quantity-subtract');
+      const variantId = parseInt(wrapper.dataset.variantId);
+      const maxAllowed = parseInt(wrapper.dataset.maxAllowed);
+      let quantity = parseInt(input.value) || 0;
+
+      const updateState = () => {
+        input.value = quantity;
+        addBtn.disabled = quantity >= maxAllowed;
+        subBtn.disabled = quantity <= 0;
+        GiftBagModalState.setQuantity(variantId, quantity);
+      };
+
+      addBtn.addEventListener('click', () => {
+        if (quantity < maxAllowed) {
+          quantity++;
+          updateState();
+        }
+      });
+
+      subBtn.addEventListener('click', () => {
+        if (quantity > 0) {
+          quantity--;
+          updateState();
+        }
+      });
+
+      updateState();
+    });
+  });
+
+  document.getElementById('gift-bag-modal-save')?.addEventListener('click', async () => {
+    const items = GiftBagModalState.getSelections();
+
+    if (!items.length) {
+      return;
+    }
+
+    await fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({ items }),
+    });
+
+    location.reload();
+  });
+</script>

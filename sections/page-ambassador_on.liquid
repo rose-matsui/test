@@ -1,0 +1,2738 @@
+
+{{ 'ambassador_common.css' | asset_url | stylesheet_tag }}
+{{ 'ambassador_on.css' | asset_url | stylesheet_tag }}
+
+<style>
+.ambassador_on .ambassador_common-intro__lines {
+	text-align: center;
+	padding: 5.3107344633vw 3.0508474576vw 29.0395480226vw;
+	background: url('{{ "ambassador-on-intro-line-bg.png" | asset_url }}') no-repeat center
+		bottom/100% 100%;
+}
+
+@media screen and (min-width: 960px) {
+	.ambassador_on .ambassador_common-intro__lines {
+		padding: 2.8125vw 2.1875vw 5.2083333333vw;
+		background: url('{{ "ambassador-on-intro-line-bg-pc.png" | asset_url }}') no-repeat center
+			bottom/100% 100%;
+	}
+}
+
+.ambassador_on .ambassador_common-sound-notice::before {
+	background-image: url('{{ "ambassador-on-cm-notice-icon.png" | asset_url }}');
+}
+
+.ambassador_on .ambassador_common-cm__modal-overlay {
+	background: url('{{ "ambassador-on-cm-popup-bg.jpg" | asset_url }}') no-repeat top center/cover;
+}
+
+.ambassador_on .ambassador_common-making__modal-overlay {
+	background: url('{{ "ambassador-on-making-popup-bg.jpg" | asset_url }}') no-repeat top
+		center/cover;
+	background-color: rgba(28, 20, 16, 0.9);
+}
+
+.ambassador_on .ambassador_common-award::before {
+	background: url('{{ "ambassador-on-award-bg1.png" | asset_url }}') no-repeat center top/cover;
+}
+
+.ambassador_on .ambassador_common-award::after {
+	background: url('{{ "ambassador-on-award-bg2.png" | asset_url }}') no-repeat center top/cover;
+}
+
+@media screen and (min-width: 960px) {
+	.ambassador_on .ambassador_common-award::before {
+		background: url('{{ "ambassador-on-award-bg-pc.png" | asset_url }}') no-repeat center top/100%
+			auto;
+	}
+}
+
+.ambassador_on .ambassador_common-recommend__action-button {
+	background: #d3d1ce url('{{ "ambassador-on-arrow-icon-color.png" | asset_url }}') no-repeat top 40%
+		right 3.1638418079vw/7.1186440678vw;
+}
+@media screen and (min-width: 960px) {
+    .ambassador_on .ambassador_common-recommend__action-button {
+        background-size: 1.875vw;
+        background-position: top 40% right .8333333333vw;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .ambassador_on .ambassador_common-recommend__action-button {
+        background-size: 36px;
+        background-position: top 40% right 16px;
+    }
+}
+.ambassador_on .ambassador_common-time__modal-dialog .ambassador_common-time__item-link {
+	background: #15415b url('{{ "ambassador-on-arrow-icon.png" | asset_url }}') no-repeat center
+		right 3.1638418079vw/7.1186440678vw;
+}
+@media screen and (min-width: 960px) {
+    .ambassador_on .ambassador_common-time__modal-dialog .ambassador_common-time__item-link {
+        background-position: top .5208333333vw right .46875vw;
+        background-size: 1.6666666667vw auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .ambassador_on .ambassador_common-time__modal-dialog .ambassador_common-time__item-link {
+        background-position: top 10px right 9px;
+        background-size: 32px auto;
+    }
+}
+.ambassador_on .ambassador_common-talk {
+	background: url('{{ "ambassador-on-talk-bg.png" | asset_url }}') no-repeat center bottom/cover;
+}
+
+.ambassador_on .ambassador_common-talk__modal-overlay {
+	background: url('{{ "ambassador-on-talk-bg.png" | asset_url }}') no-repeat center/cover;
+	background-color: #718291;
+}
+
+@media screen and (min-width: 960px) {
+	.ambassador_on .ambassador_common-talk {
+		background: url('{{ "ambassador-on-talk-bg-pc.png" | asset_url }}') no-repeat center/cover;
+	}
+}
+
+.ambassador_on .ambassador_common-download .ambassador_common-button--gold {
+	background:
+		url('{{ "ambassador-on-download-icon.png" | asset_url }}') no-repeat right 3.3898305085vw
+			center/5.197740113vw 5.5367231638vw,
+		linear-gradient(90deg, #d3d1ce 0%, #eaeaea 100%);
+}
+@media screen and (min-width: 960px) {
+    .ambassador_on .ambassador_common-download .ambassador_common-button--gold {
+        background-position: right .8333333333vw center, 0 0;
+        background-size: 1.09375vw 1.1979166667vw, auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .ambassador_on .ambassador_common-download .ambassador_common-button--gold {
+        background-position: right 16px center, 0 0;
+        background-size: 21px 23px, auto;
+    }
+}
+</style>
+
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Shippori+Mincho&display=swap"
+    rel="stylesheet">
+
+
+<div id="ambassador-lp-root" class="ambassador_common-lp-root ambassador_on">
+<div class="ambassador_common-wrapper">
+
+<section class="ambassador_common-fv ambassador_common-fv--on" id="fv">
+  <div class="ambassador_common-fv__inner">
+    <div class="ambassador_common-fv__container">
+
+      <div class="ambassador_common-fv__slide" aria-hidden="true">
+        <ul class="ambassador_common-fv__slide-list">
+          <li class="ambassador_common-fv__slide-item">
+            <picture>
+              <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-fv-slide-01.jpg' | asset_url }}">
+              <img class="ambassador_common-fv__slide-image"
+                src="{{ 'ambassador-on-fv-slide-01-pc.jpg' | asset_url }}" alt="" width="1440" height="800">
+            </picture>
+          </li>
+          <li class="ambassador_common-fv__slide-item">
+            <picture>
+              <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-fv-slide-02.jpg' | asset_url }}">
+              <img class="ambassador_common-fv__slide-image"
+                src="{{ 'ambassador-on-fv-slide-02-pc.jpg' | asset_url }}" alt="" width="1440" height="800">
+            </picture>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ambassador_common-fv__overlay">
+        <div class="ambassador_common-fv__copy">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-fv-copy.png' | asset_url }}">
+            <img class="ambassador_common-fv__copy-image" src="{{ 'ambassador-on-fv-copy-pc.png' | asset_url }}"
+              alt="香りでON。じぶんに自信。シトラスウッディの香り。心に余裕、肌に自信。" width="767" height="309">
+          </picture>
+        </div>
+        <div class="ambassador_common-fv__link">
+          <a href="#original" class="ambassador_common-fv__link-anchor">
+            <img class="ambassador_common-fv__link-image" src="{{ 'ambassador-on-fv-link.png' | asset_url }}"
+              alt="SABONオリジナル キースプーンチャーム" width="560" height="280">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="ambassador_common-gradient-band">
+<section class="ambassador_common-intro" id="intro">
+  <div class="ambassador_common-intro__inner">
+    <div class="ambassador_common-intro__container">
+
+      <div class="ambassador_common-intro__heading">
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-intro-heading.png' | asset_url }}">
+          <img class="ambassador_common-intro__visual-image"
+            src="{{ 'ambassador-on-intro-heading-pc.png' | asset_url }}" alt="ジェントルマンの凛とした香りで、気持ちを整え、自信を引き出す。"
+            width="800" height="500">
+        </picture>
+      </div>
+
+      <!-- Shopify移植時: OFFタブは {{ pages['ambassador-off'].url }} 等へリンク -->
+      <div class="ambassador_common-tab">
+        <div class="ambassador_common-tab__list" role="tablist" aria-label="LP切り替え">
+          <button type="button" class="ambassador_common-tab__link ambassador_common-tab__link--active"
+            onclick="location.href='ambassador_off'" role="tab" aria-selected="true" data-lp-tab="ambassador_off">
+            <img src="{{ 'ambassador-on-intro-tab-off.png' | asset_url }}" alt="OFF" width="160" height="48">
+          </button>
+          <button type="button" class="ambassador_common-tab__link" onclick="location.href='ambassador_on'" role="tab"
+            aria-selected="false" data-lp-tab="ambassador_on">
+            <img src="{{ 'ambassador-on-intro-tab-on.png' | asset_url }}" alt="ON" width="160" height="48">
+          </button>
+        </div>
+      </div>
+
+      <nav class="ambassador_common-nav" id="nav" aria-label="ページ内ナビゲーション">
+        <ul class="ambassador_common-nav__list">
+          <li class="ambassador_common-nav__item">
+            <a href="#cm" class="ambassador_common-nav__link">ON動画</a>
+          </li>
+          <li class="ambassador_common-nav__item">
+            <a href="#recommend" class="ambassador_common-nav__link">製品</a>
+          </li>
+          <li class="ambassador_common-nav__item">
+            <a href="#time" class="ambassador_common-nav__link">田中樹と<br class="u-hide-sp">SABONしよ</a>
+          </li>
+          <li class="ambassador_common-nav__item">
+            <a href="#talk" class="ambassador_common-nav__link">田中樹の<br class="u-hide-sp">SABONトーク</a>
+          </li>
+          <li class="ambassador_common-nav__item">
+            <a href="#original" class="ambassador_common-nav__link"><span>SABONオリジナル</span>限定特典</a>
+          </li>
+          <li class="ambassador_common-nav__item">
+            <a href="#campaign" class="ambassador_common-nav__link">キャンペーン</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="ambassador_common-intro__visual">
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-intro-visual.png' | asset_url }}">
+          <img class="ambassador_common-intro__visual-image"
+            src="{{ 'ambassador-on-intro-visual-pc.png' | asset_url }}" alt="SABON Ambassador 田中 樹" width="800"
+            height="500">
+        </picture>
+      </div>
+
+      <div class="ambassador_common-intro__lines" data-intro-lines>
+        <div class="ambassador_common-intro__line">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-intro-line-01.png' | asset_url }}">
+            <img class="ambassador_common-intro__line-image"
+              src="{{ 'ambassador-on-intro-line-01-pc.png' | asset_url }}"
+              alt="揺るがない自信が欲しい日もある。今日こそは、と胸に抱く朝もある。そんなときは、SABONの洗練された香りに包まれて、深く息をしてみる。" width="640" height="48">
+          </picture>
+
+        </div>
+        <div class="ambassador_common-intro__line">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-intro-line-02.png' | asset_url }}">
+            <img class="ambassador_common-intro__line-image"
+              src="{{ 'ambassador-on-intro-line-02-pc.png' | asset_url }}"
+              alt="やわらかなスクラブで、素肌をなめらかに整えて。その香りに、音に、五感を解放していけば心も肌も、たしかに切り替わっていく。" width="640" height="48">
+          </picture>
+        </div>
+        <div class="ambassador_common-intro__line">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-intro-line-03.png' | asset_url }}">
+            <img class="ambassador_common-intro__line-image"
+              src="{{ 'ambassador-on-intro-line-03-pc.png' | asset_url }}"
+              alt="ふだんとちがう香りを纏う。それだけで、きっと変われるから。SABONといっしょに、じぶんの背中を押す時間を。" width="640" height="48">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="ambassador_common-grid">
+<section class="ambassador_common-cm" id="cm">
+  <div class="ambassador_common-cm__inner">
+    <div class="ambassador_common-cm__container">
+      <div class="ambassador_common-cm__heading">
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-cm-title.png' | asset_url }}">
+          <img class="ambassador_common-cm__title-image" src="{{ 'ambassador-on-cm-title-pc.png' | asset_url }}"
+            alt="CM" width="400" height="80">
+        </picture>
+      </div>
+
+      <!-- YouTube動画（サムネイルクリックでポップアップ再生） -->
+      <!-- Shopify: data-cm-youtube="{{ section.settings.youtube_id }}" -->
+      <div class="ambassador_common-cm__video">
+        <button type="button" class="ambassador_common-cm__video-trigger" data-cm-open data-cm-youtube="mxczy52duQg"
+          aria-label="CM動画を再生">
+          <img class="ambassador_common-cm__thumb-image" src="{{ 'ambassador-on-cm-thumb.png' | asset_url }}"
+            alt="CMサムネイル" width="800" height="450">
+          <span class="ambassador_common-cm__play-icon" aria-hidden="true">
+            <img class="ambassador_common-cm__modal-title-image"
+              src="{{ 'ambassador-common-play-icon.png' | asset_url }}" alt="PLAY" width="65" height="65">
+          </span>
+        </button>
+      </div>
+
+      <p class="ambassador_common-sound-notice">音が出ますのでご注意ください</p>
+
+      <div class="ambassador_common-making__actions">
+        <a href="/products/10203061" class="ambassador_common-making__action">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-making-action-01.png' | asset_url }}">
+            <img class="ambassador_common-making__action-image"
+              src="{{ 'ambassador-on-making-action-01-pc.png' | asset_url }}" alt="" width="320" height="64">
+          </picture>
+        </a>
+        <!--<a href="#recommend" class="ambassador_common-making__action-link">限定キットもチェックする</a>-->
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ambassador_common-cm__modal" data-cm-modal hidden>
+    <div class="ambassador_common-cm__modal-overlay" data-cm-close></div>
+    <div class="ambassador_common-cm__modal-dialog" role="dialog" aria-modal="true" aria-label="CM動画">
+      <button type="button" class="ambassador_common-cm__modal-close" data-cm-close aria-label="閉じる">
+        <span class="ambassador_common-cm__modal-close-icon" aria-hidden="true"></span>
+      </button>
+      <div class="ambassador_common-cm__modal-title">
+        <img class="ambassador_common-cm__modal-title-image"
+          src="{{ 'ambassador-on-cm-pop-title.png' | asset_url }}" alt="CM" width="400" height="80">
+      </div>
+      <div class="ambassador_common-cm__modal-player">
+        <iframe class="ambassador_common-cm__iframe" data-cm-iframe title="CM動画"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="ambassador_common-making__actions">
+        <a href="/products/10203061" class="ambassador_common-making__action">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-making-action-01.png' | asset_url }}">
+            <img class="ambassador_common-making__action-image"
+              src="{{ 'ambassador-on-making-action-01-pc.png' | asset_url }}" alt="" width="320" height="64">
+          </picture>
+        </a>
+        <!-- <a href="/products/10202921" class="ambassador_common-making__action">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-making-action-02.png' | asset_url }}">
+            <img class="ambassador_common-making__action-image"
+              src="{{ 'ambassador-on-making-action-02-pc.png' | asset_url }}" alt="" width="320" height="64">
+          </picture>
+        </a> -->
+        <!--<a href="#recommend" class="ambassador_common-making__action-link">限定キットもチェックする</a>-->
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ambassador_common-making" id="making">
+  <div class="ambassador_common-making__inner">
+    <div class="ambassador_common-making__container">
+
+      <div class="ambassador_common-making__heading">
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-making-title.png' | asset_url }}">
+          <img class="ambassador_common-making__title-image"
+            src="{{ 'ambassador-on-making-title-pc.png' | asset_url }}" alt="メイキング" width="400" height="80">
+        </picture>
+      </div>
+
+      <!-- YouTube動画（サムネイルクリックでポップアップ再生） -->
+      <!-- Shopify: data-making-youtube="{{ section.settings.youtube_id }}" -->
+      <div class="ambassador_common-making__video">
+        <button type="button" class="ambassador_common-making__video-trigger" data-making-open
+          data-making-youtube="QxyRBbDyjtA" aria-label="メイキング動画を再生">
+          <img class="ambassador_common-making__thumb-image"
+            src="{{ 'ambassador-on-making-thumb.png' | asset_url }}" alt="メイキングサムネイル" width="800" height="450">
+          <span class="ambassador_common-making__play-icon" aria-hidden="true">
+            <img class="ambassador_common-making__modal-title-image"
+              src="{{ 'ambassador-common-play-icon.png' | asset_url }}" alt="PLAY" width="65" height="65">
+          </span>
+        </button>
+      </div>
+
+      <p class="ambassador_common-sound-notice">音が出ますのでご注意ください</p>
+
+      <div class="ambassador_common-making__actions">
+        <a href="/products/10202921" class="ambassador_common-making__action">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-making-action-02.png' | asset_url }}">
+            <img class="ambassador_common-making__action-image"
+              src="{{ 'ambassador-on-making-action-02-pc.png' | asset_url }}" alt="" width="320" height="64">
+          </picture>
+        </a>
+        <!--<a href="/pages/ambassador_off#recommend" class="ambassador_common-making__action-link">限定キットもチェックする</a>-->
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ambassador_common-making__modal" data-making-modal hidden>
+    <div class="ambassador_common-making__modal-overlay" data-making-close></div>
+    <div class="ambassador_common-making__modal-dialog" role="dialog" aria-modal="true" aria-label="メイキング動画">
+      <button type="button" class="ambassador_common-making__modal-close" data-making-close aria-label="閉じる">
+        <span class="ambassador_common-making__modal-close-icon" aria-hidden="true"></span>
+      </button>
+      <div class="ambassador_common-making__modal-title">
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-making-pop-title.png' | asset_url }}">
+          <!--<img class="ambassador_common-making__modal-title-image"
+            src="{{ 'ambassador-on-making-pop-title-pc.png' | asset_url }}" alt="メイキング" width="400" height="80">-->
+        </picture>
+      </div>
+      <div class="ambassador_common-making__modal-player">
+        <iframe class="ambassador_common-making__iframe" data-making-iframe title="メイキング動画"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="ambassador_common-making__actions">
+        <!-- <a href="/products/10203061" class="ambassador_common-making__action">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-making-action-01.png' | asset_url }}">
+            <img class="ambassador_common-making__action-image"
+              src="{{ 'ambassador-on-making-action-01-pc.png' | asset_url }}" alt="" width="320" height="64">
+          </picture>
+        </a> -->
+        <a href="/products/10202921" class="ambassador_common-making__action">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-making-action-02.png' | asset_url }}">
+            <img class="ambassador_common-making__action-image"
+              src="{{ 'ambassador-on-making-action-02-pc.png' | asset_url }}" alt="" width="320" height="64">
+          </picture>
+        </a>
+        <!--<a href="#recommend" class="ambassador_common-making__action-link">限定キットもチェックする</a>-->
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</div>
+
+<section class="ambassador_common-award" id="award">
+  <div class="ambassador_common-award__inner">
+    <div class="ambassador_common-award__container">
+
+      <h2 class="ambassador_common-award__title">
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-award-title.png' | asset_url }}">
+          <img class="ambassador_common-award__title-image"
+            src="{{ 'ambassador-on-award-title-pc.png' | asset_url }}" alt="累計74冠受賞* ボディスクラブ" width="400"
+            height="80">
+        </picture>
+      </h2>
+
+      <p class="ambassador_common-award__title-note">
+        ＊2025年12月時点、SABON調べ<br class="u-sp-only">@cosmeベストコスメアワード他
+      </p>
+
+      <!-- YouTube動画 -->
+      <!-- Shopify: src="https://www.youtube.com/embed/{{ section.settings.youtube_id }}" -->
+      <div class="ambassador_common-award__video">
+        <div class="ambassador_common-award__video-player">
+          <iframe class="ambassador_common-award__iframe"
+            src="https://www.youtube.com/embed/pvI-vALp9SE?autoplay=1&mute=1&loop=1&playlist=pvI-vALp9SE&controls=0&rel=0&playsinline=1"
+            title="アワード動画"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <p class="ambassador_common-award__text">
+        死海のミネラル<span>*1*2</span>と、3種のオーガニックオイル<span>*3*4*5</span>配合<br>
+        なめらかなつや肌へ磨き上げ、心地よい香りに包まれます。
+      </p>
+
+      <p class="ambassador_common-award__ingredient-note">
+        * 1 海塩(洗浄補助、整肌) * 2 水/海塩(整肌) * 3 アルガニアスピノサ核油(保湿)<br>
+        * 4 ホホバ種子油(保湿) * 5 アーモンド油(保湿)
+      </p>
+
+      <div class="ambassador_common-award__image-wrap">
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-award-main.png' | asset_url }}">
+          <img class="ambassador_common-award__image"
+            src="{{ 'ambassador-on-award-main-pc.png' | asset_url }}"
+            alt="顧客満足度97%、リピート 購入意向98%、顧客推奨度98%" width="800" height="500">
+        </picture>
+      </div>
+
+      <p class="ambassador_common-award__text ambassador_common-award__text--lower">
+        ※SABON調べ 調査時期：2025年9月 回答数：757名(ボディスクラブ購入者)
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<section class="ambassador_common-recommend" id="recommend">
+  <h2 class="ambassador_common-recommend__title">
+    <img class="ambassador_common-recommend__title-image"
+      src="{{ 'ambassador-on-recommend-title.png' | asset_url }}" alt="Recommend" width="400" height="80">
+  </h2>
+
+  <div class="ambassador_common-recommend__slider">
+    <div class="swiper ambassador_common-recommend__main-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide ambassador_common-recommend__slide">
+          <h3 class="ambassador_common-recommend__slide-title">
+            香りも自信もON！！<br class="u-sp-only">
+            ジェントルマン
+          </h3>
+          <!-- Shopify:  -->
+          <div class="ambassador_common-recommend__slide-grid">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="{{ 'ambassador-on-recommend-slide-01-pc.jpg' | asset_url }}">
+              <img class="ambassador_common-recommend__slide-image"
+                src="{{ 'ambassador-on-recommend-slide-01.jpg' | asset_url }}" alt="ボディスクラブ ジェントルマン" width="400"
+                height="400">
+            </picture>
+            <div class="ambassador_common-recommend__slide-contents">
+              <dl class="ambassador_common-recommend__product">
+                <dt class="ambassador_common-recommend__product-name">
+                  ボディスクラブ<br>
+                  ジェントルマン
+                </dt>
+                <dd class="ambassador_common-recommend__product-price">
+                  ¥6,600<span>(税込) </span> /600g
+                </dd>
+              </dl>
+              <div class="ambassador_common-recommend__actions">
+                <a href="/products/10203061"
+                  class="ambassador_common-recommend__action-button ambassador_common-button">詳細を見る</a>
+                <a href="/pages/gentleman" class="ambassador_common-making__action-link">気品漂う大人の魅力ジェントルマン</a>
+              </div>
+            </div>
+          </div>
+          <!-- /.ambassador_common-recommend__slide-grid -->
+        </div>
+
+        <div class="swiper-slide ambassador_common-recommend__slide">
+          <h3 class="ambassador_common-recommend__slide-title">
+            はじめてのジェントルマンに<br class="u-sp-only">人気アイテムを気軽に試せるセット
+          </h3>
+          <div class="ambassador_common-recommend__slide-grid">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="{{ 'ambassador-on-recommend-slide-02-pc.jpg' | asset_url }}">
+              <img class="ambassador_common-recommend__slide-image"
+                src="{{ 'ambassador-on-recommend-slide-02.jpg' | asset_url }}" alt="ウェルカムキット　ジェントルマン" width="400"
+                height="400">
+            </picture>
+            <div class="ambassador_common-recommend__slide-contents">
+              <dl class="ambassador_common-recommend__product">
+                <dt class="ambassador_common-recommend__product-name">
+                  ウェルカムキット<br>ジェントルマン
+                </dt>
+                <dd class="ambassador_common-recommend__product-price">
+                  ¥3,080<span>(税込) </span>
+                </dd>
+              </dl>
+              <ul>
+                <li>・シャワーオイル 100mL</li>
+                <li>・ボディスクラブ ジェントルマン 60g</li>
+              </ul>
+              <div class="ambassador_common-recommend__actions">
+                <a href="/products/10108231" class="ambassador_common-recommend__action-button ambassador_common-button">詳細を見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide ambassador_common-recommend__slide">
+          <h3 class="ambassador_common-recommend__slide-title">
+            デッドシーの黒の魔法でデトックス<br class="u-sp-only">3STEPで身も心もリフレッシュ
+          </h3>
+          <div class="ambassador_common-recommend__slide-grid">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="{{ 'ambassador-on-recommend-slide-03-pc.jpg' | asset_url }}">
+              <img class="ambassador_common-recommend__slide-image"
+                src="{{ 'ambassador-on-recommend-slide-03.jpg' | asset_url }}" alt="ディスカバリーキット　デッドシー" width="400"
+                height="400">
+            </picture>
+            <div class="ambassador_common-recommend__slide-contents">
+              <dl class="ambassador_common-recommend__product">
+                <dt class="ambassador_common-recommend__product-name">
+                  ディスカバリーキット<br>デッドシー
+                </dt>
+                <dd class="ambassador_common-recommend__product-price">
+                  ¥6,050<span>(税込) </span>
+                </dd>
+              </dl>
+              <ul>
+                <li>・ブラックボディクレンザー 100mL</li>
+                <li>・ブラック ボディスクラブ 60g</li>
+                <li>・クリーム トゥ オイル 50mL</li>
+              </ul>
+              <div class="ambassador_common-recommend__actions">
+                <a href="/products/10102941" class="ambassador_common-recommend__action-button ambassador_common-button">詳細を見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide ambassador_common-recommend__slide">
+          <h3 class="ambassador_common-recommend__slide-title">
+            <span>
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="{{ 'ambassador-common-recommend-ribbon-pc.png' | asset_url }}">
+                <img src="{{ 'ambassador-common-recommend-ribbon.png' | asset_url }}"
+                  alt="直営店舗＆オンラインストア限定">
+              </picture>
+            </span>
+            スクラブでオン<br class="u-sp-only">
+            非日常へ誘う香りで、心まで解き放つ
+          </h3>
+          <div class="ambassador_common-recommend__slide-grid">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="{{ 'ambassador-on-recommend-slide-04-pc.png' | asset_url }}">
+              <img class="ambassador_common-recommend__slide-image"
+                src="{{ 'ambassador-on-recommend-slide-04.png' | asset_url }}" alt="スクラブ&キーチャーム キット M" width="400"
+                height="400">
+            </picture>
+            <div class="ambassador_common-recommend__slide-contents">
+              <dl class="ambassador_common-recommend__product">
+                <dt class="ambassador_common-recommend__product-name">
+                  スクラブ&キーチャーム<br>キット M
+                </dt>
+                <dd class="ambassador_common-recommend__product-price">
+                  ¥5,940<span>(税込) </span>
+                </dd>
+              </dl>
+              <ul>
+                <li>・ブラック ボディスクラブデッドシー 320g</li>
+                <li>・キースプーンチャーム</li>
+              </ul>
+              <div class="ambassador_common-recommend__actions">
+                <a href="/products/10108881"
+                  class="ambassador_common-recommend__action-button ambassador_common-button">詳細を見る
+                </a>
+              </div>
+              <!-- <p class="ambassador_common-recommend__note">
+                ※オンラインストアでは<br>「スクラブ600g(ジェントルマン)」のみ対象です。
+              </p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide ambassador_common-recommend__slide">
+          <h3 class="ambassador_common-recommend__slide-title">
+            <span>
+              <picture>
+                <source media="(min-width: 960px)"
+                  srcset="{{ 'ambassador-common-recommend-ribbon-pc.png' | asset_url }}">
+                <img src="{{ 'ambassador-common-recommend-ribbon.png' | asset_url }}"
+                  alt="直営店舗＆オンラインストア限定">
+              </picture>
+            </span>
+            スクラブでオン<br class="u-sp-only">
+            今の自分を、自信で満たす。
+          </h3>
+          <div class="ambassador_common-recommend__slide-grid">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="{{ 'ambassador-on-recommend-slide-05-pc.png' | asset_url }}">
+              <img class="ambassador_common-recommend__slide-image"
+                src="{{ 'ambassador-on-recommend-slide-05.png' | asset_url }}" alt="スクラブ&キーチャーム キット L" width="400"
+                height="400">
+            </picture>
+            <div class="ambassador_common-recommend__slide-contents">
+              <dl class="ambassador_common-recommend__product">
+                <dt class="ambassador_common-recommend__product-name">
+                  スクラブ&キーチャーム<br>キット L
+                </dt>
+                <dd class="ambassador_common-recommend__product-price">
+                  ¥7,260<span>(税込) </span>
+                </dd>
+              </dl>
+              <ul>
+                <li>・ボディスクラブ ジェントルマン 600g</li>
+                <li>・キースプーンチャーム</li>
+              </ul>
+              <div class="ambassador_common-recommend__actions">
+                <a href="/products/10108351"
+                  class="ambassador_common-recommend__action-button ambassador_common-button">詳細を見る</a>
+              </div>
+              <!-- <p class="ambassador_common-recommend__note">
+                ※オンラインストアでは<br>「スクラブ600g(ジェントルマン)」のみ対象です。
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ambassador_common-recommend__prev">
+        <img src="{{ 'ambassador-on-recommend-arrow-l.png' | asset_url }}" width="48" height="48">
+      </div>
+      <div class="ambassador_common-recommend__next">
+        <img src="{{ 'ambassador-on-recommend-arrow-r.png' | asset_url }}" alt="" width="48" height="48">
+      </div>
+    </div>
+
+    <div class="swiper ambassador_common-recommend__thumb-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide ambassador_common-recommend__thumb">
+          <img class="ambassador_common-recommend__thumb-image"
+            src="{{ 'ambassador-on-recommend-thumb-01.png' | asset_url }}" alt="" width="120" height="120">
+        </div>
+        <div class="swiper-slide ambassador_common-recommend__thumb">
+          <img class="ambassador_common-recommend__thumb-image"
+            src="{{ 'ambassador-on-recommend-thumb-02.png' | asset_url }}" alt="" width="120" height="120">
+        </div>
+        <div class="swiper-slide ambassador_common-recommend__thumb">
+          <img class="ambassador_common-recommend__thumb-image"
+            src="{{ 'ambassador-on-recommend-thumb-03.png' | asset_url }}" alt="" width="120" height="120">
+        </div>
+        <div class="swiper-slide ambassador_common-recommend__thumb">
+          <img class="ambassador_common-recommend__thumb-image"
+            src="{{ 'ambassador-on-recommend-thumb-04.png' | asset_url }}" alt="" width="120" height="120">
+        </div>
+        <div class="swiper-slide ambassador_common-recommend__thumb">
+          <img class="ambassador_common-recommend__thumb-image"
+            src="{{ 'ambassador-on-recommend-thumb-05.png' | asset_url }}" alt="" width="120" height="120">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ambassador_common-recommend__inner">
+    <div class="ambassador_common-recommend__banners">
+      <a href="/pages/ambassador_off#recommend" class="ambassador_common-recommend__banner">
+        <picture>
+          <source media="(max-width: 959px)"
+            srcset="{{ 'ambassador-on-recommend-banner-01.png' | asset_url }}">
+          <img class="ambassador_common-recommend__banner-image"
+            src="{{ 'ambassador-on-recommend-banner-01-pc.png' | asset_url }}"
+            alt="SABONでoffしよ。がんばる自分。おすすめ製品はこちら" width="400" height="200">
+        </picture>
+      </a>
+      <a href="#original" class="ambassador_common-recommend__banner">
+        <picture>
+          <source media="(max-width: 959px)"
+            srcset="{{ 'ambassador-on-recommend-banner-02.png' | asset_url }}">
+          <img class="ambassador_common-recommend__banner-image"
+            src="{{ 'ambassador-on-recommend-banner-02-pc.png' | asset_url }}"
+            alt="スクラブ&キーチャームキット新登場！直営店舗・オンラインストア限定" width="400" height="200">
+        </picture>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="ambassador_common-time-campaign-band">
+<!-- Shopify section: ambassador-time-on -->
+<section class="ambassador_common-time" id="time">
+  <div class="ambassador_common-time__inner">
+    <div class="ambassador_common-time__container">
+
+      <!-- タイトル -->
+      <h2 class="ambassador_common-time__title">
+        <picture>
+          <source media="(min-width: 960px)" srcset="{{ 'ambassador-on-time-title-pc.png' | asset_url }}">
+          <img class="ambassador_common-time__title-image" src="{{ 'ambassador-on-time-title.png' | asset_url }}"
+            alt="田中樹とSABONしよ" width="400" height="80">
+        </picture>
+      </h2>
+
+      <!-- テキスト（普通文字） -->
+      <p class="ambassador_common-time__text">
+        田中樹さんが語る、SABONとのひととき。
+      </p>
+
+      <!-- テキスト（大文字） -->
+      <p class="ambassador_common-time__text ambassador_common-time__text--upper">
+        順次公開中！
+      </p>
+
+      <!-- 注意文 -->
+      <p class="ambassador_common-sound-notice">音が流れますのでご注意ください</p>
+
+      <!-- 2カラム動画 x 4 -->
+      <div class="ambassador_common-time__grid">
+
+        <div class="ambassador_common-time__item">
+          <button type="button" class="ambassador_common-time__video-trigger" data-time-open
+            data-time-youtube="YhDSmbPL--8" data-time-name="「いい香りのヒミツは？ 」篇"
+            data-time-item-url="/products/10202921"
+            data-time-share-url="https://twitter.com/intent/tweet?url=https://youtu.be/YhDSmbPL--8"
+            aria-label="「いい香りのヒミツは？ 」篇 動画を再生">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="{{ 'ambassador-on-time-thumb-01-pc-play.png' | asset_url }}">
+              <img class="ambassador_common-time__thumb-image"
+                src="{{ 'ambassador-on-time-thumb-01-play.png' | asset_url }}" alt="" width="400" height="225">
+            </picture>
+            <span class="ambassador_common-time__play-icon" aria-hidden="true"></span>
+          </button>
+          <div class="ambassador_common-time__item-actions">
+            <a href="/products/10202921" class="ambassador_common-time__item-link">この動画で紹介された<br>アイテムを見る</a>
+            <a href="https://twitter.com/intent/tweet?url=https://youtu.be/YhDSmbPL--8"
+              class="ambassador_common-time__item-link ambassador_common-time__item-link--share">
+              <img class="ambassador_common-time__item-share-icon"
+                src="{{ 'ambassador-on-time-share-icon.png' | asset_url }}" alt="" width="24" height="24"
+                aria-hidden="true">
+              <span class="ambassador_common-time__item-share-text">この動画をシェア</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="ambassador_common-time__item">
+          <button type="button" class="ambassador_common-time__video-trigger" data-time-open
+            data-time-youtube="DTPciV_2xZY" data-time-name="「おそろいにする？ 」篇"
+            data-time-item-url="/products/31000831" data-time-share-url="https://twitter.com/intent/tweet?url=https://youtu.be/DTPciV_2xZY"
+            aria-label="「おそろいにする？ 」篇 動画を再生">
+            <picture>
+              <source media="(min-width: 960px)" srcset="{{ 'ambassador-on-time-thumb-02-pc-play.png' | asset_url }}">
+              <img class="ambassador_common-time__thumb-image"
+                src="{{ 'ambassador-on-time-thumb-02-play.png' | asset_url }}" alt="" width="400" height="225">
+            </picture>
+            <span class="ambassador_common-time__play-icon" aria-hidden="true"></span>
+          </button>
+          <div class="ambassador_common-time__item-actions">
+            <a href="/products/31000831" class="ambassador_common-time__item-link">この動画で紹介された<br>アイテムを見る</a>
+            <a href="https://twitter.com/intent/tweet?url=https://youtu.be/DTPciV_2xZY" class="ambassador_common-time__item-link ambassador_common-time__item-link--share">
+              <img class="ambassador_common-time__item-share-icon"
+                src="{{ 'ambassador-on-time-share-icon.png' | asset_url }}" alt="" width="24" height="24"
+                aria-hidden="true">
+              <span class="ambassador_common-time__item-share-text">この動画をシェア</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="ambassador_common-time__item">
+          <button type="button" class="ambassador_common-time__video-trigger" data-time-open
+            data-time-youtube="FQlK_CIDncc" data-time-name="「俺が教えたげる 」篇"
+            data-time-item-url="/products/10203061" data-time-share-url="https://twitter.com/intent/tweet?url=https://youtu.be/FQlK_CIDncc"
+            aria-label="「俺が教えたげる 」篇 動画を再生">
+            <picture>
+              <source media="(min-width: 960px)" srcset="{{ 'ambassador-on-time-thumb-03-pc-play.png' | asset_url }}">
+              <img class="ambassador_common-time__thumb-image"
+                src="{{ 'ambassador-on-time-thumb-03-play.png' | asset_url }}" alt="" width="400" height="225">
+            </picture>
+            <span class="ambassador_common-time__play-icon" aria-hidden="true"></span>
+          </button>
+          <div class="ambassador_common-time__item-actions">
+            <a href="/products/10203061" class="ambassador_common-time__item-link">この動画で紹介された<br>アイテムを見る</a>
+            <a href="https://twitter.com/intent/tweet?url=https://youtu.be/FQlK_CIDncc" class="ambassador_common-time__item-link ambassador_common-time__item-link--share">
+              <img class="ambassador_common-time__item-share-icon"
+                src="{{ 'ambassador-on-time-share-icon.png' | asset_url }}" alt="" width="24" height="24"
+                aria-hidden="true">
+              <span class="ambassador_common-time__item-share-text">この動画をシェア</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="ambassador_common-time__item">
+          <button type="button" style="pointer-events: none;" class="ambassador_common-time__video-trigger" data-time-open
+            data-time-youtube="2sV7rtPJVOo" data-time-name="「どの香りが好き？ 」篇"
+            data-time-item-url="/products/" data-time-share-url="https://twitter.com/intent/tweet?url=https://youtu.be/"
+            aria-label="「どの香りが好き？ 」篇 動画を再生">
+            <picture>
+              <source media="(min-width: 960px)" srcset="{{ 'ambassador-on-time-thumb-04-pc.png' | asset_url }}">
+              <img class="ambassador_common-time__thumb-image"
+                src="{{ 'ambassador-on-time-thumb-04.png' | asset_url }}" alt="" width="400" height="225">
+            </picture>
+            <span class="ambassador_common-time__play-icon" aria-hidden="true"></span>
+          </button>
+          <div class="ambassador_common-time__item-actions" style="display: none;">
+            <a href="#" class="ambassador_common-time__item-link">この動画で紹介された<br>アイテムを見る</a>
+            <a href="#" class="ambassador_common-time__item-link ambassador_common-time__item-link--share">
+              <img class="ambassador_common-time__item-share-icon"
+                src="{{ 'ambassador-on-time-share-icon.png' | asset_url }}" alt="" width="24" height="24"
+                aria-hidden="true">
+              <span class="ambassador_common-time__item-share-text">この動画をシェア</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!--10/22ホリデーLPの公開後、ホリデーLPに遷移するバナー
+      <div class="ambassador_common-time__footer">
+        <a href="#" class="ambassador_common-time__footer-link">
+          <//!-- Shopify: {{ 'ambassador-on-time-btn.png' | asset_url }} --//>
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-time-btn.png' | asset_url }}">
+          <img class="ambassador_common-time__footer-image"
+            src="{{ 'ambassador-on-time-btn-pc.png' | asset_url }}" alt="" width="400" height="225">
+        </picture>
+        </a>
+      </div>
+      -->
+
+    </div>
+  </div>
+
+  <!-- ポップアップ: 動画名・動画・ボタン2つ縦並び -->
+  <div class="ambassador_common-time__modal" data-time-modal hidden>
+    <div class="ambassador_common-time__modal-overlay" data-time-close></div>
+    <div class="ambassador_common-time__modal-dialog" role="dialog" aria-modal="true" aria-label="Time動画">
+      <button type="button" class="ambassador_common-time__modal-close" data-time-close aria-label="閉じる">
+        <span class="ambassador_common-time__modal-close-icon" aria-hidden="true"></span>
+      </button>
+      <p class="ambassador_common-time__modal-name" data-time-modal-name></p>
+      <div class="ambassador_common-time__modal-player">
+        <iframe class="ambassador_common-time__iframe" data-time-iframe title="Time動画"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="ambassador_common-time__item-actions">
+        <a href="#" class="ambassador_common-time__item-link">この動画で紹介された<br class="u-sp-only">アイテムを見る</a>
+        <a href="#" class="ambassador_common-time__item-link ambassador_common-time__item-link--share">
+          <img class="ambassador_common-time__item-share-icon"
+            src="{{ 'ambassador-on-time-share-icon.png' | asset_url }}" alt="" width="24" height="24"
+            aria-hidden="true">
+          <span class="ambassador_common-time__item-share-text">この動画をシェア</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ambassador_common-talk" id="talk">
+  <div class="ambassador_common-talk__inner">
+    <div class="ambassador_common-talk__container">
+
+      <h2 class="ambassador_common-talk__title">
+        <picture>
+          <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-talk-title.png' | asset_url }}">
+          <img class="ambassador_common-talk__title-image"
+            src="{{ 'ambassador-on-talk-title-pc.png' | asset_url }}" alt="Talk" width="400" height="80">
+        </picture>
+      </h2>
+
+      <p class="ambassador_common-talk__text">
+        田中さんがSABONの魅力を紹介する<br>店内放送を実施中／WEBでも順次公開
+      </p>
+
+      <p class="ambassador_common-sound-notice">音が出ますのでご注意ください</p>
+      
+      <div class="ambassador_common-talk__pair" data-talk-slider data-talk-index="0">
+
+        <div class="ambassador_common-talk__arc-col">
+          <div class="ambassador_common-talk__arc-track" data-talk-arc>
+
+            <div class="ambassador_common-talk__text-box" data-talk-text-item data-talk-offset="-2"
+              data-talk-mp3="{{ 'ambassador-common-talk-01.mp3' | file_url }}"
+              data-talk-image="{{ 'ambassador-on-talk-thumb-01-now.png' | asset_url }}"
+              data-talk-popup-image="{{ 'ambassador-on-talk-popup-thumb-01.png' | asset_url }}"
+              data-talk-image-side="{{ 'ambassador-common-talk-thumb-side-01.png' | asset_url }}"
+              data-talk-label="Talk 01">
+              <div class="ambassador_common-talk__text-box-cols">
+                <div class="ambassador_common-talk__text-box-body">
+                  <p class="ambassador_common-talk__item-title">
+                    <img class="ambassador_common-talk__item-title-image"
+                      src="{{ 'ambassador-on-talk-item-title-01.png' | asset_url }}" alt="店頭でやること" width="120"
+                      height="28">
+                  </p>
+                  <p class="ambassador_common-talk__item-subtitle">店頭でやること</p>
+                  <!--<p class="ambassador_common-talk__item-text">まずはここ、<br class="u-sp-only">試してみて</p>-->
+                </div>
+                <div class="ambassador_common-talk__text-box-media">
+                  <button type="button" class="ambassador_common-talk__text-box-video-trigger" data-talk-open
+                    data-talk-mp3="{{ 'ambassador-common-talk-01.mp3' | file_url }}" aria-label="店頭でやること 音声を再生">
+                    <img class="ambassador_common-talk__text-box-thumb"
+                      src="{{ 'ambassador-common-talk-thumb-side-01.png' | asset_url }}" alt="店頭でやること"
+                      loading="lazy">
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="ambassador_common-talk__text-box" data-talk-text-item data-talk-offset="-1"
+              data-talk-mp3="{{ 'ambassador-common-talk-02.mp3' | file_url }}"
+              data-talk-image="{{ 'ambassador-on-talk-thumb-02.png' | asset_url }}"
+              data-talk-popup-image="{{ 'ambassador-on-talk-popup-thumb-02.png' | asset_url }}"
+              data-talk-image-side="{{ 'ambassador-common-talk-thumb-side-02.png' | asset_url }}"
+              data-talk-label="第二弾">
+              <div class="ambassador_common-talk__text-box-cols">
+                <div class="ambassador_common-talk__text-box-body">
+                  <p class="ambassador_common-talk__item-title">
+                    <img class="ambassador_common-talk__item-title-image"
+                      src="{{ 'ambassador-on-talk-item-title-02.png' | asset_url }}" alt="ヘッドスクラブ" width="120"
+                      height="28">
+                  </p>
+                  <p class="ambassador_common-talk__item-subtitle">ヘッドスクラブ</p>
+                  <!--<p class="ambassador_common-talk__item-text">まじでやみつきに<br>なるから</p>-->
+                </div>
+                <div class="ambassador_common-talk__text-box-media">
+                  <button type="button" class="ambassador_common-talk__text-box-video-trigger" data-talk-open style="pointer-events: none; cursor: default;"
+                    data-talk-mp3="{{ 'ambassador-common-talk-02.mp3' | file_url }}" aria-label="ヘッドスクラブ 音声を再生">
+                    <img class="ambassador_common-talk__text-box-thumb"
+                      src="{{ 'ambassador-common-talk-thumb-side-02.png' | asset_url }}" alt="" loading="lazy">
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="ambassador_common-talk__text-box ambassador_common-talk__text-box--active" data-talk-text-item
+              data-talk-offset="0" data-talk-mp3="{{ 'ambassador-common-talk-03.mp3' | file_url }}"
+              data-talk-image="{{ 'ambassador-on-talk-thumb-03.png' | asset_url }}"
+              data-talk-popup-image="{{ 'ambassador-on-talk-popup-thumb-03.png' | asset_url }}"
+              data-talk-image-side="{{ 'ambassador-common-talk-thumb-side-03.png' | asset_url }}"
+              data-talk-label="第三弾">
+              <div class="ambassador_common-talk__text-box-cols">
+                <div class="ambassador_common-talk__text-box-body">
+                  <p class="ambassador_common-talk__item-title">
+                    <img class="ambassador_common-talk__item-title-image"
+                      src="{{ 'ambassador-on-talk-item-title-03.png' | asset_url }}" alt="ボディスクラブ" width="140"
+                      height="28">
+                  </p>
+                  <p class="ambassador_common-talk__item-subtitle">ボディスクラブ</p>
+                  <!--<p class="ambassador_common-talk__item-text">仕事の後は、<br class="u-sp-only">家に帰って、<br>ついこれで<br>癒やされちゃう</p>-->
+                </div>
+                <div class="ambassador_common-talk__text-box-media">
+                  <button type="button" class="ambassador_common-talk__text-box-video-trigger" data-talk-open style="pointer-events: none; cursor: default;"
+                    data-talk-mp3="{{ 'ambassador-common-talk-03.mp3' | file_url }}" aria-label="ボディスクラブ 音声を再生">
+                    <img class="ambassador_common-talk__text-box-thumb"
+                      src="{{ 'ambassador-on-talk-thumb-03.png' | asset_url }}" alt="ボディスクラブ" loading="lazy">
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="ambassador_common-talk__text-box" data-talk-text-item data-talk-offset="1"
+              data-talk-mp3="{{ 'ambassador-common-talk-04.mp3' | file_url }}"
+              data-talk-image="{{ 'ambassador-on-talk-thumb-04.png' | asset_url }}"
+              data-talk-popup-image="{{ 'ambassador-on-talk-popup-thumb-04.png' | asset_url }}"
+              data-talk-image-side="{{ 'ambassador-common-talk-thumb-side-04.png' | asset_url }}"
+              data-talk-label="ホリデー">
+              <div class="ambassador_common-talk__text-box-cols">
+                <div class="ambassador_common-talk__text-box-body">
+                  <p class="ambassador_common-talk__item-title">
+                    <img class="ambassador_common-talk__item-title-image"
+                      src="{{ 'ambassador-on-talk-item-title-04.png' | asset_url }}" alt="ホリデー" width="130"
+                      height="28">
+                  </p>
+                  <p class="ambassador_common-talk__item-subtitle">ホリデー</p>
+                  <!--<p class="ambassador_common-talk__item-text">いつも応援して<br class="u-sp-only">くれている<br>みんなに、<br class="u-sp-only">聞いてほしい</p>-->
+                </div>
+                <div class="ambassador_common-talk__text-box-media">
+                  <button type="button" class="ambassador_common-talk__text-box-video-trigger" data-talk-open style="pointer-events: none; cursor: default;"
+                    data-talk-mp3="{{ 'ambassador-common-talk-04.mp3' | file_url }}" aria-label="ホリデー 音声を再生">
+                    <img class="ambassador_common-talk__text-box-thumb" src="{{ 'ambassador-common-talk-thumb-side-04.png' | asset_url }}" alt="ホリデー" loading="lazy">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="ambassador_common-talk__text-box" data-talk-text-item data-talk-offset="2"
+              data-talk-mp3="{{ 'ambassador-common-talk-05.mp3' | file_url }}"
+              data-talk-image="{{ 'ambassador-on-talk-thumb-05.png' | asset_url }}"
+              data-talk-popup-image="{{ 'ambassador-on-talk-popup-thumb-05.png' | asset_url }}"
+              data-talk-image-side="{{ 'ambassador-common-talk-thumb-side-05.png' | asset_url }}"
+              data-talk-label="第五弾">
+              <div class="ambassador_common-talk__text-box-cols">
+                <div class="ambassador_common-talk__text-box-body">
+                  <p class="ambassador_common-talk__item-title">
+                    <img class="ambassador_common-talk__item-title-image"
+                      src="{{ 'ambassador-on-talk-item-title-05.png' | asset_url }}" alt="シャワーオイル" width="100"
+                      height="28">
+                  </p>
+                  <p class="ambassador_common-talk__item-subtitle">シャワーオイル</p>
+                  <!--<p class="ambassador_common-talk__item-text">一度使うと普通に<br>もう手放せない</p>-->
+                </div>
+                <div class="ambassador_common-talk__text-box-media">
+                  <button type="button" class="ambassador_common-talk__text-box-video-trigger" data-talk-open style="pointer-events: none; cursor: default;"
+                    data-talk-mp3="{{ 'ambassador-common-talk-05.mp3' | file_url }}" aria-label="シャワーオイル 音声を再生">
+                    <img class="ambassador_common-talk__text-box-thumb" src="{{ 'ambassador-common-talk-thumb-side-05.png' | asset_url }}" alt="" loading="lazy">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ambassador_common-talk__footer">
+        <a href="#shop"
+          class="ambassador_common-talk__button ambassador_common-button ambassador_common-button--large">田中樹のSABONトーク対象店舗を見る</a>
+      </div>
+
+      <p class="ambassador_common-talk__text ambassador_common-talk__text--lower">
+        ※ページ内の対象店舗一覧へ移動します。
+      </p>
+
+    </div>
+  </div>
+
+  <div class="ambassador_common-talk__modal" data-talk-modal hidden>
+    <div class="ambassador_common-talk__modal-overlay" data-talk-close></div>
+    <div class="ambassador_common-talk__modal-dialog" role="dialog" aria-modal="true" aria-label="Talk音声">
+      <button type="button" class="ambassador_common-talk__modal-close" data-talk-close aria-label="閉じる">
+        <span class="ambassador_common-talk__modal-close-icon" aria-hidden="true"></span>
+      </button>
+      <div class="ambassador_common-talk__modal-player">
+        <audio class="ambassador_common-talk__audio" data-talk-audio preload="metadata"></audio>
+      </div>
+      <div class="ambassador_common-talk__modal-thumb">
+        <img class="ambassador_common-talk__modal-thumb-image" data-talk-modal-thumb src="" alt="" width="640"
+          height="360">
+      </div>
+      <div class="ambassador_common-talk__controls">
+        <button type="button" class="ambassador_common-talk__control-icon" data-talk-pause aria-label="一時停止">
+          <img class="ambassador_common-talk__control-icon-image"
+            src="{{ 'ambassador-common-talk-icon-pause.png' | asset_url }}" alt="" width="48" height="48">
+        </button>
+        <button type="button" class="ambassador_common-talk__control-icon" data-talk-play aria-label="再生">
+          <img class="ambassador_common-talk__control-icon-image"
+            src="{{ 'ambassador-common-talk-icon-play.png' | asset_url }}" alt="" width="48" height="48">
+        </button>
+        <input type="range" class="ambassador_common-talk__seek" data-talk-seek min="0" max="100" step="0.1" value="0"
+          aria-label="再生位置" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="ambassador_common-talk__volume" data-talk-volume-wrap>
+          <button type="button" class="ambassador_common-talk__control-icon" data-talk-volume-toggle aria-label="音量"
+            aria-expanded="false">
+            <img class="ambassador_common-talk__control-icon-image" data-talk-volume-icon
+              src="{{ 'ambassador-common-talk-icon-volume.png' | asset_url }}"
+              data-volume-src="{{ 'ambassador-common-talk-icon-volume.png' | asset_url }}"
+              data-volume-muted-src="{{ 'ambassador-common-talk-icon-volume-muted.png' | asset_url }}" alt=""
+              width="48" height="48">
+          </button>
+          <div class="ambassador_common-talk__volume-panel" data-talk-volume-panel hidden>
+            <input type="range" class="ambassador_common-talk__volume-range" data-talk-volume min="0" max="1"
+              step="0.05" value="1" aria-label="音量">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ambassador_common-campaign">
+  <div class="ambassador_common-campaign__inner">
+    <div class="ambassador_common-campaign__container">
+
+      <div class="ambassador_common-campaign__banner" id="original">
+        <a href="#shop">
+          <picture>
+            <source media="(min-width: 960px)"
+              srcset="{{ 'ambassador-on-campaign-banner-01-pc.png' | asset_url }}">
+            <img class="ambassador_common-campaign__banner-image"
+              src="{{ 'ambassador-on-campaign-banner-01.png' | asset_url }}" alt="SABON キースプーンチャーム"
+              width="960" height="280">
+          </picture>
+        </a>
+      </div>
+
+      <p class="ambassador_common-campaign__text ambassador_common-campaign__text--small">
+        直営店舗：お好きな香りのボディスクラブ320g／600gとキーチャームスプーンのキットをご用意しております。<br>
+        オンラインストア：キーチャーム付き「スクラブ＆キーチャーム キットM(デッドシー)/スクラブ＆キーチャーム キットL(ジェントルマン)」のみ販売しております。<br>
+        ※ボディスクラブ60gは対象外です。<br>
+        ※数量限定のため、なくなり次第終了となります。<br>
+      </p>
+
+      <div class="ambassador_common-campaign__banner" id="campaign">
+        <picture>
+          <source media="(min-width: 960px)"
+            srcset="{{ 'ambassador-on-campaign-banner-02-pc.png' | asset_url }}">
+          <img class="ambassador_common-campaign__banner-image"
+            src="{{ 'ambassador-on-campaign-banner-02.png' | asset_url }}" alt="SABON ボディスクラブプレゼント"
+            width="960" height="280">
+        </picture>
+      </div>
+      <!-- 
+      <div class="ambassador_common-campaign__actions">
+        <a href="https://x.com/SABON_Japan" class="ambassador_common-campaign__action" target="_blank"
+          rel="noopener noreferrer">
+          <img class="ambassador_common-campaign__action-image"
+            src="{{ 'ambassador-on-campaign-action-01.png' | asset_url }}" alt="Xで参加する" width="320" height="64">
+        </a>
+        <a href="https://www.instagram.com/sabon_japan/" class="ambassador_common-campaign__action" target="_blank"
+          rel="noopener noreferrer">
+          <img class="ambassador_common-campaign__action-image"
+            src="{{ 'ambassador-on-campaign-action-02.png' | asset_url }}" alt="Instagramで参加する" width="320"
+            height="64">
+        </a>
+      </div> -->
+      <div class="ambassador_common-campaign__actions">
+        <picture>
+          <source media="(min-width: 960px)"
+            srcset="{{ 'ambassador-on-campaign-banner-02-coming-pc.png' | asset_url }}">
+          <img class="ambassador_common-campaign__action-image"
+            src="{{ 'ambassador-on-campaign-banner-02-coming.png' | asset_url }}"
+            alt="SABON ボディスクラブプレゼントComing Soon" width="320" height="64">
+        </picture>
+      </div>
+
+      <p class="ambassador_common-campaign__text">
+        新CM投稿をフォロー&リポストしてくれた人の中から抽選で、ボディスクラブが当たるキャンペーン。<br class="h-hide-sp">さらに、<span>「#SABONの香りでON」</span>をつけてSABONアイテムの感想を投稿すると、当選確率UP！
+      </p>
+
+      <div class="ambassador_common-campaign__footer">
+        <details class="ambassador_common-campaign__notice">
+          <summary
+            class="ambassador_common-campaign__notice-summary ambassador_common-button ambassador_common-button--large">
+            キャンペーン詳細を表示
+          </summary>
+          <div class="ambassador_common-campaign__notice-content">
+            <h3 class="ambassador_common-campaign__notice-heading">SABON新CM公開を記念して<br>プレゼントキャンペーンを開催します！</h3>
+            <p class="ambassador_common-campaign__notice-overview">
+              <span class="ambassador_common-campaign__notice-overview-item">■応募期間：9/11(金)0:00～9/25(金)23:59</span><br>
+              <span class="ambassador_common-campaign__notice-overview-item">■当選人数：20名さま（ X（旧Twitter）で10名、Instagramで10名 ）</span><br>
+              <span class="ambassador_common-campaign__notice-overview-item">■商品：ボディスクラブ ジェントルマン（600g）</span><br>
+              <span class="ambassador_common-campaign__notice-overview-item">■応募方法：X（旧Twitter） or Instagramからのご応募となります。</span>
+            </p>
+            <dl class="ambassador_common-campaign__notice-conditions">
+              <dt class="ambassador_common-campaign__notice-conditions-title">ー応募条件ー</dt>
+              <dd class="ambassador_common-campaign__notice-conditions-body">
+                <ol class="ambassador_common-campaign__notice-steps">
+                  <li class="ambassador_common-campaign__notice-step">
+                    ①公式X・Instagramをフォロー
+                    <span class="ambassador_common-campaign__notice-step-note">サボン / SABON
+                      公式X（旧Twitter）アカウント<br><a href="https://x.com/SABON_Japan" target="_blank"
+                        rel="noopener noreferrer">(@SABON_Japan)</a></span>
+                    <span class="ambassador_common-campaign__notice-step-note">サボン/ SABON
+                      公式Instagramアカウント<br><a href="https://www.instagram.com/sabon_japan/" target="_blank"
+                        rel="noopener noreferrer">(@sabon_japan)</a></span>
+                  </li>
+                  <li class="ambassador_common-campaign__notice-step">
+                    ②リポストorいいね
+                    X（旧Twitter）：キャンペーン応募対象ポストをリポスト<br>Instagram：キャンペーン応募対象ポストにいいね
+                  </li>
+                </ol>
+                <!-- <div class="ambassador_common-campaign__notice-links">
+                  <a href="https://x.com/SABON_Japan" class="ambassador_common-campaign__notice-link" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="ambassador_common-campaign__notice-link-image"
+                      src="{{ 'ambassador-on-campaign-notice-link-01.jpg' | asset_url }}" alt="フォローする" width="320"
+                      height="64">
+                  </a>
+                  <a href="https://www.instagram.com/sabon_japan/" class="ambassador_common-campaign__notice-link"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="ambassador_common-campaign__notice-link-image"
+                      src="{{ 'ambassador-on-campaign-notice-link-02.jpg' | asset_url }}" alt="リポストする" width="320"
+                      height="64">
+                  </a>
+                </div> -->
+                <div class="ambassador_common-campaign__actions">
+                  <picture>
+                    <source media="(min-width: 960px)"
+                      srcset="{{ 'ambassador-off-campaign-banner-02-coming-pc.png' | asset_url }}">
+                    <img class="ambassador_common-campaign__action-image"
+                      src="{{ 'ambassador-off-campaign-banner-02-coming.png' | asset_url }}"
+                      alt="SABON ボディスクラブプレゼントComing Soon" width="320" height="64">
+                  </picture>
+                </div>
+                <p class="ambassador_common-campaign__notice-bonus">
+                  さらに<span
+                    class="ambassador_common-campaign__notice-bonus-tag">#SABONの香りでON</span>をつけてSABONアイテムの感想をキャンペーン応募対象ポストにコメントすると、当選確率UP
+                  ！
+                </p>
+              </dd>
+            </dl>
+            <h4 class="ambassador_common-campaign__notice-caution-heading">■注意事項</h4>
+            <p class="ambassador_common-campaign__notice-caution">
+              ※諸事情により当選のご連絡が遅れる場合がございます。<br>
+              また、当選外の方にはご連絡いたしませんので、予めご了承ください。<br>
+              ※掲載内容は予告なく変更となる場合がございます。
+            </p>
+            <p class="ambassador_common-campaign__notice-terms">
+              <a href="/pages/ambassador-campaign-on" class="ambassador_common-campaign__notice-terms-link" target="_blank"
+                rel="noopener noreferrer">応募規約 &gt;</a>
+              <span class="ambassador_common-campaign__notice-terms-note">※詳細は応募規約をご確認ください。</span>
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="ambassador_common-download-ambassador-band">
+<section class="ambassador_common-download" id="download">
+  <div class="ambassador_common-download__inner">
+    <div class="ambassador_common-download__container">
+
+      <h2 class="ambassador_common-download__title ambassador_common-download__sp-only">
+        <img class="ambassador_common-download__title-image"
+          src="{{ 'ambassador-on-download-title.png' | asset_url }}" alt="DOWNLOAD" width="400" height="80">
+      </h2>
+
+      <p class="ambassador_common-download__text ambassador_common-download__sp-only">
+        田中樹さんのSABONアンバサダー就任を記念して、<br>
+        オフ/オンのSABONオリジナル壁紙が<br>
+        今だけダウンロードできます！
+      </p>
+
+      <div class="ambassador_common-download__body">
+        <div class="ambassador_common-download__gallery">
+
+          <figure class="ambassador_common-download__item ambassador_common-download__item--left">
+            <picture>
+              <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-download-01.png' | asset_url }}">
+              <img class="ambassador_common-download__image"
+                src="{{ 'ambassador-on-download-01-pc.png' | asset_url }}" alt="オフ/オンのSABONオリジナル壁紙"
+                width="480" height="640">
+            </picture>
+          </figure>
+
+          <figure class="ambassador_common-download__item ambassador_common-download__item--main" data-download-image
+            data-download-filename="sabon-wallpaper-sp.jpg"
+            data-download-filename-pc="sabon-wallpaper-pc.jpg">
+            <picture>
+              <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-download-02.png' | asset_url }}">
+              <img class="ambassador_common-download__image"
+                src="{{ 'ambassador-on-download-02-pc.png' | asset_url }}"
+                data-download-src="{{ 'ambassador-bg-img.jpg' | asset_url }}"
+                data-download-src-pc="{{ 'ambassador-bg-img-pc.jpg' | asset_url }}"
+                alt="オフ/オンのSABONオリジナル壁紙"
+                width="480" height="640" draggable="false">
+            </picture>
+            <figcaption class="ambassador_common-download__caption u-sp-only">1440 × 3200 （285KB）</figcaption>
+            <figcaption class="ambassador_common-download__caption u-pc-only">1920 × 1080 （220KB）</figcaption>
+          </figure>
+
+          <figure class="ambassador_common-download__item ambassador_common-download__item--right">
+            <img class="ambassador_common-download__image"
+              src="{{ 'ambassador-on-download-03-pc.png' | asset_url }}" alt="" width="316" height="899">
+          </figure>
+
+        </div>
+
+        <div class="ambassador_common-download__content ambassador_common-download__content--pc">
+          <h2 class="ambassador_common-download__title">
+            <img class="ambassador_common-download__title-image"
+              src="{{ 'ambassador-on-download-title.png' | asset_url }}" alt="DOWNLOAD" width="400" height="80">
+          </h2>
+
+          <p class="ambassador_common-download__text">
+            田中樹さんのSABONアンバサダー就任を記念して、<br>オフ/オンのSABONオリジナル壁紙が今だけダウンロードできます！
+          </p>
+
+          <p class="ambassador_common-download__text ambassador_common-download__text--save">
+            画像を長押しor 下記ダウンロードボタンを<br class="u-sp-only">
+            押して保存してください。
+          </p>
+
+          <div class="ambassador_common-download__actions">
+            <a href="#" data-download-button
+              class="ambassador_common-download__button ambassador_common-button ambassador_common-button--large ambassador_common-button--gold">ダウンロード</a>
+            <div class="ambassador_common-download__button-notes">
+              <p class="ambassador_common-download__button-note">
+                壁紙画像は、ご自身のスマートフォンやパソコンの壁紙として、個人利用の範囲でお楽しみください。
+              </p>
+              <p class="ambassador_common-download__button-note">
+                壁紙画像のSNS・その他サイト等への転載、再配布、加工および商用利用はご遠慮ください。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="ambassador_common-download__text ambassador_common-download__sp-only ambassador_common-download__text--save">
+        画像を長押しor 下記ダウンロードボタンを<br class="u-sp-only">
+        押して保存してください。
+      </p>
+
+      <div class="ambassador_common-download__actions ambassador_common-download__sp-only">
+        <a href="#" data-download-button
+          class="ambassador_common-download__button ambassador_common-button ambassador_common-button--large ambassador_common-button--gold">ダウンロード</a>
+        <div class="ambassador_common-download__button-notes">
+          <p class="ambassador_common-download__button-note">
+            壁紙画像は、ご自身のスマートフォンやパソコンの壁紙として、個人利用の範囲でお楽しみください。
+          </p>
+          <p class="ambassador_common-download__button-note">
+            壁紙画像のSNS・その他サイト等への転載、再配布、加工および商用利用はご遠慮ください。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="ambassador_common-ambassador" id="ambassador">
+  <div class="ambassador_common-ambassador__inner">
+    <div class="ambassador_common-ambassador__container">
+
+      <div class="ambassador_common-ambassador__profile">
+        <h2 class="ambassador_common-ambassador__title">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-ambassador-title.png' | asset_url }}">
+            <img class="ambassador_common-ambassador__title-image"
+              src="{{ 'ambassador-on-ambassador-title-pc.png' | asset_url }}" alt="Ambassador" width="400"
+              height="80">
+          </picture>
+        </h2>
+
+        <div class="ambassador_common-ambassador__image-wrap">
+          <picture>
+            <source media="(max-width: 959px)" srcset="{{ 'ambassador-on-ambassador-01.png' | asset_url }}">
+            <img class="ambassador_common-ambassador__image"
+              src="{{ 'ambassador-on-ambassador-01-pc.png' | asset_url }}" alt="田中 樹" width="400" height="500">
+          </picture>
+        </div>
+
+        <p class="ambassador_common-ambassador__text">
+          アイドルグループ・SixTONESのメンバーとして活動するほか、俳優としても幅広く活躍。主な出演作に、ドラマ『スプラウト』(12年)、『心療中－in the Room－』(13年)、『ブラック校則』(19年)、舞台『DREAM BOYS』(21年、22年)、ドラマ『単身花日』(23年)、『ACMA:GAME アクマゲーム』(24年)、WOWOWオリジナルドラマ『連続ドラマＷ　I, KILL』( 25年5月〜 )など。<br><br>2025年には舞台『ぼくらの七日間戦争2025』で初の単独主演を務めるなど、アーティスト・俳優として多方面で活躍している。
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="ambassador_common-banner" id="banner">
+  <div class="ambassador_common-banner__inner">
+    <div class="ambassador_common-banner__container">
+
+      <div class="ambassador_common-banner__list">
+
+        <div class="ambassador_common-banner__item">
+          <a href="/pages/bodyscrub">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="{{ 'ambassador-common-banner-01-pc.jpg' | asset_url }}">
+              <img class="ambassador_common-banner__image"
+                src="{{ 'ambassador-common-banner-01.jpg' | asset_url }}" alt="SABON ボディスクラブを見る"
+                width="960" height="280">
+            </picture>
+          </a>
+        </div>
+
+        <!-- <div class="ambassador_common-banner__item">
+          <a href="">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="{{ 'ambassador-common-banner-02-pc.jpg' | asset_url }}">
+              <img class="ambassador_common-banner__image"
+                src="{{ 'ambassador-common-banner-02.jpg' | asset_url }}" alt="SABON ホリデーギフトを見る"
+                width="960" height="280">
+            </picture>
+          </a>
+        </div> -->
+
+        <!--<div class="ambassador_common-banner__item">
+          <picture>
+            <source media="(min-width: 960px)" srcset="{{ 'ambassador-on-campaign-banner-03-pc.png' | asset_url }}">
+            <img class="ambassador_common-campaign__action-image"
+              src="{{ 'ambassador-on-campaign-banner-03.png' | asset_url }}" alt="SABONアンバサダー 田中樹さんとボディスクラブのリーフレット配布中"
+              width="320" height="64" style="margin: 0 auto;">
+          </picture>
+        </div>-->
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Shopify section: ambassador-shop-common -->
+<section class="ambassador_common-shop" id="shop">
+  <div class="ambassador_common-shop__inner">
+    <div class="ambassador_common-shop__box">
+
+      <div class="ambassador_common-shop__head">
+        <h2 class="ambassador_common-shop__title">
+          <span class="ambassador_common-shop__title-sub">対象店舗一覧</span>
+          SABONトーク｜スクラブ＆キーチャームキット
+        </h2>
+      </div>
+
+      <div class="ambassador_common-shop__accordion">
+
+        <details class="ambassador_common-shop__item">
+          <summary class="ambassador_common-shop__summary">関東エリア</summary>
+          <div class="ambassador_common-shop__content">
+            <ul class="ambassador_common-shop__list">
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-01.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-01-pc.jpg' | asset_url }}" alt="SABON アトレ恵比寿店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON アトレ恵比寿店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒150-0022<br>
+                    東京都渋谷区恵比寿南1-5-5 アトレ恵比寿本館 4階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-02.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-02-pc.jpg' | asset_url }}" alt="SABON 六本木ヒルズ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 六本木ヒルズ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒106-0032<br>
+                    東京都港区六本木6-10-1 六本木ヒルズウェストウォーク4階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">11：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-03.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-03-pc.jpg' | asset_url }}" alt="SABON 渋谷ヒカリエShinQs店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 渋谷ヒカリエShinQs店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒150-8509<br>
+                    東京都渋谷区渋谷2-21-1 1F 渋谷ヒカリエ内ShinQs by TOKYU DEPARTMENT STORE
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">平日・土　11：00～21：00<br>
+                    日・祝　11：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-04.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-04-pc.jpg' | asset_url }}" alt="SABON 渋谷マークシティ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 渋谷マークシティ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒150-0043<br>
+                    東京都渋谷区道玄坂1-12-3 渋谷マークシティイーストモール3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～21：00</dd>
+                </dl>
+              </li>
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-05.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-05-pc.jpg' | asset_url }}" alt="SABON ルミネ新宿店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルミネ新宿店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒160-0022<br>
+                    東京都新宿区新宿3-38-2 ルミネ新宿ルミネ2／2階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">11：00～21：00</dd>
+                </dl>
+              </li>
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-06.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-06-pc.jpg' | asset_url }}" alt="SABON ルミネ池袋店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルミネ池袋店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒171-0021<br>
+                    東京都豊島区西池袋1-11-1 ルミネ池袋B1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">11：00～21：00</dd>
+                </dl>
+              </li>
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-07.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-07-pc.jpg' | asset_url }}" alt="SABON 西武池袋店" width="200"
+                    height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 西武池袋店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒171-8569<br>
+                    東京都豊島区南池袋1丁目28-1 西武池袋本店3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-08.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-08-pc.jpg' | asset_url }}" alt="SABON ルミネ北千住店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルミネ北千住店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒120-0026<br>
+                    東京都足立区千住旭町42-2 ルミネ北千住3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">11：00～20：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-09.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-09-pc.jpg' | asset_url }}" alt="SABON パルコヤ上野店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON パルコヤ上野店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒110-0005<br>
+                    東京都台東区上野3-24-6 パルコヤ上野1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-10.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-10-pc.jpg' | asset_url }}" alt="SABON ルミネ有楽町店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルミネ有楽町店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒100-0006<br>
+                    東京都千代田区有楽町2-5-1 ルミネ有楽町ルミネ1／1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">11：00～21：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-11.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-11-pc.jpg' | asset_url }}" alt="SABON 銀座松屋通り店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 銀座松屋通り店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒104-0061<br>
+                    東京都中央区銀座3-7-14
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">11：30～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-12.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-12-pc.jpg' | asset_url }}" alt="SABON 日本橋髙島屋S.C"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 日本橋髙島屋S.C</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒103-6101<br>
+                    東京都中央区日本橋2-5-1 日本橋髙島屋S.C.新館1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：30～20：00<br>
+                    <span>※営業時間は館に准ずるため、変更になる可能性がございます。</span>
+                  </dd>
+                </dl>
+              </li>
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-13.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-13-pc.jpg' | asset_url }}" alt="SABON 三越銀座店" width="200"
+                    height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 三越銀座店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒104-8212<br>
+                    東京都中央区銀座4-6-16 銀座三越 新館地下1階 ギンザコスメワールド/サボン
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-14.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-14-pc.jpg' | asset_url }}" alt="SABON キラリナ京王吉祥寺店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON キラリナ京王吉祥寺店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒180-0003<br>
+                    東京都武蔵野市吉祥寺南町2-1-25 キラリナ京王吉祥寺2階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～21：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-15.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-15-pc.jpg' | asset_url }}" alt="SABON グランデュオ立川店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON グランデュオ立川店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒190-8554<br>
+                    東京都立川市柴崎町3-2-1 グランデュオ立川1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">月～土 10：00～20：30<br>
+                    日・祝 10：00～20：00</dd>
+                </dl>
+              </li>
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-16.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-16-pc.jpg' | asset_url }}" alt="SABON ルミネ荻窪店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルミネ荻窪店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒167-0043<br>
+                    東京都杉並区上荻1-7-1 ルミネ荻窪1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-17.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-17-pc.jpg' | asset_url }}" alt="SABON 調布パルコ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 調布パルコ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒182-0026<br>
+                    東京都調布市小島町1-38-1 調布パルコ1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：30<br>
+                    金曜日のみ 10：00～21：00</dd>
+                </dl>
+              </li>
+
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-18.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-18-pc.jpg' | asset_url }}" alt="SABON ルミネ町田店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルミネ町田店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒194-0013<br>
+                    東京都町田市原町田6-1-11 ルミネ町田2階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：30～20：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-19.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-19-pc.jpg' | asset_url }}" alt="SABON ルミネ横浜店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルミネ横浜店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒220-0011<br>
+                    神奈川県横浜市西区高島2-16-1 ルミネ横浜1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">平日 10：00～21：00<br>
+                    土・日曜・祝日 10：00～20：30</dd>
+                </dl>
+              </li>
+
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-20.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-20-pc.jpg' | asset_url }}" alt="SABON ラゾーナ川崎店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ラゾーナ川崎店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒212-8576<br>
+                    神奈川県川崎市幸区堀川町72-1 ラゾーナ川崎プラザ2階22110
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～21：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-21.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-21-pc.jpg' | asset_url }}" alt="SABON 京急上大岡店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 京急上大岡店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒233-8556<br>
+                    神奈川県横浜市港南区上大岡西1-6-1 京急百貨店3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-22.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-22-pc.jpg' | asset_url }}" alt="SABON 大船ルミネウィング店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 大船ルミネウィング店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒247-0056<br>
+                    神奈川県鎌倉市大船1-4-1<br>
+                    大船ルミネウィング3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">平日 10：00～20：30<br>
+                    土曜・日曜・祝日 10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-23.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-23-pc.jpg' | asset_url }}" alt="SABON ルミネ大宮店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルミネ大宮店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒330-0853<br>
+                    埼玉県さいたま市大宮区錦町630番 ルミネ大宮ルミネ2　3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">平日 10：00～21：00<br>
+                    土曜・日曜・祝日 10：00～20：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-24.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-24-pc.jpg' | asset_url }}" alt="SABON 浦和パルコ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 浦和パルコ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒330-0055<br>
+                    埼玉県さいたま市浦和区東高砂町11-1 浦和パルコ1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～21：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-25.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-25-pc.jpg' | asset_url }}" alt="SABON 柏髙島屋ステーションモール店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 柏髙島屋ステーションモール店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒277-8550<br>
+                    千葉県柏市末広町1-1 柏髙島屋ステーションモールS館専門店3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00<br>
+                    <span>※営業時間は館に准ずるため、変更になる可能性がございます。</span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-26.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-26-pc.jpg' | asset_url }}" alt="SABON ペリエ千葉店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ペリエ千葉店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒260-0031<br>
+                    千葉県千葉市中央区新千葉1-1-1 ペリエ千葉1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">月～土　10：00～21：00<br>
+                    日・祝　10：00～20：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-27.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-27-pc.jpg' | asset_url }}" alt="SABON 水戸京成百貨店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 水戸京成百貨店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒310-0026<br>
+                    茨城県水戸市泉町1-6-1<br>
+                    水戸京成百貨店1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：30～19：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-28.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-28-pc.jpg' | asset_url }}" alt="SABON FKDインターパーク店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON FKDインターパーク店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒321-0118<br>
+                    栃木県宇都宮市インターパーク6-1-1 1F
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00<br>
+                    <span>※営業時間は館に准ずるため、変更になる可能性がございます。</span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kanto-29.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kanto-29-pc.jpg' | asset_url }}" alt="SABON 高崎オーパ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 高崎オーパ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒370-0849<br>
+                    群馬県高崎市八島町46-1<br>
+                    高崎オーパ2階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+            </ul>
+          </div>
+        </details>
+
+
+
+
+
+
+
+        <details class="ambassador_common-shop__item">
+          <summary class="ambassador_common-shop__summary">関西エリア</summary>
+          <div class="ambassador_common-shop__content">
+
+            <ul class="ambassador_common-shop__list">
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-01.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-01-pc.jpg' | asset_url }}" alt="SABON 梅田阪神店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 梅田阪神店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒530-8224<br>
+                    大阪府大阪市北区梅田1-13-13 阪神梅田本店3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00<br>
+                    <span>※営業時間は館に准ずるため、変更になる可能性がございます。</span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-02.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-02-pc.jpg' | asset_url }}" alt="SABON 髙島屋大阪店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 髙島屋大阪店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒542-8510<br>
+                    大阪府大阪市中央区難波5-1-5 髙島屋大阪店1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00<br>
+                    <span>※営業時間は館に准ずるため、変更になる可能性がございます。</span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-03.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-03-pc.jpg' | asset_url }}" alt="SABON うめだ阪急店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON うめだ阪急店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒530-8350<br>
+                    大阪府大阪市北区角田町8-7 阪急うめだ本店3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00<br>
+                    <span>※営業時間は館に准ずるため、変更になる可能性がございます。</span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-04.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-04-pc.jpg' | asset_url }}" alt="SABON 天王寺ミオ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 天王寺ミオ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒543-0055<br>
+                    大阪府大阪市天王寺区悲田院町10-39 天王寺ミオ本館2階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：30～20：30<br>
+                    <span>※ただしミオクラブカード5倍ポイントアップキャンペーン開催期間中は、10:30～21:00となります。</span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-05.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-05-pc.jpg' | asset_url }}" alt="SABON 京橋京阪モール店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 京橋京阪モール店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒534-0024<br>
+                    大阪府大阪市都島区東野田町2-1-38 京阪百貨店モール京橋店1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：30～20：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-06.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-06-pc.jpg' | asset_url }}" alt="SABON ルクア大阪店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ルクア大阪店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒530-8558<br>
+                    大阪市北区梅田3-1-3 ルクアイーレ2F
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：30～20：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-07.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-07-pc.jpg' | asset_url }}" alt="SABON 京都烏丸店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 京都烏丸店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒604-8142<br>
+                    京都府京都市中京区西魚屋町621 清光ビル1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">11：00～20：00<br><span>※祝日を除く毎週火曜店休日</span></dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-08.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-08-pc.jpg' | asset_url }}" alt="SABON ジェイアール京都伊勢丹店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ジェイアール京都伊勢丹店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒600-8555<br>
+                    京都府京都市下京区烏丸通塩小路下ル東塩小路町 ジェイアール京都伊勢丹店2階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-09.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-09-pc.jpg' | asset_url }}" alt="SABON 京都高島屋S.C.店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 京都高島屋S.C.店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒600-8002<br>
+                    京都市下京区四条通寺町東入二丁目御旅町35 京都髙島屋S.C.店 1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-10.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-10-pc.jpg' | asset_url }}" alt="SABON 大丸神戸店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 大丸神戸店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒650-0037<br>
+                    兵庫県神戸市中央区明石町40 大丸1階海側外廊
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-11.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-11-pc.jpg' | asset_url }}" alt="SABON 神戸阪急店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 神戸阪急店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒651-8511<br>
+                    神戸市中央区小野柄通8丁目1番8号 神戸阪急3階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00<br>
+                    <span>※営業時間は館に准ずるため、変更になる可能性がございます。</span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kansai-12.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kansai-12-pc.jpg' | asset_url }}" alt="SABON 和歌山近鉄店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 和歌山近鉄店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒640-8546<br>
+                    和歌山県和歌山市友田町5-18 近鉄百貨店和歌山店1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～19：00</dd>
+                </dl>
+              </li>
+
+            </ul>
+          </div>
+        </details>
+
+
+
+
+
+
+
+        <details class="ambassador_common-shop__item">
+          <summary class="ambassador_common-shop__summary">東海エリア</summary>
+          <div class="ambassador_common-shop__content">
+            <ul class="ambassador_common-shop__list">
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-tokai-01.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-tokai-01-pc.jpg' | asset_url }}" alt="SABON ジェイアール名古屋タカシマヤ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ジェイアール名古屋タカシマヤ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒450-6001<br>
+                    愛知県名古屋市中村区名駅1-1-4 ジェイアール名古屋タカシマヤ4階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00<br>
+                    <span>※営業時間は館に准ずるため、変更になる可能性がございます。</span>
+                  </dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-tokai-02.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-tokai-02-pc.jpg' | asset_url }}" alt="SABON 名古屋パルコ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 名古屋パルコ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒460-0008<br>
+                    愛知県名古屋市中区栄3-29-1 名古屋パルコ西館1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-tokai-03.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-tokai-03-pc.jpg' | asset_url }}" alt="SABON 静岡パルコ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 静岡パルコ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒420-0852<br>
+                    静岡県静岡市葵区紺屋町6-7 静岡パルコ1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">平日：10:30～19:30<br>
+                    土日祝日：10:00～19:30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-tokai-04.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-tokai-04-pc.jpg' | asset_url }}" alt="SABON 浜松遠鉄店" width="200"
+                    height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 浜松遠鉄店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒430-0927<br>
+                    静岡県浜松市中央区旭町12-1 遠鉄百貨店新館１階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～19：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-tokai-05.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-tokai-05-pc.jpg' | asset_url }}" alt="SABON ながの東急店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON ながの東急店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒380-8539<br>
+                    長野市南千歳1-1-1 ながの東急 1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～19：00</dd>
+                </dl>
+              </li>
+
+
+            </ul>
+          </div>
+        </details>
+
+
+
+
+
+
+
+        <details class="ambassador_common-shop__item">
+          <summary class="ambassador_common-shop__summary">北海道・東北エリア</summary>
+          <div class="ambassador_common-shop__content">
+            <ul class="ambassador_common-shop__list">
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-hokkaido-tohoku-01.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-hokkaido-tohoku-01-pc.jpg' | asset_url }}"
+                    alt="SABON 札幌ステラプレイス店" width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 札幌ステラプレイス店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒060-0005<br>
+                    北海道札幌市中央区北五条西2丁目 札幌ステラプレイスセンターB1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-hokkaido-tohoku-02.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-hokkaido-tohoku-02-pc.jpg' | asset_url }}" alt="SABON 仙台パルコ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 仙台パルコ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒980-8484<br>
+                    宮城県仙台市青葉区中央1-2-3 仙台PARCO1 2階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-hokkaido-tohoku-03.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-hokkaido-tohoku-03-pc.jpg' | asset_url }}" alt="SABON 盛岡川徳店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 盛岡川徳店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒020-8655<br>
+                    岩手県盛岡市菜園1-10-1 パルクアベニュー・カワトク 1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～19：00</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+
+
+
+
+
+
+        <details class="ambassador_common-shop__item">
+          <summary class="ambassador_common-shop__summary">北陸エリア</summary>
+          <div class="ambassador_common-shop__content">
+            <ul class="ambassador_common-shop__list">
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-hokuriku-01.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-hokuriku-01-pc.jpg' | asset_url }}" alt="SABON 金沢フォーラス店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 金沢フォーラス店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒920-0849<br>
+                    石川県金沢市堀川新町3-1 金沢フォーラス1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-hokuriku-02.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-hokuriku-02-pc.jpg' | asset_url }}" alt="SABON 富山大和店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 富山大和店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒930-8505<br>
+                    富山県富山市総曲輪3丁目8-6 富山大和1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～19：00</dd>
+                </dl>
+              </li>
+
+            </ul>
+          </div>
+        </details>
+
+
+
+
+
+
+
+        <details class="ambassador_common-shop__item">
+          <summary class="ambassador_common-shop__summary">中国エリア</summary>
+          <div class="ambassador_common-shop__content">
+            <ul class="ambassador_common-shop__list">
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-chugoku-01.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-chugoku-01-pc.jpg' | asset_url }}" alt="SABON 広島福屋八丁堀店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 広島福屋八丁堀店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒730-8548<br>
+                    広島県広島市中区胡町6-26<br>
+                    福屋八丁堀本店1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：30～19：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-chugoku-02.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-chugoku-02-pc.jpg' | asset_url }}" alt="SABON 岡山一番街店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 岡山一番街店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒700-0024<br>
+                    岡山県岡山市北区駅元町 岡山一番街地下2号
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+
+
+
+
+
+
+        <details class="ambassador_common-shop__item">
+          <summary class="ambassador_common-shop__summary">四国エリア</summary>
+          <div class="ambassador_common-shop__content">
+            <ul class="ambassador_common-shop__list">
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-shikoku-01.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-shikoku-01-pc.jpg' | asset_url }}" alt="SABON いよてつ髙島屋店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON いよてつ髙島屋店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒790-8587<br>
+                    愛媛県松山市湊町5丁目1番地1<br>
+                    いよてつ髙島屋3F
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～19：00</dd>
+                </dl>
+              </li>
+
+            </ul>
+          </div>
+        </details>
+
+
+
+
+
+
+
+        <details class="ambassador_common-shop__item">
+          <summary class="ambassador_common-shop__summary">九州・沖縄エリア</summary>
+          <div class="ambassador_common-shop__content">
+            <ul class="ambassador_common-shop__list">
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kyushu-okinawa-01.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kyushu-okinawa-01-pc.jpg' | asset_url }}" alt="SABON 博多阪急店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 博多阪急店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒812-0012<br>
+                    福岡県福岡市博多区博多駅中央街1-1 博多阪急1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kyushu-okinawa-02.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kyushu-okinawa-02-pc.jpg' | asset_url }}" alt="SABON 岩田屋本店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 岩田屋本店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒810-0001<br>
+                    福岡県福岡市中央区天神2丁目5番35号 岩田屋本店本館1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kyushu-okinawa-03.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kyushu-okinawa-03-pc.jpg' | asset_url }}" alt="SABON 熊本鶴屋店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 熊本鶴屋店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒860-8586<br>
+                    熊本県熊本市中央区手取本町6-1 鶴屋百貨店本館1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～19：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kyushu-okinawa-04.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kyushu-okinawa-04-pc.jpg' | asset_url }}"
+                    alt="SABON アミュプラザ長崎新館店" width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON アミュプラザ長崎新館店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒850-0058<br>
+                    長崎県長崎市尾上町1-1 アミュプラザ長崎新館1階9131区画
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～20：00</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kyushu-okinawa-05.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kyushu-okinawa-05-pc.jpg' | asset_url }}" alt="SABON 大分トキハ店"
+                    width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 大分トキハ店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒870-8688<br>
+                    大分県大分市府内町2丁目1番4号 大分トキハ 1階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～18：30</dd>
+                </dl>
+              </li>
+
+              <li class="ambassador_common-shop__list-item">
+                <div class="ambassador_common-shop__media">
+                  <picture>
+                    <source media="(max-width: 959px)" srcset="{{ 'ambassador-common-shop-kyushu-okinawa-06.jpg' | asset_url }}">
+                    <img class="ambassador_common-shop__image"
+                      src="{{ 'ambassador-common-shop-kyushu-okinawa-06-pc.jpg' | asset_url }}"
+                    alt="SABON 沖縄PARCO CITY店" width="200" height="150" loading="lazy">
+                  </picture>
+                </div>
+                <dl class="ambassador_common-shop__info">
+                  <dt class="ambassador_common-shop__name">SABON 沖縄PARCO CITY店</dt>
+                  <dd class="ambassador_common-shop__address">
+                    〒901-2123<br>
+                    沖縄県浦添市西洲3-1-1 サンエー浦添西海岸 PARCO CITY2階
+                  </dd>
+                  <dd class="ambassador_common-shop__hours">10：00～22：00</dd>
+                </dl>
+              </li>
+
+            </ul>
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+{{ 'ambassador-lp.js' | asset_url | script_tag }}
+

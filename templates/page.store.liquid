@@ -1,0 +1,140 @@
+{% layout 'default' %}
+{{ 'template-store.css' | asset_url | stylesheet_tag }}
+
+<section class="store-locator">
+  <div class='store-locator__image-container'>
+    <img 
+      src="{{ 'store_locator.png' | asset_url }}"
+      alt="{{ 'store.title' | t }}"
+      class="store-locator__image"
+      width="100%"
+      height="100%">
+  </div>
+  <div class="store-locator__title-container">
+    <h1 class="store-locator__title">{{ 'store.title' | t }}</h1>
+  </div>
+
+  <div class="store-locator__area-buttons">
+    <p class="store-locator__area-buttons-title">{{ 'store.area_selector' | t }}</p>
+    <div class="store-locator__area-buttons-inner">
+    </div>
+  </div>
+
+  <div class="store-locator__area-container">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const token    = "{{ shop.metafields.custom.metaobject_access_token }}";
+      const endpoint = "/api/{{ settings.shopify_api_version }}/graphql.json";
+      const placeholderSvg = "{{ 'sabon-logo.svg' | asset_url }}";
+
+      const storeQuery = `
+        query {
+          metaobjects(first: 100, type: "store") {
+            edges {
+              node {
+                handle
+                fields {
+                  key
+                  value
+                  reference {
+                    __typename
+                    ... on MediaImage {
+                      image { url }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `;
+
+      const resp = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Shopify-Storefront-Access-Token': token
+        },
+        body: JSON.stringify({ query: storeQuery })
+      });
+      const json = await resp.json();
+
+      const stores = json.data.metaobjects.edges.map(({ node }) => {
+        const s = { system: { handle: node.handle }, name: '', area: '', imageUrl: '' };
+        node.fields.forEach(f => {
+          if (f.key === 'name') s.name = f.value;
+          if (f.key === 'area') s.area = f.value;
+          if (f.key === 'image' && f.reference?.image) {
+            s.imageUrl = f.reference.image.url;
+          }
+        });
+        return s;
+      });
+
+      const areaOrder = [
+        '北海道・東北エリア',
+        '北陸エリア',
+        '関東エリア',
+        '東海エリア',
+        '関西エリア',
+        '中国エリア',
+        '四国エリア',
+        '九州エリア'
+      ];
+
+      // Get areas and sort them according to areaOrder
+      const areas = [...new Set(stores.map(s => s.area))].sort((a, b) => {
+        const indexA = areaOrder.indexOf(a);
+        const indexB = areaOrder.indexOf(b);
+        if (indexA === -1) return 1;
+        if (indexB === -1) return -1;
+        return indexA - indexB;
+      });
+
+      const btns = areas.map(area => {
+        const slug = encodeURIComponent(area);
+        return `
+          <button
+            class="store-locator__area-button btn btn--secondary"
+            onclick="window.location.hash='${slug}'">
+            <span>${area}</span>
+          </button>`;
+      }).join('');
+      document.querySelector('.store-locator__area-buttons-inner').innerHTML = btns;
+
+      const blocks = areas.map(area => {
+        const slug = encodeURIComponent(area);
+        const storesHTML = stores
+        .filter(s => s.area === area)
+        .map(s => {
+          const isPlaceholder = !(s.imageUrl && s.imageUrl.trim());
+          const cls = isPlaceholder ? ' is-placeholder' : '';
+          const imgSrc = s.imageUrl && s.imageUrl.trim() ? s.imageUrl : placeholderSvg;
+          const imgAlt = s.imageUrl && s.imageUrl.trim() ? s.name : `${s.name} (placeholder)`;
+          return `
+            <a href="/pages/store/${s.system.handle}" class="store-locator__store-container">
+              <div class="store-locator__store-image">
+                <img src="${imgSrc}" alt="${imgAlt}"class="${cls}" loading="lazy">
+              </div>
+              <h3 class="store-locator__store-title">${s.name}</h3>
+              <div class="store-locator__store-chevron">
+                {% render 'icon' with icon: 'chevron-small' %}
+              </div>
+            </a>
+          `;
+        }).join('');
+
+        return `
+          <div class="store-locator__area-container-inner" id="${slug}">
+            <h2 class="store-locator__area">${area}</h2>
+            <div class="store-locator__stores">
+              ${storesHTML}
+            </div>
+          </div>`;
+      }).join('');
+      document.querySelector('.store-locator__area-container').innerHTML = blocks;
+    });
+  </script>
+</section>

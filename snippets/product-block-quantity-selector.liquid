@@ -1,0 +1,29 @@
+{% assign label_classes = 'fs-body-100' %}
+
+{%- unless block.settings.show_labels -%}
+  {% assign label_classes =  label_classes | append: ' visually-hidden' %}
+{%- endunless -%}
+{%- liquid
+  assign enable_purchase_limit = product.metafields.custom.enable_purchase_limit.value
+  assign max_purchase_quantity = product.metafields.custom.max_purchase_quantity.value
+-%}
+
+<div
+  class="product__controls-group product__controls-group-quantity  product__block product__block--medium"
+  {{ block.shopify_attributes }}
+>
+  <div class="product__label-wrapper{% unless block.settings.show_labels %} product__label-wrapper--collapse{% endunless %}">
+    <label class="product__label {{ label_classes }}" for="Quantity-Input-{{ product.id }}">
+      {{ 'products.product.quantity' | t }}
+    </label>
+  </div>
+  <div class="product__item">
+    {%- render 'quantity-input',
+      id: product.id,
+      initial_value: '1',
+      enable_purchase_limit: enable_purchase_limit,
+      max_purchase_quantity: max_purchase_quantity,
+      product_metafields: product.metafields
+    -%}
+  </div>
+</div>
